@@ -3,128 +3,91 @@
 
 
 	<div class="header">
-		<div class="title">Deletions and Additions</div>
-		<div>Below is a tutorial about deletions and additions: How they
-			were marked by the scribe and how you should represent them when you
-			transcribe.</div>
+		<div class="title">Suppressions et ajouts</div>
+		<div>Voici un tutoriel concernant les suppressions et les ajouts : comment ils sont-ils indiqués par le scribe et comment les représenter lors de la transcription.
+</div>
 	</div>
 	<div class="content">
 		<div class="deletions">
-			<div class="title">Deletions</div>
+			<div class="title">Suppressions</div>
 			<div class="content">
-				<p>There are two basic types of deletions: a) Deletions of the
-					first scribe during the writing process where he corrected his own
-					mistakes during the copying process: wrong letters, words written
-					twice (dittography), etc. b) Deletions by others who corrected
-					scribal mistakes or added text from other manuscripts. The scribe
-					of ms Geneva marks deletions in several ways: a horizontal line
-					striking through the word; a horizontal line above the word; dots
-					above the word; diagonal strokes. Usually, the scribe of ms Geneva
-					uses the first method (line above the word), but there are a couple
-					of other deletion types in the manuscript:</p>
+				<p>Il faut distinguer deux types de suppressions : a) les suppressions effectuées par le premier scribe lors de la rédaction du manuscrit, par lesquelles il corrige ses propres erreurs à mesure qu’il copie : lettres erronées, mots écrits deux fois (dittographie), etc. b) les suppressions effectuées ultérieurement par d’autres scribes pouvant être des corrections d’erreurs ou des témoins issus d’autres manuscrits.
+Le scribe du manuscrit de Genève indique les suppressions de plusieurs façons : une ligne horizontale barrant le mot ; une ligne horizontale au-dessus du mot ; des points au-dessus du mot ; des traits en diagonale. Il utilise en général la première méthode (ligne au-dessus du mot), mais les autres méthodes de suppression apparaissent occasionnellement :
+</p>
 
 				<ul>
-					<li><img src="/TS1218/images/ex_deletion_small.jpg"> the
-						line above indicates the deletion of ×××ª ×× ×× (erroneously written
-						twice).</li>
+					<li><img src="/TS1218/images/ex_deletion_small.jpg"> La ligne horizontale indique la suppression des mots ×××ª ×× ×× (écrits deux fois, par erreur).</li>
 					<li><img src="/TS1218/images/ex_struck_through_small.jpg">
-						the word ××ª××¨× has been struck through.</li>
+						le mot ××ª××¨× a été barré.</li>
 					<li><img
 						src="/TS1218/images/ex_combination_stuck_deletion_small.jpg">
-						a combination of both methods mentioned above.</li>
+						Une combinaison des deux méthodes ci-dessus.</li>
 				</ul>
 				<p>
-					In order to signal that a word or letter in the manuscript has been
-					deleted, mark the text using the mouse and then press on the
-					âdeletedâ button (<img
-						src="/TS1218/images/ex_deleted_btn_small.jpg">) under the
-					text box. Alternatively, press the delete button and then type the
-					deleted text between parentheses. For example: <img
+					Pour indiquer la suppression d’une lettre ou d’un mot dans le manuscrit, sélectionnez le texte supprimé avec la souris, puis cliquez sur le bouton « supprimé »
+					âdeletedâ  (<img
+						src="/TS1218/images/ex_deleted_btn_small.jpg">) en-dessous de la boîte de texte. Vous pouvez également cliquer sur le bouton « supprimé » puis taper le texte supprimé entre les parenthèses. Par exemple : <img
 						src="/TS1218/images/ex_marked_as_deleted_small.jpg"> (×××ª× )
-					Is marked as deleted
+					est supprimé.
 				</p>
 			</div>
 		</div>
 
 		<div class="unidentified_deleted_text">
-			<div class="title">Unidentified deleted text</div>
-			<div class="content">If the deleted word or letter cannot be
-				identified, press once on the deletion button, to mark that
-				something was deleted there and continue.</div>
+			<div class="title">Texte supprimé illisible</div>
+			<div class="content">Si la lettre ou le mot ne peuvent être identifiés, cliquez une fois sur le bouton « Supprimé », afin d’indiquer que quelque chose a été supprimé à cet endroit, puis continuez.</div>
 		</div>
 		<div class="additions">
-			<div class="title">Additions</div>
+			<div class="title">Ajouts</div>
 			<div class="content">
-				<p>Additions can be either interlinear (above or below the line)
-					or marginal (in the margins). Additions of the first scribe - to
-					add a word or letter missed during copying Additions by others - to
-					add a word accidentally omitted by the first scribe or to correct
-					the text according to a different version. The scribe of ms Geneva
-					usually inserts additions above the line if they are short, while
-					longer passages are added in the margins.</p>
+				<p>Il existe deux types d’ajouts, qu’ils soient interlinéaires (en-dessus ou en-dessous de la ligne) ou marginaux (dans les marges).
+Ajouts par le premier scribe : une lettre ou un mot qui ont été omis pendant le processus de copie
+Ajouts par d’autres : un mot accidentellement omis par le scribe, ou correction du texte à la lumière d’une autre version.
+Le scribe du manuscrit de Genève insère le plus souvent les ajouts les plus courts au-dessus de la ligne, tandis que les passages plus longs sont ajoutés dans les marges.
+</p>
 				<p>
-					Here, the scribe has inserted the word ×× : <img
-						src="/TS1218/images/ex_addition_small.jpg"> In order to
-					signal an addition, press the [Addition] button below the text line
-					and then write the added word between the brackets. If you want to
-					signal that a transcribed word or letter should rather be handled
-					as addition, please mark that word or letter with your mouse and
-					then click on the [Addition] button. For example, the addition of
-					the letter × in the ×©×§××× has to appear in the end as ×¢× ×©[×]×§×××
+					Ici, le scribe a inséré le mot ×× : <img
+						src="/TS1218/images/ex_addition_small.jpg"> Afin de signaler un ajout, utilisez le bouton [Ajouté] en-dessous de la ligne de texte, et écrivez le mot inséré entre les crochets. Si vous devez signaler qu’une lettre ou un mot transcrits doivent être considérés comme un ajout, sélectionnez-les avec la souris, puis cliquez sur le bouton [Ajouté]. Par exemple, l’insertion de la lettre × dans le mot ×©×§××× doit être signalée dans la transcription de la façon suivante : ×¢× ×©[×]×§×××
 					×©××:
 				</p>
 			</div>
 		</div>
 		<div class="combination">
-			<div class="title">Combination of a deletion and an addition</div>
-			<div class="content">Additions can If a word added between the
-				lines corrects a word in the line, both have to be marked. In the
-				following example, the scribe first wrote ××ª××××× and then deleted
-				it and added ×××ª××©××× above the line. This has to be marked
+			<div class="title">Combinaison d’une suppression et d’un ajout</div>
+			<div class="content">Si un mot est inséré entre deux lignes afin de corriger un mot de la ligne, le mot ajouté et le mot corrigé doivent être marqués tous les deux. Dans l’exemple suivant, le scribe a écrit ××ª××××× puis il a barré ce mot et inséré
+ ×××ª××©××× au-dessus. Cela doit être transcrit
 				as:××ª×××× (××ª×××××) [××ª××©×××] ×</div>
 		</div>
 		<div class="diagonal_words_at_the_end_of_lines">
-			<div class="title">Diagonal words at the end of lines</div>
-			<div class="content">In order to align end of lines, the author
-				sometimes wrote the last word diagonally. Often the transcription
-				software has problems with such words. These words should be written
-				as regular words without any special mark. See examples below</div>
+			<div class="title">Mots en diagonale à la fin des lignes</div>
+			<div class="content">Afin de justifier les paragraphes du côté gauche, le scribe écrit quelquefois le dernier mot de la ligne en diagonale. Cette technique constitue souvent un obstacle pour le logiciel de transcription.
+Ces mots doivent être écrits normalement, sans aucune indication spéciale. Voir les exemples ci-dessous.
+</div>
 		</div>
 		<div class="damaged_or_unreadable_text">
-			<div class="title">Damaged or unreadable text</div>
+			<div class="title">Texte endommagé ou illisible</div>
 			<div class="content">
-				<p>Manuscripts were damaged over the years. Sometimes they are
-					torn and sometimes the ink was erased/blurred.</p>
+				<p>Les manuscrits ont été endommagés à travers les années. Ils sont parfois déchirés et parfois l’encre est effacée ou estompée.</p>
 				<p>
-					<strong> In order to mark unidentified letters
-						(torn/blurred) press on the âdamagedâ button and mark spaces
-						between square brackets according to the estimated missing/unclear
-						part.</strong>
+					<strong> Pour marquer des lettres non-identifiables (déchirées ou estompées), cliquez sur le bouton âdamagedâ et insérez des espaces entre les chevrons, selon votre estimation de la longueur du texte illisible.</strong>
 				</p>
-				<p>needs to be written as follows: ×§×× ×©××× ××¦× < ></p>
+				<p>doit être noté ainsi : ×§×× ×©××× ××¦× < ></p>
 			</div>
 		</div>
 		<div class="uncertainty_in_transcription">
-			<div class="title">Uncertainty in transcription</div>
+			<div class="title">Un doute concernant la transcription</div>
 			<div class="content">
 				<p>
-					<strong>âdoubtfulâ</strong>
+					<strong>âdouteuxâ</strong>
 				</p>
-				<p>The doubtful button is intended for cases where you are not
-					sure if the automatic transcription correctly identified the letter
-					in the manuscript. Please try to minimize the use of this button
-					and use it only in extreme cases.</p>
-				<p>For example, the last letter of the word is not clear enough
-					and you have doubt whether the transcription is correct: ××× ××¤×
+				<p>Le bouton du doute est destiné aux cas où vous n’êtes pas certain si la transcription automatique a bien identifié une lettre dans le manuscrit. Essayez d’utiliser ce bouton le plus rarement possible, et seulement dans des cas particulièrement difficiles.</p>
+				<p>Par exemple, la dernière lettre du dernier mot n’est pas assez claire et vous n’êtes pas certain si la transcription est correcte : ××× ××¤×
 					×××</p>
 				<p>
-					<strong>In order to mark the uncertainty, use the mouse to
-						mark the uncertain letter and then press the âdoubtfulâ button .
-						Alternatively, you can press the button and type the most probable
-						option between curly brackets.</strong>
+					<strong>Pour indiquer le doute, utilisez la souris et marquez la lettre puis cliquez sur âdoubtfulâ.
+						Vous pouvez également cliquer sur le bouton et taper la lettre la plus probable entre les accolades.</strong>
 				</p>
-				<p>In the example there is a need to write the doubtful letter
-					as follows: {××× ××¤× ××{×</p>
+				<p>Dans cet exemple il faut marquer comme douteuse la lettre ainsi : {××× ××¤× ××{×</p>
 			</div>
 		</div>
 	</div>
