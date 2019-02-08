@@ -1,11 +1,11 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 <div class="partners">
 	<div class="header">
-		<strong>Partners - Institutions</strong>
+		<strong>Partenaires - Institutions</strong>
 	</div>
-	<div>Elijah lab - Elijah lab is a crowdsourcing lab for engaging
-		the public in research at the department of Jewish History at the
-		University of Haifa. The lab develops a variety of tools that invite
-		the general public to participate in studying and research efforts of
-		Judaism research and Israeli culture and history.</div>
+	<div>Elijah Lab - Elijah Lab est un laboratoire de crowdsourcing 
+	qui engage le public dans la recherche au département d’histoire
+	juive de l’université de Haïfa. Le laboratoire développe divers 
+	outils qui permettent au grand public de participer au travail de 
+	recherche et d’étude du judaïsme et de l’histoire et de la culture israéliennes.</div>
 </div>
