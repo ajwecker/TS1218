@@ -103,17 +103,17 @@ public class LoginServlet extends HttpServlet {
 		String msglang = "en";
 		switch (lang) {
 		case "EN":
-			dir = "ltr";
+			dir = "myltr";
 			msglang = "en";
 				
 			break;
 		case "FR":
-			dir = "ltr";
+			dir = "myltr";
 			msglang = "fr";
 				
 			break;
 		case "HE":
-			dir = "rtl";
+			dir = "myrtl";
 			msglang = "es";
 				
 			break;	

@@ -4,11 +4,11 @@
 
 <%@include file="../common/header.jspf"%>
 
-<body onload="onloadResize();" dir="${dir}">
+<body onload="onloadResize();" class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
 	<div dir="ltr"     class="transcribe-page scrollable mt-2 p-2 row">
 		<div id="info-page" class="container col-4 flex-column d-flex">
-			<div dir="${dir}">
+			<div>
 
 				<ul class="nav nav-tabs flex-nowrap" role="tablist">
 					<li class="nav-item"><a class="nav-link active sfont"
@@ -32,7 +32,7 @@
 					</li>
 				</ul>
 			</div>
-			<div dir="${dir}" class="tab-content">
+			<div class="tab-content">
 				<div class="tab-pane fade show active" id="page" role="tabpanel"
 					aria-labelledby="page-tab">
 					<div id="imgPage">
@@ -84,13 +84,13 @@
 				</div>
 				<div class="tab-pane fade" id="special" role="tabpanel"
 					aria-labelledby="profile-tab">
-					<div dir="${dir}" class="tabcontent">
+					<div  class="tabcontent">
 						<jsp:include page="../views/parts/${lang}/transcribe/special.jspf" />
 					</div>
 				</div>
 				<div class="tab-pane fade" id="ab" role="tabpanel"
 					aria-labelledby="ab-tab">
-					<div dir="${dir}" class="tabcontent">
+					<div  class="tabcontent">
 						<jsp:include page="../views/parts/${lang}/transcribe/abc.jspf" />
 					</div>
 				</div>
@@ -219,7 +219,7 @@
 								</div>
 							</div>
 
-							<div dir="${dir}" id="activity" class="mt-2 align-self-center w-60">
+							<div id="activity" class="mt-2 align-self-center w-60">
 
 								<div><fmt:message key="main.work_area.finish_line_1"/></div>
 								<div><fmt:message key="main.work_area.finish_line_2"/></div>
