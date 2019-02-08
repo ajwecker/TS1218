@@ -1,24 +1,18 @@
 <div class="special_chars info_content">
 	<div class="header">
-		<div class="title">Special characters</div>
+		<div class="title">Caractères spéciaux</div>
 	</div>
 	<div class="content">
 		<div class="line_fillers">
-			<div class="title">Line fillers</div>
+			<div class="title">Bouts-de-ligne (line-fillers)</div>
 			<div class="content">
-				<p>In order to maintain a homogeneous text layout, medieval
-					scribes frequently used “line fillers”, special characters added at
-					the ends of lines in cases where the text did not reach the end of
-					line naturally. Another way was filling the remaining space with
-					the first letters of the word of the next line. The scribe of the
-					Geneva manuscript usually fills the end of lines with one or two
-					diagonal strokes.</p>
+				<p>Afin de conserver une mise en page homogène, les scribes médiévaux utilisaient fréquemment des “line fillers”, des caractères spéciaux ajoutés à la fin des lignes qui n’atteignent pas naturellement la longueur des autres lignes du paragraphe. Ces caractères peuvent être des traits dans différentes directions, ou la première lettre de la ligne suivante.
+Le scribe du manuscrit de Genève utilise le plus souvent deux lignes diagonales // pour terminer les lignes trop courtes.
+</p>
 				<img
 					src="/TS1218/images/special_characters/a_special_characters_linefillers.png">
 				<p>
-					<strong>In order to insert these characters at the end of
-						a line, press the leftmost button at the buttons line under the
-						text and select the / symbol or //</strong>
+					<strong>Pour insérer ces caractères à la fin d’une ligne, sélectionner le symbole voulu parmi les icônes, dans le menu déroulant à gauche, en-dessous de la boîte de texte.</strong>
 				</p>
 
 
@@ -26,21 +20,18 @@
 		</div>
 
 		<div class="wide_letters">
-			<div class="title">Wide letters</div>
+			<div class="title">Lettres larges</div>
 			<div class="content">
-				<p>Another way to fill the rest of the line is to write very
-					large letters at the ends of the lines. These letters need to be
-					written as regular letters. For example: - נוטל את.</p>
+				<p>Il existe une autre façon de remplir la ligne est d’allonger largement la dernière lettre de la ligne. Ces lettres allongées doivent être transcrites de façon normale sans aucune indication spéciale. Par exemple : - נוטל את.</p>
 				<img
 					src="/TS1218/images/special_characters/b_special_characters_wide_letters.png">
 
 			</div>
 		</div>
 		<div class="upper_dots">
-			<div class="title">Upper dots</div>
+			<div class="title">Points supérieurs</div>
 			<div class="content">
-				<p>Instead commas and full stops used today, the author of
-					Geneva manuscript separated sentences using upper dots:</p>
+				<p>A la place des points et virgules en usage aujourd’hui, les auteurs du manuscrit de Genève séparent les phrases à l’aide de points supérieurs :</p>
 				<p>
 				<div class="images">
 					<img
@@ -48,37 +39,32 @@
 					<br /> <img
 						src="/TS1218/images/special_characters/d_special_characters_upper_dot2.png">
 				</div>
-				<strong>To mark an upper dot press the button (<img
+				<strong>Pour transcrire un point supérieur, sélectionnez l’icône (<img
 					src="/TS1218/images/special_characters/e_special_characters_upper_dot_button.png"
-					class="small">) in the buttons line under the text. Add the
-					same number of dots that the manuscript author wrote. If you
-					encounter a different mark that appears on the keyboard, for
-					instance “:”, you may consider using it.
+					class="small">) sous la boîte de texte. Ajoutez autant de points supérieurs que le scribe en a écrits.
+Si vous rencontrez un caractère différent qui existe sur votre clavier, comme “:”, vous pouvez l’utiliser.
+
 				</strong>
 				</p>
 			</div>
 		</div>
 		<div class="ligature_alef_lamed">
-			<div class="title">Ligature א-ל</div>
+			<div class="title">La ligature א-ל</div>
 			<div class="content">
-				<p>Due to the sanctity of the divine name, scribes have been
-					avoiding to write two complete letters aleph lamed in continuation
-					and wrote a ligature, a sign joining both letters, instead. We use
-					for this the corresponding special sign ﭏ (note the little flag on
-					the top left of the aleph).</p>
+				<p>Le nom divin étant sacré, les scribes ont évité d’écrire les lettres Aleph et Lamed successivement, et utilisaient à la place une ligature, un signe unique composé des deux lettres. Nous utilisons pour cela le signe spécial ﭏ (notez le petit drapeau à l’extrémité du bras gauche du aleph).</p>
 				<p>
 					<img
 						src="/TS1218/images/special_characters/f_special_characters_ligature_aleph_lamed.png">
-					for example means אליו. Please use the special button <img
+					par exemple, signifie אליו. Veuillez utiliser l’icône <img
 						src="/TS1218/images/special_characters/g_special_characters_ligature_aleph_lamed_button.png"
-						class="small"> below the text line and transcribe ﭏיו.
+						class="small"> et transcrire ﭏיו.
 				</p>
 			</div>
 		</div>
 		<div class="abbreviations_and_numbers">
-			<div class="title">Abbreviations and Numbers</div>
+			<div class="title">Abréviations et nombres</div>
 			<div class="content">
-				<p>Some expressions are almost always abbreviated. For example:
+				<p>Certaines expressions sont presque toujours abrégées. Par exemple :
 					ז'ש'ה' – זהו שאמר הכתוב; ד'א' – דבר אחר; ה'ב'ה' – הקודש (או הקדוש)
 					ברוך הוא.</p>
 				<div class="images inline">
@@ -90,10 +76,8 @@
 						src="/TS1218/images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
 				</div>
 				<p>
-					<strong>Please write each single visible letter of the
-						abbreviation without space in between, each letter followed
-						directly by an apostrophe ‘ representing the dot above</strong>, i.e. :
-					ה'ב'ה', ז'ש'ה'. Please do NOT resolve the abbreviations.
+					<strong>Veuillez écrire chaque lettre visible de l’abréviation sans espace entre elles. Chaque lettre doit être suivie directement par une apostrophe, qui représente le point utilisé dans le manuscrit</strong>, :
+					ה'ב'ה', ז'ש'ה'. Il ne faut pas développer les abréviations.
 
 
 
@@ -108,9 +92,7 @@
 						src="/TS1218/images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
 					- משה וג'
 				</div>
-				<p>When letters serve as numbers they should be transcribed with
-					the letters displayed (and the dot above the Hebrew letter as an
-					apostrophe, i.e.</p>
+				<p>Quand les lettres expriment des nombres, elles doivent être transcrites exactement comme elles apparaissent dans le manuscrit (ici aussi, l’apostrophe représente le point qui surplombe la lettre) :</p>
 				<div>
 					<img
 						src="/TS1218/images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
@@ -120,28 +102,21 @@
 			</div>
 		</div>
 		<div class="the_divine_name">
-			<div class="title">The Divine name</div>
+			<div class="title">Le nom divin</div>
 			<div class="content">
 				<p>
-					In manuscripts written by Jews, there are many ways to write the
-					name of G”d replacing the tetragrammaton, most of them use two or
-					three yods, sometimes with an ornament. The scribe of the Geneva
-					manuscript, usually writes the divine name <img
+					Les scribes avaient diverses façon d’écrire le nom divin, en remplacement du tétragramme. La plupart utilisent deux ou trois yods, qui sont quelquefois décorés. Le scribe du manuscrit de Genève écrit le plus souvent <img
 						src="/TS1218/images/special_characters/n_special_characters_divine_name.png">
-					and should be transcribed as יוי.
+					qui doit être transcrit יוי.
 				</p>
 			</div>
 		</div>
 		<div class="headwords">
-			<div class="title">Headwords</div>
+			<div class="title">Têtes de chapitres</div>
 			<div class="content">
-				<p>The manuscript contains big headwords, usually written with
-					square letters standing out from the other handwriting. Sometimes
-					they invade the line below that remains empty and sometimes they
-					are integrated into the line.</p>
+				<p>Le manuscrit contient des têtes de chapitres, souvent écrites en script carré, qui contraste avec le reste du paragraphe écrit en script cursif. Ces titres peuvent empiéter sur la ligne du dessous qui reste vide à cet endroit, ou bien être parfaitement intégrer à la ligne en cours.</p>
 				<p>
-					<strong>Transcribe the headwords in regular font like the
-						rest of the text</strong>
+					<strong>Transcrivez les têtes de chapitres normalement, sans les différencier du reste du texte.</strong>
 				</p>
 				<img
 					src="/TS1218/images/special_characters/o_special_characters_headwords.png" class="large">
