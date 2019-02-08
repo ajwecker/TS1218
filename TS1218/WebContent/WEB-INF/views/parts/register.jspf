@@ -28,13 +28,13 @@
 			name="passwordsignup_confirm" required="required" type="password"
 			placeholder="eg. X8df!90EO" />
 	</p>
-	<br>
+	
 	<fieldset>
 		<legend style="font-size: 15px; font-weight: bold;">
 			<fmt:message key="register_screen.demographics"/></legend>
-		<label for="age"> <fmt:message key="register_screen.DoB"/> </label> <input maxlength="2" id="age"
-			name="age" style="padding: 0px; width: 45px; height: 25px;"
-			type="number" min="1" max="120" placeholder="eg. 75" /> <br> 
+<%-- 		<label for="age"> <fmt:message key="register_screen.DoB"/> </label> <input maxlength="2" id="age" --%>
+<!-- 			name="age" style="padding: 0px; width: 45px; height: 25px;" -->
+<!-- 			type="number" min="1" max="120" placeholder="eg. 75" /> <br>  -->
 			<legend style="font-size: 15px; font-weight: bold;">
 			<fmt:message key="register_screen.Hebrew"/></legend>
 
