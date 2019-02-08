@@ -175,28 +175,28 @@
 										<option value="'">'</option>
 									</select>
 									<button class="btn btn-secondary" type="button"
-										onclick="myInsert('ﭏ')" title="Aleph Lamed Ligature">
+										onclick="myInsert('ﭏ')" title='<fmt:message key="main.work_area.hovers.over_ligature"/>'>
 										<b>ﭏ</b>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myInsert('˙')" title="High Point">
+										onclick="myInsert('˙')" title='<fmt:message key="main.work_area.hovers.over_upper"/>'>
 										<b>˙</b>
 									</button>
 
 									<button class="btn btn-secondary" type="button"
-										onclick="myMark('}','{')" title="Mark Damaged">
+										onclick="myMark('}','{')" title='<fmt:message key="main.work_area.hovers.over_uncertain"/>'>
 										<span style="font-size: smaller;"><fmt:message key="main.work_area.button_4"/></span>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myMark('>','<')" title="Mark Uncertain">
+										onclick="myMark('>','<')" title='<fmt:message key="main.work_area.hovers.over_damaged"/>'>
 										<span style="font-size: smaller;"><fmt:message key="main.work_area.button_3"/></span>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myMark(')','(')" title="Mark Deleted">
+										onclick="myMark(')','(')" title='<fmt:message key="main.work_area.hovers.over_deletions"/>'>
 										<span style="font-size: smaller;"><fmt:message key="main.work_area.button_1"/></span>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myMark(']','[')" title="Mark Addition">
+										onclick="myMark(']','[')" title='<fmt:message key="main.work_area.hovers.over_additions"/>'>
 										<span style="font-size: smaller;"><fmt:message key="main.work_area.button_2"/></span>
 									</button>
 								</div>
@@ -205,7 +205,7 @@
 								<div dir="rtl" class="btn-group mr-2" role="group"
 									aria-label="Second group">
 									<button class="btn btn-secondary" type="button"
-										onclick="myReset()" title="Reset to original transcribedline"><fmt:message key="main.work_area.button_5"/></button>
+										onclick="myReset()" title='<fmt:message key="main.work_area.hovers.over_reset"/>'><fmt:message key="main.work_area.button_5"/></button>
 									<button class="btn btn-secondary" type="button"
 										onclick="myResize(1)" title="Increase size of text">
 										<span style="font-size: larger;"><b>א+</b></span>

@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 
 
@@ -6,63 +7,63 @@
 <p class="change_link">
 		
 	</p>
-	<h4>Register</h4> (Already registered? <a href="#" onclick="showLoginForm()">Login</a>)
+	<h4><fmt:message key="register_screen.title"/></h4> <fmt:message key="register_screen.subtitle"/> <a href="#" onclick="showLoginForm()"><fmt:message key="Login.login_area.login"/></a>
 	<p style="font-weight: bold; font-size: large; color: red;">${errorMessageRegister}</p>
 	<p>
-		<label for="usernamesignup" class="uname" data-icon="u">Userid:</label>
+		<label for="usernamesignup" class="uname" data-icon="u"><fmt:message key="register_screen.userid"/></label>
 		<input style="width: 145px;" id="usernamesignup" name="usernamesignup"
 			required="required" type="text" placeholder="mysuperusername690" />
 		<label for="emailsignup" style="margin-left: 25px" class="youmail"
-			data-icon="e"> E-mail:</label> <input style="width: 145px;"
+			data-icon="e"> <fmt:message key="register_screen.email"/></label> <input style="width: 145px;"
 			id="emailsignup" name="emailsignup" required="required" type="email"
 			placeholder="mysupermail@mail.com" />
 	</p>
 	<p>
-		<label for="passwordsignup" class="youpasswd" data-icon="p">Password:
+		<label for="passwordsignup" class="youpasswd" data-icon="p"><fmt:message key="register_screen.password"/>
 		</label> <input style="width: 125px;" id="passwordsignup"
 			name="passwordsignup" required="required" type="password"
 			placeholder="eg. X8df!90EO" /> <label for="passwordsignup_confirm"
-			style="margin-left: 25px" class="youpasswd" data-icon="p">Confirm<br>
-			password:
+			style="margin-left: 25px" class="youpasswd" data-icon="p"><fmt:message key="register_screen.confirm"/>
 		</label> <input style="width: 125px;" id="passwordsignup_confirm"
 			name="passwordsignup_confirm" required="required" type="password"
 			placeholder="eg. X8df!90EO" />
 	</p>
 	<br>
 	<fieldset>
-		<legend style="font-size: 15px; font-weight: bold;">Demographics
-			(Optional)</legend>
-		<label for="age"> Age </label> <input maxlength="2" id="age"
+		<legend style="font-size: 15px; font-weight: bold;">
+			<fmt:message key="register_screen.demographics"/></legend>
+		<label for="age"> <fmt:message key="register_screen.DoB"/> </label> <input maxlength="2" id="age"
 			name="age" style="padding: 0px; width: 45px; height: 25px;"
-			type="number" min="1" max="120" placeholder="eg. 75" /> <br> <label>Knowledge
-			of Hebrew</label>
+			type="number" min="1" max="120" placeholder="eg. 75" /> <br> 
+			<legend style="font-size: 15px; font-weight: bold;">
+			<fmt:message key="register_screen.Hebrew"/></legend>
 
 		<ul class="likert">
-			<li class="likert">None</li>
+			<li class="likert"><fmt:message key="register_screen.none_Hebrew"/></li>
 			<li class="likert"><input type="radio" name="hebrew" value="1" /></li>
 			<li class="likert"><input type="radio" name="hebrew" value="2" /></li>
 			<li class="likert"><input type="radio" name="hebrew" value="3" /></li>
 			<li class="likert"><input type="radio" name="hebrew" value="4" /></li>
 			<li class="likert"><input type="radio" name="hebrew" value="5" /></li>
-			<li class="likert">Very Knowledgeable</li>
+			<li class="likert"><fmt:message key="register_screen.knowledgable_Hebrew"/></li>
 		</ul>
 	</fieldset>
 	<fieldset>
-		<label>Knowledge of Midrashim</label>
+		<legend style="font-size: 15px; font-weight: bold;"><fmt:message key="register_screen.Midrash"/></legend>
 
 		<ul class="likert">
-			<li  class="likert">None</li>
+			<li  class="likert"><fmt:message key="register_screen.none_Midrash"/></li>
 			<li class="likert"><input type="radio" name="midrashim" value="1" /></li>
 			<li class="likert"><input type="radio" name="midrashim" value="2" /></li>
 			<li class="likert"><input type="radio" name="midrashim" value="3" /></li>
 			<li class="likert"><input type="radio" name="midrashim" value="4" /></li>
 			<li class="likert"><input type="radio" name="midrashim" value="5" /></li>
-			<li class="likert">Very Knowledgeable</li>
+			<li class="likert"><fmt:message key="register_screen.knowledgable_Midrash"/></li>
 		</ul>
 	</fieldset>
 	<p class="signin button">
 		<input name="register" type="submit"
-			style="width: 75px; margin-left: 25px;" value="Register" />
+			style="width: 75px; margin-left: 25px;" value='<fmt:message key="register_screen.title"/>' />
 	</p>
 	
 </form>
