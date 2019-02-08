@@ -7,7 +7,11 @@ document.getElementById("logout").className += " active";
  </script>
 <%@include file="../common/navigation.jspf"  %>
 
-
+<%
+		if (session != null) {
+		    session.invalidate();
+		}
+%>
     <div >
     <h1><fmt:message key="main.work_area.Good_bye_Message1"/></h1>
     <fmt:message key="main.work_area.Good_bye_Message2"/> ${userlinecount}
