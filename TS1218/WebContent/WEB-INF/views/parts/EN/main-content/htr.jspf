@@ -2,17 +2,14 @@
 <h3>
 	<u>What is HTR?</u>
 </h3>
-<p>HTR – (automatic) Handwritten Text Recognition is a subdiscipline
-	of Computer Vision that deals with the automatic process of
-	transforming document images to text so it can be searched and
-	integrated into websites, books or articles. We use a combination of
-	cutting edge deep learning techniques, different types of neural
-	networks (biLSTM, CNN) with classical methods such a morphological
-	transformations, projections and different filters. The basic principle
-	is that we show the computer a great number of images of manuscript
-	lines and their corresponding text transcriptions and the computer
-	learns the principle how to get from the image to the text. Eventually,
-	it can do this also for images it has never seen.</p>
+<p>
+HTR – (automatic) Handwritten Text Recognition is a subdiscipline of Computer Vision that deals with the process of automatically transforming document images to text so that the text can be searched and integrated into websites, books or articles. We use a combination of cutting edge deep learning techniques, different types of neural networks (biLSTM, CNN) with classical methods such a morphological transformations, projections and different filters.
+In a first step the layout of the manuscript is analyzed automatically in order to extract column and annotation regions. In a second step these regions are segmented into line images. Currently this process is done with classical computer vision methods but we are in the midst of switching to neural network analysis. 
+In a third step the computer is trained to decipher the text in the line images. The basic principle is that we show the computer a great number of images of manuscript lines and their corresponding text transcriptions. The computer learns the principle how to get from the image to the text. Eventually, it can do this also for images it has never seen.
+Our main transcription engine is kraken by Benjamin Kiessling. 
+Tikkoun Sofrim is the second HTR project at the EPHE next to Sofer Mahir, a project dealing with automatic transcription of major manuscripts of Tannaitic literature.
+At PSL, in the framework of the Scripta-PSL project, we are currently constructing the eScriptorium, an open source infrastructure that will permit the automatic transcription and deep annotation of handwritten material.
+</p>
 
 <h3 class='mt-5'>
 	<u>Crowdsourcing and citizen science</u>
