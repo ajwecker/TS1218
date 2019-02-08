@@ -51,7 +51,7 @@
 		<label>Knowledge of Midrashim</label>
 
 		<ul class="likert">
-			<li>None</li>
+			<li  class="likert">None</li>
 			<li class="likert"><input type="radio" name="midrashim" value="1" /></li>
 			<li class="likert"><input type="radio" name="midrashim" value="2" /></li>
 			<li class="likert"><input type="radio" name="midrashim" value="3" /></li>
