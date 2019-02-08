@@ -6,26 +6,28 @@
 
 <body onload="onloadResize();" class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
-	<div dir="ltr"     class="transcribe-page scrollable mt-2 p-2 row">
+	<div class="transcribe-page scrollable mt-2 p-2 row">
 		<div id="info-page" class="container col-4 flex-column d-flex">
 			<div>
 
 				<ul class="nav nav-tabs flex-nowrap" role="tablist">
 					<li class="nav-item"><a class="nav-link active sfont"
 						id="page-tab" data-toggle="tab" role="tab" href="#page"
-						aria-controls="page" aria-selected="true"><fmt:message key="main.data_area.page"/></a></li>
+						aria-controls="page" aria-selected="true"><fmt:message
+								key="main.data_area.page" /></a></li>
 
 					<li class="nav-item"><a class="nav-link sfont"
 						id="special-tab" data-toggle="tab" role="tab" href="#special"
-						aria-controls="special"><fmt:message key="main.data_area.Issues"/></a></li>
+						aria-controls="special"><fmt:message
+								key="main.data_area.Issues" /></a></li>
 
 					<li class="nav-item"><a class="nav-link sfont" id="ab-tab"
-						data-toggle="tab" role="tab" href="#ab" aria-controls="ab"><fmt:message key="main.data_area.Alphabet"/></a>
-					</li>
+						data-toggle="tab" role="tab" href="#ab" aria-controls="ab"><fmt:message
+								key="main.data_area.Alphabet" /></a></li>
 
 					<li class="nav-item sfont"><a class="nav-link" id="marked-tab"
-						data-toggle="tab" role="tab" href="#marked" aria-controls="marked"><fmt:message key="main.data_area.editing"/>
-							Text</a></li>
+						data-toggle="tab" role="tab" href="#marked" aria-controls="marked"><fmt:message
+								key="main.data_area.editing" /> Text</a></li>
 
 					<li class="nav-item"><a class="nav-link sfont" id="help-tab"
 						data-toggle="tab" role="tab" href="#help" aria-controls="help">Help</a>
@@ -84,13 +86,13 @@
 				</div>
 				<div class="tab-pane fade" id="special" role="tabpanel"
 					aria-labelledby="profile-tab">
-					<div  class="tabcontent">
+					<div class="tabcontent">
 						<jsp:include page="../views/parts/${lang}/transcribe/special.jspf" />
 					</div>
 				</div>
 				<div class="tab-pane fade" id="ab" role="tabpanel"
 					aria-labelledby="ab-tab">
-					<div  class="tabcontent">
+					<div class="tabcontent">
 						<jsp:include page="../views/parts/${lang}/transcribe/abc.jspf" />
 					</div>
 				</div>
@@ -110,19 +112,21 @@
 		</div>
 
 		<!-- Column Two work area -->
-		<div  dir="rtl" id="transcribe" class="container col-8">
+		<div id="transcribe" class="container col-8">
 			<div class="flex-fill d-flex flex-column justify-content-around">
 				<div class="w-100 p-3">
 					<div id="work-page"
 						class="d-flex flex-column justify-content-between">
-						<div style="float: left"  class="header mb-4">
+						<div style="float: left" class="header mb-4">
 							<div>
-							
-							<fmt:message key="main.work_area.intro_line_1"/>
-							
+
+								<fmt:message key="main.work_area.intro_line_1" />
+
 							</div>
 
-							<div><fmt:message key="main.work_area.intro_line_2"/></div>
+							<div>
+								<fmt:message key="main.work_area.intro_line_2" />
+							</div>
 						</div>
 						<!--             <div id="img-line" style="background-image:url('http://tikkoun-sofrim.haifa.ac.il/cantaloupe/iiif/2/bge-cl0146_007.jpg/511,4684,4155,449/full/0/default.jpg');"> -->
 						<img id="imgline"
@@ -145,24 +149,24 @@
 							method="post">
 							<div class="mt-2">
 								<input id="trw" type="text" oninput="trwChanged()"
-									name="transcribed" dir="rtl" value="${transcribedline}"
+									name="transcribed" value="${transcribedline}"
 									style="font-family: Corsiva" class="w-100 p-2"> <input
 									type="hidden" id="trwOrig" value="${transcribedline}" />
 							</div>
 							<!-- Transcribe toolbar -->
-							<div dir="ltr" class="btn-toolbar justify-content-between d-flex mt-3 p-10"
+							<div class="btn-toolbar justify-content-between d-flex mt-3 p-10"
 								role="toolbar">
-<!-- 								<div class="mr-2" role="group"> -->
-<!-- 									<select id="filler" class="custom-select" -->
-<!-- 										title="End of line marks" onchange="myFill()"> -->
-<!-- 										<option value="">&nbsp;</option> -->
-<!-- 										<option value="/">/</option> -->
-<!-- 										<option value="//">//</option> -->
-<!-- 										<option value="|">|</option> -->
-<!-- 										<option value="V">V</option> -->
-<!-- 										<option value="'">'</option> -->
-<!-- 									</select> -->
-<!-- 								</div> -->
+								<!-- 								<div class="mr-2" role="group"> -->
+								<!-- 									<select id="filler" class="custom-select" -->
+								<!-- 										title="End of line marks" onchange="myFill()"> -->
+								<!-- 										<option value="">&nbsp;</option> -->
+								<!-- 										<option value="/">/</option> -->
+								<!-- 										<option value="//">//</option> -->
+								<!-- 										<option value="|">|</option> -->
+								<!-- 										<option value="V">V</option> -->
+								<!-- 										<option value="'">'</option> -->
+								<!-- 									</select> -->
+								<!-- 								</div> -->
 								<div class="btn-group mr-2" role="group"
 									aria-label="First group">
 									<select id="filler" class="custom-select"
@@ -175,37 +179,50 @@
 										<option value="'">'</option>
 									</select>
 									<button class="btn btn-secondary" type="button"
-										onclick="myInsert('ﭏ')" title='<fmt:message key="main.work_area.hovers.over_ligature"/>'>
+										onclick="myInsert('ﭏ')"
+										title='<fmt:message key="main.work_area.hovers.over_ligature"/>'>
 										<b>ﭏ</b>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myInsert('˙')" title='<fmt:message key="main.work_area.hovers.over_upper"/>'>
+										onclick="myInsert('˙')"
+										title='<fmt:message key="main.work_area.hovers.over_upper"/>'>
 										<b>˙</b>
 									</button>
 
 									<button class="btn btn-secondary" type="button"
-										onclick="myMark('}','{')" title='<fmt:message key="main.work_area.hovers.over_uncertain"/>'>
-										<span style="font-size: smaller;"><fmt:message key="main.work_area.button_4"/></span>
+										onclick="myMark('}','{')"
+										title='<fmt:message key="main.work_area.hovers.over_uncertain"/>'>
+										<span style="font-size: smaller;"><fmt:message
+												key="main.work_area.button_4" /></span>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myMark('>','<')" title='<fmt:message key="main.work_area.hovers.over_damaged"/>'>
-										<span style="font-size: smaller;"><fmt:message key="main.work_area.button_3"/></span>
+										onclick="myMark('>','<')"
+										title='<fmt:message key="main.work_area.hovers.over_damaged"/>'>
+										<span style="font-size: smaller;"><fmt:message
+												key="main.work_area.button_3" /></span>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myMark(')','(')" title='<fmt:message key="main.work_area.hovers.over_deletions"/>'>
-										<span style="font-size: smaller;"><fmt:message key="main.work_area.button_1"/></span>
+										onclick="myMark(')','(')"
+										title='<fmt:message key="main.work_area.hovers.over_deletions"/>'>
+										<span style="font-size: smaller;"><fmt:message
+												key="main.work_area.button_1" /></span>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myMark(']','[')" title='<fmt:message key="main.work_area.hovers.over_additions"/>'>
-										<span style="font-size: smaller;"><fmt:message key="main.work_area.button_2"/></span>
+										onclick="myMark(']','[')"
+										title='<fmt:message key="main.work_area.hovers.over_additions"/>'>
+										<span style="font-size: smaller;"><fmt:message
+												key="main.work_area.button_2" /></span>
 									</button>
 								</div>
 
 								<!-- right part -->
-								<div dir="rtl" class="btn-group mr-2" role="group"
+								<div class="btn-group mr-2" role="group"
 									aria-label="Second group">
 									<button class="btn btn-secondary" type="button"
-										onclick="myReset()" title='<fmt:message key="main.work_area.hovers.over_reset"/>'><fmt:message key="main.work_area.button_5"/></button>
+										onclick="myReset()"
+										title='<fmt:message key="main.work_area.hovers.over_reset"/>'>
+										<fmt:message key="main.work_area.button_5" />
+									</button>
 									<button class="btn btn-secondary" type="button"
 										onclick="myResize(1)" title="Increase size of text">
 										<span style="font-size: larger;"><b>א+</b></span>
@@ -214,22 +231,31 @@
 										onclick="myResize(-1)" title="Reduce size of text">
 										<span style="font-size: smaller;"><b>א-</b></span>
 									</button>
-									<button class="btn btn-secondary" type="button" title="Font size" id="test" disabled="disabled" ></button>
-<!-- 									<label id="test">Font size</label> -->
+									<button class="btn btn-secondary" type="button"
+										title="Font size" id="test" disabled="disabled"></button>
+									<!-- 									<label id="test">Font size</label> -->
 								</div>
 							</div>
 
 							<div id="activity" class="mt-2 align-self-center w-60">
 
-								<div><fmt:message key="main.work_area.finish_line_1"/></div>
-								<div><fmt:message key="main.work_area.finish_line_2"/></div>
+								<div>
+									<fmt:message key="main.work_area.finish_line_1" />
+								</div>
+								<div>
+									<fmt:message key="main.work_area.finish_line_2" />
+								</div>
 
 								<div id="activity-buttons"
 									class="mt-2 d-flex justify-content-between">
 									<button type="submit" class="btn btn-primary" name="status"
-										value="Done"><fmt:message key="main.work_area.finish_button_1"/></button>
+										value="Done">
+										<fmt:message key="main.work_area.finish_button_1" />
+									</button>
 									<button type="submit" class="btn btn-primary" name="status"
-										value="Skip"><fmt:message key="main.work_area.finish_button_2"/></button>
+										value="Skip">
+										<fmt:message key="main.work_area.finish_button_2" />
+									</button>
 								</div>
 							</div>
 						</form>

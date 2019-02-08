@@ -18,7 +18,7 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 	</nav>
-	<div dir="${dir}" class="top-nav d-flex justify-content-between p-2">
+	<div class="top-nav d-flex justify-content-between p-2">
 		<div>
 			<ul class="nav nav-pills">
 				<li class="nav-item"><a class="nav-link" data-link="transcribe"

@@ -14,7 +14,7 @@
 
 <script src="https://unpkg.com/leaflet-iiif@1.2.1"></script>
 </head>
-<body>
+<body class="${dir}">
 
 <!-- div id="openseadragon1" style="width: 100%; height: 250; "></div>
 

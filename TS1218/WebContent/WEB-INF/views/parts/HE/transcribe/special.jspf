@@ -1,20 +1,24 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 
-<div dir="rtl"    class="special_chars info_content">
-	<div  class="header">
-		<div  class="title">סימנים מיוחדים</div>
+<div class="special_chars info_content">
+	<div class="header">
+		<div class="title">סימנים מיוחדים</div>
 	</div>
-	<div dir="rtl" class="content">
+	<div class="content">
 		<div class="line_fillers">
 			<div class="title">שומר שורה</div>
-			<div dir="rtl" class="content">
-				<p>כדי לשמור על גוף טקסט אחיד ואסתטי, נהגו סופרי ימי הביניים להוסיף סימנים שונים בסופי השורות במקרים בהם הטקסט לא הגיע עד סוף השורה. אחרים נהגו לרשום את האותיות הראשונות של המילה ואז להעתיקה בשלמותה בתחילת השורה הבאה. שיטה נוספת היא כתיבת אות אחרונה רחבה במיוחד, עד סוף השורה 
-סופר כתב יד ז'נבה ממלא בדרך כלל את סופי השורות בקו אלכסוני, או בשני קווים אלכסוניים.
-</p>
+			<div class="content">
+				<p>כדי לשמור על גוף טקסט אחיד ואסתטי, נהגו סופרי ימי הביניים
+					להוסיף סימנים שונים בסופי השורות במקרים בהם הטקסט לא הגיע עד סוף
+					השורה. אחרים נהגו לרשום את האותיות הראשונות של המילה ואז להעתיקה
+					בשלמותה בתחילת השורה הבאה. שיטה נוספת היא כתיבת אות אחרונה רחבה
+					במיוחד, עד סוף השורה סופר כתב יד ז'נבה ממלא בדרך כלל את סופי השורות
+					בקו אלכסוני, או בשני קווים אלכסוניים.</p>
 				<img
 					src="/TS1218/images/special_characters/a_special_characters_linefillers.png">
 				<p>
-					<strong>כדי לסמן תוים אלה בסוף שורת הטקסט, לחצו על הכפתור השמאלי ביותר בשורת הכפתורים מתחת לשורת הטקסט, ובחרו בסימן  / או //</strong>
+					<strong>כדי לסמן תוים אלה בסוף שורת הטקסט, לחצו על הכפתור
+						השמאלי ביותר בשורת הכפתורים מתחת לשורת הטקסט, ובחרו בסימן / או //</strong>
 				</p>
 
 
@@ -24,8 +28,8 @@
 		<div class="wide_letters">
 			<div class="title">אותיות רחבות</div>
 			<div class="content">
-				<p>שיטה נוספת למילוי השורה היא רישום אותיות רחבות במיוחד בסופי שורות. אותיות אלה יש לרשום כאות רגילה. לדוגמא:
-: - נוטל את.</p>
+				<p>שיטה נוספת למילוי השורה היא רישום אותיות רחבות במיוחד בסופי
+					שורות. אותיות אלה יש לרשום כאות רגילה. לדוגמא: : - נוטל את.</p>
 				<img
 					src="/TS1218/images/special_characters/b_special_characters_wide_letters.png">
 
@@ -34,7 +38,8 @@
 		<div class="upper_dots">
 			<div class="title">נקודות עיליות</div>
 			<div class="content">
-				<p>במקום פסיקים ונקודות הנהוגים כיום, סופר כ"י ז'נבה נוטה להפריד בין עניינים על ידי שימוש בנקודות עיליות:</p>
+				<p>במקום פסיקים ונקודות הנהוגים כיום, סופר כ"י ז'נבה נוטה להפריד
+					בין עניינים על ידי שימוש בנקודות עיליות:</p>
 				<p>
 				<div class="images">
 					<img
@@ -44,19 +49,22 @@
 				</div>
 				<strong>כדי לסמן נקודה עילית לחצו על הכפתור (<img
 					src="/TS1218/images/special_characters/e_special_characters_upper_dot_button.png"
-					class="small">) בשורת הכפתורים שמתחת לשורת הטקסט. סמנו את אותו מספר נקודות שסימן הסופר.
-אם נתקלתם בסימן אחר שיש לכם במקלדת, לדוגמא נקודותיים, ניתן להשתמש בו על פי שיקול דעתכם.
+					class="small">) בשורת הכפתורים שמתחת לשורת הטקסט. סמנו את
+					אותו מספר נקודות שסימן הסופר. אם נתקלתם בסימן אחר שיש לכם במקלדת,
+					לדוגמא נקודותיים, ניתן להשתמש בו על פי שיקול דעתכם.
 
 				</strong>
-				
+
 			</div>
 		</div>
 		<div class="ligature_alef_lamed">
 			<div class="title">ליגטורה א-ל</div>
 			<div class="content">
-				<p>מפאת קדושתו של שם האל, נמנעו סופרים מלכתוב במפורש את  צירוף האותיות אלף-למד. במקומו, יצרו צירוף מיוחד של שתי האותיות (צירוף כזה נקרא ליגטורה). אנחנו מסמנים כתב זה באמצעות הסימון: ﭏ
-סופר כתב יש ז'נבה משתמש בצורת רישום זו באופן כמעט בלעדי, לדוגמא המילה 'אליו' נכתבת כך:
-</p>
+				<p>מפאת קדושתו של שם האל, נמנעו סופרים מלכתוב במפורש את צירוף
+					האותיות אלף-למד. במקומו, יצרו צירוף מיוחד של שתי האותיות (צירוף כזה
+					נקרא ליגטורה). אנחנו מסמנים כתב זה באמצעות הסימון: ﭏ סופר כתב יש
+					ז'נבה משתמש בצורת רישום זו באופן כמעט בלעדי, לדוגמא המילה 'אליו'
+					נכתבת כך:</p>
 				<p>
 					<img
 						src="/TS1218/images/special_characters/f_special_characters_ligature_aleph_lamed.png">
@@ -69,8 +77,9 @@
 		<div class="abbreviations_and_numbers">
 			<div class="title">ראשי תיבות וקיצורים</div>
 			<div class="content">
-				<p>סופר כתב היד מקצר באופן קבוע כמה מלים וביטויים בראשי תיבות. לדוגמא – ז'ש'ה' – זהו שאמר הכתוב; ד'א' – דבר אחר; ה'ב'ה' – הקודש (או הקדוש) ברוך הוא.
-</p>
+				<p>סופר כתב היד מקצר באופן קבוע כמה מלים וביטויים בראשי תיבות.
+					לדוגמא – ז'ש'ה' – זהו שאמר הכתוב; ד'א' – דבר אחר; ה'ב'ה' – הקודש
+					(או הקדוש) ברוך הוא.</p>
 				<div class="images inline">
 					<img
 						src="/TS1218/images/special_characters/h_special_characters_abbreviations_and_numbers1.png">
@@ -80,55 +89,61 @@
 						src="/TS1218/images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
 				</div>
 				<p>
-					<strong>רישום נכון של ראשי התיבות: רשמו את כל האותיות ללא רווח, וסמנו את הנקודה העלית בעזרת גרש. '.
-</strong> .לדוגמא: ה'ב'ה', ז'ש'ה
-</div>
-<strong>קיצורים יש לרשום כפי שהם, תוך שימוש בגרש בסוף המילה. אין להשלים את הקיצורים .
-</strong> לדוגמא: 
+					<strong>רישום נכון של ראשי התיבות: רשמו את כל האותיות ללא
+						רווח, וסמנו את הנקודה העלית בעזרת גרש. '. </strong> .לדוגמא: ה'ב'ה', ז'ש'ה
 
-				<div>
-					<img
-						src="/TS1218/images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
-					- אמ' ר' לוי'
-				</div>
-				<div>
-					<img
-						src="/TS1218/images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
-					- משה וג'
-				</div>
-				<p>גם אותיות המשמשות כערך נומרי, כתחליף למספר, יש לתעתק כפי שמעתיקים ראשי תיבות: ז', י'א'. </p>
-				<div>
-					<img
-						src="/TS1218/images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
-					- לנולד בן ז'
-				</div>
+				
+			</div>
+			<strong>קיצורים יש לרשום כפי שהם, תוך שימוש בגרש בסוף המילה.
+				אין להשלים את הקיצורים . </strong> לדוגמא:
 
-			</div>
-		</div>
-		<div class="the_divine_name">
-			<div class="title">שם האל</div>
-			<div class="content">
-				<p>
-					ישנן שיטות רבות של רישום שם האל בכתבי יד יהודיים, שנועדו להחליף את השם המפורש. רובן משתמשות בשניים או שלשה יו"דין, לעתים בתוספת עיטור קבוע.
-					 סופר כתב יד ז'נבה רושם את שם האל בדרך כלל כך:
-					<img
-						src="/TS1218/images/special_characters/n_special_characters_divine_name.png">
-					יש לרשום את האותיות כפי שהן: יוי.
-				</div>
-			</div>
-		</div>
-		<div class="headwords">
-			<div class="title">כותרות</div>
-			<div class="content">
-				<p>בכתב היד ישנן כותרות גדולות, שכתובות בדרך כלל באותיות מרובעות ולא בכתב הרגיל. לעתים הן פולשות למרחב השורה שמתחת שנותרת ריקה, ולעתים משולבות בשורה כרגיל. </p>
-				<p>
-					<strong>העתיקו את הכותרות באות רגילה כמו שאר הטקסט.</strong>
-				</p>
+			<div>
 				<img
-					src="/TS1218/images/special_characters/o_special_characters_headwords.png" class="large">
+					src="/TS1218/images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
+				- אמ' ר' לוי'
 			</div>
+			<div>
+				<img
+					src="/TS1218/images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
+				- משה וג'
+			</div>
+			<p>גם אותיות המשמשות כערך נומרי, כתחליף למספר, יש לתעתק כפי
+				שמעתיקים ראשי תיבות: ז', י'א'.</p>
+			<div>
+				<img
+					src="/TS1218/images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
+				- לנולד בן ז'
+			</div>
+
 		</div>
-	
+	</div>
+	<div class="the_divine_name">
+		<div class="title">שם האל</div>
+		<div class="content">
+			<p>
+				ישנן שיטות רבות של רישום שם האל בכתבי יד יהודיים, שנועדו להחליף את
+				השם המפורש. רובן משתמשות בשניים או שלשה יו"דין, לעתים בתוספת עיטור
+				קבוע. סופר כתב יד ז'נבה רושם את שם האל בדרך כלל כך: <img
+					src="/TS1218/images/special_characters/n_special_characters_divine_name.png">
+				יש לרשום את האותיות כפי שהן: יוי.
+		</div>
+	</div>
+</div>
+<div class="headwords">
+	<div class="title">כותרות</div>
+	<div class="content">
+		<p>בכתב היד ישנן כותרות גדולות, שכתובות בדרך כלל באותיות מרובעות
+			ולא בכתב הרגיל. לעתים הן פולשות למרחב השורה שמתחת שנותרת ריקה, ולעתים
+			משולבות בשורה כרגיל.</p>
+		<p>
+			<strong>העתיקו את הכותרות באות רגילה כמו שאר הטקסט.</strong>
+		</p>
+		<img
+			src="/TS1218/images/special_characters/o_special_characters_headwords.png"
+			class="large">
+	</div>
+</div>
+
 
 
 
