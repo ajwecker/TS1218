@@ -1,0 +1,4 @@
+<jsp:directive.page contentType="text/html;charset=UTF-8" />
+<jsp:include page="../views/parts/${lang}/team/partners.jspf" />
+<jsp:include page="../views/parts/${lang}/team/team.jspf" />
+<jsp:include page="../views/parts/${lang}/team/thanks.jspf" />

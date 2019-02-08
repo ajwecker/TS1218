@@ -4,10 +4,9 @@
 	<nav class="top-banner navbar navbar-expand-lg navbar-light bg-dark">
 		<a class="navbar-brand"
 			href="${pageContext.request.contextPath}/LoginServlet?page=views/login.jsp"
-			title="Tikkoun Sofrim"> 
-			<img src="/TS1218/images/TS_logo_nobackground.png"
-			class="d-inline-block align-top" alt="Tikkoun Sofrim logo"> 
-			<label
+			title="Tikkoun Sofrim"> <img
+			src="/TS1218/images/TS_logo_nobackground.png"
+			class="d-inline-block align-top" alt="Tikkoun Sofrim logo"> <label
 			class="mmsg">Discover Ancient Hebrew Manuscripts<br>Try
 				your skills at deciphering them
 		</label>
@@ -24,37 +23,32 @@
 			<ul class="nav nav-pills">
 				<li class="nav-item"><a class="nav-link" data-link="transcribe"
 					href="${pageContext.request.contextPath}/TranscribeServlet"><strong>
-							<fmt:message key="toolbar.right.start"/></strong></a></li>
+							<fmt:message key="toolbar.right.start" />
+					</strong></a></li>
 				<li class="nav-item"><a class="nav-link" data-link="project"
 					href="${pageContext.request.contextPath}/LoginServlet?page=views/project.jsp">
-						<fmt:message key="Toolbar.left.Project"/></a></li>
+						<fmt:message key="Toolbar.left.Project" />
+				</a></li>
 				<li class="nav-item"><a class="nav-link" data-link="htr"
 					href="${pageContext.request.contextPath}/LoginServlet?page=views/htr.jsp">
-						<fmt:message key="Toolbar.left.HTR"/></a></li>
+						<fmt:message key="Toolbar.left.HTR" />
+				</a></li>
 				<li class="nav-item"><a class="nav-link" data-link="tanhuma"
 					href="${pageContext.request.contextPath}/LoginServlet?page=views/tanhuma.jsp">
-						<fmt:message key="toolbar.left.Midrash"/></a></li>
+						<fmt:message key="toolbar.left.Midrash" />
+				</a></li>
 				<li class="nav-item"><a class="nav-link" data-link="team"
 					href="${pageContext.request.contextPath}/LoginServlet?page=views/team.jsp">
-						<fmt:message key="toolbar.left.Team"/></a></li>
+						<fmt:message key="toolbar.left.Team" />
+				</a></li>
 			</ul>
 		</div>
 
 		<div>
 			<ul class="nav">
-			<%-- 	<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" data-toggle="dropdown"
-					href="${pageContext.request.contextPath}/LoginServlet?lang=EN"
-					role="button" aria-haspopup="false" aria-expanded="false">EN</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item"
-							href="${pageContext.request.contextPath}/LoginServlet?lang=HE">HE</a>
-						<a class="dropdown-item"
-							href="${pageContext.request.contextPath}/LoginServlet?lang=FR">FR</a>
-					</div></li>  --%>
 				<li class="nav-item"><a class="nav-link" data-link="ENG"
 					href="${pageContext.request.contextPath}/LoginServlet?lang=EN">EN</a>
-				</li>	
+				</li>
 				<li class="nav-item"><a class="nav-link" data-link="HEB"
 					href="${pageContext.request.contextPath}/LoginServlet?lang=HE">עב</a>
 				</li>
@@ -62,8 +56,8 @@
 					href="${pageContext.request.contextPath}/LoginServlet?lang=FR">FR</a>
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="${pageContext.request.contextPath}/LoginServlet?page=views/logout.jsp"><fmt:message key="toolbar.right.logout"/></a>
-				</li>
+					href="${pageContext.request.contextPath}/LoginServlet?page=views/logout.jsp"><fmt:message
+							key="toolbar.right.logout" /></a></li>
 			</ul>
 		</div>
 	</div>
