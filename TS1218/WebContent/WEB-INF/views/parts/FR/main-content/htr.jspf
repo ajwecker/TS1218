@@ -1,13 +1,13 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 <h3>
-	<u>What is HTR?</u>
+	<u>Qu’est-ce que l’HTR ?</u>
 </h3>
 <p>HTR – (automatic) Handwritten Text Recognition is a subdiscipline
 	of Computer Vision that deals with the automatic process of
 	transforming document images to text so it can be searched and
 	integrated into websites, books or articles. We use a combination of
 	cutting edge deep learning techniques, different types of neural
-	networks (biLSTM, CNN) with classical methods such a morphological
+	networks (biLSTM, CNN) with classical methods such as morphological
 	transformations, projections and different filters. The basic principle
 	is that we show the computer a great number of images of manuscript
 	lines and their corresponding text transcriptions and the computer
@@ -15,23 +15,29 @@
 	it can do this also for images it has never seen.</p>
 
 <h3 class='mt-5'>
-	<u>Crowdsourcing and citizen science</u>
+	<u>Crowdsourcing et sciences participatives</u>
 </h3>
 <p>
-	In recent years numerous initiatives involving the general public in
-	academic research have been developed. In general, they are called
-	“citizen science”. In these initiatives the general public is invited
-	to help in labor intensive tasks in a variety of domains, from
-	categorizing galaxies to mapping extinct animals and even in the
-	humanities. Crowdsourcing initiatives are bidirectional, they are
-	intended not only to expose scientific research to the general public
-	in an understandable manner and to engage the public in performing
-	scientific research but also to get scientists and scholars out of
-	their ivory tower and to deepen the connection and collaboration
-	between society and academia. Tikkoun Sofrim is the second
-	crowdsourcing initiative of <a
-		href="http://elijahlab.haifa.ac.il/index.php/en/" target="_blank">elijah
-		lab at the University of Haifa</a> and follows its predecessor <a
-		href="https://www.zooniverse.org/projects/judaicadh/scribes-of-the-cairo-geniza/"
-		target="_blank">scribes of the Cairo Geniza</a>
+	
+Les initiatives impliquant le grand public dans 
+la recherche universitaire sont en plein essor 
+ces dernières années. On les appelle souvent 
+“sciences citoyennes”. Ces initiatives invitent
+le grand public à participer à des tâches dans 
+divers domaines qui vont de la catégorisation 
+des galaxies à la classification des espèces 
+animales en voie d’extinction ; tout comme les
+sciences humaines.
+Les initiatives de sciences participatives sont
+ont un intérêt mutuel : elles visent, d’une part,
+à exposer la recherche scientifique au grand 
+public d’une façon compréhensible, qui lui permet
+de participer aux tâches inhérentes à la recherche
+scientifique ; et d’autre part elles forcent les 
+scientifiques et les chercheurs à descendre de leur
+tour d’ivoire afin de développer les relations entre
+la société et la recherche.
+Tikkoun Sofrim est la deuxième initiative de sciences
+citoyennes de l’Elijah Lab de l’université de Haifa,
+prenant la suite du projet Scribes of the Cairo Genizah.
 </p>
