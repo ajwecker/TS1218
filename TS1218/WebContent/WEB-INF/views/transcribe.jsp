@@ -249,13 +249,14 @@
 								<div id="activity-buttons"
 									class="mt-2 d-flex justify-content-between">
 									<button type="submit" class="btn btn-primary" name="status"
-										value="Done">
-										<fmt:message key="main.work_area.finish_button_1" />
-									</button>
-									<button type="submit" class="btn btn-primary" name="status"
 										value="Skip">
 										<fmt:message key="main.work_area.finish_button_2" />
 									</button>
+									<button type="submit" class="btn btn-primary" name="status"
+										value="Done">
+										<fmt:message key="main.work_area.finish_button_1" />
+									</button>
+									
 								</div>
 							</div>
 						</form>
