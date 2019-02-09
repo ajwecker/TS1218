@@ -1,54 +1,44 @@
 <div class="team">
 	<div class="header">
-		<strong>Beam</strong>
+		<strong>L'équipe</strong>
 		<div>
-			<strong>(Alphabetical order)</strong>
+			<strong>(par l'ordre alphabétique)</strong>
 		</div>
 	</div>
 
+
 	<div class="members">
-		<div class="member">Kaan Eraslan is Ph.D. candidate in Demotic
-			and Digital Humanities at the EPHE, PSL.</div>
-		<div class="member">Pawel Jablonski is M.A. student in Jewish Studies at the EPHE, PSL.</div> 
-		<div class="member">Ben Kiessling is Artificial Intelligence and
-			Computer Vision Engineer at PSL and a Ph.D. student at the EPHE and
-			Leipzig University.</div>
-		<div class="member">Prof. Tsvi Kuflik teaches at the Information
-			Systems department and is a co-chair of the Digital Humanities B.Sc.
-			program at the University of Haifa.</div>
-		<div class="member">Dr. Moshe Lavee teaches at the Jewish
-			History department. He is the founder and head of the e-Lijah lab and
-			a co-chair of the Digital Humanities B.Sc. program at the University
-			of Haifa.</div>
-		<div class="member">Ellena Lolli - Ph.D. student at the
-			University of Bologna and EPHE</div>
-		<div class="member">Dr. Avigail Ohali is a post-doctoral student
-			at the EPHE. Her Ph.D. thesis dealt with Humor in the Mishnah and the
-			Tosefta.</div>
+		<div class="member">Kaan Eraslan est doctorant en démotique et humanités numériques à l’EPHE, PSL.</div>
+		<div class="member">Pawel Jablonski est étudiant master en études juives à l’EPHE, PSL.</div> 
+		<div class="member">Ben Kiessling est ingénieur en Vision par Ordinateur et Intelligence Artificielle à l’université PSL, et doctorant à l’EPHE et à l’université de Leipzig.
+</div>
+		<div class="member">Pr. Tsvi Kuflik enseigne au département de Systèmes d’information et est co-directeur du programme de licence d’Humanités numériques (Digital Humanities) de l’université de Haifa.
+</div>
+		<div class="member">Dr. Moshe Lavee enseigne au département d’histoire juive, le fondateur et directeur de e-Lijah Lab et 
+co-directeur du programme de licence d’Humanités numériques de l’université de Haifa.
+</div>
+		<div class="member">Elena Lolli est doctorante en cotutelle à l'Université de Bologne et à l'EPHE, PSL.</div>
+		<div class="member">Dr. Avigail Ohali est post-doc à l’EPHE, PSL. Sa thèse (Paris 3) traite l’humour dans la Mishna et la Tosefta.
+</div>
 
-		<div class="member">Dr. Vered Raziel Kretzmer is a post doctoral
-			student at e-Lijah Lab, University of Haifa. Her Ph.D. thesis dealt
-			with Palestinian liturgy from the Cairo genizah.</div>
+		<div class="member">Dr. Vered Raziel Kretzmer est post-doc à e-Lijah Lab à l’université de Haifa, elle étudie la liturgie et les midrash dans les documents de la Géniza du Caire.
+</div>
 
-		<div class="member">Uri Schor is a Ph.D. candidate at Haifa
-			University. He has a B.Sc. in Computer Science and M.A. in Talmud.</div>
+		<div class="member">M. Uri Schor est doctorant à l’université de Haifa. Il a une licence en informatique et un master en études talmudiques.
+</div>
 
-		<div class="member">Dr. Tsafra Siew - Hebrew Manuscripts project
-			manager at the National Library of Israel</div>
+		<div class="member">Dr. Tsafra Siew est le directeur des projets sur les manuscrits hébreux à la Bibliothèque nationale d'Israël.</div>
 
-		<div class="member">Lily Signoret is a M.A. student at the
-			University of Strasbourg.</div>
+		<div class="member">Lily Signoret est étudiante en master à l’université de Strasbourg.</div>
 
-		<div class="member">Prof. Daniel Stoekl Ben Ezra is research
-			professor for Ancient Hebrew and Aramaic in the Faculty for History
-			and Philology at the EPHE, PSL.</div>
+		<div class="member">Pr. Daniel Stökl Ben Ezra est directeur d’études d’hébreu et d’araméen anciens à la section des sciences historiques et philologiques à l’EPHE, PSL et directeur du volet numérique du projet Scripta-PSL qui construit l'eScriptorium.
+</div>
 
-		<div class="member">Prof. Peter Stokes is a research professor
-			for digital and computational humanities applied to ancient writing
-			at the EPHE, PSL.</div>
+		<div class="member">
+Peter Stokes est directeur d’études en humanités numériques et computationnelles appliquées aux écrits anciens et le directeur du programme en humanités numériques à l’EPHE, PSL.</div>
 
-		<div class="member">Dr. Alan Wecker is a chief developer in the
-			Tikkoun Sofrim project. Alan has a Ph.D. in Information Systems.</div>
+		<div class="member">Dr. Alan Wecker est le développeur principal auprès du projet Tikkoun Sofrim. Il est docteur en informatique.
+</div>
 
 	</div>
 </div>
