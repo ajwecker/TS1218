@@ -1,18 +1,14 @@
 <div class="thanks">
 	<div class="header">
-		<strong>Special Thanks</strong>
+		<strong>Remerciements</strong>
 	</div>
 	<div>
-		<p>We would like to thank Robin Tissot, Prof. Marc Bui, Dr. Shimon
-			Fogel, Einat Tamir, Pawel Jablonski and Anna Scius-Bertrand for their
-			contributions.</p>
-		<p>Special thanks to the scholars who donated Manuscript
-			transcriptions used for the initial training of Kraken: Prof. Hananel
-			Mack, Dr. Tamar Kadari, Prof. Rivka Ulmer.</p>
-		<p>Additionally, thank you to the following institutions for
-			providing images for this project: Biblioth�que de Gen�ve, Biblioteca
-			Apostolica Vaticana, Biblioteca Palatina in Parma. All rights of the
-			manuscript images reserved to these institutions.</p>
+		<p>Nous remercions Robin Tissot, Pr. Marc Bui, Dr. Shimon
+			Fogel, Einat Tamir et Anna Scius-Bertrand pour leurs contributions.</p>
+		<p>Un grand merci aux collègues qui ont fourni leurs transcriptions afin d'entrainer Kraken: Pr. Hananel
+			Mack, Dr. Tamar Kadari, Pr. Rivka Ulmer.</p>
+		<p>Les institutions suivantes ont fourni les images pour ce projet et nous leur remercions tout particulièrement : La Bibliothèque de Genève, Biblioteca
+			Apostolica Vaticana, la Biblioteca Palatina in Parma. Tous les droits aux images appartiennent à ces institutions.</p>
 
 	</div>
 </div>
