@@ -1,31 +1,20 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 <p>
-	<strong>Tikkoun Sofrim</strong> is a joint French Israeli project aimed
-	to make Medieval Hebrew manuscripts openly and freely available as
-	texts.The project is combining automatic Handwritten Text-Recognition
-	(HTR) and Crowdsourcing.
+	<strong>Tikkoun Sofrim</strong> est un projet collaboratif franco-israélien, dont l’objectif est de rendre les textes manuscrits hébraïques médiévaux accessibles à tous. Le projet associe la reconnaissance automatique des textes manuscrits (HTR) et la production participative (Crowdsourcing).
+
 </p>
 <p>
-	In a first stage we analyse the manuscript layout and train <strong>Kraken</strong>,
-	a deep learning engine for automatic reading. Kraken is reading quite
-	well, with an error rate of less than 10% and often even less than 5%
-	on the letter level.
+	Lors de la première phase, nous analysons automatiquement la structure de la page manuscrite, ce qui permet d’entraîner Kraken, un système d’apprentissage profond (deep learning) de lecture automatique. Les capacités de lecture de Kraken sont très bonnes, avec un taux d’erreur inférieur à 10%, voire inférieur à 5%. 
 </p>
 <p>
-	But this is <u>not yet good enough</u>.
-</p>
+Mais ce n’est <u>pas encore suffisant</u>. 
+	</p>
+
 <p>
-	In order to further improve Kraken’s automatic reading and provide
-	efficient editions of the texts, we need the <u>human eye</u>. The tool
-	in this website is aimed at achieving this goal.
+	Afin d’améliorer les capacités de lecture automatique de Kraken et d’obtenir une transcription impeccable des textes, nous avons besoin du regard humain.
+
 </p>
-<p>Here you can check the automatic reading and correct mistakes. In
-	the next stage your corrections will be used for improving automatic
-	reading as well as creating digital critical editions and enabling
-	textual search of manuscripts in library viewers.</p>
-<p>Tikkoun Sofrim is a joined French-Israeli project, developed by
-	the EPHE, PSL, in Paris, the eLijah-Lab at the University of Haifa and
-	the National Library, Israel. The project is supported by the
-	Maimonides grant funded by the French Ministry of Higher Education and
-	Research, the French Ministry of Foreign Affairs and the Israeli
-	Ministry of Science. eLijah-lab is supported by Hekhal Eliyahu NGO.</p>
+<p>C’est là l’objectif de notre site : vous donner l’opportunité de contribuer à la recherche en vérifiant la lecture automatique de Kraken, et de la corriger si besoin.</p>
+<p>Lors de la deuxième phase, vos corrections seront utilisées d’une part pour améliorer la lecture automatique, et d’autre part pour l’élaboration d’éditions critiques numériques permettant la recherche textuelle dans les manuscrits et leur visualisation en ligne.</p>
+
+<p>Tikkoun Sofrim est un projet collaboratif franco-israélien développé par l’EPHE, PSL, à Paris, eLijah-Lab de l’université de Haïfa, et la Bibliothèque Nationale d’Israël. Le projet est financé dans le cadre du PHC “Maïmonide” du Ministère français de l’éducation supérieure et de la recherche, par le Ministère français des affaires étrangères et par le Ministère israélien des Sciences. Le laboratoire eLijah-Lab est soutenu par l’ONG Hekhal Eliyahu.</p>
