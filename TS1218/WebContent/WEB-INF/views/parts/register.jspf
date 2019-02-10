@@ -22,11 +22,11 @@
 		<label for="passwordsignup" class="youpasswd" data-icon="p"><fmt:message key="register_screen.password"/>
 		</label> <input style="width: 125px;" id="passwordsignup"
 			name="passwordsignup" required="required" type="password"
-			placeholder="eg. X8df!90EO" /> <label for="passwordsignup_confirm"
+			placeholder="password" /> <label for="passwordsignup_confirm"
 			style="margin-left: 25px" class="youpasswd" data-icon="p"><fmt:message key="register_screen.confirm"/>
 		</label> <input style="width: 125px;" id="passwordsignup_confirm"
 			name="passwordsignup_confirm" required="required" type="password"
-			placeholder="eg. X8df!90EO" />
+			placeholder="password" />
 	</p>
 	
 	<fieldset>

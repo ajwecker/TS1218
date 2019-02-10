@@ -7,8 +7,7 @@
 <body class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
 	<div class="container mt-2 scrollable login-page show-login">
-
-
+	
 		<div class="login-form-wrapper">
 			<%@include file="parts/login.jspf"%>
 		</div>

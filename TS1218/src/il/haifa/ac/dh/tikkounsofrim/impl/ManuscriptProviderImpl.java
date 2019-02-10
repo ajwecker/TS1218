@@ -32,7 +32,7 @@ public class ManuscriptProviderImpl implements ManuscriptProvider {
 						 " Il a probablement été copié quelque part en Orient aux alentours du XIVe s. L&#39;écriture hébraïque est une semi-cursive"+
 						 " orientale. Genève, Bibliothèque de Genève, Comites Latentes 146: Midrash Tanhuma (Lévitique-Nombres-Deutéronome)",
 						 "http://www.e-codices.unifr.ch/fr/description/bge/cl0146",
-						 "hebrew description of manuscript",
+						 "כתב יד זנבה 146 כולל את מדרש תנחומא לחומשים ויקרא, במדבר ודברים. זהו כתב יד מזרחי מן המאה ה-14, והוא מוצג כאן הודות לרשיון הפתוח של ספריית אוניברסיטת זנבה.",
 						 "http://www.e-codices.unifr.ch/en/description/bge/cl0146/",
 						 "<a href='(http://www.e-codices.unifr.ch/en/list/one/bge/cl0146'>Genève, Bibliothèque de Genève, Comites Latentes 146: Midrash Tanhuma (Leviticus-Numbers-Deuteronomy)</a>"+
 						 "<a href=' https://creativecommons.org/licenses/by-nc/4.0/'>Images CC-BY-NC 4.0</a>"

@@ -137,9 +137,9 @@
 										onclick="myResize(-1)" title="Reduce size of text">
 										<span style="font-size: smaller;"><b>א-</b></span>
 									</button>
-									<button class="btn btn-secondary" type="button"
-										title="Font size" id="test" disabled="disabled"></button>
-									<!-- 									<label id="test">Font size</label> -->
+<!-- In comment since will return for future release									<button class="btn btn-secondary" type="button" -->
+<!-- 										title="Font size" id="test" disabled="disabled"></button> -->
+<!-- 																		<label id="test">Font size</label> -->
 								</div>
 							</div>
 
@@ -194,7 +194,7 @@
 								key="main.data_area.editing" /></a></li>
 
 					<li class="nav-item"><a class="nav-link sfont" id="help-tab"
-						data-toggle="tab" role="tab" href="#help" aria-controls="help">Help</a>
+						data-toggle="tab" role="tab" href="#help" aria-controls="help"><strong>Help</strong></a>
 					</li>
 				</ul>
 			</div>

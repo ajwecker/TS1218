@@ -71,8 +71,9 @@ function myResizeOrg() {
     var elemTRW = document.getElementById("trw");
     elemTRW.style.height = fontsize;
     elemTRW.style.fontSize = fontsize;
-    var elemTest = document.getElementById("test");
-    elemTest.innerHTML = fontsize;
+ // Future version
+ //   var elemTest = document.getElementById("test");
+ //   elemTest.innerHTML = fontsize;
     console.log("OrgFontsize= " + fontsize);
   }
 
@@ -86,8 +87,9 @@ function myResizeOrg2() {
     var elemTRW = document.getElementById("trw");
     elemTRW.style.height = fontsize;
     elemTRW.style.fontSize = fontsize;
-    var elemTest = document.getElementById("test");
-    elemTest.innerHTML = fontsize;
+ // Future version
+//    var elemTest = document.getElementById("test");
+//    elemTest.innerHTML = fontsize;
     console.log("OrgFontsize= " + fontsize)
   }
 
@@ -98,8 +100,8 @@ function myResize(myAdd) {
   var fontsize = (Math.trunc(rect.height) + myAdd) + "px";
   elemTRW.style.height = fontsize;
   elemTRW.style.fontSize = fontsize;
-  var elemTest = document.getElementById("test");
-  elemTest.innerHTML = fontsize;
+//  var elemTest = document.getElementById("test");
+//  elemTest.innerHTML = fontsize;
   console.log("Fontsize= " + fontsize)
 }
 
