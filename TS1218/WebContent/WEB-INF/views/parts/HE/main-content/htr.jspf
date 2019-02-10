@@ -1,37 +1,42 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 <h3>
-	<u>What is HTR?</u>
+	<u>אודות HTR</u>
 </h3>
-<p>HTR – (automatic) Handwritten Text Recognition is a subdiscipline
-	of Computer Vision that deals with the automatic process of
-	transforming document images to text so it can be searched and
-	integrated into websites, books or articles. We use a combination of
-	cutting edge deep learning techniques, different types of neural
-	networks (biLSTM, CNN) with classical methods such a morphological
-	transformations, projections and different filters. The basic principle
-	is that we show the computer a great number of images of manuscript
-	lines and their corresponding text transcriptions and the computer
-	learns the principle how to get from the image to the text. Eventually,
-	it can do this also for images it has never seen.</p>
+<p>HTR – זיהוי ממוחשב של כתבי יד ( HTR – Handwritten Text Recognition) היא טכנולוגיה העוסקת בפענוח אוטומטי של מסמכים הכתובים בכתב יד, ומאפשרת הפיכת תמונות לקבצי טקסט דיגיטליים כדי לאפשר חיפוש בהם, או את הטמעתם באתר אינטרנט, מאמר או ספר. HTR הוא תחום משנה של ראייה מוחשבת (Computer Vision).
+</p>
+
+<p>
+בפרויקט 'תיקון סופרים' אנו משתמשים בשילוב של למידה עמוקה (Deep Learning) ורשתות נוירונים מלאכותיות (biLSTM, CNN), יחד עם שיטות קלאסיות כגון מגוון סוגי טרנספורמציה מורפולוגית, השלכה (projection) וסינון (filtering). 
+</p>
+
+<p>
+השלב הראשון בתהליך הוא ניתוח הדף: המחשב מנתח את עיצוב הדף, מזהה את האיזור הכתוב, ומפריד אותו באיזורים אחרים בדף (הערות, שרטוטים וכדומה).
+</p>
+
+<p>
+השלב השני הוא סגמנטציה, בה מחלקים את האיזורים הכתובים לשורות. כרגע אנו משתמשים בשיטות קלאסיות למשימה זו אך אנו באמצע מעבר לשימוש ברשתות נוירונים. 
+</p>
+
+<p>
+בשלב שלישי מאמנים את המחשב לפענח את הכתב בתמונות של שורות. לשם כך מציגים למחשב תמונות רבות מאוד של שורות מכתב היד, לצד התעתיק שלהם. לאט לאט המחשב מוצא בעצמו את הנוסחא המתמטית המובילה מהנתונים הויזואלים (תמונת שורה) לטקסט. כך, מפתח המחשב את היכולת לפענח גם את הטקסט של שורות בכתב היד שאת תעתיקם לא הראינו לו. אנו משתמשים במערכת קראקן שפותחה על ידי בנימין קיסלינג.
+</p>
+
+<p>
+תיקון סופרים הוא פרויקט שני בתעתיק אוטומטי ב-EPHE. הראשון, סופר מהיר, עוסק בכתבי יד של החיבורים הראשיים של הספרות התנאית. במסגרת הפרויקט SCRIPTA-PSL ב-PSL בפאריס, אנו בונים כרגע מערכת בשם eScriptorium אשר תאפשר העתקה אוטמטית של כתבי יד והעשרתן העמוקה בהערות מכל סוג, באמצעות הוספת שכבות מטא-דאטה.
+</p>
 
 <h3 class='mt-5'>
-	<u>Crowdsourcing and citizen science</u>
+	<u>שיתוף המונים ומדע אזרחי</u>
 </h3>
 <p>
-	In recent years numerous initiatives involving the general public in
-	academic research have been developed. In general, they are called
-	“citizen science”. In these initiatives the general public is invited
-	to help in labor intensive tasks in a variety of domains, from
-	categorizing galaxies to mapping extinct animals and even in the
-	humanities. Crowdsourcing initiatives are bidirectional, they are
-	intended not only to expose scientific research to the general public
-	in an understandable manner and to engage the public in performing
-	scientific research but also to get scientists and scholars out of
-	their ivory tower and to deepen the connection and collaboration
-	between society and academia. Tikkoun Sofrim is the second
-	crowdsourcing initiative of <a
-		href="http://elijahlab.haifa.ac.il/index.php/en/" target="_blank">elijah
-		lab at the University of Haifa</a> and follows its predecessor <a
+	בשנים האחרונות מפותחים מגוון מיזמים של שיתוף הציבור במאמץ המחקרי, או כפי שהם נקראים בנוסף 'מדע אזרחי' (citizen science). במסגרת מיזמי מדע אזרחי מוזמן הציבור הרחב לסייע במשימות עתירות עבודה במגוון תחומים, מסיווג גלקסיות ועד מיפוי בעלי חיים נכחדים, ואף בתחומי מדעי הרוח.
+<p/>
+
+<p>
+מיזמי שיתוף המונים הם דו כיווניים, הם נועדו לא רק לשתף את הציבור הרחב בפעילות המדעית ולגייס את עזרתו לטובת המאמץ המחקרי, אלא גם להוציא את האקדמיה ממגדל השן, לחשוף את הציבור למחקרים ולגופי ידע, ולהעמיק את הקשר ושיתוף הפעולה בין האקדמיה לבין החברה.
+<p/>
+פרוייקט תיקון סופרים הוא מיזם שיתוף ההמונים השני של <a
+		href="http://elijahlab.haifa.ac.il/index.php/en/" target="_blank">מעבדת אליהו באוניברסיטת חיפה</a> והוא מצטרף לאחיו הבכור <a
 		href="https://www.zooniverse.org/projects/judaicadh/scribes-of-the-cairo-geniza/"
-		target="_blank">scribes of the Cairo Geniza</a>
+		target="_blank">סופרי הגניזה הקהירית</a>
 </p>
