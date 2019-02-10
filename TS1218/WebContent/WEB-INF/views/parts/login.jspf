@@ -16,7 +16,8 @@
 			<input id="username" name="username" required="required" type="text"
 				placeholder="myusername or mymail@mail.com" value="${username}" />
 			<input id="password" name="password"
-				type="password" placeholder="eg. X8df!90EO" /> <input id="loginButton" name="login"
+				type="password" placeholder="eg. X8df!90EO" /> 
+			<input id="loginButton" name="login" class="btn-primary"
 				type="submit" value='<fmt:message key="toolbar.right.start"/>' />
 		</div>
 		<p style="font-weight: bold; font-size: large; color: red;">${errorMessageLogin}</p>

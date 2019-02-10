@@ -34,7 +34,7 @@
 						<fmt:message key="Toolbar.left.HTR" />
 				</a></li>
 				<li class="nav-item"><a class="nav-link" data-link="tanhuma"
-					href="${pageContext.request.contextPath}/LoginServlet?page=views/tanhuma.jsp">
+					href="${pageContext.request.contextPath}/LoginServlet?page=views/midrash.jsp">
 						<fmt:message key="toolbar.left.Midrash" />
 				</a></li>
 				<li class="nav-item"><a class="nav-link" data-link="team"
