@@ -189,7 +189,7 @@
 
 					<li class="nav-item sfont"><a class="nav-link" id="marked-tab"
 						data-toggle="tab" role="tab" href="#marked" aria-controls="marked"><fmt:message
-								key="main.data_area.editing" /> Text</a></li>
+								key="main.data_area.editing" /></a></li>
 
 					<li class="nav-item"><a class="nav-link sfont" id="help-tab"
 						data-toggle="tab" role="tab" href="#help" aria-controls="help">Help</a>
