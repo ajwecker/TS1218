@@ -71,7 +71,7 @@ Ces mots doivent être écrits normalement, sans aucune indication spéciale. Vo
 				<p>
 					<strong> Pour marquer des lettres non-identifiables (déchirées ou estompées), cliquez sur le bouton âdamagedâ et insérez des espaces entre les chevrons, selon votre estimation de la longueur du texte illisible.</strong>
 				</p>
-				<p>doit être noté ainsi : ×§×× ×©××× ××¦× < ></p>
+				<p>doit être noté ainsi : ×§×× ×©××× ××¦× &lt; &gt;</p>
 			</div>
 		</div>
 		<div class="uncertainty_in_transcription">

@@ -6,7 +6,7 @@
 
 <body onload="onloadResize();" class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
-	
+	<%@include file="../common/footer2.jspf"%>
 	<div class="transcribe-page scrollable mt-2 p-2 row">
 		
 
@@ -217,7 +217,7 @@
 												center : [ 0, 0 ],
 												crs : L.CRS.Simple,
 												
-												zoom : 10,
+												zoom : 2,
 												zoomDelta : 0.25,
 												zoomSnap : 0
 											});
@@ -225,7 +225,7 @@
 													.addTo(map);
 											map.attributionControl.setPrefix("");
 											map.attributionControl.addAttribution("${manuscriptAttribution}");
-//											map.attributionControl.addAttribution('Weebles Inc');		
+		
 											var polygon = L
 													.polygon(
 															[
@@ -246,7 +246,7 @@
 																fillColor : '#f03',
 																fillOpacity : 0.2
 															}).addTo(map);
-										}, 1500);
+										}, 3000);
 							</script>
 						</div>
 					</div>
@@ -278,6 +278,6 @@
 			</div>
 		</div>
 	</div>
-<%@include file="../common/footer2.jspf"%>
+
 
 	
