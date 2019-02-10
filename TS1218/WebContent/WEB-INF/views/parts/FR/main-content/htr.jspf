@@ -2,19 +2,7 @@
 <h3>
 	<u>Qu’est-ce que l’HTR ?</u>
 </h3>
-<p>HTR – (automatic) Handwritten Text Recognition is a subdiscipline
-	of Computer Vision that deals with the automatic process of
-	transforming document images to text so it can be searched and
-	integrated into websites, books or articles. We use a combination of
-	cutting edge deep learning techniques, different types of neural
-	networks (biLSTM, CNN) with classical methods such as morphological
-	transformations, projections and different filters. The basic principle
-	is that we show the computer a great number of images of manuscript
-	lines and their corresponding text transcriptions and the computer
-	learns the principle how to get from the image to the text. Eventually,
-	it can do this also for images it has never seen.
-	
-	La reconnaissance automatique des textes (HTR - Handwritten Text Recognition)
+<p>	La reconnaissance automatique des textes (HTR - Handwritten Text Recognition)
 	est une opération tenant du domaine de la Vision par Ordinateur, qui vise à 
 	transformer automatiquement des images en texte. Cette transformation permet 
 	entre autres choses d’explorer le texte et de l’intégrer à des articles, des 
