@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import il.haifa.ac.dh.tikkounsofrim.impl.*;
 import il.haifa.ac.dh.tikkounsofrim.model.ImageData;
@@ -54,7 +55,8 @@ public class TranscribeServlet extends HttpServlet {
 			redirectToLoginPage(request, response);
 			return;
 		}
-		setupTranscription(request, task);
+		
+		setupTranscription(request.getSession(), task);
 		start = System.currentTimeMillis();
 		request.getSession().setAttribute("starttime",start);
 		String page = "views/transcribe.jsp";
@@ -76,9 +78,10 @@ public class TranscribeServlet extends HttpServlet {
 	}
 
 
-private void setupTranscription(HttpServletRequest request, Task task) {
+private void setupTranscription(HttpSession session, Task task) {
 	int lineNumber = task.getLineNumber();
 	int pageNumber = task.getPageNumber();
+	String lang = (String) session.getAttribute("lang");
 	//image
 	ImageData imageData= manuscriptProvider.getManuscriptLine(task.getmId(),pageNumber,lineNumber,0,0,0);
 	
@@ -88,33 +91,34 @@ private void setupTranscription(HttpServletRequest request, Task task) {
 	//transcription
 	TranscribedString transcription = manuscriptProvider.getTranscribedLine(task.getmId(), pageNumber, lineNumber, 0);
 	
-	request.getSession().setAttribute("manuscriptName",task.getmId().getName());
-	String manuscriptShortDesc =  manuscriptDesc.getShortDescription();
-	request.getSession().setAttribute("manuscriptShortDesc",manuscriptShortDesc);
+	session.setAttribute("manuscriptName",task.getmId().getName());
+	String manuscriptShortDesc =  manuscriptDesc.getShortDescription(lang);
+	session.setAttribute("manuscriptShortDesc",manuscriptShortDesc);
 	System.out.println("Manuscript ShortDesc="+manuscriptShortDesc);
-	String manuscriptDescLink =  manuscriptDesc.getDescriptionLink();
-	request.getSession().setAttribute("manuscriptDescLink",manuscriptDescLink);
-	request.getSession().setAttribute("manuscriptPage",pageNumber);
-	request.getSession().setAttribute("manuscriptLine",lineNumber);
-	request.getSession().setAttribute("manuscriptTotalPages",manuscriptDesc.getTotalPageNumber());
-	request.getSession().setAttribute("manuscriptTotalLines",manuscriptDesc.getTotalLineNumbers(task.getPageNumber()));
-	request.getSession().setAttribute("transcribedlineimgsrc",imageData.getTranscribedLineImgSrc());
+	String manuscriptDescLink =  manuscriptDesc.getDescriptionLink(lang);
+	session.setAttribute("manuscriptDescLink",manuscriptDescLink);
+	session.setAttribute("manuscriptAttribution", manuscriptDesc.getAttribution());
+	session.setAttribute("manuscriptPage",pageNumber);
+	session.setAttribute("manuscriptLine",lineNumber);
+	session.setAttribute("manuscriptTotalPages",manuscriptDesc.getTotalPageNumber());
+	session.setAttribute("manuscriptTotalLines",manuscriptDesc.getTotalLineNumbers(task.getPageNumber()));
+	session.setAttribute("transcribedlineimgsrc",imageData.getTranscribedLineImgSrc());
 	
-	request.getSession().setAttribute("pageimgsrc",imageData.getPageImgSrc());
+	session.setAttribute("pageimgsrc",imageData.getPageImgSrc());
 	
-	request.getSession().setAttribute("boundingbox",imageData.getBoundingBox().toString());
+	session.setAttribute("boundingbox",imageData.getBoundingBox().toString());
 	double leafletFactor = manuscriptDesc.getLeafletFactor();
 	int ytop = (int) (imageData.getBoundingBox().y/leafletFactor);
 	int ybottom = (int) ((imageData.getBoundingBox().y+imageData.getBoundingBox().height)/leafletFactor);
 	int xleft = (int) (imageData.getBoundingBox().x/leafletFactor);
 	int xright = (int) ((imageData.getBoundingBox().x+imageData.getBoundingBox().width)/leafletFactor);
-	request.getSession().setAttribute("ytop",0-ytop);
-	request.getSession().setAttribute("ybottom",0-ybottom);
-	request.getSession().setAttribute("xleft",xleft);
-	request.getSession().setAttribute("xright",xright);
+	session.setAttribute("ytop",0-ytop);
+	session.setAttribute("ybottom",0-ybottom);
+	session.setAttribute("xleft",xleft);
+	session.setAttribute("xright",xright);
 	
-	request.getSession().setAttribute("transcribedline",transcription.getString());
-	request.getSession().setAttribute("transcribedlength",(transcription.getString().length()+1));
+	session.setAttribute("transcribedline",transcription.getString());
+	session.setAttribute("transcribedlength",(transcription.getString().length()+1));
 	System.out.println("transcribesdLength="+(transcription.getString().length()+1));
 	System.out.println("Original Bounding box+"+imageData.getBoundingBox().toString());
 	System.out.println("Leaflet coordinates ytop, ybottom, xleft, xright=("+ytop+","+ybottom+","+xleft+","+xright+")");
@@ -163,7 +167,7 @@ private void setupTranscription(HttpServletRequest request, Task task) {
 	    taskProvider = (TaskProvider) request.getSession().getAttribute("taskProvider");
 		taskProvider.getNextTask(task);
 		request.getSession().setAttribute("task",task);
-		setupTranscription(request, task);
+		setupTranscription(request.getSession(), task);
 		start = System.currentTimeMillis();
 		request.getSession().setAttribute("starttime",start);
 		request.getRequestDispatcher("/WEB-INF/views/transcribe.jsp").forward(

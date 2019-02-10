@@ -6,6 +6,7 @@
 
 <body onload="onloadResize();" class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
+	
 	<div class="transcribe-page scrollable mt-2 p-2 row">
 		
 
@@ -168,6 +169,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 <div id="info-page" class="container col-4 flex-column d-flex">
 			<div>
@@ -214,13 +216,16 @@
 											var map = L.map('map', {
 												center : [ 0, 0 ],
 												crs : L.CRS.Simple,
-												attributionControl : false,
+												
 												zoom : 2,
 												zoomDelta : 0.25,
 												zoomSnap : 0
 											});
 											L.tileLayer.iiif("${pageimgsrc}")
 													.addTo(map);
+											map.attributionControl.setPrefix("");
+											map.attributionControl.addAttribution("${manuscriptAttribution}");
+//											map.attributionControl.addAttribution('Weebles Inc');		
 											var polygon = L
 													.polygon(
 															[
@@ -273,6 +278,6 @@
 			</div>
 		</div>
 	</div>
+<%@include file="../common/footer2.jspf"%>
 
-
-	<%@ include file="../common/footer2.jspf"%>
+	

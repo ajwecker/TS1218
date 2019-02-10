@@ -22,10 +22,21 @@ public class ManuscriptProviderImpl implements ManuscriptProvider {
 		super();
 		ManuscriptData gmdata= ManuscriptDataImpl.loadData(ManuscriptDataImpl.tvsGeneva);
 		GENEVA146 = new ManuscriptDescriptor(gmdata, (SegmentationProvider) gmdata, (TranscriptionProvider) gmdata, 15.9, 
-				"One of the earliest manuscript exemplars of the version of the Tanhuma midrash text known among scholars as the 'printed text'"+
+						 "One of the earliest manuscript exemplars of the version of the Tanhuma midrash text known among scholars as the &quot;printed text&quot;"+
 						 "(first printed in Constantinople, 1520-22), as distinguished from the version first edited and printed by Solomon Buber in Vilnius, 1885. "+
 						 "Copied probably somewhere in the Orient around the 14th century, the Hebrew script is Oriental semi-cursive.,",
-						 "http://www.e-codices.unifr.ch/en/description/bge/cl0146/"
+						 "http://www.e-codices.unifr.ch/en/description/bge/cl0146/",
+						 "Il s&#39;agit de l&#39;un des plus anciens exemplaires manuscrits de la version du texte de la Tanhuma midrash,"+
+						 " connu parmi les savants comme le &quot;printed text&quot; (première édition imprimée à Constantinople, 1520-22),"+
+						 " et qui se distingue de la version éditée et imprimée pour la première fois en 1885, par Solomon Buber à Vilnius."+
+						 " Il a probablement été copié quelque part en Orient aux alentours du XIVe s. L&#39;écriture hébraïque est une semi-cursive"+
+						 " orientale. Genève, Bibliothèque de Genève, Comites Latentes 146: Midrash Tanhuma (Lévitique-Nombres-Deutéronome)",
+						 "http://www.e-codices.unifr.ch/fr/description/bge/cl0146",
+						 "hebrew description of manuscript",
+						 "http://www.e-codices.unifr.ch/en/description/bge/cl0146/",
+						 "<a href='(http://www.e-codices.unifr.ch/en/list/one/bge/cl0146'>Genève, Bibliothèque de Genève, Comites Latentes 146: Midrash Tanhuma (Leviticus-Numbers-Deuteronomy)</a>"+
+						 "<a href=' https://creativecommons.org/licenses/by-nc/4.0/'>Images CC-BY-NC 4.0</a>"
+						 
 				);
 		 
 		
