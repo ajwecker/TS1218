@@ -111,7 +111,7 @@
 										<b>ﭏ</b>
 									</button>
 									<select id="filler" class="custom-select-sm btn-secondary"
-										title="End of line marks" onchange="myFill()">
+										title='<fmt:message key="main.work_area.hovers.over_line_fillers"/>' onchange="myFill()">
 										<option value="">&nbsp;</option>
 										<option value="/">/</option>
 										<option value="//">//</option>
@@ -130,11 +130,11 @@
 										<span style="font-size: smaller;"><fmt:message key="main.work_area.button_5" /></span>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myResize(1)" title="Increase size of text">
+										onclick="myResize(1)" title='<fmt:message key="main.work_area.hovers.over_alef_plus"/>'>
 										<span style="font-size: larger;"><b>א+</b></span>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myResize(-1)" title="Reduce size of text">
+										onclick="myResize(-1)" title='<fmt:message key="main.work_area.hovers.over_alef_minus"/>'>
 										<span style="font-size: smaller;"><b>א-</b></span>
 									</button>
 <!-- In comment since will return for future release									<button class="btn btn-secondary" type="button" -->
