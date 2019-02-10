@@ -4,8 +4,8 @@
 <body class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
 	<script type="text/javascript">
-		window.page_name = 'tanhuma';
-		$("[data-link='tanhuma']").addClass('active');
+		window.page_name = 'midrash';
+		$("[data-link='midrash']").addClass('active');
 	</script>
 	<div class="container scrollable mt-2">
 		<jsp:include page="../views/parts/${lang}/main-content/midrash.jspf" />

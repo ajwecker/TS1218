@@ -217,7 +217,7 @@
 												center : [ 0, 0 ],
 												crs : L.CRS.Simple,
 												
-												zoom : 2,
+												zoom : 10,
 												zoomDelta : 0.25,
 												zoomSnap : 0
 											});
