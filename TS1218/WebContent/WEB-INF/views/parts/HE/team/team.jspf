@@ -1,9 +1,12 @@
 <div class="team">
-	<div class="header">
-		<strong>צוות</strong>
-		<div>
-			<strong>(על פי סדר הא-ב)</strong>
-		</div>
+	<h3 class="header">
+		<u>צוות</u>
+		</h3>
+		<h4>
+		<strong>(על פי סדר הא-ב)</strong>
+		</h4>
+			
+		
 	</div>
 
 	<div class="members">
@@ -46,4 +49,4 @@
 
 
 	</div>
-</div>
+

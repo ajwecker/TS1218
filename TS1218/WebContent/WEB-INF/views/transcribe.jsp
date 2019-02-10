@@ -48,10 +48,10 @@
 							action="${pageContext.request.contextPath}/TranscribeServlet"
 							method="post">
 							<div class="mt-2">
-								<input id="trw" type="text" oninput="trwChanged()"
+								<input id="trw" type="text" 
 									name="transcribed" value="${transcribedline}"
-									style="font-family: Corsiva" class="w-100 p-2 rtl"> <input
-									type="hidden" id="trwOrig" value="${transcribedline}" />
+									style="font-family: Corsiva" class="w-100 p-2 rtl"> 
+									<input type="hidden" id="trwOrig" value="${transcribedline}" />
 							</div>
 							<!-- Transcribe toolbar -->
 							<div class="btn-toolbar justify-content-between d-flex mt-3 p-10 ltr"
@@ -154,11 +154,11 @@
 
 								<div id="activity-buttons"
 									class="mt-2 d-flex justify-content-between">
-									<button type="submit" class="btn btn-warning" name="status"
+									<button type="submit" class="btn btn-warning" name="status" id="Skip"
 										value="Skip">
 										<fmt:message key="main.work_area.finish_button_2" />
 									</button>
-									<button type="submit" class="btn btn-success" name="status"
+									<button type="submit" class="btn btn-success" name="status" id="Done"	
 										value="Done">
 										<fmt:message key="main.work_area.finish_button_1" />
 									</button>
@@ -185,16 +185,19 @@
 						aria-controls="special"><fmt:message
 								key="main.data_area.Issues" /></a></li>
 
-					<li class="nav-item"><a class="nav-link sfont" id="ab-tab"
-						data-toggle="tab" role="tab" href="#ab" aria-controls="ab"><fmt:message
+					<li class="nav-item"><a class="nav-link sfont" 
+						id="ab-tab" data-toggle="tab" role="tab" href="#ab" 
+						aria-controls="ab"><fmt:message
 								key="main.data_area.Alphabet" /></a></li>
 
-					<li class="nav-item sfont"><a class="nav-link" id="marked-tab"
-						data-toggle="tab" role="tab" href="#marked" aria-controls="marked"><fmt:message
+					<li class="nav-item sfont"><a class="nav-link" 
+						id="marked-tab" data-toggle="tab" role="tab" href="#marked"
+						aria-controls="marked"><fmt:message
 								key="main.data_area.editing" /></a></li>
 
-					<li class="nav-item"><a class="nav-link sfont" id="help-tab"
-						data-toggle="tab" role="tab" href="#help" aria-controls="help"><strong>Help</strong></a>
+					<li class="nav-item"><a class="nav-link sfont" 
+						id="help-tab" data-toggle="tab" role="tab" href="#help" 
+						aria-controls="help"><strong>Help</strong></a>
 					</li>
 				</ul>
 			</div>

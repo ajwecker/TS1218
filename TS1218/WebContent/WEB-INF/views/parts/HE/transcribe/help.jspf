@@ -1,5 +1,8 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
+<div class="help-page info_content">
+	<div class="header">
 <div class="title">המשימה</div>
+</div>
 <div>
 	<p>העבודה על תיקון סופרים היא די פשוטה. 
 	במוקד הדף מוצגת לכם שורה מתוך כתב היד ומתחתיה תעתוק השורה הזו 
@@ -47,4 +50,5 @@
 o      מדרש תנחומא הנדפס.
 o      מדרש תנחומא, מהדורת בובר.
 o      מדרש רבה (שבו נמצא חלק מהחומר לחומשים שמות, במדבר ודברים) </p>
+</div>
 </div>
