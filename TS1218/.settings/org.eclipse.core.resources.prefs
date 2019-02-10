@@ -1,11 +1,14 @@
 eclipse.preferences.version=1
 encoding//WebContent/WEB-INF/common/navigation.jspf=UTF-8
 encoding//WebContent/WEB-INF/data/Geneva_146_all_data_for_Alan.txt=UTF-8
+encoding//WebContent/WEB-INF/views/parts=UTF-8
 encoding//WebContent/WEB-INF/views/parts/EN/transcribe/abc.jspf=UTF-8
 encoding//WebContent/WEB-INF/views/parts/EN/transcribe/help.jspf=UTF-8
 encoding//WebContent/WEB-INF/views/parts/EN/transcribe/marked.jspf=UTF-8
 encoding//WebContent/WEB-INF/views/parts/EN/transcribe/special.jspf=UTF-8
 encoding//WebContent/WEB-INF/views/parts/FR/transcribe/abc.jspf=UTF-8
+encoding//WebContent/WEB-INF/views/parts/FR/transcribe/marked.jspf=UTF-8
+encoding//WebContent/WEB-INF/views/parts/FR/transcribe/special.jspf=UTF-8
 encoding//WebContent/WEB-INF/views/parts/HE/team/partners.jspf=UTF-8
 encoding//WebContent/WEB-INF/views/parts/HE/team/team.jspf=UTF-8
 encoding//WebContent/WEB-INF/views/parts/HE/team/thanks.jspf=UTF-8
