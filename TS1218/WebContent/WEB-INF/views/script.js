@@ -99,9 +99,6 @@ function myResizeOrg2() {
 		var elemTRW = document.getElementById("trw");
 		elemTRW.style.height = fontsize;
 		elemTRW.style.fontSize = fontsize;
-		var elemTest = document.getElementById("test");
-		elemTest.innerHTML = fontsize;
-		console.log("OrgFontsize= " + fontsize)
 	}
 
 }
@@ -111,8 +108,6 @@ function myResize(myAdd) {
   var fontsize = (Math.trunc(rect.height) + myAdd) + "px";
   elemTRW.style.height = fontsize;
   elemTRW.style.fontSize = fontsize;
-//  var elemTest = document.getElementById("test");
-//  elemTest.innerHTML = fontsize;
   console.log("Fontsize= " + fontsize)
 }
 
@@ -120,37 +115,10 @@ function myReset() {
 	var elemTRW = document.getElementById("trw");
 	var elemTRWORG = document.getElementById("trwOrig");
 	elemTRW.value = elemTRWORG.value;
-
-  //domentById("PC").setAttribute("style", "background-color: #f0f0f0");
-}
-
-function trwChanged() {
-  //document.getElementById("NE").disabled = false;
-  //document.getElementById("NE").setAttribute("style", "background-color: #f0f0f0");
-  //document.getElementById("Skip").disabled = true;
-  //document.getElementById("Skip").setAttribute("style", "background-color: #f0f0f0");
-  //document.getElementById("AC").disabled = false;
-  //document.getElementById("AC").setAttribute("style", "background-color: 90CAF9");
-  //document.getElementById("PC").disabled = false;
-  //document.getElementById("PC").setAttribute("style", "background-color: 90CAF9");
-}
-function resizeImg() {
-	var elemImgPage = document.getElementById("imgPage");
-	var rect = elemImgPage.getBoundingClientRect();
-	var width = Math.trunc(rect.width * 1);
-	var height = Math.trunc(width * 1);
-
-	elemImgPage.style.height = height + "px";
-	var elemImgMap = document.getElementById("map");
-	elemImgMap.style.height = height + "px";
-	elemImgMap.style.width = width + "px";
-
-	console.log("imgPageHeight= " + height)
 }
 
 function onloadResize() {
 	myResizeOrg();
-	resizeImg();
 }
 
 function openInfo(evt, infoName) {

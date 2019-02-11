@@ -6,9 +6,9 @@
 
 <body onload="onloadResize();" class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
-	
+
 	<div class="transcribe-page scrollable mt-2 p-2 row">
-		
+
 
 		<!-- Column Two work area -->
 		<div id="transcribe" class="container col-8">
@@ -28,14 +28,13 @@
 							</div>
 						</div>
 						<!--             <div id="img-line" style="background-image:url('http://tikkoun-sofrim.haifa.ac.il/cantaloupe/iiif/2/bge-cl0146_007.jpg/511,4684,4155,449/full/0/default.jpg');"> -->
-						
+
 					</div>
 					<div>
-					<img id="imgline"
+						<img id="imgline"
 							alt="Page ${manuscriptPage} of ${manuscriptTotalPages}, line ${manuscriptLine} of ${manuscriptTotalLines}"
 							width="100%" src="${transcribedlineimgsrc}"
-							data-high-res-src="${transcribedlineimgsrc}"
-							class="imageline">
+							data-high-res-src="${transcribedlineimgsrc}" class="imageline">
 						<script type="text/javascript">
 							//Example 3
 							$(function() {
@@ -48,13 +47,14 @@
 							action="${pageContext.request.contextPath}/TranscribeServlet"
 							method="post">
 							<div class="mt-2">
-								<input id="trw" type="text" 
-									name="transcribed" value="${transcribedline}"
-									style="font-family: Corsiva" class="w-100 p-2 rtl"> 
-									<input type="hidden" id="trwOrig" value="${transcribedline}" />
+								<input id="trw" type="text" name="transcribed"
+									value="${transcribedline}" style="font-family: Corsiva"
+									class="w-100 p-2 rtl"> <input type="hidden"
+									id="trwOrig" value="${transcribedline}" />
 							</div>
 							<!-- Transcribe toolbar -->
-							<div class="btn-toolbar justify-content-between d-flex mt-3 p-10 ltr"
+							<div
+								class="btn-toolbar justify-content-between d-flex mt-3 p-10 ltr"
 								role="toolbar">
 								<!-- 								<div class="mr-2" role="group"> -->
 								<!-- 									<select id="filler" class="custom-select" -->
@@ -69,13 +69,13 @@
 								<!-- 								</div> -->
 								<div class="btn-group mr-2 rtl" role="group"
 									aria-label="First group">
-									
-									
-									
 
-									
-									
-									
+
+
+
+
+
+
 									<button class="btn btn-secondary" type="button"
 										onclick="myMark(']','[')"
 										title='<fmt:message key="main.work_area.hovers.over_additions"/>'>
@@ -111,7 +111,8 @@
 										<b>ﭏ</b>
 									</button>
 									<select id="filler" class="custom-select-sm btn-secondary"
-										title='<fmt:message key="main.work_area.hovers.over_line_fillers"/>' onchange="myFill()">
+										title='<fmt:message key="main.work_area.hovers.over_line_fillers"/>'
+										onchange="myFill()">
 										<option value="">&nbsp;</option>
 										<option value="/">/</option>
 										<option value="//">//</option>
@@ -127,19 +128,22 @@
 									<button class="btn btn-secondary" type="button"
 										onclick="myReset()"
 										title='<fmt:message key="main.work_area.hovers.over_reset"/>'>
-										<span style="font-size: smaller;"><fmt:message key="main.work_area.button_5" /></span>
+										<span style="font-size: smaller;"><fmt:message
+												key="main.work_area.button_5" /></span>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myResize(1)" title='<fmt:message key="main.work_area.hovers.over_alef_plus"/>'>
+										onclick="myResize(1)"
+										title='<fmt:message key="main.work_area.hovers.over_alef_plus"/>'>
 										<span style="font-size: larger;"><b>א+</b></span>
 									</button>
 									<button class="btn btn-secondary" type="button"
-										onclick="myResize(-1)" title='<fmt:message key="main.work_area.hovers.over_alef_minus"/>'>
+										onclick="myResize(-1)"
+										title='<fmt:message key="main.work_area.hovers.over_alef_minus"/>'>
 										<span style="font-size: smaller;"><b>א-</b></span>
 									</button>
-<!-- In comment since will return for future release									<button class="btn btn-secondary" type="button" -->
-<!-- 										title="Font size" id="test" disabled="disabled"></button> -->
-<!-- 																		<label id="test">Font size</label> -->
+									<!-- In comment since will return for future release									<button class="btn btn-secondary" type="button" -->
+									<!-- 										title="Font size" id="test" disabled="disabled"></button> -->
+									<!-- 																		<label id="test">Font size</label> -->
 								</div>
 							</div>
 
@@ -154,8 +158,8 @@
 
 								<div id="activity-buttons" dir="rtl"
 									class="mt-2 d-flex justify-content-between">
-									
-									
+
+
 									<button type="submit" class="btn btn-warning rtl" name="status"
 										value="Skip">
 										<fmt:message key="main.work_area.finish_button_2" />
@@ -164,16 +168,16 @@
 										value="Done">
 										<fmt:message key="main.work_area.finish_button_1" />
 									</button>
-									
+
 								</div>
 							</div>
 						</form>
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
-<div id="info-page" class="container col-4 flex-column d-flex">
+		<div id="info-page" class="container col-4 flex-column d-flex">
 			<div>
 
 				<ul class="nav nav-tabs flex-nowrap" role="tablist">
@@ -187,74 +191,33 @@
 						aria-controls="special"><fmt:message
 								key="main.data_area.Issues" /></a></li>
 
-					<li class="nav-item"><a class="nav-link sfont" 
-						id="ab-tab" data-toggle="tab" role="tab" href="#ab" 
-						aria-controls="ab"><fmt:message
+					<li class="nav-item"><a class="nav-link sfont" id="ab-tab"
+						data-toggle="tab" role="tab" href="#ab" aria-controls="ab"><fmt:message
 								key="main.data_area.Alphabet" /></a></li>
 
-					<li class="nav-item sfont"><a class="nav-link" 
-						id="marked-tab" data-toggle="tab" role="tab" href="#marked"
-						aria-controls="marked"><fmt:message
+					<li class="nav-item sfont"><a class="nav-link" id="marked-tab"
+						data-toggle="tab" role="tab" href="#marked" aria-controls="marked"><fmt:message
 								key="main.data_area.editing" /></a></li>
 
-					<li class="nav-item"><a class="nav-link sfont" 
-						id="help-tab" data-toggle="tab" role="tab" href="#help" 
-						aria-controls="help"><strong>Help</strong></a>
+					<li class="nav-item"><a class="nav-link sfont" id="help-tab"
+						data-toggle="tab" role="tab" href="#help" aria-controls="help"><strong>Help</strong></a>
 					</li>
 				</ul>
 			</div>
-			<div class="tab-content">
-				<div class="tab-pane fade show active" id="page" role="tabpanel"
-					aria-labelledby="page-tab">
+			<div class="tab-content w-100 h-100">
+				<div
+					class="tab-pane fade flex-fill h-100 w-100 show active d-flex justify-content-between flex-column "
+					id="page" role="tabpanel" aria-labelledby="page-tab">
 					<div id="imgPage">
 						<a href="${manuscriptDescLink}" target="_blank"> <label
 							style="clear: both; color: blue;" title="${manuscriptShortDesc}">${manuscriptName}</label>
 						</a> <label> - Page ${manuscriptPage} /
 							${manuscriptTotalPages}, Line ${manuscriptLine} /
 							${manuscriptTotalLines} </label>
-
-
-						<div id="map" class="flex">
-							<script type="text/javascript">
-								setTimeout(
-										function() {
-											var map = L.map('map', {
-												center : [ 0, 0 ],
-												crs : L.CRS.Simple,
-												
-												zoom : 2,
-												zoomDelta : 0.25,
-												zoomSnap : 0
-											});
-											L.tileLayer.iiif("${pageimgsrc}")
-													.addTo(map);
-											map.attributionControl.setPrefix("");
-											map.attributionControl.addAttribution("${manuscriptAttribution}");
-		
-											var polygon = L
-													.polygon(
-															[
-																	[
-																			"${ytop}",
-																			"${xleft}" ],
-																	[
-																			"${ytop}",
-																			"${xright}" ],
-																	[
-																			"${ybottom}",
-																			"${xright}" ],
-																	[
-																			"${ybottom}",
-																			"${xleft}" ] ],
-															{
-																color : 'blue',
-																fillColor : '#f03',
-																fillOpacity : 0.2
-															}).addTo(map);
-										}, 1500);
-							</script>
-						</div>
 					</div>
+
+					<div id="map" class="flex-fill"></div>
+
 				</div>
 				<div class="tab-pane fade" id="special" role="tabpanel"
 					aria-labelledby="profile-tab">
@@ -283,6 +246,37 @@
 			</div>
 		</div>
 	</div>
-<%@include file="../common/footer2.jspf"%>
+	<script type="text/javascript">
+		var map = L.map('map', {
+			center : [ 0, 0 ],
+			crs : L.CRS.Simple,
+			zoom : 0
+		});
+		
+		map.on('zoomend',function(){map.invalidateSize()})
 
-	
+		var imageLayer = L.tileLayer.iiif('${pageimgsrc}').addTo(map);
+
+		
+		var linePolygonLayer = L.polygon(
+				[ [ "${ytop}", "${xleft}" ], [ "${ytop}", "${xright}" ],
+						[ "${ybottom}", "${xright}" ],
+						[ "${ybottom}", "${xleft}" ] ], {
+					color : 'blue',
+					fillColor : '#f03',
+					fillOpacity : 0.2
+				}).addTo(map);
+
+		var iiifLayers = {
+			'imageLayer' : imageLayer,
+			'linePolygon' : linePolygonLayer
+		};
+
+		map.attributionControl.setPrefix("");
+		map.attributionControl.addAttribution("${manuscriptAttribution}");
+
+		L.control.layers(iiifLayers).addTo(map);
+		
+		setTimeout(function(){map.invalidateSize()},2500);
+	</script>
+	<%@include file="../common/footer2.jspf"%>
