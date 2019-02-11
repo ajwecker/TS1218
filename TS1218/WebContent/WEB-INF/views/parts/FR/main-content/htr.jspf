@@ -1,7 +1,7 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
-<h3>
-	<u>Qu’est-ce que l’HTR ?</u>
-</h3>
+<div class="tabContentTitle">
+Qu’est-ce que l’HTR ?
+</div>
 <p>	La reconnaissance automatique des textes (HTR - Handwritten Text Recognition)
 	est une opération tenant du domaine de la Vision par Ordinateur, qui vise à 
 	transformer automatiquement des images en texte. Cette transformation permet 
@@ -36,9 +36,9 @@ manuscrits et leur annotation profonde (philologique, historique, linguistique).
 
 </p>
 
-<h3 class='mt-5'>
-	<u>Crowdsourcing et sciences participatives</u>
-</h3>
+<div class="tabContentTitle mt-5">
+Crowdsourcing et sciences participatives
+</div>
 <p>
 	
 Les initiatives impliquant le grand public dans 

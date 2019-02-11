@@ -20,26 +20,27 @@ public class TaskProviderImpl implements TaskProvider {
 	@Override
 	public Task getTask(TikunUser user) {
 
-		ManuscriptPlace seed = getDeafultManuscriptPlace();
-		seed = getNextFree(seed);
+		ManuscriptPlace seed = getDefaultManuscriptPlace();
+		seed = getNextFree(seed,user);
 		return getTask(user, seed);
 	}
 
-	private ManuscriptPlace getNextFree(ManuscriptPlace seed) {
+	private ManuscriptPlace getNextFree(ManuscriptPlace seed, TikunUser user) {
 		// TODO Auto-generated method stub
-		boolean free = checkIfFree(seed);
+		boolean free = checkIfFree(seed, user);
 		while (!free) {
 			seed = seed.getNext(mprov.getManuscriptDescription(seed.manuscriptId).getTotalLineNumbers(seed.page),
 					mprov.getManuscriptDescription(seed.manuscriptId).getTotalPageNumber());
-			free = checkIfFree(seed);
+			free = checkIfFree(seed, user);
 		}
 		return seed;
 	}
 
-	private boolean checkIfFree(ManuscriptPlace seed) {
+	private boolean checkIfFree(ManuscriptPlace seed, TikunUser user) {
 		// TODO Auto-generated method stub
 		if (userDB.getTotalTimesLineSeen(seed) <= SEEN_LIMIT
-				&& userDB.getTotalTimesLineCorrected(seed) <= CORRECT_LIMIT) {
+				&& userDB.getTotalTimesLineCorrected(seed) <= CORRECT_LIMIT
+				&& !userDB.userDidLine(seed,user.getId())) {
 			return true;
 		}
 		return false;
@@ -87,7 +88,7 @@ public class TaskProviderImpl implements TaskProvider {
 	private Task getFreeTask(TikunUser user, ManuscriptPlace place) {
 		Task task = new Task(user, place, null, null);		
 		while (true) {
-			if (checkIfFree(task.getPlace())) {
+			if (checkIfFree(task.getPlace(), user)) {
 				return task;
 			}
 			
@@ -98,14 +99,14 @@ public class TaskProviderImpl implements TaskProvider {
 
 	private ManuscriptPlace lookup(int book, int chapter) {
 		// TODO do actual lookup
-		ManuscriptPlace seed = getDeafultManuscriptPlace();
+		ManuscriptPlace seed = getDefaultManuscriptPlace();
 		return seed;
 	}
 
 	/**
 	 * @return
 	 */
-	private ManuscriptPlace getDeafultManuscriptPlace() {
+	private ManuscriptPlace getDefaultManuscriptPlace() {
 		return new ManuscriptPlace(ChapterAssignmentDataImpl.GENEVA_MANUSRIPT_NAME, 7, 13);
 	}
 
@@ -117,7 +118,7 @@ public class TaskProviderImpl implements TaskProvider {
 	private ManuscriptPlace lookup(int ntnChapterId) {
 		ChapterAssignment chapterAssignment = chapterAssignmentData.getChapterAssignment(ntnChapterId);
 		if (chapterAssignment == null) {
-			return getDeafultManuscriptPlace();
+			return getDefaultManuscriptPlace();
 		}
 
 		ManuscriptPlace seed = new ManuscriptPlace(chapterAssignmentData.getName(),

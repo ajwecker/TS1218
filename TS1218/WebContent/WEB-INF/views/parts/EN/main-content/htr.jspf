@@ -1,7 +1,7 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
-<h3>
-	<u>What is HTR?</u>
-</h3>
+<div class="tabContentTitle">
+What is HTR?
+</div>
 <p>
 HTR – (automatic) Handwritten Text Recognition is a task in the field of Computer Vision that deals with the process of automatically transforming document images to text so that the text can be searched and integrated into websites, books or articles. We use a combination of cutting edge neural machine learning techniques and traditional hand-optimized methods based on filtering and morphology.
 In a first step the layout of the manuscript is analyzed automatically in order to extract column and annotation regions. In a second step these regions are segmented into line images. 
@@ -14,9 +14,9 @@ Tikkoun Sofrim is the second HTR project at the EPHE next to Sofer Mahir, a proj
 At PSL, in the framework of the Scripta-PSL project, we are currently constructing the eScriptorium, an open source infrastructure that will permit the automatic transcription and deep annotation of handwritten material.
  </p>
 
-<h3 class='mt-5'>
-	<u>Crowdsourcing and citizen science</u>
-</h3>
+<div class="tabContentTitle mt-5">
+Crowdsourcing and citizen science
+</div>
 <p>
 	In recent years numerous initiatives involving the general public in
 	academic research have been developed. In general, they are called

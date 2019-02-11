@@ -7,7 +7,7 @@
 	Lors de la première phase, nous analysons automatiquement la structure de la page manuscrite, ce qui permet d’entraîner Kraken, un système d’apprentissage profond (deep learning) de lecture automatique. Les capacités de lecture de Kraken sont très bonnes, avec un taux d’erreur inférieur à 10%, voire inférieur à 5%. 
 </p>
 <p>
-Mais ce n’est <u>pas encore suffisant</u>. 
+Mais ce n’est <strong>pas encore suffisant</strong>. 
 	</p>
 
 <p>

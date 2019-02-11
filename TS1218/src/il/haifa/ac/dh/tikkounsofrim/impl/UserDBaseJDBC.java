@@ -285,7 +285,7 @@ public class UserDBaseJDBC implements UserDBase {
 			connect();
 			statement = connect.createStatement();
 			resultSet = statement
-	                 .executeQuery("select count(*) from tikkoun.users where userid = '"+ user + "'and status <> '0'");
+	                 .executeQuery("select count(*) from tikkoun.transcriptions where userid = '"+ user + "'and status <> '0'");
 			boolean empty = resultSet.last();
 			if (!empty) {
 				int rowcount = resultSet.getInt(1);
@@ -362,6 +362,12 @@ public class UserDBaseJDBC implements UserDBase {
 		}
 		return 0;
 
+	}
+
+	@Override
+	public boolean userDidLine(ManuscriptPlace seed, String user) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
 

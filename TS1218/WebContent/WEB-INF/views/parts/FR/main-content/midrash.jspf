@@ -1,7 +1,7 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
-<h3>
-	<u>Tanhouma-Yelamdenou</u>
-</h3>
+<div class="tabContentTitle">
+Tanhouma-Yelamdenou
+</div>
 
 <p>Tanhouma-Yelamdenou désigne un ensemble de midrashim homilétiques. Comme tout midrash homilétique, il est composé d’homélies pour 
 toutes les sections du cycle de lecture de la Tora, tel qu’il était pratiqué en terre d’Israël. La Torah était alors lue selon un cycle

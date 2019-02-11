@@ -12,6 +12,7 @@ public interface UserDBase {
 			String automaticTranscription, String userTranscription, int status, long start, String ipAddress);
 	 public int getTotalTimesLineSeen(ManuscriptPlace place);
 	 public int getTotalTimesLineCorrected(ManuscriptPlace place);
+	public boolean userDidLine(ManuscriptPlace seed, String user);
 	 
 
 }

@@ -152,13 +152,15 @@
 									<fmt:message key="main.work_area.finish_line_2" />
 								</div>
 
-								<div id="activity-buttons"
+								<div id="activity-buttons" dir="rtl"
 									class="mt-2 d-flex justify-content-between">
-									<button type="submit" class="btn btn-warning" name="status"
+									
+									
+									<button type="submit" class="btn btn-warning rtl" name="status"
 										value="Skip">
 										<fmt:message key="main.work_area.finish_button_2" />
 									</button>
-									<button type="submit" class="btn btn-success" name="status"
+									<button type="submit" class="btn btn-success rtl" name="status"
 										value="Done">
 										<fmt:message key="main.work_area.finish_button_1" />
 									</button>
