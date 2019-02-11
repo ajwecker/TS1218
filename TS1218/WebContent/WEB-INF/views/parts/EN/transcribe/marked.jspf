@@ -57,7 +57,7 @@
 			<div class="content">
 				<p>Additions can be either interlinear (above or below the line)
 					or marginal (in the margins). Additions of the first scribe - to
-					add a word or letter missed during copying Additions by others - to
+					add a word or letter missed during copying. Additions by others - to
 					add a word accidentally omitted by the first scribe or to correct
 					the text according to a different version. The scribe of ms Geneva
 					usually inserts additions above the line if they are short, while
@@ -133,9 +133,9 @@
 			<div class="title">Uncertainty in transcription</div>
 			<div class="content">
 				<p>
-					<strong>‘doubtful’</strong>
+					<strong>‘Uncertain’</strong>
 				</p>
-				<p>The doubtful button is intended for cases where you are not
+				<p>The uncertain button is intended for cases where you are not
 					sure if the automatic transcription correctly identified the letter
 					in the manuscript. Please try to minimize the use of this button
 					and use it only in extreme cases.</p>
@@ -144,14 +144,14 @@
 					כחן</p>
 				<p>
 					<strong>In order to mark the uncertainty, use the mouse to
-						mark the uncertain letter and then press the “doubtful” button (<img
+						mark the uncertain letter and then press the {Uncertain} button (<img
 						src="/TS1218/images/uncertain_button.PNG">). Alternatively,
 						you can press the button and type the most probable option between
 						curly brackets.
 					</strong>
 				</p>
 				<p>
-					In the example there is a need to write the doubtful letter as
+					In the example there is a need to write the doubtful/uncertain letter as
 					follows: <img
 						src="/TS1218/images/marked_text/k_marked_text_uncertainty1.png">
 					{אלא לפי כח{ו

@@ -3,15 +3,24 @@
 What is HTR?
 </div>
 <p>
-HTR – (automatic) Handwritten Text Recognition is a task in the field of Computer Vision that deals with the process of automatically transforming document images to text so that the text can be searched and integrated into websites, books or articles. We use a combination of cutting edge neural machine learning techniques and traditional hand-optimized methods based on filtering and morphology.
-In a first step the layout of the manuscript is analyzed automatically in order to extract column and annotation regions. In a second step these regions are segmented into line images. 
-While segmentation is currently done with with a manually constructed algorithm, we are in the process of switching to a fully trainable convolutional approach.
-In a third step the computer is trained to decipher the text in the line images. The basic principle is that we show the computer a great number of images of manuscript lines and their corresponding text transcriptions. The computer learns the principle how to get from the image to the text. Eventually, it can do this also for images it has never seen.
-Our main transcription engine is kraken by Benjamin Kiessling. 
+HTR – (automatic) Handwritten Text Recognition is a task in the field of Computer Vision 
+that deals with the process of automatically transforming document images to text so that the text can be searched and integrated into websites,
+books or articles. We use a combination of cutting edge neural machine learning techniques and 
+traditional hand-optimized methods based on filtering  and morphology.
+In the first step the layout of the manuscript is analyzed automatically in order to extract column and annotation regions. 
+In the second step these regions are segmented into line images. 
+While segmentation is currently done with with a manually constructed algorithm, 
+we are in the process of switching to a fully trainable convolutional approach.
+In the third step the computer is trained to decipher the text in the line images. 
+The basic principle is that we show the computer a great number of images of manuscript lines and their corresponding text transcriptions.
+The computer learns the principle how to get from the image to the text. Eventually, it can do this also for images it has never seen.
+Our main transcription engine is Kraken by Benjamin Kiessling. 
 </p>
 <p>
-Tikkoun Sofrim is the second HTR project at the EPHE next to Sofer Mahir, a project dealing with automatic transcription of major manuscripts of Tannaitic literature.
-At PSL, in the framework of the Scripta-PSL project, we are currently constructing the eScriptorium, an open source infrastructure that will permit the automatic transcription and deep annotation of handwritten material.
+Tikkoun Sofrim is the second HTR project at the EPHE next to Sofer Mahir, 
+a project dealing with automatic transcription of major manuscripts of Tannaitic literature.
+At PSL, in the framework of the Scripta-PSL project, we are currently constructing the eScriptorium, 
+an open source infrastructure that will permit the automatic transcription and deep annotation of handwritten material.
  </p>
 
 <div class="tabContentTitle mt-5">
