@@ -6,7 +6,7 @@
 
 <body onload="onloadResize();" class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
-	<%@include file="../common/footer2.jspf"%>
+	
 	<div class="transcribe-page scrollable mt-2 p-2 row">
 		
 
@@ -154,11 +154,11 @@
 
 								<div id="activity-buttons"
 									class="mt-2 d-flex justify-content-between">
-									<button type="submit" class="btn btn-warning" name="status" id="Skip"
+									<button type="submit" class="btn btn-warning" name="status"
 										value="Skip">
 										<fmt:message key="main.work_area.finish_button_2" />
 									</button>
-									<button type="submit" class="btn btn-success" name="status" id="Done"	
+									<button type="submit" class="btn btn-success" name="status"
 										value="Done">
 										<fmt:message key="main.work_area.finish_button_1" />
 									</button>
@@ -249,7 +249,7 @@
 																fillColor : '#f03',
 																fillOpacity : 0.2
 															}).addTo(map);
-										}, 3000);
+										}, 1500);
 							</script>
 						</div>
 					</div>
@@ -281,6 +281,6 @@
 			</div>
 		</div>
 	</div>
-
+<%@include file="../common/footer2.jspf"%>
 
 	
