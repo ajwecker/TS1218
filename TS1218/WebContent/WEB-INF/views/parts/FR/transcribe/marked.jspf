@@ -16,9 +16,9 @@ Le scribe du manuscrit de Genève indique les suppressions de plusieurs façons 
 </p>
 
 				<ul>
-					<li><img src="/TS1218/images/ex_deletion_small.jpg"> La ligne horizontale indique la suppression des mots ×××ª ×× ×× (écrits deux fois, par erreur).</li>
+					<li><img src="/TS1218/images/ex_deletion_small.jpg"> La ligne horizontale indique la suppression des mots ואת בניו (écrits deux fois, par erreur).</li>
 					<li><img src="/TS1218/images/ex_struck_through_small.jpg">
-						le mot ××ª××¨× a été barré.</li>
+						le mot תורה a été barré.</li>
 					<li><img
 						src="/TS1218/images/ex_combination_stuck_deletion_small.jpg">
 						Une combinaison des deux méthodes ci-dessus.</li>
@@ -27,7 +27,7 @@ Le scribe du manuscrit de Genève indique les suppressions de plusieurs façons 
 					Pour indiquer la suppression d’une lettre ou d’un mot dans le manuscrit, sélectionnez le texte supprimé avec la souris, puis cliquez sur le bouton « supprimé »
 					âdeletedâ  (<img
 						src="/TS1218/images/ex_deleted_btn_small.jpg">) en-dessous de la boîte de texte. Vous pouvez également cliquer sur le bouton « supprimé » puis taper le texte supprimé entre les parenthèses. Par exemple : <img
-						src="/TS1218/images/ex_marked_as_deleted_small.jpg"> (×××ª× )
+						src="/TS1218/images/ex_marked_as_deleted_small.jpg"> (אותי)
 					est supprimé.
 				</p>
 			</div>
@@ -46,17 +46,15 @@ Ajouts par d’autres : un mot accidentellement omis par le scribe, ou correctio
 Le scribe du manuscrit de Genève insère le plus souvent les ajouts les plus courts au-dessus de la ligne, tandis que les passages plus longs sont ajoutés dans les marges.
 </p>
 				<p>
-					Ici, le scribe a inséré le mot ×× : <img
-						src="/TS1218/images/ex_addition_small.jpg"> Afin de signaler un ajout, utilisez le bouton [Ajouté] en-dessous de la ligne de texte, et écrivez le mot inséré entre les crochets. Si vous devez signaler qu’une lettre ou un mot transcrits doivent être considérés comme un ajout, sélectionnez-les avec la souris, puis cliquez sur le bouton [Ajouté]. Par exemple, l’insertion de la lettre × dans le mot ×©×§××× doit être signalée dans la transcription de la façon suivante : ×¢× ×©[×]×§×××
-					×©××:
+					Ici, le scribe a inséré le mot בן : <img
+						src="/TS1218/images/ex_addition_small.jpg"> Afin de signaler un ajout, utilisez le bouton [Ajouté] en-dessous de la ligne de texte, et écrivez le mot inséré entre les crochets. Si vous devez signaler qu’une lettre ou un mot transcrits doivent être considérés comme un ajout, sélectionnez-les avec la souris, puis cliquez sur le bouton [Ajouté]. Par exemple, l’insertion de la lettre × dans le mot ×©×§××× doit être signalée dans la transcription de la façon suivante : על ש[ה]קדים שמו 
 				</p>
 			</div>
 		</div>
 		<div class="combination">
 			<div class="title">Combinaison d’une suppression et d’un ajout</div>
 			<div class="content">Si un mot est inséré entre deux lignes afin de corriger un mot de la ligne, le mot ajouté et le mot corrigé doivent être marqués tous les deux. Dans l’exemple suivant, le scribe a écrit ××ª××××× puis il a barré ce mot et inséré
- ×××ª××©××× au-dessus. Cela doit être transcrit
-				as:××ª×××× (××ª×××××) [××ª××©×××] ×</div>
+ ×××ª××©××× au-dessus. Cela doit être transcrit ainsi :××ª×××× (××ª×××××) [××ª××©×××] ×</div>
 		</div>
 		<div class="diagonal_words_at_the_end_of_lines">
 			<div class="title">Mots en diagonale à la fin des lignes</div>
