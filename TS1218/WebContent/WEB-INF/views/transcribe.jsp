@@ -48,34 +48,16 @@
 							method="post">
 							<div class="mt-2">
 								<input id="trw" type="text" name="transcribed"
-									value="${transcribedline}" style="font-family: Corsiva"
-									class="w-100 p-2 rtl"> <input type="hidden"
-									id="trwOrig" value="${transcribedline}" />
+									autocomplete="off" value="${transcribedline}"
+									style="font-family: Corsiva" class="w-100 p-2 rtl"> <input
+									type="hidden" id="trwOrig" value="${transcribedline}" />
 							</div>
 							<!-- Transcribe toolbar -->
 							<div
 								class="btn-toolbar justify-content-between d-flex mt-3 p-10 ltr"
 								role="toolbar">
-								<!-- 								<div class="mr-2" role="group"> -->
-								<!-- 									<select id="filler" class="custom-select" -->
-								<!-- 										title="End of line marks" onchange="myFill()"> -->
-								<!-- 										<option value="">&nbsp;</option> -->
-								<!-- 										<option value="/">/</option> -->
-								<!-- 										<option value="//">//</option> -->
-								<!-- 										<option value="|">|</option> -->
-								<!-- 										<option value="V">V</option> -->
-								<!-- 										<option value="'">'</option> -->
-								<!-- 									</select> -->
-								<!-- 								</div> -->
 								<div class="btn-group mr-2 rtl" role="group"
 									aria-label="First group">
-
-
-
-
-
-
-
 									<button class="btn btn-secondary" type="button"
 										onclick="myMark(']','[')"
 										title='<fmt:message key="main.work_area.hovers.over_additions"/>'>
@@ -177,9 +159,8 @@
 			</div>
 
 		</div>
-		<div id="info-page" class="container col-4 flex-column d-flex">
+		<div id="info-page" class="col-4 flex-column d-flex">
 			<div>
-
 				<ul class="nav nav-tabs flex-nowrap" role="tablist">
 					<li class="nav-item"><a class="nav-link active sfont"
 						id="page-tab" data-toggle="tab" role="tab" href="#page"
@@ -204,9 +185,10 @@
 					</li>
 				</ul>
 			</div>
-			<div class="tab-content w-100 h-100">
+			<div
+				class="tab-content flex-fill d-flex justify-content-between flex-column">
 				<div
-					class="tab-pane fade flex-fill h-100 w-100 show active d-flex justify-content-between flex-column "
+					class="tab-pane fadeshow active flex-fill d-flex justify-content-between flex-column"
 					id="page" role="tabpanel" aria-labelledby="page-tab">
 					<div id="imgPage">
 						<a href="${manuscriptDescLink}" target="_blank"> <label
@@ -252,12 +234,13 @@
 			crs : L.CRS.Simple,
 			zoom : 0
 		});
-		
-		map.on('zoomend',function(){map.invalidateSize()})
+
+		map.on('zoomend', function() {
+			map.invalidateSize()
+		})
 
 		var imageLayer = L.tileLayer.iiif('${pageimgsrc}').addTo(map);
 
-		
 		var linePolygonLayer = L.polygon(
 				[ [ "${ytop}", "${xleft}" ], [ "${ytop}", "${xright}" ],
 						[ "${ybottom}", "${xright}" ],
@@ -276,7 +259,9 @@
 		map.attributionControl.addAttribution("${manuscriptAttribution}");
 
 		L.control.layers(iiifLayers).addTo(map);
-		
-		setTimeout(function(){map.invalidateSize()},2500);
+
+		setTimeout(function() {
+			map.invalidateSize()
+		}, 2500);
 	</script>
 	<%@include file="../common/footer2.jspf"%>
