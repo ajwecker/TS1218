@@ -345,8 +345,7 @@ public class UserDBaseJDBC implements UserDBase {
 	                 .executeQuery("select count(*) from tikkoun.transcriptions where manuscript = '"+ place.manuscriptId.getName() +
 	                		 "' and page = "+place.page+ 
 	                		 " and line = "+place.line+ 
-	                		 "");
-//	                		 "'and status <> '0'");
+	                		 "'and status <> '0'");
 			if (resultSet.last()) {
 				int rowcount = resultSet.getInt(1);
 					return rowcount;
@@ -365,8 +364,24 @@ public class UserDBaseJDBC implements UserDBase {
 	}
 
 	@Override
-	public boolean userDidLine(ManuscriptPlace seed, String user) {
-		// TODO Auto-generated method stub
+	public boolean userDidLine(ManuscriptPlace place, String user) {
+		try {
+			connect();
+			statement = connect.createStatement();
+			resultSet = statement
+	                 .executeQuery("select * from tikkoun.transcriptions where manuscript = '"+ place.manuscriptId.getName() +
+	                		 "' and page = " + place.page + 
+	                		 " and line = " + place.line + 
+	                		 " and userid = '" + user + '\'');
+			return resultSet.next();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return false;
 	}
 }
