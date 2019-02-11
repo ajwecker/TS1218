@@ -181,7 +181,8 @@
 								key="main.data_area.editing" /></a></li>
 
 					<li class="nav-item"><a class="nav-link sfont" id="help-tab"
-						data-toggle="tab" role="tab" href="#help" aria-controls="help"><strong>Help</strong></a>
+						data-toggle="tab" role="tab" href="#help" aria-controls="help"><strong><fmt:message
+								key="main.data_area.help" /></strong></a>
 					</li>
 				</ul>
 			</div>
