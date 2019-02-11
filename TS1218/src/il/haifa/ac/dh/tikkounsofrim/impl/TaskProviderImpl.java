@@ -5,7 +5,7 @@ import il.haifa.ac.dh.tikkounsofrim.model.*;
 
 public class TaskProviderImpl implements TaskProvider {
 	private static final int SEEN_LIMIT = 10;
-	private static final int CORRECT_LIMIT = 3;
+	private static final int CORRECT_LIMIT = 5;
 	ManuscriptProvider mprov = null;
 	UserDBase userDB = null;
 	ChapterAssignmentData chapterAssignmentData = null;
