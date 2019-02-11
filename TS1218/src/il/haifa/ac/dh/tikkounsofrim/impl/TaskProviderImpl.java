@@ -37,10 +37,11 @@ public class TaskProviderImpl implements TaskProvider {
 	}
 
 	private boolean checkIfFree(ManuscriptPlace seed, TikunUser user) {
-		// TODO Auto-generated method stub
+		// check whether the line hase been seen opr corrected more that the threshold.
+		// Also, skip the line if user already saw it, unless it the guest account
 		if (userDB.getTotalTimesLineSeen(seed) <= SEEN_LIMIT
 				&& userDB.getTotalTimesLineCorrected(seed) <= CORRECT_LIMIT
-				&& !userDB.userDidLine(seed,user.getId())) {
+				&& ("guest".equals(user.getId()) || !userDB.userDidLine(seed,user.getId()))) {
 			return true;
 		}
 		return false;
