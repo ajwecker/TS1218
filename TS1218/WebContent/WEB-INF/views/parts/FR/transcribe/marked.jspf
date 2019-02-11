@@ -24,8 +24,7 @@ Le scribe du manuscrit de Genève indique les suppressions de plusieurs façons 
 						Une combinaison des deux méthodes ci-dessus.</li>
 				</ul>
 				<p>
-					Pour indiquer la suppression d’une lettre ou d’un mot dans le manuscrit, sélectionnez le texte supprimé avec la souris, puis cliquez sur le bouton « supprimé »
-					âdeletedâ  (<img
+					Pour indiquer la suppression d’une lettre ou d’un mot dans le manuscrit, sélectionnez le texte supprimé avec la souris, puis cliquez sur le bouton « supprimé » (<img
 						src="/TS1218/images/ex_deleted_btn_small.jpg">) en-dessous de la boîte de texte. Vous pouvez également cliquer sur le bouton « supprimé » puis taper le texte supprimé entre les parenthèses. Par exemple : <img
 						src="/TS1218/images/ex_marked_as_deleted_small.jpg"> (אותי)
 					est supprimé.
@@ -47,14 +46,14 @@ Le scribe du manuscrit de Genève insère le plus souvent les ajouts les plus co
 </p>
 				<p>
 					Ici, le scribe a inséré le mot בן : <img
-						src="/TS1218/images/ex_addition_small.jpg"> Afin de signaler un ajout, utilisez le bouton [Ajouté] en-dessous de la ligne de texte, et écrivez le mot inséré entre les crochets. Si vous devez signaler qu’une lettre ou un mot transcrits doivent être considérés comme un ajout, sélectionnez-les avec la souris, puis cliquez sur le bouton [Ajouté]. Par exemple, l’insertion de la lettre × dans le mot ×©×§××× doit être signalée dans la transcription de la façon suivante : על ש[ה]קדים שמו 
+						src="/TS1218/images/ex_addition_small.jpg"> Afin de signaler un ajout, utilisez le bouton [Ajouté] en-dessous de la ligne de texte, et écrivez le mot inséré entre les crochets. Si vous devez signaler qu’une lettre ou un mot transcrits doivent être considérés comme un ajout, sélectionnez-les avec la souris, puis cliquez sur le bouton [Ajouté]. Par exemple, l’insertion de la lettre ה dans le mot שקדים doit être signalée dans la transcription de la façon suivante : על ש[ה]קדים שמו 
 				</p>
 			</div>
 		</div>
 		<div class="combination">
 			<div class="title">Combinaison d’une suppression et d’un ajout</div>
-			<div class="content">Si un mot est inséré entre deux lignes afin de corriger un mot de la ligne, le mot ajouté et le mot corrigé doivent être marqués tous les deux. Dans l’exemple suivant, le scribe a écrit ××ª××××× puis il a barré ce mot et inséré
- ×××ª××©××× au-dessus. Cela doit être transcrit ainsi :××ª×××× (××ª×××××) [××ª××©×××] ×</div>
+			<div class="content">Si un mot est inséré entre deux lignes afin de corriger un mot de la ligne, le mot ajouté et le mot corrigé doivent être marqués tous les deux. Dans l’exemple suivant, le scribe a écrit מתחילין puis il a barré ce mot et inséré
+ מתישבים au-dessus. Cela doit être transcrit ainsi : [התחילו (מתחילין) [מתישבים</div>
 		</div>
 		<div class="diagonal_words_at_the_end_of_lines">
 			<div class="title">Mots en diagonale à la fin des lignes</div>
@@ -69,23 +68,22 @@ Ces mots doivent être écrits normalement, sans aucune indication spéciale. Vo
 				<p>
 					<strong> Pour marquer des lettres non-identifiables (déchirées ou estompées), cliquez sur le bouton âdamagedâ et insérez des espaces entre les chevrons, selon votre estimation de la longueur du texte illisible.</strong>
 				</p>
-				<p>doit être noté ainsi : ×§×× ×©××× ××¦× &lt; &gt;</p>
+				<p>doit être noté ainsi :  קול שילך אצל <  > &lt; &gt;</p>
 			</div>
 		</div>
 		<div class="uncertainty_in_transcription">
 			<div class="title">Un doute concernant la transcription</div>
 			<div class="content">
 				<p>
-					<strong>âdouteuxâ</strong>
+					<strong>‘douteux’</strong>
 				</p>
 				<p>Le bouton du doute est destiné aux cas où vous n’êtes pas certain si la transcription automatique a bien identifié une lettre dans le manuscrit. Essayez d’utiliser ce bouton le plus rarement possible, et seulement dans des cas particulièrement difficiles.</p>
-				<p>Par exemple, la dernière lettre du dernier mot n’est pas assez claire et vous n’êtes pas certain si la transcription est correcte : ××× ××¤×
-					×××</p>
+				<p>Par exemple, la dernière lettre du dernier mot n’est pas assez claire et vous n’êtes pas certain si la transcription est correcte : אלא לפי כחן</p>
 				<p>
-					<strong>Pour indiquer le doute, utilisez la souris et marquez la lettre puis cliquez sur âdoubtfulâ.
+					<strong>Pour indiquer le doute, utilisez la souris et marquez la lettre puis cliquez sur ‘douteux’.
 						Vous pouvez également cliquer sur le bouton et taper la lettre la plus probable entre les accolades.</strong>
 				</p>
-				<p>Dans cet exemple il faut marquer comme douteuse la lettre ainsi : {××× ××¤× ××{×</p>
+				<p>Dans cet exemple il faut marquer comme douteuse la lettre ainsi : {אלא לפי כח{ו</p>
 			</div>
 		</div>
 	</div>
