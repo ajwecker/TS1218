@@ -3,26 +3,35 @@
 	<div class="header">
 		<strong>Partners - Institutions</strong>
 	</div>
-	<p>	<strong>EPHE</strong>
-	<p>
-The École Pratique des Hautes Études (EPHE), established in the Sorbonne in 1868 and acknowledged as one of France’s ‘grands établissements’, has three faculties (Life and Earth sciences, History and Philology, Religious Studies) with ca. 260 faculty members. Already in 1955, it founded a chair in computational humanities, one of the first worldwide. 
+	<div>
+	<p>	<strong>EPHE</strong> </p>
+	<p> The <a href="https://www.ephe.fr/en" target="_blank"> École Pratique des Hautes Études (EPHE)</a>, established in the Sorbonne in 1868 and acknowledged as one of France’s ‘grands établissements’, has three faculties (Life and Earth sciences, History and Philology, Religious Studies) with ca. 260 faculty members. Already in 1955, it founded a chair in computational humanities, one of the first worldwide. 
 Today, the EPHE is part of PSL (Paris Sciences et Lettres) University where it works hand-in-hand with other prestigious establishments. Many world-renowned scientists and scholars have taught at the EPHE or have worked in its laboratories, i.e. Émile Benveniste, Israël Lévi (who was also Chief Rabbi of France and participated in the inauguration of the Hebrew University of Jerusalem),  Claude Lévi-Strauss, Sylvain Lévi, Marcel Mauss, Ferdinand de Saussure. 
 	</p>
-<p><strong>PSL-Université</strong>
-The French government has asked institutions of higher education in France to regroup in COMUes (university clusters). Created in 2011, PSL encompasses a rich array of prestigious schools and institutions covering the arts, sciences, engineering, the humanities and social science. Among these institutions are the EPHE, the ENS,  Mines ParisTech and Paris-Dauphine. The Collège de France and the EHESS are associated members. With 4,500 researchers and 17,000 students, ranked 41st on the TLS ranking in 2018, PSL’s strengths are comparable to those of the world’s top universities with innovative curricula (among which is the master in digital and computational humanities), creating startups (40 on average per year). As part of its federative initiatives, PSL has launched the Scripta-PSL project.
-</p>
-<p><strong>Scripta-PSL</strong>
-<p>
-Scripta-PSL is a project federating around 100 researchers at PSL University that work on inscribed objects from all cultures, periods and types, i.e from cuneiform tablets and hieroglyphic Temple inscriptions, to Medieval manuscripts. It is directed by Andreas Stauder. In its digital component, we are constructing eScriptorium, an open source infrastructure combining digital tools for deep visual and textual annotation with computational means for automatic transcription (HTR) and computer palaeography as well as natural language processing (NLP).
-</p>
-<p><strong>CHArt</strong>
-The laboratory for Human and Artificial Cognition (EA 4004), founded in 2007, groups around 100 researchers from from the EPHE and the Universities of Paris 8, 10 and 12 working with experimental and informatic means on natural and artificial cognition. Daniel Stökl Ben Ezra is an associated member of CHArt.
-</p>
-<p><strong>eLijah-Lab</strong>
+	</div>
+	<div>
+	<p><strong>eLijah-Lab</strong> </p>
 <p>
 The <a href="http://elijahlab.haifa.ac.il/index.php/en/" target="_blank"> eLijah-Lab at the University of Haifa</a>
  is a crowdsourcing lab for engaging the public with the research conducted by the department of Jewish History at the 
  University of Haifa. The Lab is actively developing a variety of tools that engage 
  the general public to participate in the study and research efforts, conducted by the department, in the fields of
- Judaism and Israeli culture and history </div>
+ Judaism and Israeli culture and history</p>
+ </div>
+ <div>
+<p><strong>PSL-Université</strong> </p>
+<p> The French government has asked institutions of higher education in France to regroup in COMUes (university clusters). Created in 2011, <a href="https://www.psl.eu/en" target="_blank"> PSL</a> encompasses a rich array of prestigious schools and institutions covering the arts, sciences, engineering, the humanities and social science. Among these institutions are the EPHE, the ENS,  Mines ParisTech and Paris-Dauphine. The Collège de France and the EHESS are associated members. With 4,500 researchers and 17,000 students, ranked 41st on the TLS ranking in 2018, PSL’s strengths are comparable to those of the world’s top universities with innovative curricula (among which is the master in digital and computational humanities), creating startups (40 on average per year). As part of its federative initiatives, PSL has launched the Scripta-PSL project.
+</p>
+</div>
+<div>
+<p><strong>Scripta-PSL</strong> </p>
+<p>
+<a href="https://www.psl.eu/en/scripta" target="_blank"> Scripta-PSL</a> is a project federating around 100 researchers at PSL University that work on inscribed objects from all cultures, periods and types, i.e from cuneiform tablets and hieroglyphic Temple inscriptions, to Medieval manuscripts. It is directed by Andreas Stauder. In its digital component, we are constructing eScriptorium, an open source infrastructure combining digital tools for deep visual and textual annotation with computational means for automatic transcription (HTR) and computer palaeography as well as natural language processing (NLP).
+</p>
+</div>
+<div>
+<p><strong>CHArt</strong> </p>
+The laboratory for Human and Artificial Cognition (EA 4004), founded in 2007, groups around 100 researchers from from the EPHE and the Universities of Paris 8, 10 and 12 working with experimental and informatic means on natural and artificial cognition. Daniel Stökl Ben Ezra is an associated member of <a href="http://www.cognition-usages.org/chart2/" target="_blank"> CHArt</a>.
+</p>
+
 
