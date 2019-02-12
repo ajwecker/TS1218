@@ -1,10 +1,10 @@
 <div class="abc-page info_content">
 	<div class="header">
-		<div class="title">Geneva letters</div>
+		<div class="title">Lettres du manuscrit de Genève</div>
 	</div>
 	<div class="content">
-	<div>לפניכם אותיות כתב היד, מתחת לטבלה תוכלו
-		למצוא הדרכה על הבחנה בין אותיות דומות במיוחד: ב-כ, ד-ר, ס-ם.</div>
+	<div>Voici les lettres du manucrit. En bas vous trouvez des comparaisons entre des lettres qui sont souvent confondues (bet-kaf, dalet-resh, tet-mem).
+	</div>
 	<div class="letters">
 		<div class="content">
 			<table class="letters-table">
