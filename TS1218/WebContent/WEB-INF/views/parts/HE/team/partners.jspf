@@ -1,3 +1,4 @@
+<jsp:directive.page contentType="text/html;charset=UTF-8" />
 <div class="partners">
 	<div class="tabContentTitle">
 		שותפים - מוסדות
@@ -44,4 +45,4 @@
 	<div>
 	
 </div>
-
+</div>
