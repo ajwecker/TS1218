@@ -5,27 +5,44 @@
 	</div>
 	<div>
 <strong>	L’EPHE</strong>
-L’École pratique des hautes études (EPHE), établie en Sorbonne en 1868, et connu comme un des grands établissements de France, a trois sections (sciences de la vie et de la terre, sciences historiques et philologiques, sciences religieuses) et compte près de 260 chaires. Déjà en 1955, l’EPHE était une des premières institutions au monde à créer une chaire en humanités computationnelles.
-Aujourd’hui, l’EPHE est membre de l’Université-PSL où elle collabore avec d’autres établissements prestigieux. Beaucoup de chercheurs de renommée mondiale ont enseigné à l’EPHE ou travaillé dans ses laboratoires, par ex. 
- Émile Benveniste, Israël Lévi (qui était aussi grand-rabbin de France et qui à participé à l’inauguration de l’Université hébraïque de Jérusalem),  Claude Lévi-Strauss, Sylvain Lévi, Marcel Mauss, Ferdinand de Saussure. 
+L’École pratique des hautes études (<a href="https://www.ephe.fr"> EPHE</a>), établie en Sorbonne en 1868, 
+et connu comme un des grands établissements de France, a trois sections (sciences de la vie et de la terre, 
+sciences historiques et philologiques, sciences religieuses) et compte près de 260 chaires. Déjà en 1955, 
+l’EPHE était une des premières institutions au monde à créer une chaire en humanités computationnelles.
+Aujourd’hui, l’EPHE est membre de <a href="https://www.psl.eu">l'Université-PSL</a> où elle collabore avec 
+d’autres établissements prestigieux. Beaucoup de chercheurs de renommée mondiale ont enseigné à l’EPHE ou 
+travaillé dans ses laboratoires, par ex. 
+ Émile Benveniste, Israël Lévi (qui était aussi grand-rabbin de France et qui à participé à l’inauguration 
+ de l’Université hébraïque de Jérusalem),  Claude Lévi-Strauss, Sylvain Lévi, Marcel Mauss, Ferdinand de Saussure. 
 	</div>
 	<div>
 	<strong>Elijah Lab</strong>
-	Elijah Lab est un laboratoire de crowdsourcing qui engage le public dans la recherche au département d’histoire juive de l’université de Haïfa. Le laboratoire développe divers outils qui permettent au grand public de participer au travail de recherche et d’étude du judaïsme et de l’histoire et de la culture israéliennes.
+	<a
+		href="http://elijahlab.haifa.ac.il/index.php/en/" target="_blank">eLijah-
+Lab</a> est un laboratoire de crowdsourcing qui engage le public dans la recherche au département d’histoire 
+juive de l’université de Haïfa. Le laboratoire développe divers outils qui permettent au grand public de 
+participer au travail de recherche et d’étude du judaïsme et de l’histoire et de la culture israéliennes.
 	</div>
 	<div>
 	<strong>La bibliothèque nationale d'Israël</strong>
 	</div>
 	<div>
 	<strong>L’Université PSL</strong>
-Le gouvernement français a demandé aux institutions d’enseignement supérieur et de recherche de se regrouper en COMUes (communautés d’universités). Créée en 2011, PSL comprend un grand nombre de grandes écoles et institutions prestigieuses qui couvrent les arts, les sciences, l’ingénierie, les sciences humaines et sociales. Parmi ces institutions il y a l’EPHE, l’ENS, Mines ParisTech et Paris Dauphine. Le Collège de France et l’EHESS appartiennent aux membres associés. Comptant 17000 étudiants et 4500 chercheurs et classée au 41e rang mondial du classement du Times Literary Supplement de 2018, PSL appartient aux meilleures universités du monde avec des curricula innovateurs (par ex. le master en humanités numériques et computationnelles), un nombre important de startups (env. 40 par ans). En tant qu’une de ses actions fédératrices, PSL a monté le projet Scripta-PSL.
+Le gouvernement français a demandé aux institutions d’enseignement supérieur et de recherche de se regrouper en 
+COMUes (communautés d’universités). Créée en 2011, <a href="https://www.psl.eu">PSL</a> comprend un grand nombre 
+de grandes écoles et institutions prestigieuses qui couvrent les arts, les sciences, l’ingénierie, les sciences 
+humaines et sociales. Parmi ces institutions il y a l’EPHE, l’ENS, Mines ParisTech et Paris Dauphine. Le 
+Collège de France et l’EHESS appartiennent aux membres associés. Comptant 17000 étudiants et 4500 chercheurs 
+et classée au 41e rang mondial du classement du <a href="https://www.timeshighereducation.com/world-university-rankings/paris-sciences-et-lettres-psl-research-university-paris">Times Literary Supplement</a> de 2018, PSL appartient aux meilleures 
+universités du monde avec des curricula innovateurs (par ex. le master en humanités numériques et computationnelles), 
+un nombre important de startups (env. 40 par ans). En tant qu’une de ses actions fédératrices, PSL a monté le projet Scripta-PSL.
 </div>
 <div>
 <strong>Scripta-PSL</strong>
-Scripta-PSL est un projet auquel participent une centaine de chercheurs de l’Université PSL, qui s’intéressent à toute forme d’écrit, quelque soit son type et culture et son époque d’origine, des tablettes cunéiformes et inscriptions hiéroglyphique aux médiévaux manuscrits. Scripta-PSL est dirigé par Andreas Stauder. Dans le cadre de son volet numérique, nous sommes en train de construire e-Scriptorium, une infrastructure en open source qui allie des outils numériques pour l’annotation profonde d’images et de texte avec des instruments informatiques pour la reconnaissance automatique de textes (HTR) et pour la paléographie computationnelle, ainsi que pour le traitement automatique de langage (TAL). 
+<a href="https://www.psl.eu/scripta" Scripta-PSL</a> est un projet auquel participent une centaine de chercheurs de l’Université PSL, qui s’intéressent à toute forme d’écrit, quelque soit son type et culture et son époque d’origine, des tablettes cunéiformes et inscriptions hiéroglyphique aux médiévaux manuscrits. Scripta-PSL est dirigé par Andreas Stauder. Dans le cadre de son volet numérique, nous sommes en train de construire e-Scriptorium, une infrastructure en open source qui allie des outils numériques pour l’annotation profonde d’images et de texte avec des instruments informatiques pour la reconnaissance automatique de textes (HTR) et pour la paléographie computationnelle, ainsi que pour le traitement automatique de langage (TAL). 
 </div>
 <div>
 <strong>CHArt</strong>
-L’équipe d’accueil Cognition humaine et artificielle (EA 4004), fondée en 2007, regroupe environ 100 chercheurs de l’EPHE et des universités Paris 8, 10 et 12 qui travaillent sur la complexité de la cognition naturelle et artificielle utilisant des méthodes expérimentales et informatiques. Daniel Stökl Ben Ezra est membre associé du CHArt.
+L’équipe d’accueil <a href="http://www.cognition-usages.org">Cognition humaine et artificielle</a> (EA 4004), fondée en 2007, regroupe environ 100 chercheurs de l’EPHE et des universités Paris 8, 10 et 12 qui travaillent sur la complexité de la cognition naturelle et artificielle utilisant des méthodes expérimentales et informatiques. Daniel Stökl Ben Ezra est membre associé du CHArt.
 </div>
 </div>
