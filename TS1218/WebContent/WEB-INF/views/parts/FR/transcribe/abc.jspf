@@ -1,3 +1,4 @@
+<jsp:directive.page contentType="text/html;charset=UTF-8" />
 <div class="abc-page info_content">
 	<div class="header">
 		<div class="title">Lettres du manuscrit de Genève</div>
@@ -5,7 +6,9 @@
 	<div class="content">
 	<div>Voici les lettres du manucrit. En bas vous trouvez des comparaisons entre des lettres qui sont souvent confondues (bet-kaf, dalet-resh, tet-mem).
 	</div>
-	<div class="letters">
+
+<%-- 	<jsp:include page="/WEB-INF/views/parts/alephbet.jspf" /> --%>
+<div class="letters">
 		<div class="content">
 			<table class="letters-table">
 				<tr>
