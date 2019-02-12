@@ -2,7 +2,8 @@
 	<div class="header">
 		<div class="title">Geneva letters</div>
 	</div>
-	<div class="content">div>לפניכם אותיות כתב היד, מתחת לטבלה תוכלו
+	<div class="content">
+	<div>לפניכם אותיות כתב היד, מתחת לטבלה תוכלו
 		למצוא הדרכה על הבחנה בין אותיות דומות במיוחד: ב-כ, ד-ר, ס-ם.</div>
 	<div class="letters">
 		<div class="content">
@@ -89,7 +90,7 @@
 	</div>
 </div>
 
-<div class="content mt-5">
+<div class="content mt-3">
 	<div class="header">
 		<div class="title">Distinguer des lettres similaires</div>
 	</div>
@@ -163,5 +164,6 @@
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 
