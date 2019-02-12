@@ -7,11 +7,10 @@
 <body onload="onloadResize();" class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
 
-	<div class="transcribe-page scrollable mt-2 p-2 row">
-
-
+	<div
+		class="transcribe-page scrollable mt-2 p-2 d-flex justify-content-between">
 		<!-- Column Two work area -->
-		<div id="transcribe" class="container col-8">
+		<div id="transcribe" style="flex:1;">
 			<div class="flex-fill d-flex flex-column justify-content-around">
 				<div class="w-100 p-3">
 					<div id="work-page"
@@ -27,8 +26,6 @@
 								<fmt:message key="main.work_area.intro_line_2" />
 							</div>
 						</div>
-						<!--             <div id="img-line" style="background-image:url('http://tikkoun-sofrim.haifa.ac.il/cantaloupe/iiif/2/bge-cl0146_007.jpg/511,4684,4155,449/full/0/default.jpg');"> -->
-
 					</div>
 					<div>
 						<img id="imgline"
@@ -58,36 +55,36 @@
 								role="toolbar">
 								<div class="btn-group mr-2 rtl" role="group"
 									aria-label="First group">
-									<button class="btn btn-secondary" type="button"
+									<button class="rounded-0 btn btn-secondary" type="button"
 										onclick="myMark(']','[')"
 										title='<fmt:message key="main.work_area.hovers.over_additions"/>'>
 										<span style="font-size: smaller;"><fmt:message
 												key="main.work_area.button_2" /></span>
 									</button>
-									<button class="btn btn-secondary" type="button"
+									<button class="rounded-0 btn btn-secondary" type="button"
 										onclick="myMark(')','(')"
 										title='<fmt:message key="main.work_area.hovers.over_deletions"/>'>
 										<span style="font-size: smaller;"><fmt:message
 												key="main.work_area.button_1" /></span>
 									</button>
-									<button class="btn btn-secondary" type="button"
+									<button class="rounded-0 btn btn-secondary" type="button"
 										onclick="myMark('>','<')"
 										title='<fmt:message key="main.work_area.hovers.over_damaged"/>'>
 										<span style="font-size: smaller;"><fmt:message
 												key="main.work_area.button_3" /></span>
 									</button>
-									<button class="btn btn-secondary" type="button"
+									<button class="rounded-0 btn btn-secondary" type="button"
 										onclick="myMark('}','{')"
 										title='<fmt:message key="main.work_area.hovers.over_uncertain"/>'>
 										<span style="font-size: smaller;"><fmt:message
 												key="main.work_area.button_4" /></span>
 									</button>
-									<button class="btn btn-secondary" type="button"
+									<button class="rounded-0 btn btn-secondary" type="button"
 										onclick="myInsert('˙')"
 										title='<fmt:message key="main.work_area.hovers.over_upper"/>'>
 										<b>˙</b>
 									</button>
-									<button class="btn btn-secondary" type="button"
+									<button class="rounded-0 btn btn-secondary" type="button"
 										onclick="myInsert('ﭏ')"
 										title='<fmt:message key="main.work_area.hovers.over_ligature"/>'>
 										<b>ﭏ</b>
@@ -107,25 +104,22 @@
 								<!-- right part -->
 								<div class="btn-group mr-2 rtl" role="group"
 									aria-label="Second group">
-									<button class="btn btn-secondary" type="button"
+									<button class="rounded-0 btn btn-secondary" type="button"
 										onclick="myReset()"
 										title='<fmt:message key="main.work_area.hovers.over_reset"/>'>
 										<span style="font-size: smaller;"><fmt:message
 												key="main.work_area.button_5" /></span>
 									</button>
-									<button class="btn btn-secondary" type="button"
+									<button class="rounded-0 btn btn-secondary" type="button"
 										onclick="myResize(1)"
 										title='<fmt:message key="main.work_area.hovers.over_alef_plus"/>'>
 										<span style="font-size: larger;"><b>א+</b></span>
 									</button>
-									<button class="btn btn-secondary" type="button"
+									<button class="rounded-0 btn btn-secondary" type="button"
 										onclick="myResize(-1)"
 										title='<fmt:message key="main.work_area.hovers.over_alef_minus"/>'>
 										<span style="font-size: smaller;"><b>א-</b></span>
 									</button>
-									<!-- In comment since will return for future release									<button class="btn btn-secondary" type="button" -->
-									<!-- 										title="Font size" id="test" disabled="disabled"></button> -->
-									<!-- 																		<label id="test">Font size</label> -->
 								</div>
 							</div>
 
@@ -159,7 +153,8 @@
 			</div>
 
 		</div>
-		<div id="info-page" class="col-4 flex-column d-flex">
+		<div id="info-page" class="container flex-column d-flex"
+			style="width: 520px;">
 			<div>
 				<ul class="nav nav-tabs flex-nowrap" role="tablist">
 					<li class="nav-item"><a class="nav-link active sfont"
@@ -182,8 +177,7 @@
 
 					<li class="nav-item"><a class="nav-link sfont" id="help-tab"
 						data-toggle="tab" role="tab" href="#help" aria-controls="help"><strong><fmt:message
-								key="main.data_area.help" /></strong></a>
-					</li>
+									key="main.data_area.help" /></strong></a></li>
 				</ul>
 			</div>
 			<div
@@ -199,7 +193,7 @@
 							${manuscriptTotalLines} </label>
 					</div>
 
-					<div id="map" class="flex-fill"></div>
+					<div id="map" class="flex-fill w-100"></div>
 
 				</div>
 				<div class="tab-pane fade" id="special" role="tabpanel"
@@ -230,41 +224,28 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-	setTimeout(function(){
 		var map = L.map('map', {
 			center : [ 0, 0 ],
-			crs : L.CRS.Simple,
-			zoom : 0
+			minZoom : 0,
+			zoom : 0,
+			crs : L.CRS.Simple
 		});
 
-		map.on('zoomend', function() {
-			map.invalidateSize()
-		})
+		var pageTileLayer = L.tileLayer.iiif('${pageimgsrc}');
+		var imageLayer = pageTileLayer.addTo(map);
 
-		var imageLayer = L.tileLayer.iiif('${pageimgsrc}').addTo(map);
+		var linePolygonLayer = L.polygon([ [ "${ytop}", "${xleft}" ],
+				[ "${ytop}", "${xright}" ], [ "${ybottom}", "${xright}" ],
+				[ "${ybottom}", "${xleft}" ] ], {
+			color : 'blue',
+			fillColor : '#f03',
+			fillOpacity : 0.2
+		});
 
-		var linePolygonLayer = L.polygon(
-				[ [ "${ytop}", "${xleft}" ], [ "${ytop}", "${xright}" ],
-						[ "${ybottom}", "${xright}" ],
-						[ "${ybottom}", "${xleft}" ] ], {
-					color : 'blue',
-					fillColor : '#f03',
-					fillOpacity : 0.2
-				}).addTo(map);
-
-		var iiifLayers = {
-			'imageLayer' : imageLayer,
-			'linePolygon' : linePolygonLayer
-		};
+		linePolygonLayer.addTo(map);
 
 		map.attributionControl.setPrefix("");
 		map.attributionControl.addAttribution("${manuscriptAttribution}");
-
-		L.control.layers(iiifLayers).addTo(map);
-	
-	
-	},1500);
-	
-	
+		map.fitBounds(map.getBounds(imageLayer))
 	</script>
 	<%@include file="../common/footer2.jspf"%>
