@@ -1,6 +1,6 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 <p>
-	<strong>Tikkoun Sofrim</strong> est un projet collaboratif franco-israélien, dont l’objectif est de rendre les textes manuscrits hébraïques médiévaux accessibles à tous. Le projet associe la reconnaissance automatique des textes manuscrits (HTR) et la production participative (Crowdsourcing).
+	<strong>Tikkoun Sofrim</strong> est un projet collaboratif franco-israélien dans le cadre du PHC Maimonide. L’objectif est de rendre les textes manuscrits hébraïques médiévaux accessibles à tous. Le projet associe la reconnaissance automatique des textes manuscrits (HTR) et la production participative (Crowdsourcing).
 
 </p>
 <p>
