@@ -189,7 +189,7 @@
 			<div
 				class="tab-content flex-fill d-flex justify-content-between flex-column">
 				<div
-					class="tab-pane fadeshow active flex-fill d-flex justify-content-between flex-column"
+					class="tab-pane fade show active flex-fill d-flex justify-content-between flex-column"
 					id="page" role="tabpanel" aria-labelledby="page-tab">
 					<div id="imgPage">
 						<a href="${manuscriptDescLink}" target="_blank"> <label

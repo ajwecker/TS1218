@@ -14,7 +14,7 @@ we are in the process of switching to a fully trainable convolutional approach.
 In the third step the computer is trained to decipher the text in the line images. 
 The basic principle is that we show the computer a great number of images of manuscript lines and their corresponding text transcriptions.
 The computer learns the principle how to get from the image to the text. Eventually, it can do this also for images it has never seen.
-Our main transcription engine is Kraken by Benjamin Kiessling. 
+Our primary transcription engine is Kraken by Benjamin Kiessling. 
 </p>
 <p>
 Tikkoun Sofrim is the second HTR project at the EPHE next to Sofer Mahir, 
