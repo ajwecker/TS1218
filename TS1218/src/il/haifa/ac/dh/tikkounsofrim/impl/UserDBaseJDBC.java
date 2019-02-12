@@ -13,8 +13,8 @@ import il.haifa.ac.dh.tikkounsofrim.model.UserDBase;
 import il.haifa.ac.dh.tikkounsofrim.model.UserInfo;
 
 public class UserDBaseJDBC implements UserDBase {
-//	private static final String DB_SERVER = "tikkoun-sofrim.haifa.ac.il";
-	 private static final String DB_SERVER = "localhost";
+	private static final String DB_SERVER = "tikkoun-sofrim.haifa.ac.il";
+	 //private static final String DB_SERVER = "localhost";
 
 	private Connection connect = null;
 	private static UserDBaseJDBC instance = null;

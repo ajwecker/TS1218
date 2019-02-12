@@ -230,6 +230,7 @@
 		</div>
 	</div>
 	<script type="text/javascript">
+	setTimeout(function(){
 		var map = L.map('map', {
 			center : [ 0, 0 ],
 			crs : L.CRS.Simple,
@@ -260,9 +261,10 @@
 		map.attributionControl.addAttribution("${manuscriptAttribution}");
 
 		L.control.layers(iiifLayers).addTo(map);
-
-		setTimeout(function() {
-			map.invalidateSize()
-		}, 2500);
+	
+	
+	},1500);
+	
+	
 	</script>
 	<%@include file="../common/footer2.jspf"%>
