@@ -10,7 +10,7 @@
 	<div
 		class="transcribe-page scrollable mt-2 p-2 d-flex justify-content-between">
 		<!-- Column Two work area -->
-		<div id="transcribe" style="flex:1;">
+		<div id="transcribe" style="flex: 1;">
 			<div class="flex-fill d-flex flex-column justify-content-around">
 				<div class="w-100 p-3">
 					<div id="work-page"
@@ -240,7 +240,7 @@
 			color : 'blue',
 			fillColor : '#f03',
 			fillOpacity : 0.1,
-			weight:1
+			weight : 1
 		});
 
 		linePolygonLayer.addTo(map);

@@ -7,25 +7,28 @@
 </p>
 <p>
 	In the first stage we analyse the manuscript layout and train <strong>Kraken</strong>,
-	a deep learning engine for automatic reading. Kraken is transcribing quite
-	well, with an error rate of less than 10% and often even less than 5%
-	at the letter level.
+	a deep learning engine for automatic reading. Kraken is transcribing
+	quite well, with an error rate of less than 10% and often even less
+	than 5% at the letter level.
 </p>
-<p>
-	However this is not quite good enough.
-</p>
+<p>However this is not quite good enough.</p>
 <p>
 	In order to further improve Kraken’s automatic reading and provide
-	accurate editions of the texts, we need the <strong>human eye</strong>. The tool
-	in this website is aimed at achieving this goal.
+	accurate editions of the texts, we need the <strong>human eye</strong>.
+	The tool in this website is aimed at achieving this goal.
 </p>
-<p>At this website you can help us by checking the automatic reading and correcting mistakes. In
-	the next stage your corrections will be used for improving the automatic
-	reading as well as creating digital critical editions and enabling
-	textual search of manuscripts in library viewers.</p>
+<p>At this website you can help us by checking the automatic reading
+	and correcting mistakes. In the next stage your corrections will be
+	used for improving the automatic reading as well as creating digital
+	critical editions and enabling textual search of manuscripts in library
+	viewers.</p>
 <p>Tikkoun Sofrim is a joined French-Israeli project, developed by
 	the EPHE, PSL, in Paris, the eLijah-Lab at the University of Haifa and
 	the National Library, Israel. The project is supported by the
 	Maimonides grant funded by the French Ministry of Higher Education and
 	Research, the French Ministry of Foreign Affairs and the Israeli
 	Ministry of Science. eLijah-Lab is supported by Hekhal Eliyahu NGO.</p>
+<div>
+	For questions, suggestions or any other remark, feel free to <a
+		href="mailto:tikkoun.sofrim@gmail.com">contact us</a>
+</div>

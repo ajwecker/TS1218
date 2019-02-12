@@ -101,15 +101,28 @@ text-decoration: underline;
 font-weight: bold;
 font-size:18px;
 }
+#info-page {
+
+        overflow-y: auto;
+        height:100%;
+    }
 
 .rtl {
     direction:rtl;
     text-align:right;
+    #info-page {
+        border-right: 1px solid black;
+        
+    }
     }
 
     .ltr {
     direction:ltr;
     text-align:left;
+    #info-page {
+        border-left: 1px solid black;
+
+    }
     }
     
 body {
@@ -119,15 +132,7 @@ body {
     top: 0;
     position: absolute;
     overflow: hidden;
-    &.rtl {
-    direction:rtl;
-    text-align:right;
-    }
 
-    &.ltr {
-    direction:ltr;
-    text-align:left;
-    }
     .top-banner {
         height: 60px;
         background-image: url(/TS1218/images/Banner_1900_100.png);
@@ -150,11 +155,7 @@ body {
         }
     }
 
-    #info-page {
-        border-right: 1px solid black;
-        overflow-y: auto;
-        height:100%;
-    }
+    
     .partner-logos {
         img {
             height: 45px;

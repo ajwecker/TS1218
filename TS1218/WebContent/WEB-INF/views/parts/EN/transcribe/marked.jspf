@@ -1,7 +1,5 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 <div class="marked_text info_content">
-
-
 	<div class="header">
 		<div class="title">Deletions and Additions</div>
 		<div>Below is a tutorial about deletions and additions: How they
@@ -57,20 +55,20 @@
 			<div class="content">
 				<p>Additions can be either interlinear (above or below the line)
 					or marginal (in the margins). Additions of the first scribe - to
-					add a word or letter missed during copying. Additions by others - to
-					add a word accidentally omitted by the first scribe or to correct
-					the text according to a different version. The scribe of ms Geneva
-					usually inserts additions above the line if they are short, while
-					longer passages are added in the margins.</p>
+					add a word or letter missed during copying. Additions by others -
+					to add a word accidentally omitted by the first scribe or to
+					correct the text according to a different version. The scribe of ms
+					Geneva usually inserts additions above the line if they are short,
+					while longer passages are added in the margins.</p>
 				<p>
-					Here, the scribe has inserted the word בן : 
-					<img src="/TS1218/images/ex_addition_small.jpg">
-					In order to signal an addition, press the [Addition] button below the text line
+					Here, the scribe has inserted the word בן : <img
+						src="/TS1218/images/ex_addition_small.jpg"> In order to
+					signal an addition, press the [Addition] button below the text line
 					and then write the added word between the brackets. If you want to
 					signal that a transcribed word or letter should rather be handled
 					as addition, please mark that word or letter with your mouse and
-					then click on the [Addition] button (
-					<img src="/TS1218/images/ex_inserted_btn.png">). For example, the
+					then click on the [Addition] button ( <img
+						src="/TS1218/images/ex_inserted_btn.png">). For example, the
 					addition of the letter ה in the שקדים has to appear in the end as
 					על ש[ה]קדים שמו:
 				</p>
@@ -123,10 +121,8 @@
 				<p>
 					needs to be written as follows: <img
 						src="/TS1218/images/marked_text/j_marked_text_damage_unreadable_text.png">
-						</p>
-						<p>
-				&lt;קול שילך אצל &gt;
 				</p>
+				<p>&lt;קול שילך אצל &gt;</p>
 			</div>
 		</div>
 		<div class="uncertainty_in_transcription">
@@ -151,16 +147,12 @@
 					</strong>
 				</p>
 				<p>
-					In the example there is a need to write the doubtful/uncertain letter as
-					follows: <img
+					In the example there is a need to write the doubtful/uncertain
+					letter as follows: <img
 						src="/TS1218/images/marked_text/k_marked_text_uncertainty1.png">
 					{אלא לפי כח{ו
 				</p>
 			</div>
 		</div>
 	</div>
-
-
-
-
 </div>

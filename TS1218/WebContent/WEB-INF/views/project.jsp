@@ -14,10 +14,5 @@
 		<jsp:include page="../views/parts/${lang}/main-content/project.jspf" />
 
 	</div>
-	<div>
-		For questions, suggestions or any other remark, feel free to <a
-			href="mailto:tikkoun.sofrim@gmail.com">contact us</a>
-	</div>
 
-	<!-- img src='<c:url value="/images/elijah.png" ></c:url>' /-->
 	<%@ include file="../common/footer.jspf"%>

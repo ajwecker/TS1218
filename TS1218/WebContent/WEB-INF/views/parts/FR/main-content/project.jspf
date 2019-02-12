@@ -1,20 +1,39 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 <p>
-	<strong>Tikkoun Sofrim</strong> est un projet collaboratif franco-israélien dans le cadre du PHC Maimonide. L’objectif est de rendre les textes manuscrits hébraïques médiévaux accessibles à tous. Le projet associe la reconnaissance automatique des textes manuscrits (HTR) et la production participative (Crowdsourcing).
+	<strong>Tikkoun Sofrim</strong> est un projet collaboratif
+	franco-israélien dans le cadre du PHC Maimonide. L’objectif est de
+	rendre les textes manuscrits hébraïques médiévaux accessibles à tous.
+	Le projet associe la reconnaissance automatique des textes manuscrits
+	(HTR) et la production participative (Crowdsourcing).
 
 </p>
-<p>
-	Lors de la première phase, nous analysons automatiquement la structure de la page manuscrite, ce qui permet d’entraîner Kraken, un système d’apprentissage profond (deep learning) de lecture automatique. Les capacités de lecture de Kraken sont très bonnes, avec un taux d’erreur inférieur à 10%, voire inférieur à 5%. 
-</p>
-<p>
-Mais ce n’est pas encore suffisant. 
-	</p>
+<p>Lors de la première phase, nous analysons automatiquement la
+	structure de la page manuscrite, ce qui permet d’entraîner Kraken, un
+	système d’apprentissage profond (deep learning) de lecture automatique.
+	Les capacités de lecture de Kraken sont très bonnes, avec un taux
+	d’erreur inférieur à 10%, voire inférieur à 5%.</p>
+<p>Mais ce n’est pas encore suffisant.</p>
 
-<p>
-	Afin d’améliorer les capacités de lecture automatique de Kraken et d’obtenir une transcription impeccable des textes, nous avons besoin du regard humain.
+<p>Afin d’améliorer les capacités de lecture automatique de Kraken
+	et d’obtenir une transcription impeccable des textes, nous avons besoin
+	du regard humain.</p>
+<p>C’est là l’objectif de notre site : vous donner l’opportunité de
+	contribuer à la recherche en vérifiant la lecture automatique de
+	Kraken, et de la corriger si besoin.</p>
+<p>Lors de la deuxième phase, vos corrections seront utilisées d’une
+	part pour améliorer la lecture automatique, et d’autre part pour
+	l’élaboration d’éditions critiques numériques permettant la recherche
+	textuelle dans les manuscrits et leur visualisation en ligne.</p>
 
-</p>
-<p>C’est là l’objectif de notre site : vous donner l’opportunité de contribuer à la recherche en vérifiant la lecture automatique de Kraken, et de la corriger si besoin.</p>
-<p>Lors de la deuxième phase, vos corrections seront utilisées d’une part pour améliorer la lecture automatique, et d’autre part pour l’élaboration d’éditions critiques numériques permettant la recherche textuelle dans les manuscrits et leur visualisation en ligne.</p>
-
-<p>Tikkoun Sofrim est un projet collaboratif franco-israélien développé par l’EPHE, PSL, à Paris, eLijah-Lab de l’université de Haïfa, et la Bibliothèque Nationale d’Israël. Le projet est financé dans le cadre du PHC “Maïmonide” du Ministère français de l’éducation supérieure et de la recherche, par le Ministère français des affaires étrangères et par le Ministère israélien des Sciences. Le laboratoire eLijah-Lab est soutenu par l’ONG Hekhal Eliyahu.</p>
+<p>Tikkoun Sofrim est un projet collaboratif franco-israélien
+	développé par l’EPHE, PSL, à Paris, eLijah-Lab de l’université de
+	Haïfa, et la Bibliothèque Nationale d’Israël. Le projet est financé
+	dans le cadre du PHC “Maïmonide” du Ministère français de l’éducation
+	supérieure et de la recherche, par le Ministère français des affaires
+	étrangères et par le Ministère israélien des Sciences. Le laboratoire
+	eLijah-Lab est soutenu par l’ONG Hekhal Eliyahu.</p>
+<div>
+	Pour des questions, des suggestions ou toute autre remarque, n'hésitez
+	pas à nous <a href="mailto:tikkoun.sofrim@gmail.com">contacter</a>,
+	s'il vous plaît!
+</div>
