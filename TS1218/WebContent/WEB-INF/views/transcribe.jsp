@@ -239,7 +239,8 @@
 				[ "${ybottom}", "${xleft}" ] ], {
 			color : 'blue',
 			fillColor : '#f03',
-			fillOpacity : 0.2
+			fillOpacity : 0.1,
+			weight:1
 		});
 
 		linePolygonLayer.addTo(map);
