@@ -3,8 +3,9 @@
 		<div class="title">Geneva letters</div>
 	</div>
 	<div class="content">
-		<div>לפניכם אותיות כתב היד, מתחת לטבלה תוכלו למצוא הדרכה על
-			הבחנה בין אותיות דומות במיוחד: ב-כ, ד-ר, ס-ם.</div>
+		<div>Here is a reader of the Geneva manuscript Alphabet, below
+			it you may find further guidance concerning similar letters and how
+			to distinguish between them.</div>
 		<div class="letters">
 			<div class="content">
 				<table class="letters-table">
@@ -90,18 +91,19 @@
 		</div>
 		<div class="content mt-5">
 			<div class="header">
-				<div class="title">אבחנה בין אותיות דומות</div>
+				<div class="title">How to distinguish between similar letters?
+				</div>
 			</div>
 			<div class="content">
 				<div class="content">
 					<div class="letters mt-5">
-						<div class="title">דל"ת – רי"ש</div>
+						<div class="title">Dalet - Resh</div>
 						<div class="content">
-							<p>בדרך כלל קל להבחין בין האותיות דל"ת ורי"ש בכ"י ז'נבה: הריש
-								מעוגלת ונכתבת במשיחה אחת, ואילו הקו היורד של הדל"ת נוטה באלכסון
-								שמאלה, עם זוית ברורה בנקודת המפגש בפינה הימנית העליונה.</p>
-							<p>אמ;לק –פינה ימנית עליונה מעוגלת – רי"ש, פינה מזוותת –
-								דל"ת.</p>
+							<p>I most cases it is easy to distinguish between Dalet and
+								Resh. Resh is rounded, written in one stroke, whereas the leg of
+								Dalet tends left in diagonal line.</p>
+							<p>In short: Resh - Rounded upper right corner;Dalet -
+								Angular corner.</p>
 							<div class="images">
 								<img class="w-100 large"
 									src="/TS1218/images/similar_letters/a_similar_letters_dalet_reish_table.png">
@@ -116,14 +118,16 @@
 				</div>
 				<div class="content">
 					<div class="letters mt-5">
-						<div class="title">בי"ת – כ"ף</div>
+						<div class="title">Bet - Kaf</div>
 						<div class="content">
-							<p>האותיות בי"ת וכ"ף בדרך כלל מובחנות היטב: הכ"ף מעוגלת
-								וכתובה במשיחה אחת. האות בי"ת כתובה בקווים ישרים, הקו הימני יורד
-								מטה באלכסון קל ימינה ונוצרות פינות ברורות. לעתים יורד הקו ישר
-								ומתעקל בקצהו התחתון ליצירת ה'זנב' התחתון של הבי"ת.</p>
-							<p>אמ;לק - הצד הימני מעוגל – כ"ף, ישנן פינות בולטות מימין
-								למעלה ולמטה – בי"ת.</p>
+							<p>In most cases the letters Bet and Kaf are clearly
+								distinguished. Kaf is rounded, written in one stroke, whereas
+								Bet is written in straight lines, the right line descent in a
+								slight diagonal manner, creating distinguished corners. Some
+								times there is a slight curve creating the ‘tail’ of the Bet
+								which is more common in square writing of Bet.</p>
+							<p>In short: Kaf - rounded right side. Bet - Corners in both
+								upper and lower right side.</p>
 							<div class="images">
 								<img class="w-100 large"
 									src="/TS1218/images/similar_letters/c_similar_letters_bet_kaf_table.png">
@@ -138,13 +142,14 @@
 				</div>
 				<div class="content">
 					<div class="letters mt-5">
-						<div class="title">מ"ם סופית – סמ"ך</div>
+						<div class="title">Final Mem - Samech</div>
 						<div class="content">
-							<p>בניגוד למקובל בכתב המודרני, המ"ם הסופית בכ"י ז'נבה מעוגלת
-								בדרך כלל. לסמ"ך לעומת זאת יש קו שמאלי היורד ישר מטה, ולעתים גם
-								שפיץ קטן בפינה השמאלית.</p>
-							<p>אמ;לק – צד שמאל מעוגל – מ"ם סופית, צד שמאל ישר או עם שפיץ
-								למטה – סמ"ך.</p>
+							<p>In opposite to the common practice in modern Hebrew
+								script, the final Mem is usually rounded, whereas the Samech has
+								a straight left line, and at times a sharp tip in the lower left
+								corner.</p>
+							<p>In short: Final Mem - rounded left side. Samech - straight
+								left side, at times with a sharp tip.</p>
 							<div class="images">
 								<img class="w-100 large"
 									src="/TS1218/images/similar_letters/e_similar_letters_sameh_mem_sofit_table.png">
