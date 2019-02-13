@@ -104,7 +104,14 @@ public class UserDBaseJDBC implements UserDBase {
 
 	@Override
 	public int registerUser(String uName, String password, String email, UserInfo uInfo) {
-
+		String hpassword;
+		try {
+			hpassword = Password.getSaltedHash(password);
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+			return -1;
+		}
 		// PreparedStatements can use variables and are more efficient
 		PreparedStatement preparedStatement = null;
 		try {
@@ -112,7 +119,7 @@ public class UserDBaseJDBC implements UserDBase {
 			preparedStatement = connect.prepareStatement("insert into  tikkoun.users values (?, ?, ?, ?, ?, ?, ?, ?)");
 			preparedStatement.setString(1, uName);
 			preparedStatement.setString(2, email);
-			preparedStatement.setString(3, password);
+			preparedStatement.setString(3, hpassword);
 			preparedStatement.setInt(4, uInfo.age);
 			preparedStatement.setInt(5, uInfo.hebrewknowledge);
 			preparedStatement.setInt(6, uInfo.midrashknowledge);
@@ -171,15 +178,16 @@ public class UserDBaseJDBC implements UserDBase {
 		try {
 			connect();
 			statement = connect.createStatement();
-			ResultSet resultSet = statement.executeQuery("select count(*) from tikkoun.users where userid = '" + user
+			ResultSet resultSet = statement.executeQuery("select * from tikkoun.users where userid = '" + user
 					+ "'and password = '" + password + "'");
 			resultSet.last();
-			int rowcount = resultSet.getInt(1);
-			if (rowcount > 0) {
-				return true;
-			}
+			String stored = resultSet.getString(1);
+			return Password.check(password, stored);
 
 		} catch (SQLException | ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
