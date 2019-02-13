@@ -43,9 +43,10 @@ public class LoginServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 
 		String newlang = request.getParameter("lang");
-//TODO avoid unnecessary resets		String currentlang = (String) request.getSession().getAttribute("lang");
-		if (newlang != null) {
+		String currentlang = (String) request.getSession().getAttribute("lang");
+		if (newlang != null && !newlang.equals(currentlang)) {
 			setLanguage(request.getSession(), newlang);
+			
 			String currentpage = (String) request.getSession().getAttribute("page");
 			if (currentpage == null) {
 				currentpage = "views/login.jsp";
@@ -54,7 +55,9 @@ public class LoginServlet extends HttpServlet {
 			request.getRequestDispatcher("/WEB-INF/" + currentpage).forward(request, response);
 			return;
 		} else {
-			setDefaultLanguage(request.getSession());
+			if(currentlang == null) {
+				setDefaultLanguage(request.getSession());
+			}
 		}
 
 		String page = request.getParameter("page");
@@ -76,6 +79,12 @@ public class LoginServlet extends HttpServlet {
 		}
 		if ("views/logout.jsp".equals(page)) {
 			request.getSession().setAttribute("userLineCount", UserDBaseJDBC.instance().getCount(userid));
+			//TODO remove all session attributes connected to user
+			request.getSession().removeAttribute("username");
+			request.getSession().removeAttribute("userid");
+			request.getSession().removeAttribute("user");
+			request.getSession().removeAttribute("task");
+			
 		}
 		System.out.println("page=" + page);
 		request.getSession().setAttribute("page", page);
