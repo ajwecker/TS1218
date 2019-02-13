@@ -153,7 +153,7 @@
 			</div>
 
 		</div>
-		<div id="info-page" class="container flex-column d-flex"
+		<div id="info-page" class="flex-column d-flex"
 			style="width: 520px;">
 			<div>
 				<ul class="nav nav-tabs flex-nowrap" role="tablist">
@@ -181,7 +181,7 @@
 				</ul>
 			</div>
 			<div
-				class="tab-content flex-fill d-flex justify-content-between flex-column">
+				class="tab-content container flex-fill d-flex justify-content-between flex-column">
 				<div
 					class="tab-pane fade show active flex-fill d-flex justify-content-between flex-column"
 					id="page" role="tabpanel" aria-labelledby="page-tab">
@@ -247,6 +247,9 @@
 
 		map.attributionControl.setPrefix("");
 		map.attributionControl.addAttribution("${manuscriptAttribution}");
-		map.fitBounds(map.getBounds(imageLayer))
+
+		setTimeout(function() {
+			map.fitBounds(map.getBounds(imageLayer))
+		}, 1500)
 	</script>
 	<%@include file="../common/footer2.jspf"%>

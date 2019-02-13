@@ -17,9 +17,7 @@
 						<td>ד</td>
 						<td>ה</td>
 						<td>ו</td>
-						<td>ז</td>
-						<td>ח</td>
-						<td>ט</td>
+
 					</tr>
 					<tr>
 						<td><img src="./images/letters/aleph.png" /></td>
@@ -28,15 +26,28 @@
 						<td><img src="./images/letters/dalet.png" /></td>
 						<td><img src="./images/letters/heh.png" /></td>
 						<td><img src="./images/letters/vav.png" /></td>
-						<td><img src="./images/letters/zain.png" /></td>
-						<td><img src="./images/letters/het.png" /></td>
-						<td><img src="./images/letters/tet.png" /></td>
-					</tr>
 
+					</tr>
 					<tr>
+
+						<td>ז</td>
+						<td>ח</td>
+						<td>ט</td>
 						<td>י</td>
 						<td>כ</td>
 						<td>ך</td>
+					</tr>
+					<tr>
+
+						<td><img src="./images/letters/zain.png" /></td>
+						<td><img src="./images/letters/het.png" /></td>
+						<td><img src="./images/letters/tet.png" /></td>
+						<td><img src="./images/letters/yod.png" /></td>
+						<td><img src="./images/letters/kaf.png" /></td>
+						<td><img src="./images/letters/kaf_sofit.png" /></td>
+					</tr>
+					<tr>
+
 						<td>ל</td>
 						<td>מ</td>
 						<td>ם</td>
@@ -45,9 +56,7 @@
 						<td>ס</td>
 					</tr>
 					<tr>
-						<td><img src="./images/letters/yod.png" /></td>
-						<td><img src="./images/letters/kaf.png" /></td>
-						<td><img src="./images/letters/kaf_sofit.png" /></td>
+
 						<td><img src="./images/letters/lamed.png" /></td>
 						<td><img src="./images/letters/mem.png" /></td>
 						<td><img src="./images/letters/mem_sofit.png" /></td>
@@ -63,9 +72,7 @@
 						<td>צ</td>
 						<td>ץ</td>
 						<td>ק</td>
-						<td>ר</td>
-						<td>ש</td>
-						<td>ת</td>
+
 
 					</tr>
 					<tr>
@@ -75,16 +82,24 @@
 						<td><img src="./images/letters/tzadi.png" /></td>
 						<td><img src="./images/letters/tzadi_sofit.png" /></td>
 						<td><img src="./images/letters/kuf.png" /></td>
+
+					</tr>
+					<tr>
+
+						<td>ר</td>
+						<td>ש</td>
+						<td>ת</td>
+						<td>א-ל</td>
+
+					</tr>
+					<tr>
+
 						<td><img src="./images/letters/reish.png" /></td>
 						<td><img src="./images/letters/shin.png" /></td>
 						<td><img src="./images/letters/tav.png" /></td>
-					</tr>
-					<tr>
-						<td>א-ל</td>
-					</tr>
-					<tr>
 						<td><img src="./images/letters/alef_lamed.png" /></td>
 					</tr>
+
 				</table>
 
 
@@ -129,9 +144,10 @@
 					<div class="images">
 						<img class="w-100 large"
 							src="/TS1218/images/similar_letters/c_similar_letters_bet_kaf_table.png">
-							<div>בדרכי - 
-						<img
-							src="/TS1218/images/similar_letters/d_similar_letters_bet_kaf_example.png"></div>
+						<div>
+							בדרכי - <img
+								src="/TS1218/images/similar_letters/d_similar_letters_bet_kaf_example.png">
+						</div>
 					</div>
 
 				</div>
@@ -149,11 +165,14 @@
 					<div class="images">
 						<img class="w-100 large"
 							src="/TS1218/images/similar_letters/e_similar_letters_sameh_mem_sofit_table.png">
-							<div>סיני - 
-						<img
-							src="/TS1218/images/similar_letters/f_similar_letters_sameh_mem_sofit_example1.png"></div>
-						<div>ומכולם - <img
-							src="/TS1218/images/similar_letters/g_similar_letters_sameh_mem_sofit_example2.png"></div>
+						<div>
+							סיני - <img
+								src="/TS1218/images/similar_letters/f_similar_letters_sameh_mem_sofit_example1.png">
+						</div>
+						<div>
+							ומכולם - <img
+								src="/TS1218/images/similar_letters/g_similar_letters_sameh_mem_sofit_example2.png">
+						</div>
 					</div>
 				</div>
 			</div>

@@ -4,169 +4,185 @@
 		<div class="title">Lettres du manuscrit de Genève</div>
 	</div>
 	<div class="content">
-	<div>Voici les lettres du manucrit. En bas vous trouvez des comparaisons entre des lettres qui sont souvent confondues (bet-kaf, dalet-resh, tet-mem).
+		<div>Voici les lettres du manucrit. En bas vous trouvez des
+			comparaisons entre des lettres qui sont souvent confondues (bet-kaf,
+			dalet-resh, tet-mem).</div>
+
+
+		<div class="letters">
+			<div class="content">
+				<table class="letters-table">
+					<tr>
+						<td>א</td>
+						<td>ב</td>
+						<td>ג</td>
+						<td>ד</td>
+						<td>ה</td>
+						<td>ו</td>
+
+					</tr>
+					<tr>
+						<td><img src="./images/letters/aleph.png" /></td>
+						<td><img src="./images/letters/bet.png" /></td>
+						<td><img src="./images/letters/gimel.png" /></td>
+						<td><img src="./images/letters/dalet.png" /></td>
+						<td><img src="./images/letters/heh.png" /></td>
+						<td><img src="./images/letters/vav.png" /></td>
+
+					</tr>
+					<tr>
+
+						<td>ז</td>
+						<td>ח</td>
+						<td>ט</td>
+						<td>י</td>
+						<td>כ</td>
+						<td>ך</td>
+					</tr>
+					<tr>
+
+						<td><img src="./images/letters/zain.png" /></td>
+						<td><img src="./images/letters/het.png" /></td>
+						<td><img src="./images/letters/tet.png" /></td>
+						<td><img src="./images/letters/yod.png" /></td>
+						<td><img src="./images/letters/kaf.png" /></td>
+						<td><img src="./images/letters/kaf_sofit.png" /></td>
+					</tr>
+					<tr>
+
+						<td>ל</td>
+						<td>מ</td>
+						<td>ם</td>
+						<td>נ</td>
+						<td>ן</td>
+						<td>ס</td>
+					</tr>
+					<tr>
+
+						<td><img src="./images/letters/lamed.png" /></td>
+						<td><img src="./images/letters/mem.png" /></td>
+						<td><img src="./images/letters/mem_sofit.png" /></td>
+						<td><img src="./images/letters/nun.png" /></td>
+						<td><img src="./images/letters/nun_sofit.png" /></td>
+						<td><img src="./images/letters/sameh.png" /></td>
+
+					</tr>
+					<tr>
+						<td>ע</td>
+						<td>פ</td>
+						<td>ף</td>
+						<td>צ</td>
+						<td>ץ</td>
+						<td>ק</td>
+
+
+					</tr>
+					<tr>
+						<td><img src="./images/letters/ayin.png" /></td>
+						<td><img src="./images/letters/peh.png" /></td>
+						<td><img src="./images/letters/peh_sofit.png" /></td>
+						<td><img src="./images/letters/tzadi.png" /></td>
+						<td><img src="./images/letters/tzadi_sofit.png" /></td>
+						<td><img src="./images/letters/kuf.png" /></td>
+
+					</tr>
+					<tr>
+
+						<td>ר</td>
+						<td>ש</td>
+						<td>ת</td>
+						<td>א-ל</td>
+
+					</tr>
+					<tr>
+
+						<td><img src="./images/letters/reish.png" /></td>
+						<td><img src="./images/letters/shin.png" /></td>
+						<td><img src="./images/letters/tav.png" /></td>
+						<td><img src="./images/letters/alef_lamed.png" /></td>
+					</tr>
+
+				</table>
+
+
+			</div>
+		</div>
 	</div>
 
-
-<div class="letters">
+	<div class="content mt-3">
+		<div class="header">
+			<div class="title">Distinguer des lettres similaires</div>
+		</div>
 		<div class="content">
-			<table class="letters-table">
-				<tr>
-					<td>א</td>
-					<td>ב</td>
-					<td>ג</td>
-					<td>ד</td>
-					<td>ה</td>
-					<td>ו</td>
-					<td>ז</td>
-					<td>ח</td>
-					<td>ט</td>
-				</tr>
-				<tr>
-					<td><img src="./images/letters/aleph.png" /></td>
-					<td><img src="./images/letters/bet.png" /></td>
-					<td><img src="./images/letters/gimel.png" /></td>
-					<td><img src="./images/letters/dalet.png" /></td>
-					<td><img src="./images/letters/heh.png" /></td>
-					<td><img src="./images/letters/vav.png" /></td>
-					<td><img src="./images/letters/zain.png" /></td>
-					<td><img src="./images/letters/het.png" /></td>
-					<td><img src="./images/letters/tet.png" /></td>
-				</tr>
-
-				<tr>
-					<td>י</td>
-					<td>כ</td>
-					<td>ך</td>
-					<td>ל</td>
-					<td>מ</td>
-					<td>ם</td>
-					<td>נ</td>
-					<td>ן</td>
-					<td>ס</td>
-				</tr>
-				<tr>
-					<td><img src="./images/letters/yod.png" /></td>
-					<td><img src="./images/letters/kaf.png" /></td>
-					<td><img src="./images/letters/kaf_sofit.png" /></td>
-					<td><img src="./images/letters/lamed.png" /></td>
-					<td><img src="./images/letters/mem.png" /></td>
-					<td><img src="./images/letters/mem_sofit.png" /></td>
-					<td><img src="./images/letters/nun.png" /></td>
-					<td><img src="./images/letters/nun_sofit.png" /></td>
-					<td><img src="./images/letters/sameh.png" /></td>
-
-				</tr>
-				<tr>
-					<td>ע</td>
-					<td>פ</td>
-					<td>ף</td>
-					<td>צ</td>
-					<td>ץ</td>
-					<td>ק</td>
-					<td>ר</td>
-					<td>ש</td>
-					<td>ת</td>
-
-				</tr>
-				<tr>
-					<td><img src="./images/letters/ayin.png" /></td>
-					<td><img src="./images/letters/peh.png" /></td>
-					<td><img src="./images/letters/peh_sofit.png" /></td>
-					<td><img src="./images/letters/tzadi.png" /></td>
-					<td><img src="./images/letters/tzadi_sofit.png" /></td>
-					<td><img src="./images/letters/kuf.png" /></td>
-					<td><img src="./images/letters/reish.png" /></td>
-					<td><img src="./images/letters/shin.png" /></td>
-					<td><img src="./images/letters/tav.png" /></td>
-				</tr>
-				<tr>
-					<td>א-ל</td>
-				</tr>
-				<tr>
-					<td><img src="./images/letters/alef_lamed.png" /></td>
-				</tr>
-			</table>
-
-
-		</div>
-	</div>
-</div>
-
-<div class="content mt-3">
-	<div class="header">
-		<div class="title">Distinguer des lettres similaires</div>
-	</div>
-	<div class="content">
-		<div class="letters mt-5">
-			<div class="title">Dalet - Resh</div>
-			<div class="content">
-				<p>Généralement, on peut facilement distinguer entre Dalet et
-					Resh dans le manuscrit de Genève : la lettre Resh est arrondie et
-					écrite d’une traite, alors que la ligne verticale de la lettre
-					Dalet penche en diagonal vers la gauche, avec un angle clairement
-					défini en haut à droite.</p>
-				<p>Angle arrondi : Resh. Angle pointu : Dalet.</p>
-				<div class="images">
-					<img class="w-100 large"
-						src="/TS1218/images/similar_letters/a_similar_letters_dalet_reish_table.png">
-					<div>
-						מדבר - <img
-							src="/TS1218/images/similar_letters/b_similar_letters_dalet_reish_example.png">
+			<div class="letters mt-5">
+				<div class="title">Dalet - Resh</div>
+				<div class="content">
+					<p>Généralement, on peut facilement distinguer entre Dalet et
+						Resh dans le manuscrit de Genève : la lettre Resh est arrondie et
+						écrite d’une traite, alors que la ligne verticale de la lettre
+						Dalet penche en diagonal vers la gauche, avec un angle clairement
+						défini en haut à droite.</p>
+					<p>Angle arrondi : Resh. Angle pointu : Dalet.</p>
+					<div class="images">
+						<img class="w-100 large"
+							src="/TS1218/images/similar_letters/a_similar_letters_dalet_reish_table.png">
+						<div>
+							מדבר - <img
+								src="/TS1218/images/similar_letters/b_similar_letters_dalet_reish_example.png">
+						</div>
 					</div>
-				</div>
 
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="content">
-		<div class="letters mt-5">
-			<div class="title">Bet - Kaf</div>
-			<div class="content">
-				<p>Les lettres Bet et Kaf sont en général très différentes : Kaf
-					est arrondie et écrite d’une traite. Bet est écrite avec des lignes
-					droites, la ligne du côté droit descend vers le bas en léger
-					diagonal vers la droite. Les angles sont clairement définis.
-					Parfois la ligne verticale est légèrement courbée en bas à droite
-					pour former la “queue” de Bet.</p>
-				<p>Forme arrondie : Kaf. Angles définis : Bet.</p>
-				<div class="images">
-					<img class="w-100 large"
-						src="/TS1218/images/similar_letters/c_similar_letters_bet_kaf_table.png">
-					<div>
-						בדרכי - <img
-							src="/TS1218/images/similar_letters/d_similar_letters_bet_kaf_example.png">
+		<div class="content">
+			<div class="letters mt-5">
+				<div class="title">Bet - Kaf</div>
+				<div class="content">
+					<p>Les lettres Bet et Kaf sont en général très différentes :
+						Kaf est arrondie et écrite d’une traite. Bet est écrite avec des
+						lignes droites, la ligne du côté droit descend vers le bas en
+						léger diagonal vers la droite. Les angles sont clairement définis.
+						Parfois la ligne verticale est légèrement courbée en bas à droite
+						pour former la “queue” de Bet.</p>
+					<p>Forme arrondie : Kaf. Angles définis : Bet.</p>
+					<div class="images">
+						<img class="w-100 large"
+							src="/TS1218/images/similar_letters/c_similar_letters_bet_kaf_table.png">
+						<div>
+							בדרכי - <img
+								src="/TS1218/images/similar_letters/d_similar_letters_bet_kaf_example.png">
+						</div>
 					</div>
-				</div>
 
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="content">
-		<div class="letters mt-5">
-			<div class="title">Mem finale - Samekh</div>
-			<div class="content">
-				<p>Contrairement à l’écriture moderne, dans le manuscrit de
-					Genève la Mem finale est généralement arrondie. Samekh, en
-					revanche, a un trait du côté gauche qui descend verticalement et
-					parfois une pointe à l’angle inférieur gauche.</p>
-				<p>Côté gauche arrondi : Mem finale. Côté gauche droit ou avec
-					une pointe en bas à gauche : Samekh.</p>
-				<div class="images">
-					<img class="w-100 large"
-						src="/TS1218/images/similar_letters/e_similar_letters_sameh_mem_sofit_table.png">
-					<div>
-						סיני - <img
-							src="/TS1218/images/similar_letters/f_similar_letters_sameh_mem_sofit_example1.png">
-					</div>
-					<div>
-						ומכולם - <img
-							src="/TS1218/images/similar_letters/g_similar_letters_sameh_mem_sofit_example2.png">
+		<div class="content">
+			<div class="letters mt-5">
+				<div class="title">Mem finale - Samekh</div>
+				<div class="content">
+					<p>Contrairement à l’écriture moderne, dans le manuscrit de
+						Genève la Mem finale est généralement arrondie. Samekh, en
+						revanche, a un trait du côté gauche qui descend verticalement et
+						parfois une pointe à l’angle inférieur gauche.</p>
+					<p>Côté gauche arrondi : Mem finale. Côté gauche droit ou avec
+						une pointe en bas à gauche : Samekh.</p>
+					<div class="images">
+						<img class="w-100 large"
+							src="/TS1218/images/similar_letters/e_similar_letters_sameh_mem_sofit_table.png">
+						<div>
+							סיני - <img
+								src="/TS1218/images/similar_letters/f_similar_letters_sameh_mem_sofit_example1.png">
+						</div>
+						<div>
+							ומכולם - <img
+								src="/TS1218/images/similar_letters/g_similar_letters_sameh_mem_sofit_example2.png">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </div>
 
