@@ -4,11 +4,11 @@
 	<nav class="top-banner navbar navbar-expand-lg navbar-light bg-dark">
 		<a class="navbar-brand"
 			href="${pageContext.request.contextPath}/LoginServlet?page=views/login.jsp"
-			title="Tikkoun Sofrim"> <img
-			src="/TS1218/images/TS_logo_nobackground.png"
-			class="d-inline-block align-top" alt="Tikkoun Sofrim logo"> <label
-			class="mmsg">Discover Ancient Hebrew Manuscripts<br>Try
-				your skills at deciphering them
+			title="Tikkoun Sofrim"> 
+			<img src="/TS1218/images/TS_logo_nobackground.png"
+			class="d-inline-block align-top" alt="Tikkoun Sofrim logo">
+			<label 	class="mmsg">Discover Ancient Hebrew Manuscripts
+				<br>Try	your skills at deciphering them
 		</label>
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
