@@ -2,11 +2,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
-<div class="text-center mt-5">
-	<h1>
+
+<div class=" col-md-8">
+<h1>
 		<fmt:message key="login.center.welcome" />
 	</h1>
-
 	<p>
 		<fmt:message key="login.center.Intro_line_1" />
 	</p>
@@ -14,28 +14,39 @@
 		<fmt:message key="login.center.Intro_line_2" />
 	</p>
 </div>
-<div class="mt-5">
+<div class="col-md-4">
 	<form autocomplete="on" id="loginForm"
 		action="${pageContext.request.contextPath}/LoginServlet" method="post">
 
-		<div class="login-form w-100 d-flex justify-content-between p-2 mb-2">
-			<input id="username" name="username" required="required" type="text"
-				placeholder="myusername or mymail@mail.com" value="${username}" />
-			<input id="password" name="password" type="password"
-				placeholder="password" /> <input id="loginButton" name="login"
-				class="btn-primary" type="submit"
-				value='<fmt:message key="toolbar.right.start"/>' />
-		</div>
-		<p style="font-weight: bold; font-size: large; color: red;">${errorMessageLogin}</p>
-		<div class="d-flex justify-content-between">
+		<div class="login-form">
 			<div>
-				<a href="#" onclick="showRegisterForm()"><fmt:message
-						key="login.login_area.register" /></a>
+				<input id="username" name="username" required="required" type="text"
+					placeholder="myusername or mymail@mail.com" value="${username}" />
 			</div>
-			<a href="#" onclick="enterAsGuest()"><fmt:message
-					key="login.login_area.geust" /></a>
+			<div>
+				<input id="password" name="password" type="password"
+					placeholder="password" />
+			</div>
+			<div>
+				<input id="loginButton" name="login" class="btn-primary"
+					type="submit" value='<fmt:message key="toolbar.right.start"/>' />
+			</div>
+			<div class="d-flex justify-content-between">
+				<div>
+					<a href="#" onclick="showRegisterForm()"><fmt:message
+							key="login.login_area.register" /></a>
+				</div>
+				<a href="#" onclick="enterAsGuest()"><fmt:message
+						key="login.login_area.geust" /></a>
 
+			</div>
 		</div>
+
+		<c:if test="${errorMessageLogin != null}">
+			<p style="font-weight: bold; font-size: large; color: red;">${errorMessageLogin}</p>
+		</c:if>
+
+
 
 	</form>
 </div>
