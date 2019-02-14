@@ -28,8 +28,8 @@ public class Password {
     public static boolean check(String password, String stored) throws Exception{
         String[] saltAndHash = stored.split("\\$");
         if (saltAndHash.length != 2) {
-            throw new IllegalStateException(
-                "The stored password must have the form 'salt$hash'");
+        	System.out.println("The stored password must have the form 'salt$hash'");
+        	return false;   
         }
         String hashOfInput = hash(password, Base64.decodeBase64(saltAndHash[0]));
         return hashOfInput.equals(saltAndHash[1]);

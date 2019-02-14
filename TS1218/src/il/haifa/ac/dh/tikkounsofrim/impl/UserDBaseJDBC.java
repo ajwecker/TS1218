@@ -13,8 +13,8 @@ import il.haifa.ac.dh.tikkounsofrim.model.UserDBase;
 import il.haifa.ac.dh.tikkounsofrim.model.UserInfo;
 
 public class UserDBaseJDBC implements UserDBase {
-	private static final String DB_SERVER = "tikkoun-sofrim.haifa.ac.il";
-	 //private static final String DB_SERVER = "localhost";
+	//private static final String DB_SERVER = "tikkoun-sofrim.haifa.ac.il";
+	private static final String DB_SERVER = "localhost";
 
 	private Connection connect = null;
 	private static UserDBaseJDBC instance = null;
@@ -145,6 +145,9 @@ public class UserDBaseJDBC implements UserDBase {
 	public boolean checkUser(String uName) {
 		Statement statement = null;
 		try {
+			if ("guest".equals(uName)) {
+				return true;
+			}
 			connect();
 			statement = connect.createStatement();
 			// Result set get the result of the SQL query
@@ -176,13 +179,19 @@ public class UserDBaseJDBC implements UserDBase {
 	public boolean isUserValid(String user, String password) {
 		Statement statement = null;
 		try {
+			if ("guest".equals(user)) {
+				return true;
+			}
 			connect();
 			statement = connect.createStatement();
 			ResultSet resultSet = statement.executeQuery("select * from tikkoun.users where userid = '" + user
 					+ "'and password = '" + password + "'");
-			resultSet.last();
-			String stored = resultSet.getString(1);
-			return Password.check(password, stored);
+			boolean exists = resultSet.last();
+			if (exists) {
+				String stored = resultSet.getString(1);
+				return Password.check(password, stored);
+			} 
+			
 
 		} catch (SQLException | ClassNotFoundException e) {
 			// TODO Auto-generated catch block

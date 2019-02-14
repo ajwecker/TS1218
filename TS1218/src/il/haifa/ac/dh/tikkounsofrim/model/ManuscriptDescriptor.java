@@ -102,4 +102,7 @@ public TranscribedString getTranscribedLine( int pageNumber, int lineNumber, int
 public String getAttribution() {
 	return attribution;
 }
+public String getTranscriptionVersion() {
+	return mdata.getTranscriptionVersion();
+}
 }

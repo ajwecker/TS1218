@@ -7,5 +7,6 @@ public interface ManuscriptData {
 	int getNumberOfPages();
 
 	int getNumberOfLines(int pageNumber);
+	String getTranscriptionVersion();
 
 }

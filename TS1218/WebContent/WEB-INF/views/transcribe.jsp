@@ -19,11 +19,16 @@
 							<div>
 
 								<fmt:message key="main.work_area.intro_line_1" />
+								
 
 							</div>
 
 							<div>
 								<fmt:message key="main.work_area.intro_line_2" />
+								<a href='<fmt:message key="main.work_area.video"/>' target ="_blank" 
+								 title='<fmt:message key="main.work_area.video_hover"/>' >
+								 <fmt:message key="main.work_area.video_text"/>
+								 </a>
 							</div>
 						</div>
 					</div>
@@ -40,14 +45,13 @@
 								});
 							});
 						</script>
-						<form
-							action="${pageContext.request.contextPath}/TranscribeServlet"
-							method="post">
+						<form action="${pageContext.request.contextPath}/TranscribeServlet"
+									method="post">
 							<div class="mt-2">
 								<input id="trw" type="text" name="transcribed"
 									autocomplete="off" value="${transcribedline}"
-									style="font-family: Corsiva" class="w-100 p-2 rtl"> <input
-									type="hidden" id="trwOrig" value="${transcribedline}" />
+									style="font-family: Corsiva" class="w-100 p-2 rtl" autofocus="autofocus"> 
+								<input type="hidden" id="trwOrig" value="${transcribedline}" />
 							</div>
 							<!-- Transcribe toolbar -->
 							<div
@@ -228,6 +232,8 @@
 			center : [ 0, 0 ],
 			minZoom : 0,
 			zoom : 0,
+			zoomSnap : 0 ;
+			zoomDelta : 0.25;
 			crs : L.CRS.Simple
 		});
 

@@ -24,6 +24,27 @@ import il.haifa.ac.dh.tikkounsofrim.model.UserDBase;
 
 @WebServlet(urlPatterns = {"/TranscribeServlet"})
 public class TranscribeServlet extends HttpServlet {
+	//TODO have these first 7 shared between all Servlets
+	private static final String USER = "user";
+	private static final String USER_DB = "userDB";
+	private static final String TASK_PROVIDER = "taskProvider";
+	private static final String LANG = "lang";
+	private static final String PAGE = "page";
+	private static final String UTF_8 = "UTF-8";
+	private static final String TASK = "task";
+	
+	private static final String M__TRANSCIPTION_STARTTIME = "starttime";
+	private static final String M_TRANSCRIBEDLINEIMGSRC = "transcribedlineimgsrc";
+	private static final String MANUSCRIPT_TOTAL_LINES = "manuscriptTotalLines";
+	private static final String MANUSCRIPT_TOTAL_PAGES = "manuscriptTotalPages";
+	private static final String MANUSCRIPT_LINE = "manuscriptLine";
+	private static final String MANUSCRIPT_PAGE = "manuscriptPage";
+	private static final String M_TRANSCRIPTION_VERSION = "mTranscriptionVersion";
+	private static final String M_TRANSCRIBEDLINE = "transcribedline";
+	private static final String MANUSCRIPT_ATTRIBUTION = "manuscriptAttribution";
+	private static final String MANUSCRIPT_DESC_LINK = "manuscriptDescLink";
+	private static final String MANUSCRIPT_SHORT_DESC = "manuscriptShortDesc";
+	private static final String MANUSCRIPT_NAME = "manuscriptName";
 	static ManuscriptProvider manuscriptProvider = null;
 	static TaskProvider taskProvider;
 	
@@ -38,7 +59,7 @@ public class TranscribeServlet extends HttpServlet {
 	
 	@Override
 	public void init(ServletConfig config) throws ServletException {
-		// TODO Auto-generated method stub
+		
 		super.init(config);
 		FilePathUtils.setFilePath(config);
 		manuscriptProvider = ManuscriptProviderImpl.instance();
@@ -49,8 +70,8 @@ public class TranscribeServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 	
-		request.setCharacterEncoding("UTF-8");
-		Task task =  (Task) request.getSession().getAttribute("task");
+		request.setCharacterEncoding(UTF_8);
+		Task task =  (Task) request.getSession().getAttribute(TASK);
 		if(task==null) {
 			redirectToLoginPage(request, response);
 			return;
@@ -58,9 +79,9 @@ public class TranscribeServlet extends HttpServlet {
 		
 		setupTranscription(request.getSession(), task);
 		start = System.currentTimeMillis();
-		request.getSession().setAttribute("starttime",start);
+		request.getSession().setAttribute(M__TRANSCIPTION_STARTTIME,start);
 		String page = "views/transcribe.jsp";
-		request.getSession().setAttribute("page", page);
+		request.getSession().setAttribute(PAGE, page);
 		request.getRequestDispatcher("/WEB-INF/"+page).forward(
 				request, response);
 	}
@@ -81,7 +102,7 @@ public class TranscribeServlet extends HttpServlet {
 private void setupTranscription(HttpSession session, Task task) {
 	int lineNumber = task.getLineNumber();
 	int pageNumber = task.getPageNumber();
-	String lang = (String) session.getAttribute("lang");
+	String lang = (String) session.getAttribute(LANG);
 	//image
 	ImageData imageData= manuscriptProvider.getManuscriptLine(task.getmId(),pageNumber,lineNumber,0,0,0);
 	
@@ -91,18 +112,19 @@ private void setupTranscription(HttpSession session, Task task) {
 	//transcription
 	TranscribedString transcription = manuscriptProvider.getTranscribedLine(task.getmId(), pageNumber, lineNumber, 0);
 	
-	session.setAttribute("manuscriptName",task.getmId().getName());
+	session.setAttribute(MANUSCRIPT_NAME,task.getmId().getName());
 	String manuscriptShortDesc =  manuscriptDesc.getShortDescription(lang);
-	session.setAttribute("manuscriptShortDesc",manuscriptShortDesc);
+	session.setAttribute(MANUSCRIPT_SHORT_DESC,manuscriptShortDesc);
 	System.out.println("Manuscript ShortDesc="+manuscriptShortDesc);
 	String manuscriptDescLink =  manuscriptDesc.getDescriptionLink(lang);
-	session.setAttribute("manuscriptDescLink",manuscriptDescLink);
-	session.setAttribute("manuscriptAttribution", manuscriptDesc.getAttribution());
-	session.setAttribute("manuscriptPage",pageNumber);
-	session.setAttribute("manuscriptLine",lineNumber);
-	session.setAttribute("manuscriptTotalPages",manuscriptDesc.getTotalPageNumber());
-	session.setAttribute("manuscriptTotalLines",manuscriptDesc.getTotalLineNumbers(task.getPageNumber()));
-	session.setAttribute("transcribedlineimgsrc",imageData.getTranscribedLineImgSrc());
+	session.setAttribute(MANUSCRIPT_DESC_LINK,manuscriptDescLink);
+	session.setAttribute(MANUSCRIPT_ATTRIBUTION, manuscriptDesc.getAttribution());
+	session.setAttribute(M_TRANSCRIPTION_VERSION, manuscriptDesc.getTranscriptionVersion());
+	session.setAttribute(MANUSCRIPT_PAGE,pageNumber);
+	session.setAttribute(MANUSCRIPT_LINE,lineNumber);
+	session.setAttribute(MANUSCRIPT_TOTAL_PAGES,manuscriptDesc.getTotalPageNumber());
+	session.setAttribute(MANUSCRIPT_TOTAL_LINES,manuscriptDesc.getTotalLineNumbers(task.getPageNumber()));
+	session.setAttribute(M_TRANSCRIBEDLINEIMGSRC,imageData.getTranscribedLineImgSrc());
 	
 	session.setAttribute("pageimgsrc",imageData.getPageImgSrc());
 	
@@ -117,7 +139,7 @@ private void setupTranscription(HttpSession session, Task task) {
 	session.setAttribute("xleft",xleft);
 	session.setAttribute("xright",xright);
 	
-	session.setAttribute("transcribedline",transcription.getString());
+	session.setAttribute(M_TRANSCRIBEDLINE,transcription.getString());
 	session.setAttribute("transcribedlength",(transcription.getString().length()+1));
 	System.out.println("transcribesdLength="+(transcription.getString().length()+1));
 	System.out.println("Original Bounding box+"+imageData.getBoundingBox().toString());
@@ -127,8 +149,8 @@ private void setupTranscription(HttpSession session, Task task) {
 	
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
-		Task task = (Task) request.getSession().getAttribute("task");
+		request.setCharacterEncoding(UTF_8);
+		Task task = (Task) request.getSession().getAttribute(TASK);
 		if (task == null) {
 			redirectToLoginPage(request, response);
 			return;
@@ -136,17 +158,17 @@ private void setupTranscription(HttpSession session, Task task) {
 
 		String transcribed = request.getParameter("transcribed");
 		
-		int pageNumber= (int) request.getSession().getAttribute("manuscriptPage");
-		int lineNumber= (int) request.getSession().getAttribute("manuscriptLine");
-		TikunUser user= (TikunUser) request.getSession().getAttribute("user");
-		UserDBase userDB = (UserDBase) request.getSession().getAttribute("userDB");
-		String version = (String) request.getSession().getAttribute("version");
+		int pageNumber= (int) request.getSession().getAttribute(MANUSCRIPT_PAGE);
+		int lineNumber= (int) request.getSession().getAttribute(MANUSCRIPT_LINE);
+		TikunUser user= (TikunUser) request.getSession().getAttribute(USER);
+		UserDBase userDB = (UserDBase) request.getSession().getAttribute(USER_DB);
+		String version = (String) request.getSession().getAttribute(M_TRANSCRIPTION_VERSION);
 		if (version == null) {
 			version = "";
 		}
 	//	ManuscriptDescriptor manuscriptDesc =  manuscriptProvider.getManuscriptDescription(task.getmId());
 		ManuscriptPlace place = new ManuscriptPlace(task.getmId().getName(), pageNumber, lineNumber);
-		String automaticTranscription = (String) request.getSession().getAttribute("transcribedline");
+		String automaticTranscription = (String) request.getSession().getAttribute(M_TRANSCRIBEDLINE);
 		if (automaticTranscription == null) {
 			automaticTranscription = "";
 			
@@ -156,7 +178,7 @@ private void setupTranscription(HttpSession session, Task task) {
 			
 		}
 		int status = determineStatus(request);
-		start = (long) request.getSession().getAttribute("starttime");
+		start = (long) request.getSession().getAttribute(M__TRANSCIPTION_STARTTIME);
 		
 		String ipAddress = getClientIpAddr(request);
 		userDB.addTranscription(user.getId(), System.currentTimeMillis(), place, version, automaticTranscription, transcribed, status,start, ipAddress);
@@ -164,12 +186,12 @@ private void setupTranscription(HttpSession session, Task task) {
 				+"originalTranscribed:"+ automaticTranscription);
 
 		
-	    taskProvider = (TaskProvider) request.getSession().getAttribute("taskProvider");
+	    taskProvider = (TaskProvider) request.getSession().getAttribute(TASK_PROVIDER);
 		taskProvider.getNextTask(task);
-		request.getSession().setAttribute("task",task);
+		request.getSession().setAttribute(TASK,task);
 		setupTranscription(request.getSession(), task);
 		start = System.currentTimeMillis();
-		request.getSession().setAttribute("starttime",start);
+		request.getSession().setAttribute(M__TRANSCIPTION_STARTTIME,start);
 		request.getRequestDispatcher("/WEB-INF/views/transcribe.jsp").forward(
 				request, response);
 
@@ -225,7 +247,7 @@ private void setupTranscription(HttpSession session, Task task) {
 	}
 	@Override
 	public void init() throws ServletException {
-		// TODO Auto-generated method stub
+		
 		super.init();
 		
 	}

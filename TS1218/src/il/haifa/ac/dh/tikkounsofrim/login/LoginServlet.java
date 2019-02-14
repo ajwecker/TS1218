@@ -16,6 +16,13 @@ import il.haifa.ac.dh.tikkounsofrim.model.TaskProvider.Task;
 @WebServlet(urlPatterns = { "/LoginServlet", "/index.html" })
 public class LoginServlet extends HttpServlet {
 
+	private static final String TASK = "task";
+	private static final String TASK_PROVIDER = "taskProvider";
+	private static final String USER = "user";
+	private static final String UTF_8 = "UTF-8";
+	private static final String PAGE = "page";
+	private static final String LANG = "lang";
+	private static final String USER_DB = "userDB";
 	/**
 	 * 
 	 */
@@ -40,14 +47,14 @@ public class LoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String userid = (String) request.getSession().getAttribute("userid");
 
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding(UTF_8);
 
-		String newlang = request.getParameter("lang");
-		String currentlang = (String) request.getSession().getAttribute("lang");
+		String newlang = request.getParameter(LANG);
+		String currentlang = (String) request.getSession().getAttribute(LANG);
 		if (newlang != null && !newlang.equals(currentlang)) {
 			setLanguage(request.getSession(), newlang);
 			
-			String currentpage = (String) request.getSession().getAttribute("page");
+			String currentpage = (String) request.getSession().getAttribute(PAGE);
 			if (currentpage == null) {
 				currentpage = "views/login.jsp";
 			}
@@ -60,7 +67,7 @@ public class LoginServlet extends HttpServlet {
 			}
 		}
 
-		String page = request.getParameter("page");
+		String page = request.getParameter(PAGE);
 		if (page == null) {
 			request.getSession().setAttribute("username", request.getParameter("u"));
 
@@ -82,12 +89,12 @@ public class LoginServlet extends HttpServlet {
 			//TODO remove all session attributes connected to user
 			request.getSession().removeAttribute("username");
 			request.getSession().removeAttribute("userid");
-			request.getSession().removeAttribute("user");
-			request.getSession().removeAttribute("task");
+			request.getSession().removeAttribute(USER);
+			request.getSession().removeAttribute(TASK);
 			
 		}
 		System.out.println("page=" + page);
-		request.getSession().setAttribute("page", page);
+		request.getSession().setAttribute(PAGE, page);
 		request.getRequestDispatcher("/WEB-INF/" + page).forward(request, response);
 
 	}
@@ -96,7 +103,7 @@ public class LoginServlet extends HttpServlet {
 	 * @param request
 	 */
 	private void setDefaultLanguage(HttpSession session) {
-		if (session.getAttribute("lang") == null) {
+		if (session.getAttribute(LANG) == null) {
 
 			setLanguage(session, "HE");
 		}
@@ -125,7 +132,7 @@ public class LoginServlet extends HttpServlet {
 			break;
 		}
 
-		session.setAttribute("lang", lang);
+		session.setAttribute(LANG, lang);
 		session.setAttribute("msglang", msglang);
 		session.setAttribute("dir", dir);
 
@@ -146,7 +153,7 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding(UTF_8);
 
 		setDefaultLanguage(request.getSession());
 
@@ -162,12 +169,12 @@ public class LoginServlet extends HttpServlet {
 			return;
 		}
 
-		String page = request.getParameter("page");
+		String page = request.getParameter(PAGE);
 		if (page == null) {
 			page = "views/login.jsp";
 		}
 		System.out.println("page2=" + page);
-		request.getSession().setAttribute("page", page);
+		request.getSession().setAttribute(PAGE, page);
 		request.getRequestDispatcher("/WEB-INF/" + page).forward(request, response);
 	}
 
@@ -222,8 +229,8 @@ public class LoginServlet extends HttpServlet {
 		if (isUserValid) {
 			TikunUser user = new TikunUser(name);
 			request.getSession().setAttribute("userid", name);
-			request.getSession().setAttribute("user", user);
-			request.getSession().setAttribute("userDB", userValidationService);
+			request.getSession().setAttribute(USER, user);
+			request.getSession().setAttribute(USER_DB, userValidationService);
 			int b = convert((String) request.getSession().getAttribute("b"));
 			int c = convert((String) request.getSession().getAttribute("c"));
 
@@ -247,8 +254,8 @@ public class LoginServlet extends HttpServlet {
 				task = taskProvider.getTask(user);
 
 			}
-			request.getSession().setAttribute("taskProvider", taskProvider);
-			request.getSession().setAttribute("task", task);
+			request.getSession().setAttribute(TASK_PROVIDER, taskProvider);
+			request.getSession().setAttribute(TASK, task);
 			response.sendRedirect("/TS1218/TranscribeServlet");
 		} else {
 			request.setAttribute("errorMessageLogin", "Invalid Credentials!");
