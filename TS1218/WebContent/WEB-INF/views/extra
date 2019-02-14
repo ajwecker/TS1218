@@ -1,9 +1,0 @@
-	zoomSnap : 0 ,
-			zoomDelta : 0.25,
-			
-			<fmt:message key="main.work_area.intro_line_2" />
-								<a href='<fmt:message key="main.work_area.video"/>' target ="_blank" 
-								 title='<fmt:message key="main.work_area.video_hover"/>' >
-								 <fmt:message key="main.work_area.video_text"/>
-								 </a>
-			

@@ -19,17 +19,16 @@
 								<div>
 
 									<fmt:message key="main.work_area.intro_line_1" />
-								
 
 								</div>
 
 								<div>
 									<fmt:message key="main.work_area.intro_line_2" />
-								</div>
-								<a href='<fmt:message key="main.work_area.video"/>' target ="_blank" 
-								 title='<fmt:message key="main.work_area.video_hover"/>' >
-								 <fmt:message key="main.work_area.video_text"/>
+									<a href='<fmt:message key="main.work_area.video"/>' target ="_blank" 
+									 title='<fmt:message key="main.work_area.video_hover"/>' >
+									 <fmt:message key="main.work_area.video_text"/>
 								 </a>
+								</div>
 							</div>
 						</div>
 						<div>
@@ -44,66 +43,15 @@
 										snapView : false
 									});
 								});
-							});
-						</script>
-						<form action="${pageContext.request.contextPath}/TranscribeServlet"
-									method="post">
-							<div class="mt-2">
-								<input id="trw" type="text" name="transcribed"
-									autocomplete="off" value="${transcribedline}"
-									style="font-family: Corsiva" class="w-100 p-2 rtl" autofocus="autofocus"> 
-								<input type="hidden" id="trwOrig" value="${transcribedline}" />
-							</div>
-							<!-- Transcribe toolbar -->
-							<div
-								class="btn-toolbar justify-content-between d-flex mt-3 p-10 ltr"
-								role="toolbar">
-								<div class="btn-group mr-2 rtl" role="group"
-									aria-label="First group">
-									<button class="rounded-0 btn btn-secondary" type="button"
-										onclick="myMark(']','[')"
-										title='<fmt:message key="main.work_area.hovers.over_additions"/>'>
-										<span style="font-size: smaller;"><fmt:message
-												key="main.work_area.button_2" /></span>
-									</button>
-									<button class="rounded-0 btn btn-secondary" type="button"
-										onclick="myMark(')','(')"
-										title='<fmt:message key="main.work_area.hovers.over_deletions"/>'>
-										<span style="font-size: smaller;"><fmt:message
-												key="main.work_area.button_1" /></span>
-									</button>
-									<button class="rounded-0 btn btn-secondary" type="button"
-										onclick="myMark('>','<')"
-										title='<fmt:message key="main.work_area.hovers.over_damaged"/>'>
-										<span style="font-size: smaller;"><fmt:message
-												key="main.work_area.button_3" /></span>
-									</button>
-									<button class="rounded-0 btn btn-secondary" type="button"
-										onclick="myMark('}','{')"
-										title='<fmt:message key="main.work_area.hovers.over_uncertain"/>'>
-										<span style="font-size: smaller;"><fmt:message
-												key="main.work_area.button_4" /></span>
-									</button>
-									<button class="rounded-0 btn btn-secondary" type="button"
-										onclick="myInsert('˙')"
-										title='<fmt:message key="main.work_area.hovers.over_upper"/>'>
-										<b>˙</b>
-									</button>
-									<button class="rounded-0 btn btn-secondary" type="button"
-										onclick="myInsert('ﭏ')"
-										title='<fmt:message key="main.work_area.hovers.over_ligature"/>'>
-										<b>ﭏ</b>
-									</button>
-									<select id="filler" class="custom-select-sm btn-secondary"
-										title='<fmt:message key="main.work_area.hovers.over_line_fillers"/>'
-										onchange="myFill()">
-										<option value="">&nbsp;</option>
-										<option value="/">/</option>
-										<option value="//">//</option>
-										<option value="|">|</option>
-										<option value="V">V</option>
-										<option value="'">'</option>
-									</select>
+							</script>
+							<form
+								action="${pageContext.request.contextPath}/TranscribeServlet"
+								method="post">
+								<div class="mt-2">
+									<input id="trw" type="text" name="transcribed"
+										autocomplete="off" value="${transcribedline}"
+										style="font-family: Corsiva" class="w-100 p-2 rtl"> <input
+										type="hidden" id="trwOrig" value="${transcribedline}" />
 								</div>
 								<!-- Transcribe toolbar -->
 								<div
@@ -287,8 +235,8 @@
 			center : [ 0, 0 ],
 			minZoom : 0,
 			zoom : 0,
-			zoomSnap : 0 ;
-			zoomDelta : 0.25;
+			zoomSnap : 0 ,
+			zoomDelta : 0.25,
 			crs : L.CRS.Simple
 		});
 
