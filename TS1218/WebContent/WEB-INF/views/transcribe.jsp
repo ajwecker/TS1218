@@ -153,8 +153,7 @@
 			</div>
 
 		</div>
-		<div id="info-page" class="flex-column d-flex"
-			style="width: 520px;">
+		<div id="info-page" class="flex-column d-flex" style="width: 520px;">
 			<div>
 				<ul class="nav nav-tabs flex-nowrap" role="tablist">
 					<li class="nav-item"><a class="nav-link active sfont"
@@ -178,6 +177,10 @@
 					<li class="nav-item"><a class="nav-link sfont" id="help-tab"
 						data-toggle="tab" role="tab" href="#help" aria-controls="help"><strong><fmt:message
 									key="main.data_area.help" /></strong></a></li>
+					<li class="nav-item"><a class="nav-link sfont"
+						id="conversation-tab" data-toggle="tab" role="tab"
+						href="#conversation" aria-controls="conversation"><strong><fmt:message
+									key="main.data_area.conversation" /></strong></a></li>
 				</ul>
 			</div>
 			<div
@@ -218,6 +221,35 @@
 					aria-labelledby="help-tab">
 					<div class="tabcontent">
 						<jsp:include page="../views/parts/${lang}/transcribe/help.jspf" />
+					</div>
+				</div>
+				<div class="tab-pane fade" id="conversation" role="tabpanel"
+					aria-labelledby="conversation-tab">
+					<div class="tabcontent">
+						<div id="disqus_thread"></div>
+						<script>
+							/**
+							 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+							 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+							/*
+							 var disqus_config = function () {
+							 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+							 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							 };
+							 */
+							(function() { // DON'T EDIT BELOW THIS LINE
+								var d = document, s = d.createElement('script');
+								s.src = 'https://tikkoun-sofrim.disqus.com/embed.js';
+								s.setAttribute('data-timestamp', +new Date());
+								(d.head || d.body).appendChild(s);
+							})();
+						</script>
+						<noscript>
+							Please enable JavaScript to view the <a
+								href="https://disqus.com/?ref_noscript">comments powered by
+								Disqus.</a>
+						</noscript>
+
 					</div>
 				</div>
 			</div>
