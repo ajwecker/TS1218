@@ -6,9 +6,9 @@
 <%@include file="../common/header.jspf"%>
 <body class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
-	<div class="container mt-2 scrollable login-page show-login">
+	<div class="container mt-5 login-page show-login">
 	
-		<div class="login-form-wrapper">
+		<div class="login-form-wrapper row">
 			<%@include file="parts/login.jspf"%>
 		</div>
 		<div class="register-form-wrapper">
