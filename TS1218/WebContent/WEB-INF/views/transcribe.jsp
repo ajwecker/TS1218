@@ -78,6 +78,9 @@
 											<span style="font-size: smaller;"><fmt:message
 													key="main.work_area.button_4" /></span>
 										</button>
+
+									</div>
+									<div class="btn-group" role="group">
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myInsert('˙')"
 											title='<fmt:message key="main.work_area.hovers.over_upper"/>'>
@@ -99,7 +102,6 @@
 											<option value="'">'</option>
 										</select>
 									</div>
-
 									<!-- right part -->
 									<div class="btn-group" role="group" aria-label="Second group">
 										<button class="rounded-0 btn btn-secondary" type="button"
