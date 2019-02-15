@@ -4,15 +4,21 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 
 <div class=" col-md-8">
-<h1>
+<h1  >
 		<fmt:message key="login.center.welcome" />
 	</h1>
 	<p>
 		<fmt:message key="login.center.Intro_line_1" />
-	</p>
+	
 	<p>
 		<fmt:message key="login.center.Intro_line_2" />
-	</p>
+	<div class="alert alert-info mmsg" role="alert">
+		<p class="mt-10">
+		<fmt:message key="banner.encourgement.line_1" />
+		<p>
+		<fmt:message key="banner.encourgement.line_2" />
+	</div>	
+	
 </div>
 <div class="col-md-4">
 	<form autocomplete="on" id="loginForm"
@@ -40,10 +46,13 @@
 						key="login.login_area.geust" /></a>
 
 			</div>
+			
 		</div>
 
-		<c:if test="${errorMessageLogin != null}">
-			<p style="font-weight: bold; font-size: large; color: red;">${errorMessageLogin}</p>
+	<c:if test="${errorMessageLogin != null}">
+			<p style="font-weight: bold; font-size: large; color: red;">
+			<fmt:message key="login.login_area.invalid" />
+			</p>
 		</c:if>
 
 

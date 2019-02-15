@@ -48,6 +48,8 @@ public class LoginServlet extends HttpServlet {
 		String userid = (String) request.getSession().getAttribute("userid");
 
 		request.setCharacterEncoding(UTF_8);
+		request.getSession().setAttribute("errorMessageRegister",null);
+		request.getSession().setAttribute("errorMessageLogin",null);
 
 		String newlang = request.getParameter(LANG);
 		String currentlang = (String) request.getSession().getAttribute(LANG);
@@ -59,6 +61,7 @@ public class LoginServlet extends HttpServlet {
 				currentpage = "views/login.jsp";
 			}
 			System.out.println("New Lang" + newlang);
+			
 			request.getRequestDispatcher("/WEB-INF/" + currentpage).forward(request, response);
 			return;
 		} else {
@@ -112,20 +115,24 @@ public class LoginServlet extends HttpServlet {
 	private void setLanguage(HttpSession session, String lang) {
 		String dir = "ltr";
 		String msglang = "en";
+		String mdirauto ="mr-auto";
 		switch (lang) {
 		case "EN":
 			dir = "ltr";
 			msglang = "en";
+			mdirauto = "mr-auto";
 
 			break;
 		case "FR":
 			dir = "ltr";
 			msglang = "fr";
+			mdirauto = "mr-auto";
 
 			break;
 		case "HE":
 			dir = "rtl";
 			msglang = "es";
+			mdirauto = "ml-auto";
 
 			break;
 		default:
@@ -135,6 +142,8 @@ public class LoginServlet extends HttpServlet {
 		session.setAttribute(LANG, lang);
 		session.setAttribute("msglang", msglang);
 		session.setAttribute("dir", dir);
+		session.setAttribute("mdirauto", mdirauto);
+	
 
 	}
 
@@ -156,7 +165,8 @@ public class LoginServlet extends HttpServlet {
 		request.setCharacterEncoding(UTF_8);
 
 		setDefaultLanguage(request.getSession());
-
+		request.getSession().setAttribute("errorMessageRegister",null);
+		request.getSession().setAttribute("errorMessageLogin",null);
 		String login = request.getParameter("login");
 		System.out.println("login exists " + login);
 		if (login != null) {
@@ -196,26 +206,34 @@ public class LoginServlet extends HttpServlet {
 		String name = request.getParameter("usernamesignup");
 		String password = request.getParameter("passwordsignup");
 		String email = request.getParameter("emailsignup");
+		String consent = request.getParameter("contact");
 		String age = request.getParameter("age");
 		String hebrew = request.getParameter("hebrew");
 		String midrashim = request.getParameter("midrashim");
 
 		UserInfo uInfo = new UserInfo(convert(age), convert(hebrew), convert(midrashim));
 		if (!userValidationService.checkUser(name)) {
-			int userRegisterd = userValidationService.registerUser(name, password, email, uInfo);
+			int userRegisterd = userValidationService.registerUser(name, password, email, convertB(consent), uInfo);
 			if (userRegisterd != 0) {
-				request.setAttribute("errorMessageRegister", "Problem registering");
+				request.getSession().setAttribute("errorMessageRegister", "Problem registering");
 				response.sendRedirect("/TS1218/LoginServlet#toregister");
 				return;
 			}
 			request.getSession().setAttribute("username", name);
 			response.sendRedirect("/TS1218/LoginServlet");
 		} else {
-			request.setAttribute("errorMessageRegister", "Invalid Username exists");
+			request.getSession().setAttribute("errorMessageRegister", "Invalid Username exists");
 			response.sendRedirect("/TS1218/LoginServlet#toregister");
 
 		}
 
+	}
+
+	private boolean convertB(String consent) {
+		if("on".equals(consent)) {
+			return true;
+		}
+		return false;
 	}
 
 	private void handleLogin(HttpServletRequest request, HttpServletResponse response)

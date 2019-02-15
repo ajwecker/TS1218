@@ -1,84 +1,100 @@
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 <div class="letters">
-		<div class="content">
-			<table class="letters-table">
-				<tr>
-					<td>א</td>
-					<td>ב</td>
-					<td>ג</td>
-					<td>ד</td>
-					<td>ה</td>
-					<td>ו</td>
-					<td>ז</td>
-					<td>ח</td>
-					<td>ט</td>
-				</tr>
-				<tr>
-					<td><img src="./images/letters/aleph.png" /></td>
-					<td><img src="./images/letters/bet.png" /></td>
-					<td><img src="./images/letters/gimel.png" /></td>
-					<td><img src="./images/letters/dalet.png" /></td>
-					<td><img src="./images/letters/heh.png" /></td>
-					<td><img src="./images/letters/vav.png" /></td>
-					<td><img src="./images/letters/zain.png" /></td>
-					<td><img src="./images/letters/het.png" /></td>
-					<td><img src="./images/letters/tet.png" /></td>
-				</tr>
 
-				<tr>
-					<td>י</td>
-					<td>כ</td>
-					<td>ך</td>
-					<td>ל</td>
-					<td>מ</td>
-					<td>ם</td>
-					<td>נ</td>
-					<td>ן</td>
-					<td>ס</td>
-				</tr>
-				<tr>
-					<td><img src="./images/letters/yod.png" /></td>
-					<td><img src="./images/letters/kaf.png" /></td>
-					<td><img src="./images/letters/kaf_sofit.png" /></td>
-					<td><img src="./images/letters/lamed.png" /></td>
-					<td><img src="./images/letters/mem.png" /></td>
-					<td><img src="./images/letters/mem_sofit.png" /></td>
-					<td><img src="./images/letters/nun.png" /></td>
-					<td><img src="./images/letters/nun_sofit.png" /></td>
-					<td><img src="./images/letters/sameh.png" /></td>
+			<div class="content">
+				<table class="letters-table">
+					<tr>
+						<td>א</td>
+						<td>ב</td>
+						<td>ג</td>
+						<td>ד</td>
+						<td>ה</td>
+						<td>ו</td>
 
-				</tr>
-				<tr>
-					<td>ע</td>
-					<td>פ</td>
-					<td>ף</td>
-					<td>צ</td>
-					<td>ץ</td>
-					<td>ק</td>
-					<td>ר</td>
-					<td>ש</td>
-					<td>ת</td>
+					</tr>
+					<tr>
+						<td><img src="./images/letters/aleph.png" /></td>
+						<td><img src="./images/letters/bet.png" /></td>
+						<td><img src="./images/letters/gimel.png" /></td>
+						<td><img src="./images/letters/dalet.png" /></td>
+						<td><img src="./images/letters/heh.png" /></td>
+						<td><img src="./images/letters/vav.png" /></td>
 
-				</tr>
-				<tr>
-					<td><img src="./images/letters/ayin.png" /></td>
-					<td><img src="./images/letters/peh.png" /></td>
-					<td><img src="./images/letters/peh_sofit.png" /></td>
-					<td><img src="./images/letters/tzadi.png" /></td>
-					<td><img src="./images/letters/tzadi_sofit.png" /></td>
-					<td><img src="./images/letters/kuf.png" /></td>
-					<td><img src="./images/letters/reish.png" /></td>
-					<td><img src="./images/letters/shin.png" /></td>
-					<td><img src="./images/letters/tav.png" /></td>
-				</tr>
-				<tr>
-					<td>א-ל</td>
-				</tr>
-				<tr>
-					<td><img src="./images/letters/alef_lamed.png" /></td>
-				</tr>
-			</table>
+					</tr>
+					<tr>
+
+						<td>ז</td>
+						<td>ח</td>
+						<td>ט</td>
+						<td>י</td>
+						<td>כ</td>
+						<td>ך</td>
+					</tr>
+					<tr>
+
+						<td><img src="./images/letters/zain.png" /></td>
+						<td><img src="./images/letters/het.png" /></td>
+						<td><img src="./images/letters/tet.png" /></td>
+						<td><img src="./images/letters/yod.png" /></td>
+						<td><img src="./images/letters/kaf.png" /></td>
+						<td><img src="./images/letters/kaf_sofit.png" /></td>
+					</tr>
+					<tr>
+
+						<td>ל</td>
+						<td>מ</td>
+						<td>ם</td>
+						<td>נ</td>
+						<td>ן</td>
+						<td>ס</td>
+					</tr>
+					<tr>
+
+						<td><img src="./images/letters/lamed.png" /></td>
+						<td><img src="./images/letters/mem.png" /></td>
+						<td><img src="./images/letters/mem_sofit.png" /></td>
+						<td><img src="./images/letters/nun.png" /></td>
+						<td><img src="./images/letters/nun_sofit.png" /></td>
+						<td><img src="./images/letters/sameh.png" /></td>
+
+					</tr>
+					<tr>
+						<td>ע</td>
+						<td>פ</td>
+						<td>ף</td>
+						<td>צ</td>
+						<td>ץ</td>
+						<td>ק</td>
 
 
+					</tr>
+					<tr>
+						<td><img src="./images/letters/ayin.png" /></td>
+						<td><img src="./images/letters/peh.png" /></td>
+						<td><img src="./images/letters/peh_sofit.png" /></td>
+						<td><img src="./images/letters/tzadi.png" /></td>
+						<td><img src="./images/letters/tzadi_sofit.png" /></td>
+						<td><img src="./images/letters/kuf.png" /></td>
+
+					</tr>
+					<tr>
+
+						<td>ר</td>
+						<td>ש</td>
+						<td>ת</td>
+						<td>א-ל</td>
+
+					</tr>
+					<tr>
+
+						<td><img src="./images/letters/reish.png" /></td>
+						<td><img src="./images/letters/shin.png" /></td>
+						<td><img src="./images/letters/tav.png" /></td>
+						<td><img src="./images/letters/alef_lamed.png" /></td>
+					</tr>
+
+				</table>
+
+
+			</div>
 		</div>
-	</div>

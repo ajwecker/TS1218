@@ -103,7 +103,7 @@ public class UserDBaseJDBC implements UserDBase {
 	}
 
 	@Override
-	public int registerUser(String uName, String password, String email, UserInfo uInfo) {
+	public int registerUser(String uName, String password, String email, boolean consent, UserInfo uInfo) {
 		String hpassword;
 		try {
 			hpassword = Password.getSaltedHash(password);
@@ -116,7 +116,7 @@ public class UserDBaseJDBC implements UserDBase {
 		PreparedStatement preparedStatement = null;
 		try {
 			connect();
-			preparedStatement = connect.prepareStatement("insert into  tikkoun.users values (?, ?, ?, ?, ?, ?, ?, ?)");
+			preparedStatement = connect.prepareStatement("insert into  tikkoun.users values (?, ?, ?, ?, ?, ?, ?, ?,?)");
 			preparedStatement.setString(1, uName);
 			preparedStatement.setString(2, email);
 			preparedStatement.setString(3, hpassword);
@@ -125,6 +125,7 @@ public class UserDBaseJDBC implements UserDBase {
 			preparedStatement.setInt(6, uInfo.midrashknowledge);
 			preparedStatement.setInt(7, 0);
 			preparedStatement.setTimestamp(8, new java.sql.Timestamp(System.currentTimeMillis()));
+			preparedStatement.setBoolean(9, consent);
 			preparedStatement.executeUpdate();
 			return 0;
 		} catch (SQLException e) {
@@ -184,11 +185,10 @@ public class UserDBaseJDBC implements UserDBase {
 			}
 			connect();
 			statement = connect.createStatement();
-			ResultSet resultSet = statement.executeQuery("select * from tikkoun.users where userid = '" + user
-					+ "'and password = '" + password + "'");
+			ResultSet resultSet = statement.executeQuery("select * from tikkoun.users where userid = '" + user +  "'");
 			boolean exists = resultSet.last();
 			if (exists) {
-				String stored = resultSet.getString(1);
+				String stored = resultSet.getString(3);
 				return Password.check(password, stored);
 			} 
 			

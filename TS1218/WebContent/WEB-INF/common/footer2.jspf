@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 
-<div class="footer">
+<div class="footer tsbackground">
 	<div class="partner-logos w-60 d-flex justify-content-between">
 		<a href="http://elijahlab.haifa.ac.il/index.php/he/" target="_blank"><img
 			class="tslogos" src="/TS1218/images/logos/e-lijah-vertical.jpg"

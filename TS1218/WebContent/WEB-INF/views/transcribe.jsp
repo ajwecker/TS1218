@@ -56,8 +56,8 @@
 								<!-- Transcribe toolbar -->
 								<div
 									class="btn-toolbar justify-content-between d-flex mt-3 p-10"
-									role="toolbar">
-									<div class="btn-group" role="group" aria-label="First group">
+									role="toolbar" dir="ltr">
+									<div class="btn-group" role="group" aria-label="First group" dir="rtl">
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myMark(']','[')"
 											title='<fmt:message key="main.work_area.hovers.over_additions"/>'>
@@ -83,8 +83,8 @@
 													key="main.work_area.button_4" /></span>
 										</button>
 
-									</div>
-									<div class="btn-group" role="group">
+									
+									
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myInsert('˙')"
 											title='<fmt:message key="main.work_area.hovers.over_upper"/>'>
@@ -107,7 +107,7 @@
 										</select>
 									</div>
 									<!-- right part -->
-									<div class="btn-group" role="group" aria-label="Second group">
+									<div class="btn-group" role="group" aria-label="Second group" dir="rtl">
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myReset()"
 											title='<fmt:message key="main.work_area.hovers.over_reset"/>'>
@@ -137,7 +137,7 @@
 									</div>
 
 									<div id="activity-buttons"
-										class="mt-2 d-flex justify-content-between">
+										class="mt-2 d-flex justify-content-between" dir="rtl">
 
 
 										<button type="submit" class="btn btn-warning" name="status"
