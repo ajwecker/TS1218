@@ -1,0 +1,96 @@
+<project name="ts" default="dist" basedir=".">
+
+	<!-- ****************** Project Standard Properties ******************* -->
+	<property name="classes.dir"      value="build/classes"/>
+	<property name="build.dir"      value="mybuild"/>
+	<property name="dist.dir"       value="dist"/>
+
+	<!-- *********************** Default Properties ********************** -->
+	<property name="extlib.dir"    value="WebContent/WEB-INF/lib"/>
+	<property name="conf.src"       value="WebContent/WEB-INF/"/>
+	<property name="library.src"    value="src"/>
+
+	<!-- ********************* Derived Properties ************************* -->
+	<property name="app.name" value="TS1812"/>
+	<property name="build.app" value="${build.dir}/${app.name}"/>
+	<property name="dist.app"  value="${dist.dir}/${app.name}.war"/>
+
+	<property name="app.jar"   value="tikkou-sofrim.jar"/>
+	<property name="dist.library"   value="${dist.dir}/${app.jar}"/>
+
+	<!-- **************** Tomcat properties ******************** -->
+	<property name="manager.url"    value="https://tikkoun-sofrim.haifa.ac.il/manager/text"/>
+	<property name="tomcat.username"    value="ts"/>
+	<property name="tomcat.password"    value="Tanhuma2019"/>
+	<property name="webapp.name" value="ts-staging"/>
+	<property name="webapp.name.prod" value="TS1812"/>
+
+	<!-- ********************** Destination Preparation ********************* -->
+
+	<target name="prepare">
+		<!-- Set up build directories -->
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${build.app}"/>
+		<mkdir dir="${build.app}/WEB-INF"/>
+		<mkdir dir="${build.app}/WEB-INF/lib"/>
+		<mkdir dir="${build.app}/META-INF"/>
+		<!-- Set up distribution directory -->
+		<mkdir dir="${dist.dir}"/>
+	</target>
+
+	<!-- **************** Compile Tag Library Components ******************** -->
+
+	<!-- Compile the application -->
+	<target name="app" depends="prepare,library-dist">
+		<copy todir="${build.app}/WEB-INF/lib">
+			<fileset dir="${extlib.dir}" excludes="*catalina*,*servlet*"/>
+			<fileset file="${dist.library}"/>
+		</copy>
+		<copy todir="${build.app}/WEB-INF">
+			<fileset dir="${conf.src}"/>
+		</copy>
+	</target>
+
+	<!-- Create the library distribution files -->
+	<target name="library-dist" depends="prepare">
+		<jar jarfile="${dist.library}" basedir="${classes.dir}" />
+	</target>
+
+	<!-- ******************* Create Distribution Files ********************** -->
+
+	<!-- Create the examples application WAR file -->
+	<target name="app-dist" depends="app">
+		<jar jarfile="${dist.app}" basedir="${build.app}"/>
+	</target>
+
+
+	<!-- Create the entire set of distribution files -->
+	<target name="dist" depends="clean,app-dist"/>
+
+	<!-- Delete output directories and files so we can build from scratch -->
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+	</target>
+
+	<!-- ************************ tomcat deploy targets ************************** -->
+	<taskdef name="deploy"    classname="org.apache.catalina.ant.DeployTask">
+		<classpath path="${extlib.dir}/catalina-ant.jar">
+		</classpath>
+	</taskdef>
+	<taskdef name="undeploy"    classname="org.apache.catalina.ant.UndeployTask">
+		<classpath path="${extlib.dir}/catalina-ant.jar">
+		</classpath>
+	</taskdef>
+
+	<target name="undeploy" description="Remove web application">
+		<undeploy url="${manager.url}" username="${tomcat.username}" password="${tomcat.password}"
+	            path="/${webapp.name}" failonerror="false"/>
+	</target>
+	<target name="deploy" description="Install web application"
+	          depends="dist,undeploy">
+		<!-- for some reason authentication will not work when user/password are taken from a variable -->
+		<deploy url="${manager.url}" username="${tomcat.username}" password="${tomcat.password}"
+	            path="/${webapp.name}" war="file:${basedir}/${dist.app}"/>
+	</target>
+</project>
