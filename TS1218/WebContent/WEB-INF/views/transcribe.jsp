@@ -28,7 +28,7 @@
 									<a href='<fmt:message key="main.work_area.video"/>'
 										target="_blank"
 										title='<fmt:message key="main.work_area.video_hover"/>'> <img
-										src="../images/video_thumb.png"/>
+										src="./images/video_thumb.png"/>
 										<fmt:message key="main.work_area.video_hover"/>
 									</a>
 								</div>
@@ -36,17 +36,17 @@
 						</div>
 						<div>
 							<img id="imgline"
-								alt="Page ${manuscriptPage} of ${manuscriptTotalPages}, line ${manuscriptLine} of ${manuscriptTotalLines}"
+								alt="Image of line in page"
 								width="100%" src="${transcribedlineimgsrc}" class="imageline">
 							<%-- <img id="imgline"
-								alt="Page ${manuscriptPage} of ${manuscriptTotalPages}, line ${manuscriptLine} of ${manuscriptTotalLines}"
+								alt="Image of line in page"
 								width="100%" src="${transcribedlineimgsrc}"
 								data-high-res-src="${transcribedlineimgsrc}" class="imageline">
 							<script type="text/javascript">
 								//Example 3
 								$(function() {
-									$('.imageline').ImageViewer({
-										snapView : false
+									$('.imageline').imgViewer2({
+										
 									});
 								});
 							</script> --%>
