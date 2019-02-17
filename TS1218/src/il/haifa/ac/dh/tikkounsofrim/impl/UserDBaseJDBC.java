@@ -141,6 +141,17 @@ public class UserDBaseJDBC implements UserDBase {
 
 		return -1;
 	}
+	
+/*	update user
+ * Get all users
+ * loop on users
+ *     get password
+ *     saltAndHash paasword
+ *     replace password
+ * 
+ * (non-Javadoc)
+ * @see il.haifa.ac.dh.tikkounsofrim.model.UserDBase#checkUser(java.lang.String)
+ */
 
 	@Override
 	public boolean checkUser(String uName) {

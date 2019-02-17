@@ -9,7 +9,7 @@
 
 	<div class="login-page show-login">
 
-		<div class="login-form-wrapper">
+		<div>
 			<div class="jumbotron jumbotron-fluid tsbackground">
 				<div class="container"
 					style="background-color: rgba(255, 255, 255, 0.8);">

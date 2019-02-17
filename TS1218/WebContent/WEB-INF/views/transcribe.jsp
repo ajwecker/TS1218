@@ -245,7 +245,8 @@
 			zoom : 0,
 			zoomSnap : 0,
 			zoomDelta : 0.25,
-			crs : L.CRS.Simple
+			crs : L.CRS.Simple,
+			dragging: !L.Browser.mobile
 		});
 
 		var pageTileLayer = L.tileLayer.iiif('${pageimgsrc}');
@@ -265,8 +266,8 @@
 		map.attributionControl.setPrefix("");
 		map.attributionControl.addAttribution("${manuscriptAttribution}");
 
-		setTimeout(function() {
+		/* setTimeout(function() {
 			map.fitBounds(map.getBounds(imageLayer))
-		}, 1500)
+		}, 1500) */
 	</script>
 	<%@include file="../common/footer2.jspf"%>

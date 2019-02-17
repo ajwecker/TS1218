@@ -76,7 +76,7 @@ function myResizeOrg() {
 
   if (elemImg) {
     var rect = elemImg.getBoundingClientRect();
-    var fontsize = (Math.trunc(rect.height * 0.60) - 1) + "px";
+    var fontsize = (Math.trunc(rect.height * 0.50) - 1) + "px";
     //    		    var elemTRO = document.getElementById("tro");
     //    			elemTRO.style.height = fontsize;
     //    			elemTRO.style.fontSize = fontsize;
