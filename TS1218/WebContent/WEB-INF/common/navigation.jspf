@@ -5,8 +5,11 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	
 	<a class="navbar-brand"
-		href="${pageContext.request.contextPath}/LoginServlet?page=views/login.jsp"><fmt:message
+		href="${pageContext.request.contextPath}/LoginServlet?page=views/login.jsp">
+		<img src="./images/TS_logo_nobackground2.png" >
+		<fmt:message
 			key="main.site_name" /></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
 		data-target="#navbarSupportedContent"
