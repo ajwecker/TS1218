@@ -4,8 +4,7 @@
 		<div class="title">Lettres du manuscrit de Genève</div>
 	</div>
 	<div class="content">
-		<div>Voici les lettres du manucrit. En bas vous trouvez des
-			comparaisons entre des lettres qui sont souvent confondues (bet-kaf,
+		<div>Voici les lettres du manucrit. Vous trouverez ci-dessous une présentation comparative des lettres qui se ressemblent, et qui sont donc souvent confondues (bet-kaf,
 			dalet-resh, tet-mem).</div>
 
 
@@ -111,15 +110,15 @@
 
 	<div class="content mt-3">
 		<div class="header">
-			<div class="title">Distinguer des lettres similaires</div>
+			<div class="title">Distinguer les lettres similaires</div>
 		</div>
 		<div class="content">
 			<div class="letters mt-5">
 				<div class="title">Dalet - Resh</div>
 				<div class="content">
-					<p>Généralement, on peut facilement distinguer entre Dalet et
+					<p>Généralement, on peut facilement distinguer le Dalet du
 						Resh dans le manuscrit de Genève : la lettre Resh est arrondie et
-						écrite d’une traite, alors que la ligne verticale de la lettre
+						tracée d'un seul trait, alors que la ligne verticale de la lettre
 						Dalet penche en diagonal vers la gauche, avec un angle clairement
 						défini en haut à droite.</p>
 					<p>Angle arrondi : Resh. Angle pointu : Dalet.</p>
@@ -140,11 +139,11 @@
 				<div class="title">Bet - Kaf</div>
 				<div class="content">
 					<p>Les lettres Bet et Kaf sont en général très différentes :
-						Kaf est arrondie et écrite d’une traite. Bet est écrite avec des
+						Le Kaf est arrondi et écrit d’une traite. Le Bet est tracé avec des
 						lignes droites, la ligne du côté droit descend vers le bas en
 						léger diagonal vers la droite. Les angles sont clairement définis.
-						Parfois la ligne verticale est légèrement courbée en bas à droite
-						pour former la “queue” de Bet.</p>
+						La ligne verticale est quelquefois légèrement courbée en bas à droite
+						pour former la “queue” du Bet.</p>
 					<p>Forme arrondie : Kaf. Angles définis : Bet.</p>
 					<div class="images">
 						<img class="w-100 large"
@@ -160,13 +159,13 @@
 		</div>
 		<div class="content">
 			<div class="letters mt-5">
-				<div class="title">Mem finale - Samekh</div>
+				<div class="title">Mem final - Samekh</div>
 				<div class="content">
 					<p>Contrairement à l’écriture moderne, dans le manuscrit de
-						Genève la Mem finale est généralement arrondie. Samekh, en
+						Genève le Mem finale est généralement arrondi. Le Samekh, en
 						revanche, a un trait du côté gauche qui descend verticalement et
 						parfois une pointe à l’angle inférieur gauche.</p>
-					<p>Côté gauche arrondi : Mem finale. Côté gauche droit ou avec
+					<p>Côté gauche arrondi : Mem final. Côté gauche droit ou avec
 						une pointe en bas à gauche : Samekh.</p>
 					<div class="images">
 						<img class="w-100 large"

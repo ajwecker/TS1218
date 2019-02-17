@@ -4,19 +4,27 @@
 
 	<div class="header">
 		<div class="title">Suppressions et ajouts</div>
-		<div>Voici un tutoriel concernant les suppressions et les ajouts : comment ils sont-ils indiqués par le scribe et comment les représenter lors de la transcription.
+		<div>Voici un tutoriel concernant les suppressions et les ajouts : comment ils sont indiqués par le scribe et 
+		comment les représenter lors de la transcription.
 </div>
 	</div>
 	<div class="content">
 		<div class="deletions">
 			<div class="title">Suppressions</div>
 			<div class="content">
-				<p>Il faut distinguer deux types de suppressions : a) les suppressions effectuées par le premier scribe lors de la rédaction du manuscrit, par lesquelles il corrige ses propres erreurs à mesure qu’il copie : lettres erronées, mots écrits deux fois (dittographie), etc. b) les suppressions effectuées ultérieurement par d’autres scribes pouvant être des corrections d’erreurs ou des témoins issus d’autres manuscrits.
-Le scribe du manuscrit de Genève indique les suppressions de plusieurs façons : une ligne horizontale barrant le mot ; une ligne horizontale au-dessus du mot ; des points au-dessus du mot ; des traits en diagonale. Il utilise en général la première méthode (ligne au-dessus du mot), mais les autres méthodes de suppression apparaissent occasionnellement :
+				<p>Il faut distinguer deux types de suppressions : a) les suppressions effectuées par le premier scribe 
+				lors de la rédaction du manuscrit, par lesquelles il corrige ses propres erreurs à mesure qu’il copie :
+				lettres erronées, mots écrits deux fois (dittographie), etc. b) les suppressions effectuées
+				ultérieurement par d’autres scribes, pouvant être des corrections d’erreurs ou des témoins issus 
+				d’autres manuscrits.
+Le scribe du manuscrit de Genève indique les suppressions de plusieurs façons : une ligne horizontale barrant le mot ; une ligne 
+horizontale au-dessus du mot ; des points au-dessus du mot ; des traits en diagonale. Il utilise en général la première méthode 
+(ligne au-dessus du mot), mais les autres méthodes de suppression apparaissent occasionnellement :
 </p>
 
 				<ul>
-					<li><img src="/TS1218/images/ex_deletion_small.jpg"> La ligne horizontale indique la suppression des mots ואת בניו (écrits deux fois, par erreur).</li>
+					<li><img src="/TS1218/images/ex_deletion_small.jpg"> La ligne horizontale indique la suppression 
+					des mots ואת בניו (écrits deux fois, par erreur).</li>
 					<li><img src="/TS1218/images/ex_struck_through_small.jpg">
 						le mot תורה a été barré.</li>
 					<li><img
@@ -24,8 +32,11 @@ Le scribe du manuscrit de Genève indique les suppressions de plusieurs façons 
 						Une combinaison des deux méthodes ci-dessus.</li>
 				</ul>
 				<p>
-					Pour indiquer la suppression d’une lettre ou d’un mot dans le manuscrit, sélectionnez le texte supprimé avec la souris, puis cliquez sur le bouton « supprimé » (<img
-						src="/TS1218/images/ex_deleted_btn_small.jpg">) en-dessous de la boîte de texte. Vous pouvez également cliquer sur le bouton « supprimé » puis taper le texte supprimé entre les parenthèses. Par exemple : <img
+					Pour indiquer la suppression d’une lettre ou d’un mot dans le manuscrit, sélectionnez le texte
+					supprimé avec la souris, puis cliquez sur le bouton « supprimé » (<img
+						src="/TS1218/images/ex_deleted_btn_small.jpg">) en-dessous de la boîte de texte. Vous
+						pouvez également cliquer sur le bouton « supprimé » puis taper le texte supprimé entre 
+						les parenthèses. Par exemple : <img
 						src="/TS1218/images/ex_marked_as_deleted_small.jpg"> (אותי)
 					est supprimé.
 				</p>
@@ -41,7 +52,7 @@ Le scribe du manuscrit de Genève indique les suppressions de plusieurs façons 
 			<div class="content">
 				<p>Il existe deux types d’ajouts, qu’ils soient interlinéaires (en-dessus ou en-dessous de la ligne) ou marginaux (dans les marges).
 Ajouts par le premier scribe : une lettre ou un mot qui ont été omis pendant le processus de copie
-Ajouts par d’autres : un mot accidentellement omis par le scribe, ou correction du texte à la lumière d’une autre version.
+Ajouts par d’autres : un mot accidentellement omis par le scribe, ou une correction du texte à la lumière d’une autre version.
 Le scribe du manuscrit de Genève insère le plus souvent les ajouts les plus courts au-dessus de la ligne, tandis que les passages plus longs sont ajoutés dans les marges.
 </p>
 				<p>
@@ -64,7 +75,7 @@ Ces mots doivent être écrits normalement, sans aucune indication spéciale. Vo
 		<div class="damaged_or_unreadable_text">
 			<div class="title">Texte endommagé ou illisible</div>
 			<div class="content">
-				<p>Les manuscrits ont été endommagés à travers les années. Ils sont parfois déchirés et parfois l’encre est effacée ou estompée.</p>
+				<p>Les manuscrits nous arrivent de loin, et ont souvent été endommagés au fil des siècles. Ils sont parfois déchirés, et l’encre peut être estompée ou effacée.</p>
 				<p>
 					<strong> Pour marquer des lettres non-identifiables (déchirées ou estompées), cliquez sur le bouton âdamagedâ et insérez des espaces entre les chevrons, selon votre estimation de la longueur du texte illisible.</strong>
 				</p>
@@ -77,13 +88,13 @@ Ces mots doivent être écrits normalement, sans aucune indication spéciale. Vo
 				<p>
 					<strong>‘douteux’</strong>
 				</p>
-				<p>Le bouton du doute est destiné aux cas où vous n’êtes pas certain si la transcription automatique a bien identifié une lettre dans le manuscrit. Essayez d’utiliser ce bouton le plus rarement possible, et seulement dans des cas particulièrement difficiles.</p>
+				<p>Le bouton "douteux" est destiné aux cas où vous n’êtes pas certain si la transcription automatique a bien identifié une lettre dans le manuscrit. Essayez d’utiliser ce bouton le plus rarement possible, et seulement dans des cas particulièrement difficiles.</p>
 				<p>Par exemple, la dernière lettre du dernier mot n’est pas assez claire et vous n’êtes pas certain si la transcription est correcte : אלא לפי כחן</p>
 				<p>
-					<strong>Pour indiquer le doute, utilisez la souris et marquez la lettre puis cliquez sur ‘douteux’.
+					<strong>Pour indiquer un doute, utilisez la souris pour sélectionner la lettre puis cliquez sur ‘douteux’.
 						Vous pouvez également cliquer sur le bouton et taper la lettre la plus probable entre les accolades.</strong>
 				</p>
-				<p>Dans cet exemple il faut marquer comme douteuse la lettre ainsi : {אלא לפי כח{ו</p>
+				<p>Dans cet exemple, il faut marquer comme douteuse la lettre ainsi : {אלא לפי כח{ו</p>
 			</div>
 		</div>
 	</div>
