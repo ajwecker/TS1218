@@ -124,10 +124,10 @@
 					<p>Angle arrondi : Resh. Angle pointu : Dalet.</p>
 					<div class="images">
 						<img class="w-100 large"
-							src="/TS1218/images/similar_letters/a_similar_letters_dalet_reish_table.png">
+							src="../images/similar_letters/a_similar_letters_dalet_reish_table.png">
 						<div>
 							מדבר - <img
-								src="/TS1218/images/similar_letters/b_similar_letters_dalet_reish_example.png">
+								src="../images/similar_letters/b_similar_letters_dalet_reish_example.png">
 						</div>
 					</div>
 
@@ -147,10 +147,10 @@
 					<p>Forme arrondie : Kaf. Angles définis : Bet.</p>
 					<div class="images">
 						<img class="w-100 large"
-							src="/TS1218/images/similar_letters/c_similar_letters_bet_kaf_table.png">
+							src="../images/similar_letters/c_similar_letters_bet_kaf_table.png">
 						<div>
 							בדרכי - <img
-								src="/TS1218/images/similar_letters/d_similar_letters_bet_kaf_example.png">
+								src="../images/similar_letters/d_similar_letters_bet_kaf_example.png">
 						</div>
 					</div>
 
@@ -169,14 +169,14 @@
 						une pointe en bas à gauche : Samekh.</p>
 					<div class="images">
 						<img class="w-100 large"
-							src="/TS1218/images/similar_letters/e_similar_letters_sameh_mem_sofit_table.png">
+							src="../images/similar_letters/e_similar_letters_sameh_mem_sofit_table.png">
 						<div>
 							סיני - <img
-								src="/TS1218/images/similar_letters/f_similar_letters_sameh_mem_sofit_example1.png">
+								src="../images/similar_letters/f_similar_letters_sameh_mem_sofit_example1.png">
 						</div>
 						<div>
 							ומכולם - <img
-								src="/TS1218/images/similar_letters/g_similar_letters_sameh_mem_sofit_example2.png">
+								src="../images/similar_letters/g_similar_letters_sameh_mem_sofit_example2.png">
 						</div>
 					</div>
 				</div>

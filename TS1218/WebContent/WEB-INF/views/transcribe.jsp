@@ -28,7 +28,7 @@
 									<a href='<fmt:message key="main.work_area.video"/>'
 										target="_blank"
 										title='<fmt:message key="main.work_area.video_hover"/>'> <img
-										src="/TS1218/images/video_thumb.png"/>
+										src="../images/video_thumb.png"/>
 										<fmt:message key="main.work_area.video_hover"/>
 									</a>
 								</div>
@@ -212,25 +212,25 @@
 						aria-labelledby="profile-tab">
 						<div class="tabcontent">
 							<jsp:include
-								page="../views/parts/${lang}/transcribe/special.jspf" />
+								page="parts/${lang}/transcribe/special.jspf" />
 						</div>
 					</div>
 					<div class="tab-pane fade" id="ab" role="tabpanel"
 						aria-labelledby="ab-tab">
 						<div class="tabcontent">
-							<jsp:include page="../views/parts/${lang}/transcribe/abc.jspf" />
+							<jsp:include page="parts/${lang}/transcribe/abc.jspf" />
 						</div>
 					</div>
 					<div class="tab-pane fade" id="marked" role="tabpanel"
 						aria-labelledby="marked-tab">
 						<div class="tabcontent">
-							<jsp:include page="../views/parts/${lang}/transcribe/marked.jspf" />
+							<jsp:include page="parts/${lang}/transcribe/marked.jspf" />
 						</div>
 					</div>
 					<div class="tab-pane fade" id="help" role="tabpanel"
 						aria-labelledby="help-tab">
 						<div class="tabcontent">
-							<jsp:include page="../views/parts/${lang}/transcribe/help.jspf" />
+							<jsp:include page="parts/${lang}/transcribe/help.jspf" />
 						</div>
 					</div>
 

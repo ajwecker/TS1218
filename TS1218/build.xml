@@ -52,10 +52,7 @@
 			<fileset dir="${conf.src}"/>
 		</copy>
 		<copy todir="${build.app}">
-			<fileset dir="${images.src}"/>
-		</copy>
-		<copy todir="${build.app}">
-			<fileset dir="${views.src}"/>
+			<fileset dir="${conf.src}" includes="images/**,views/**"/>
 		</copy>
 	</target>
 

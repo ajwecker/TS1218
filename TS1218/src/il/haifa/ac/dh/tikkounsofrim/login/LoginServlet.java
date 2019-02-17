@@ -216,14 +216,14 @@ public class LoginServlet extends HttpServlet {
 			int userRegisterd = userValidationService.registerUser(name, password, email, convertB(consent), uInfo);
 			if (userRegisterd != 0) {
 				request.getSession().setAttribute("errorMessageRegister", "Problem registering");
-				response.sendRedirect("/TS1218/LoginServlet#toregister");
+				response.sendRedirect("LoginServlet#toregister");
 				return;
 			}
 			request.getSession().setAttribute("username", name);
-			response.sendRedirect("/TS1218/LoginServlet");
+			response.sendRedirect("LoginServlet");
 		} else {
 			request.getSession().setAttribute("errorMessageRegister", "Invalid Username exists");
-			response.sendRedirect("/TS1218/LoginServlet#toregister");
+			response.sendRedirect("LoginServlet#toregister");
 
 		}
 
@@ -274,7 +274,7 @@ public class LoginServlet extends HttpServlet {
 			}
 			request.getSession().setAttribute(TASK_PROVIDER, taskProvider);
 			request.getSession().setAttribute(TASK, task);
-			response.sendRedirect("/TS1218/TranscribeServlet");
+			response.sendRedirect("TranscribeServlet");
 		} else {
 			request.setAttribute("errorMessageLogin", "Invalid Credentials!");
 			request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);

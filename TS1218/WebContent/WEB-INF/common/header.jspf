@@ -35,9 +35,9 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@0.4.10/dist/leaflet.draw.css" />
 
   <!-- Image viewer -->
-  <link href="/TS1218/views/imgViewer2.min.css" rel="stylesheet" type="text/css" />
+  <link href="imgViewer2.min.css" rel="stylesheet" type="text/css" />
   <!-- Custom styles -->
-  <link rel="stylesheet/less" type="text/css" href="/TS1218/views/css/styles.less" />
+  <link rel="stylesheet/less" type="text/css" href="views/css/styles.less" />
   <!-- DEV ONLY -->
 <!--   <script src="/lib/live.js"></script> -->
 <!-- scripts go here -->
@@ -60,11 +60,11 @@
 
 
   <!-- Image viewer -->
-  <script src="/TS1218/views/imgViewer2.min.js"></script>
+  <script src="views/imgViewer2.min.js"></script>
 
   
   <!-- Custom scripts -->
-  <script src="/TS1218/views/script.js"></script>
+  <script src="views/script.js"></script>
 </head>
 
 

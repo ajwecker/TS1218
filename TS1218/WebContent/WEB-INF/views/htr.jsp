@@ -10,7 +10,7 @@
 		$("[data-link='htr']").addClass('active');
 	</script>
 	<div class="container scrollable mt-2">
-		<jsp:include page="../views/parts/${lang}/main-content/htr.jspf" />
+		<jsp:include page="parts/${lang}/main-content/htr.jspf" />
 
 	</div>
 	<%@ include file="../common/footer.jspf"%>

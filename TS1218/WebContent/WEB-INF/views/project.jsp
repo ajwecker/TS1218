@@ -11,7 +11,7 @@
 	</script>
 
 	<div class="container scrollable mt-2">
-		<jsp:include page="../views/parts/${lang}/main-content/project.jspf" />
+		<jsp:include page="parts/${lang}/main-content/project.jspf" />
 
 	</div>
 
