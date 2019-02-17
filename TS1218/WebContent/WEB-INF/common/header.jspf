@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@0.4.10/dist/leaflet.draw.css" />
 
   <!-- Image viewer -->
-  <link href="imgViewer2.min.css" rel="stylesheet" type="text/css" />
+  <link href="views/imgViewer2.min.css" rel="stylesheet" type="text/css" />
   <!-- Custom styles -->
   <link rel="stylesheet/less" type="text/css" href="views/css/styles.less" />
   <!-- DEV ONLY -->
