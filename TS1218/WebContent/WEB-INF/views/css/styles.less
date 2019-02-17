@@ -80,7 +80,7 @@ height:100%;
         }
     }
     .login-form {
-max-width:450px;
+
         &>div{
         margin-bottom:10px;
         input{
@@ -153,6 +153,11 @@ font-size:18px;
     .info-page{
 .flex-nowrap{overflow-x:auto;overflow-y:hidden;}
 }
+.login-page {
+.login-form-wrapper{padding:5px;}
+	.login-form{width:100%;margin-top:10px}
+
+}
 body {
 @media (min-width: 768px) {
 position:absolute;
@@ -161,7 +166,10 @@ left:0;
 right:0;
 bottom:0;
 overflow:hidden;
-
+.login-page{
+.login-form-wrapper{padding:0;}
+	.login-form{max-width:450px;margin-top:0;}
+}
 .transcribe-page{
 .btn-toolbar{
 button{
@@ -184,26 +192,28 @@ overflow:hidden;
     margin-top:20px;
 }
  }
+ .video_tut{
+ a{
+ img{
+ width: 100%; border: 1px solid black
+ }
+ }
+ 
+ }
+ .big_image{
+             	background-image: url(/TS1218/images/midrash.png);
+              background-repeat: no-repeat;
+        background-size: cover;
+        height:300px;
+        width:100%;
+ }
 .tsbackground {
           
               	background-image: url(/TS1218/images/Banner_1900_100.png);
-              
-            
-        }
-    .top-banner {
-        height: 60px;
-        background-image: url(/TS1218/images/Banner_1900_100.png);
-        background-repeat: no-repeat;
+              background-repeat: no-repeat;
         background-size: cover;
-        background-blend-mode: lighten;
-       
-        .navbar-brand {
-          
-              	background-image: url(/TS1218/images/Banner_1900_100.png);
-                
-            
         }
-    }
+
     .top-nav {
         white-space: nowrap;
         border-bottom: 1px solid #333;

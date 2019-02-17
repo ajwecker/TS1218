@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
-<div class="footer tsbackground">
+<div class="footer">
 	<div class="partner-logos w-100 d-flex justify-content-between">
 		<a href="http://elijahlab.haifa.ac.il/index.php/he/" target="_blank">
 			<img class="tslogos" src="/TS1218/images/logos/e-lijah-vertical.jpg"
@@ -14,7 +14,7 @@
 			alt="Ministry of Science and Technology"
 			title="Ministry of Science and Technology"> </a> 
 		<a 	href="http://www.enseignementsup-recherche.gouv.fr/" target="_blank">
-			<img class="tslogos" src="/TS1218/images/logos/msles.jpg"
+			<img class="tslogos" src="/TS1218/images/logos/msles.png"
 			alt="Ministère de lʼEnseignement supérieur, de la Recherche et de lʼInnovation"
 			title="Ministère de lʼEnseignement supérieur, de la Recherche et de lʼInnovation">		</a> 
 		<a href="https://www.diplomatie.gouv.fr/en/" target="_blank">

@@ -2,60 +2,54 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
+<div class="row justify-content-center login-form-wrapper">
+	<div class="col-sm-4">
 
-<div class=" col-md-8">
-<h1  >
-		<fmt:message key="login.center.welcome" />
-	</h1>
-	<p>
-		<fmt:message key="login.center.Intro_line_1" />
-	
-	<p>
-		<fmt:message key="login.center.Intro_line_2" />
-	<div class="alert alert-info mmsg" role="alert">
-		<p class="mt-10">
-		<fmt:message key="banner.encourgement.line_1" />
 		<p>
+			<fmt:message key="banner.encourgement.line_1" />
+		</p>
 		<fmt:message key="banner.encourgement.line_2" />
-	</div>	
-	
-</div>
-<div class="col-md-4">
-	<form autocomplete="on" id="loginForm"
-		action="${pageContext.request.contextPath}/LoginServlet" method="post">
 
-		<div class="login-form">
-			<div>
-				<input id="username" name="username" required="required" type="text"
-					placeholder="myusername or mymail@mail.com" value="${username}" />
-			</div>
-			<div>
-				<input id="password" name="password" type="password"
-					placeholder="password" />
-			</div>
-			<div>
-				<input id="loginButton" name="login" class="btn-primary"
-					type="submit" value='<fmt:message key="toolbar.right.start"/>' />
-			</div>
-			<div class="d-flex justify-content-between">
+	</div>
+	<div class="col-sm-4">
+		<form autocomplete="on" id="loginForm"
+			action="${pageContext.request.contextPath}/LoginServlet"
+			method="post">
+
+			<div class="login-form">
 				<div>
-					<a href="#" onclick="showRegisterForm()"><fmt:message
-							key="login.login_area.register" /></a>
+					<input id="username" name="username" required="required"
+						type="text" placeholder="myusername or mymail@mail.com"
+						value="${username}" />
 				</div>
-				<a href="#" onclick="enterAsGuest()"><fmt:message
-						key="login.login_area.geust" /></a>
+				<div>
+					<input id="password" name="password" type="password"
+						placeholder="password" />
+				</div>
+				<div>
+					<input id="loginButton" name="login" class="btn-primary"
+						type="submit" value='<fmt:message key="toolbar.right.start"/>' />
+				</div>
+				<div class="d-flex justify-content-between">
+					<div>
+						<a href="#" onclick="showRegisterForm()"><fmt:message
+								key="login.login_area.register" /></a>
+					</div>
+					<a href="#" onclick="enterAsGuest()"><fmt:message
+							key="login.login_area.geust" /></a>
+
+				</div>
 
 			</div>
-			
-		</div>
 
-	<c:if test="${errorMessageLogin != null}">
-			<p style="font-weight: bold; font-size: large; color: red;">
-			<fmt:message key="login.login_area.invalid" />
-			</p>
-		</c:if>
+			<c:if test="${errorMessageLogin != null}">
+				<p style="font-weight: bold; font-size: large; color: red;">
+					<fmt:message key="login.login_area.invalid" />
+				</p>
+			</c:if>
 
 
 
-	</form>
+		</form>
+	</div>
 </div>

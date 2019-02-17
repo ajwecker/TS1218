@@ -15,24 +15,30 @@
 					<div class="w-100 p-3">
 						<div id="work-page"
 							class="d-flex flex-column justify-content-between">
-							<div style="float: left" class="header mb-4">
-								<div>
+							<div class="header mb-4 row">
+								<div class="col-8">
 
 									<fmt:message key="main.work_area.intro_line_1" />
-
+									<fmt:message key="main.work_area.intro_line_2" />
 								</div>
 
-								<div>
-									<fmt:message key="main.work_area.intro_line_2" />
-									<a href='<fmt:message key="main.work_area.video"/>' target ="_blank" 
-									 title='<fmt:message key="main.work_area.video_hover"/>' >
-									 <fmt:message key="main.work_area.video_text"/>
-								 </a>
+								<div class="video_tut col-4"
+									>
+
+									<a href='<fmt:message key="main.work_area.video"/>'
+										target="_blank"
+										title='<fmt:message key="main.work_area.video_hover"/>'> <img
+										src="/TS1218/images/video_thumb.png"/>
+										<fmt:message key="main.work_area.video_hover"/>
+									</a>
 								</div>
 							</div>
 						</div>
 						<div>
 							<img id="imgline"
+								alt="Page ${manuscriptPage} of ${manuscriptTotalPages}, line ${manuscriptLine} of ${manuscriptTotalLines}"
+								width="100%" src="${transcribedlineimgsrc}" class="imageline">
+							<%-- <img id="imgline"
 								alt="Page ${manuscriptPage} of ${manuscriptTotalPages}, line ${manuscriptLine} of ${manuscriptTotalLines}"
 								width="100%" src="${transcribedlineimgsrc}"
 								data-high-res-src="${transcribedlineimgsrc}" class="imageline">
@@ -43,7 +49,7 @@
 										snapView : false
 									});
 								});
-							</script>
+							</script> --%>
 							<form
 								action="${pageContext.request.contextPath}/TranscribeServlet"
 								method="post">
@@ -57,7 +63,8 @@
 								<div
 									class="btn-toolbar justify-content-between d-flex mt-3 p-10"
 									role="toolbar" dir="ltr">
-									<div class="btn-group" role="group" aria-label="First group" dir="rtl">
+									<div class="btn-group" role="group" aria-label="First group"
+										dir="rtl">
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myMark(']','[')"
 											title='<fmt:message key="main.work_area.hovers.over_additions"/>'>
@@ -83,8 +90,8 @@
 													key="main.work_area.button_4" /></span>
 										</button>
 
-									
-									
+
+
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myInsert('˙')"
 											title='<fmt:message key="main.work_area.hovers.over_upper"/>'>
@@ -107,7 +114,8 @@
 										</select>
 									</div>
 									<!-- right part -->
-									<div class="btn-group" role="group" aria-label="Second group" dir="rtl">
+									<div class="btn-group" role="group" aria-label="Second group"
+										dir="rtl">
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myReset()"
 											title='<fmt:message key="main.work_area.hovers.over_reset"/>'>
@@ -235,7 +243,7 @@
 			center : [ 0, 0 ],
 			minZoom : 0,
 			zoom : 0,
-			zoomSnap : 0 ,
+			zoomSnap : 0,
 			zoomDelta : 0.25,
 			crs : L.CRS.Simple
 		});
