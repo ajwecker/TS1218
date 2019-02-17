@@ -9,6 +9,8 @@
 	<property name="extlib.dir"    value="WebContent/WEB-INF/lib"/>
 	<property name="conf.src"       value="WebContent/WEB-INF/"/>
 	<property name="library.src"    value="src"/>
+	<property name="images.src"       value="${conf.src}/images"/>
+	<property name="views.src"       value="${conf.src}/views"/>
 
 	<!-- ********************* Derived Properties ************************* -->
 	<property name="app.name" value="TS1812"/>
@@ -48,6 +50,12 @@
 		</copy>
 		<copy todir="${build.app}/WEB-INF">
 			<fileset dir="${conf.src}"/>
+		</copy>
+		<copy todir="${build.app}">
+			<fileset dir="${images.src}"/>
+		</copy>
+		<copy todir="${build.app}">
+			<fileset dir="${views.src}"/>
 		</copy>
 	</target>
 

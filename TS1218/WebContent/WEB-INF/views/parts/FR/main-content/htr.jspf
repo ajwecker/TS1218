@@ -11,20 +11,19 @@ Qu’est-ce que l’HTR ?
 	optimisées manuellement.
 	</p>
 	<p>
-	Dans une première étape, nous analysons automatiquement la mise en page afin 
+	La première étape est d'analyser automatiquement la mise en page afin 
 	de définir des colonnes de texte, ainsi que des zones d’annotations marginales.
 </p>
 	<p>
-Dans une deuxième étape ces régions sont segmentées en images de lignes.
-Actuellement nous procédons encore avec des méthodes traditionnelles, mais nous sommes en 
-train de passer à une approche complètement automatisée par CNN. 
+Dans une second temps, ces régions sont segmentées en images de lignes.
+Nous procédons encore actuellement avec des méthodes traditionnelles, mais le passage à une approche complètement automatisée par CNN est en cours. 
 </p>
 	<p>
-Dans une troisième étape nous entraînons l’ordinateur à déchiffrer le texte dans les images 
+Lors de la troisième étape, nous entraînons l’ordinateur à déchiffrer le texte qui figure dans les images 
 des lignes. Le principe de base est le suivant: montrer à l’ordinateur un grand nombre d’images 
-de lignes de manuscrits et leurs transcriptions correspondantes sous forme de texte. L’ordinateur
+de lignes de manuscrits, ainsi que leurs transcriptions correspondantes sous forme de texte. L’ordinateur
 apprend au fur et à mesure comment produire du texte avec des images comme données d’entrée. 
-À force d’entraînement, il devient capable de le faire aussi pour des images qu’il n’a jamais vues.
+À force d’entraînement, il devient capable de le faire également pour des images qu’il n’a jamais vues.
 Notre système principal est Kraken, développé par Benjamin Kiessling.
 Tikkoun Sofrim est le deuxième projet d’HTR à l’EPHE à côté de Sofer Mahir, un projet qui vise 
 à la transcription automatique des principaux manuscrits de la littérature tannaïtique.
@@ -32,7 +31,7 @@ Tikkoun Sofrim est le deuxième projet d’HTR à l’EPHE à côté de Sofer Ma
 	<p>
 À l’université PSL, dans le cadre du projet Scripta-PSL, nous travaillons à la construction de
 eScriptorium, une infrastructure en open source qui permettra la transcription automatique de 
-manuscrits et leur annotation profonde (philologique, historique, linguistique).
+manuscrits et de leur annotation profonde (philologique, historique, linguistique).
 
 </p>
 
@@ -41,29 +40,27 @@ Crowdsourcing et sciences participatives
 </div>
 <p>
 	
-Les initiatives impliquant le grand public dans 
-la recherche universitaire sont en plein essor 
-ces dernières années. On les appelle souvent 
+Ces dernières années, initiatives impliquant le grand public dans 
+la recherche universitaire sont en plein essor. On les appelle souvent 
 “sciences citoyennes”. Ces initiatives invitent
 le grand public à participer à des tâches dans 
-divers domaines qui vont de la catégorisation 
+divers domaines de recherche, qui vont de la catégorisation 
 des galaxies à la classification des espèces 
-animales en voie d’extinction ; tout comme les
-sciences humaines.
+animales en voie d’extinction.
 </p>
 	<p>
-Les initiatives de sciences participatives sont
+Les initiatives de sciences participatives
 ont un intérêt mutuel : elles visent, d’une part,
 à exposer la recherche scientifique au grand 
-public d’une façon compréhensible, qui lui permet
+public d’une façon compréhensible, qui lui permette
 de participer aux tâches inhérentes à la recherche
-scientifique ; et d’autre part elles forcent les 
+scientifique ; d’autre part, elles forcent les 
 scientifiques et les chercheurs à descendre de leur
 tour d’ivoire afin de développer les relations entre
 la société et la recherche.
 </p>
 	<p>
 Tikkoun Sofrim est la deuxième initiative de sciences
-citoyennes de l’Elijah Lab de l’université de Haifa,
+citoyennes de l’eLijah-Lab de l’université de Haifa,
 prenant la suite du projet Scribes of the Cairo Genizah.
 </p>
