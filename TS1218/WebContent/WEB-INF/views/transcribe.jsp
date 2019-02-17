@@ -16,13 +16,13 @@
 						<div id="work-page"
 							class="d-flex flex-column justify-content-between">
 							<div class="header mb-4 row">
-								<div class="col-8">
+								<div class="col-md-10 col-8">
 
 									<fmt:message key="main.work_area.intro_line_1" />
 									<fmt:message key="main.work_area.intro_line_2" />
 								</div>
 
-								<div class="video_tut col-4"
+								<div class="video_tut col-md-2 col-4"
 									>
 
 									<a href='<fmt:message key="main.work_area.video"/>'
@@ -265,9 +265,5 @@
 
 		map.attributionControl.setPrefix("");
 		map.attributionControl.addAttribution("${manuscriptAttribution}");
-
-		/* setTimeout(function() {
-			map.fitBounds(map.getBounds(imageLayer))
-		}, 1500) */
 	</script>
-	<%@include file="../common/footer2.jspf"%>
+	<%@include file="../common/footer.jspf"%>

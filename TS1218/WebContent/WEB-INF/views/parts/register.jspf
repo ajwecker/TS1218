@@ -3,77 +3,109 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 
+<div class="container">
+	<form autocomplete="on"
+		action="${pageContext.request.contextPath}/LoginServlet" method="post">
+		<p class="change_link"></p>
+		<h4>
+			<fmt:message key="register_screen.title" />
+		</h4>
+		<fmt:message key="register_screen.subtitle" />
+		<a href="#" onclick="showLoginForm()"><fmt:message
+				key="Login.login_area.login" /></a>
 
-<form autocomplete="on"	action="${pageContext.request.contextPath}/LoginServlet" method="post">
-<p class="change_link">
-		
-	</p>
-	<h4><fmt:message key="register_screen.title"/></h4> <fmt:message key="register_screen.subtitle"/> <a href="#" onclick="showLoginForm()"><fmt:message key="Login.login_area.login"/></a>
-	
-	<c:if test="${errorMessageRegister != null}">
+		<c:if test="${errorMessageRegister != null}">
 			<p style="font-weight: bold; font-size: large; color: red;">
-			<fmt:message key="register_screen.invalid" />
+				<fmt:message key="register_screen.invalid" />
 			</p>
 		</c:if>
-	<p style="font-weight: bold; font-size: large; color: red;">${errorMessageRegister}</p>
-	<p>
-		<label for="usernamesignup" class="uname" data-icon="u"><fmt:message key="register_screen.userid"/></label>
-		<input style="width: 145px;" id="usernamesignup" name="usernamesignup"
-			required="required" type="text" placeholder="mysuperusername690" />
-		<label for="emailsignup" style="margin-left: 25px" class="youmail"
-			data-icon="e"> <fmt:message key="register_screen.email"/></label> <input style="width: 145px;"
-			id="emailsignup" name="emailsignup" required="required" type="email"
-			placeholder="mysupermail@mail.com" />
-	</p>
-	<p>
-		<label for="passwordsignup" class="youpasswd" data-icon="p"><fmt:message key="register_screen.password"/></label>
-		<input style="width: 125px;" id="passwordsignup"
-			name="passwordsignup" required="required" type="password"
-			placeholder="password" /> 
-		<label for="passwordsignup_confirm" style="margin-left: 25px" class="youpasswd" data-icon="p"><fmt:message key="register_screen.confirm"/></label>
-		 <input style="width: 125px;" id="passwordsignup_confirm"
-			name="passwordsignup_confirm" required="required" type="password"
-			placeholder="password" />
-		<label for="contact" class="youcontact" data-icon="p"><fmt:message key="register_screen.contact"/></label>
-		<input style="width: 125px;" id="contact"
-			name="contact"  type="checkbox"  />	
-	</p>
-	<h5 class="mt-2"><fmt:message key="register_screen.demographics"/></h5>
-	<fieldset>
-		<legend style="font-size: 15px; font-weight: bold;">
-			</legend>
-<%-- 		<label for="age"> <fmt:message key="register_screen.DoB"/> </label> <input maxlength="2" id="age" --%>
-<!-- 			name="age" style="padding: 0px; width: 45px; height: 25px;" -->
-<!-- 			type="number" min="1" max="120" placeholder="eg. 75" /> <br>  -->
-			<legend style="font-size: 15px; font-weight: bold;">
-			<fmt:message key="register_screen.Hebrew"/></legend>
+		<p style="font-weight: bold; font-size: large; color: red;">${errorMessageRegister}</p>
 
-		<ul class="likert">
-			<li class="likert"><fmt:message key="register_screen.none_Hebrew"/></li>
-			<li class="likert"><input type="radio" name="hebrew" value="1" /></li>
-			<li class="likert"><input type="radio" name="hebrew" value="2" /></li>
-			<li class="likert"><input type="radio" name="hebrew" value="3" /></li>
-			<li class="likert"><input type="radio" name="hebrew" value="4" /></li>
-			<li class="likert"><input type="radio" name="hebrew" value="5" /></li>
-			<li class="likert"><fmt:message key="register_screen.knowledgable_Hebrew"/></li>
-		</ul>
-	</fieldset>
-	<fieldset class="mt-2">
-		<legend style="font-size: 15px; font-weight: bold;"><fmt:message key="register_screen.Midrash"/></legend>
+		<div class="row">
+			<div class="col">
+				<fmt:message key="register_screen.userid" />
+			</div>
+			<div class="col">
+				<input id="usernamesignup" name="usernamesignup" required="required"
+					type="text" placeholder="mysuperusername690" />
+			</div>
+		</div>
 
-		<ul class="likert">
-			<li  class="likert"><fmt:message key="register_screen.none_Midrash"/></li>
-			<li class="likert"><input type="radio" name="midrashim" value="1" /></li>
-			<li class="likert"><input type="radio" name="midrashim" value="2" /></li>
-			<li class="likert"><input type="radio" name="midrashim" value="3" /></li>
-			<li class="likert"><input type="radio" name="midrashim" value="4" /></li>
-			<li class="likert"><input type="radio" name="midrashim" value="5" /></li>
-			<li class="likert"><fmt:message key="register_screen.knowledgable_Midrash"/></li>
-		</ul>
-	</fieldset>
-	<p class="signin button mt-3">
-		<input name="register" type="submit" class="btn btn-primary"
-			 value='<fmt:message key="register_screen.title"/>' />
-	</p>
-	
-</form>
+		<div class="row mt-2">
+			<div class="col">
+				<fmt:message key="register_screen.email" />
+			</div>
+			<div class="col">
+				<input id="emailsignup" name="emailsignup" required="required"
+					type="email" placeholder="mysupermail@mail.com" />
+			</div>
+		</div>
+
+		<div class="row mt-2">
+			<div class="col">
+				<fmt:message key="register_screen.password" />
+			</div>
+			<div class="col">
+				<input id="passwordsignup" name="passwordsignup" required="required"
+					type="password" placeholder="password" />
+			</div>
+		</div>
+
+		<div class="row mt-2">
+			<div class="col">
+				<fmt:message key="register_screen.confirm" />
+			</div>
+			<div class="col">
+				<input id="passwordsignup_confirm" name="passwordsignup_confirm"
+					required="required" type="password" placeholder="password" />
+			</div>
+		</div>
+
+		<div class="row mt-2">
+			<div class="col">
+				<fmt:message key="register_screen.contact" />
+			</div>
+			<div class="col">
+				<input id="contact" name="contact" type="checkbox" />
+			</div>
+		</div>
+
+		<h5 class="mt-2">
+			<fmt:message key="register_screen.demographics" />
+		</h5>
+		<div class="scale">
+			<div class="title">
+				<fmt:message key="register_screen.Hebrew" />
+			</div>
+
+			<ul class="d-flex">
+				<li><fmt:message key="register_screen.none_Hebrew" /></li>
+				<li><input type="radio" name="hebrew" value="1" /></li>
+				<li><input type="radio" name="hebrew" value="2" /></li>
+				<li><input type="radio" name="hebrew" value="3" /></li>
+				<li><input type="radio" name="hebrew" value="4" /></li>
+				<li><input type="radio" name="hebrew" value="5" /></li>
+				<li><fmt:message key="register_screen.knowledgable_Hebrew" /></li>
+			</ul>
+		</div>
+		<div class="scale mt-2">
+			<div class="title">
+				<fmt:message key="register_screen.Midrash" />
+			</div>
+
+			<ul class="d-flex">
+				<li><fmt:message key="register_screen.none_Midrash" /></li>
+				<li><input type="radio" name="midrashim" value="1" /></li>
+				<li><input type="radio" name="midrashim" value="2" /></li>
+				<li><input type="radio" name="midrashim" value="3" /></li>
+				<li><input type="radio" name="midrashim" value="4" /></li>
+				<li><input type="radio" name="midrashim" value="5" /></li>
+				<li><fmt:message key="register_screen.knowledgable_Midrash" /></li>
+			</ul>
+		</div>
+		<p class="signin button mt-3">
+			<input name="register" type="submit" class="btn btn-primary"
+				value='<fmt:message key="register_screen.title"/>' />
+		</p>
+	</form>
+</div>

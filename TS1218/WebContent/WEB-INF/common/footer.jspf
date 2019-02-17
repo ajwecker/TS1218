@@ -1,33 +1,42 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 <div class="footer">
-	<div class="partner-logos w-100 d-flex justify-content-between">
-		<a href="http://elijahlab.haifa.ac.il/index.php/he/" target="_blank">
-			<img class="tslogos" src="images/logos/e-lijah-vertical.jpg"
-			alt="e-lijah DH lab Haifa" title="e-lijah DH lab Haifa"></a> 
-		<a  href="https://www.haifa.ac.il/index.php/en/" target="_blank">
-			<img class="tslogos" src="images/logos/haifa-logo-small.png"
-			alt="The University of Haifa" title="The University of Haifa"></a>
-		<a 	href="https://www.gov.il/he/departments/ministry_of_science_and_technology"
-			target="_blank">
-			<img class="tslogos" src="images/logos/mada.jpg"
-			alt="Ministry of Science and Technology"
-			title="Ministry of Science and Technology"> </a> 
-		<a 	href="http://www.enseignementsup-recherche.gouv.fr/" target="_blank">
-			<img class="tslogos" src="images/logos/msles.png"
-			alt="Ministère de lʼEnseignement supérieur, de la Recherche et de lʼInnovation"
-			title="Ministère de lʼEnseignement supérieur, de la Recherche et de lʼInnovation">		</a> 
-		<a href="https://www.diplomatie.gouv.fr/en/" target="_blank">
-			<img class="tslogos" src="images/logos/mdae.jpg" alt="MDAE" title="MDAE"> </a> 
-		<a href="https://www.psl.eu/" target="_blank">
-			<img class="tslogos" src="images/logos/LOGO_PSL.png"
-			alt="PSL" title=PSL> </a> 
-		<a href="http://www.cognition-usages.org/chart2/" target="_blank">
-			<img class="tslogos" src="images/logos/LOGO_CHART.png" alt="CHART"	title="CHART"> </a> 
-		<a href="https://www.ephe.fr/en" target="_blank">
-		 	<img class="tslogos" src="images/logos/ep.png"
-			alt="École Pratique des Hautes Études"
-			title="École Pratique des Hautes Études"></a>
+	<div class="container">
+		<div class="partner-logos row">
+			<a class="col" href="http://elijahlab.haifa.ac.il/index.php/he/"
+				target="_blank"> <img class="tslogos"
+				src="images/logos/e-lijah-vertical.jpg" alt="e-lijah DH lab Haifa"
+				title="e-lijah DH lab Haifa">
+			</a> <a class="col" href="https://www.haifa.ac.il/index.php/en/"
+				target="_blank"> <img class="tslogos"
+				src="images/logos/haifa-logo-small.png"
+				alt="The University of Haifa" title="The University of Haifa">
+			</a> <a class="col"
+				href="https://www.gov.il/he/departments/ministry_of_science_and_technology"
+				target="_blank"> <img class="tslogos"
+				src="images/logos/mada.jpg" alt="Ministry of Science and Technology"
+				title="Ministry of Science and Technology">
+			</a> <a class="col" href="http://www.enseignementsup-recherche.gouv.fr/"
+				target="_blank"> <img class="tslogos"
+				src="images/logos/msles.png"
+				alt="Ministère de lʼEnseignement supérieur, de la Recherche et de lʼInnovation"
+				title="Ministère de lʼEnseignement supérieur, de la Recherche et de lʼInnovation">
+			</a>
+		</div>
+		<div class="partner-logos row">
+			<a class="col" href="https://www.diplomatie.gouv.fr/en/"
+				target="_blank"> <img class="tslogos"
+				src="images/logos/mdae.jpg" alt="MDAE" title="MDAE">
+			</a> <a class="col" href="https://www.psl.eu/" target="_blank"> <img
+				class="tslogos" src="images/logos/LOGO_PSL.png" alt="PSL" title=PSL>
+			</a> <a class="col" href="http://www.cognition-usages.org/chart2/"
+				target="_blank"> <img class="tslogos"
+				src="images/logos/LOGO_CHART.png" alt="CHART" title="CHART">
+			</a> <a class="col" href="https://www.ephe.fr/en" target="_blank"> <img
+				class="tslogos" src="images/logos/ep.png"
+				alt="École Pratique des Hautes Études"
+				title="École Pratique des Hautes Études"></a>
+		</div>
 	</div>
 </div>
 </body>
