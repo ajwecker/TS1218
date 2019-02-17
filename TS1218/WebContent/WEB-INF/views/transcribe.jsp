@@ -33,16 +33,18 @@
 						</div>
 						<div>
 							<img id="imgline"
-								alt="Page ${manuscriptPage} of ${manuscriptTotalPages}, line ${manuscriptLine} of ${manuscriptTotalLines}"
+								alt="Image of line from manuscript"
 								width="100%" src="${transcribedlineimgsrc}"
 								data-high-res-src="${transcribedlineimgsrc}" class="imageline">
 							<script type="text/javascript">
 								//Example 3
+							
 								$(function() {
-									$('.imageline').ImageViewer({
-										snapView : false
-									});
+									$("#imgline").imgViewer2(
+									
+									);
 								});
+			
 							</script>
 							<form
 								action="${pageContext.request.contextPath}/TranscribeServlet"
