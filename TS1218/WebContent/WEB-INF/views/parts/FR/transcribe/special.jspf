@@ -6,13 +6,17 @@
 		<div class="line_fillers">
 			<div class="title">Bouts-de-ligne (line-fillers)</div>
 			<div class="content">
-				<p>Afin de conserver une mise en page homogène, les scribes médiévaux utilisaient fréquemment des “line fillers”, des caractères spéciaux ajoutés à la fin des lignes qui n’atteignent pas naturellement la longueur des autres lignes du paragraphe. Ces caractères peuvent être des traits dans différentes directions, ou la première lettre de la ligne suivante.
+				<p>Afin de conserver une mise en page homogène, les scribes médiévaux utilisaient fréquemment des 
+				“line fillers”, des caractères spéciaux ajoutés à la fin des lignes qui n’atteignent pas naturellement 
+				la longueur des autres lignes du paragraphe. Ces caractères peuvent être des traits dans différentes
+				directions, ou la première lettre de la ligne suivante.
 Le scribe du manuscrit de Genève utilise le plus souvent deux lignes diagonales // pour terminer les lignes trop courtes.
 </p>
 				<img
 					src="/TS1218/images/special_characters/a_special_characters_linefillers.png">
 				<p>
-					<strong>Pour insérer ces caractères à la fin d’une ligne, sélectionner le symbole voulu parmi les icônes, dans le menu déroulant à gauche, en-dessous de la boîte de texte.</strong>
+					<strong>Pour insérer ces caractères à la fin d’une ligne, sélectionnez le symbole voulu parmi 
+					les icônes, dans le menu déroulant à gauche, en-dessous de la boîte de texte.</strong>
 				</p>
 
 
@@ -22,7 +26,9 @@ Le scribe du manuscrit de Genève utilise le plus souvent deux lignes diagonales
 		<div class="wide_letters">
 			<div class="title">Lettres larges</div>
 			<div class="content">
-				<p>Il existe une autre façon de remplir la ligne est d’allonger largement la dernière lettre de la ligne. Ces lettres allongées doivent être transcrites de façon normale sans aucune indication spéciale. Par exemple : - נוטל את.</p>
+				<p>Il existe une autre façon de remplir la ligne : allonger largement la dernière lettre de la ligne.
+				Ces lettres allongées doivent être transcrites de façon normale sans aucune indication spéciale. 
+				Par exemple : - נוטל את.</p>
 				<img
 					src="/TS1218/images/special_characters/b_special_characters_wide_letters.png">
 
@@ -31,7 +37,8 @@ Le scribe du manuscrit de Genève utilise le plus souvent deux lignes diagonales
 		<div class="upper_dots">
 			<div class="title">Points supérieurs</div>
 			<div class="content">
-				<p>A la place des points et virgules en usage aujourd’hui, les auteurs du manuscrit de Genève séparent les phrases à l’aide de points supérieurs :</p>
+				<p>A la place des points et virgules en usage aujourd’hui, les auteurs du manuscrit de Genève séparent 
+				les phrases à l’aide de points supérieurs :</p>
 				<p>
 				<div class="images">
 					<img
@@ -42,7 +49,8 @@ Le scribe du manuscrit de Genève utilise le plus souvent deux lignes diagonales
 				<p>
 				<strong>Pour transcrire un point supérieur, sélectionnez l’icône (<img
 					src="/TS1218/images/special_characters/e_special_characters_upper_dot_button.png"
-					class="small">) sous la boîte de texte. Ajoutez autant de points supérieurs que le scribe en a écrits.
+					class="small">) sous la boîte de texte. Ajoutez autant de points supérieurs que le scribe en a 
+					écrits.
 Si vous rencontrez un caractère différent qui existe sur votre clavier, comme “:”, vous pouvez l’utiliser.
 
 				</strong>
@@ -52,7 +60,9 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 		<div class="ligature_alef_lamed">
 			<div class="title">La ligature א-ל</div>
 			<div class="content">
-				<p>Le nom divin étant sacré, les scribes ont évité d’écrire les lettres Aleph et Lamed successivement, et utilisaient à la place une ligature, un signe unique composé des deux lettres. Nous utilisons pour cela le signe spécial ﭏ (notez le petit drapeau à l’extrémité du bras gauche du aleph).</p>
+				<p>Le nom divin étant sacré, les scribes ont évité d’écrire les lettres Aleph et Lamed successivement, 
+				et utilisaient à la place une ligature, un signe unique composé des deux lettres. Nous utilisons pour cela
+				le signe spécial ﭏ (notez le petit drapeau à l’extrémité du bras gauche du aleph).</p>
 				<p>
 					<img
 						src="/TS1218/images/special_characters/f_special_characters_ligature_aleph_lamed.png">
@@ -77,7 +87,8 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 						src="/TS1218/images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
 				</div>
 				<p>
-					<strong>Veuillez écrire chaque lettre visible de l’abréviation sans espace entre elles. Chaque lettre doit être suivie directement par une apostrophe, qui représente le point utilisé dans le manuscrit</strong>, :
+					<strong>Veuillez écrire chaque lettre visible de l’abréviation sans espace entre elles. Chaque lettre doit être suivie
+					directement par une apostrophe, qui représente le point utilisé dans le manuscrit</strong>, :
 					ה'ב'ה', ז'ש'ה'. Il ne faut pas développer les abréviations.
 
 
@@ -93,7 +104,8 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 						src="/TS1218/images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
 					- משה וג'
 				</div>
-				<p>Quand les lettres expriment des nombres, elles doivent être transcrites exactement comme elles apparaissent dans le manuscrit (ici aussi, l’apostrophe représente le point qui surplombe la lettre) :</p>
+				<p>Quand les lettres expriment des nombres, elles doivent être transcrites exactement comme elles apparaissent dans le manuscrit
+				(ici aussi, l’apostrophe représente le point qui surplombe la lettre) :</p>
 				<div>
 					<img
 						src="/TS1218/images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
@@ -106,7 +118,8 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 			<div class="title">Le nom divin</div>
 			<div class="content">
 				<p>
-					Les scribes avaient diverses façon d’écrire le nom divin, en remplacement du tétragramme. La plupart utilisent deux ou trois yods, qui sont quelquefois décorés. Le scribe du manuscrit de Genève écrit le plus souvent <img
+					Les scribes avaient diverses façon d’écrire le nom divin, en remplacement du tétragramme. La plupart utilisent deux ou 
+					trois yods, qui sont quelquefois décorés. Le scribe du manuscrit de Genève écrit le plus souvent <img
 						src="/TS1218/images/special_characters/n_special_characters_divine_name.png">
 					qui doit être transcrit יוי.
 				</p>
@@ -115,7 +128,9 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 		<div class="headwords">
 			<div class="title">Têtes de chapitres</div>
 			<div class="content">
-				<p>Le manuscrit contient des têtes de chapitres, souvent écrites en script carré, qui contraste avec le reste du paragraphe écrit en script cursif. Ces titres peuvent empiéter sur la ligne du dessous qui reste vide à cet endroit, ou bien être parfaitement intégrer à la ligne en cours.</p>
+				<p>Le manuscrit contient des têtes de chapitres, souvent écrites en script carré, qui contraste avec le reste du paragraphe écrit en
+				script cursif. Ces titres peuvent empiéter sur la ligne du dessous qui reste vide à cet endroit, ou bien être parfaitement intégrés à 
+				la ligne en cours.</p>
 				<p>
 					<strong>Transcrivez les têtes de chapitres normalement, sans les différencier du reste du texte.</strong>
 				</p>
