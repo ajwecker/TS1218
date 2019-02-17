@@ -68,25 +68,25 @@
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myMark(']','[')"
 											title='<fmt:message key="main.work_area.hovers.over_additions"/>'>
-											<span style="font-size: smaller;"><fmt:message
+											<span style="font-size: larger;"><fmt:message
 													key="main.work_area.button_2" /></span>
 										</button>
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myMark(')','(')"
 											title='<fmt:message key="main.work_area.hovers.over_deletions"/>'>
-											<span style="font-size: smaller;"><fmt:message
+											<span style="font-size: larger;"><fmt:message
 													key="main.work_area.button_1" /></span>
 										</button>
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myMark('>','<')"
 											title='<fmt:message key="main.work_area.hovers.over_damaged"/>'>
-											<span style="font-size: smaller;"><fmt:message
+											<span style="font-size: larger;"><fmt:message
 													key="main.work_area.button_3" /></span>
 										</button>
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myMark('}','{')"
 											title='<fmt:message key="main.work_area.hovers.over_uncertain"/>'>
-											<span style="font-size: smaller;"><fmt:message
+											<span style="font-size: larger;"><fmt:message
 													key="main.work_area.button_4" /></span>
 										</button>
 
@@ -119,7 +119,7 @@
 										<button class="rounded-0 btn btn-secondary" type="button"
 											onclick="myReset()"
 											title='<fmt:message key="main.work_area.hovers.over_reset"/>'>
-											<span style="font-size: smaller;"><fmt:message
+											<span style="font-size: larger;"><fmt:message
 													key="main.work_area.button_5" /></span>
 										</button>
 										<button class="rounded-0 btn btn-secondary" type="button"
