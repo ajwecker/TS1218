@@ -95,9 +95,39 @@ public class UserDBaseJDBC implements UserDBase {
 		}
 	}
 
+	/**
+	 * Not a real main. Just utility. This one converts the clear password to hashed ones.
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		UserDBaseJDBC dao = new UserDBaseJDBC();
-		dao.readDataBase();
+		Statement statement = null;
+		PreparedStatement updateStmt = null;
+		try {
+			dao.connect();
+			statement = dao.connect.createStatement();
+			updateStmt = dao.connect.prepareStatement("update users set hashed_password=?, password=null where userid=?");
+			ResultSet resultSet = statement.executeQuery("select userid, password from users "
+					+ "where password is not null and password <> '' and hashed_password is null");
+			while (resultSet.next()) {
+				String userid = resultSet.getString(1);
+				String clearPassword = resultSet.getString(2);
+				
+				String hashed = Password.getSaltedHash(clearPassword);
+				updateStmt.setString(1, hashed);
+				updateStmt.setString(2, userid);
+				updateStmt.execute();
+				System.out.println("Updated " + userid + " to " + hashed);
+			}
+			// autocommit is set
+			//dao.connect.commit();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			dao.closeStatement(statement);
+		}
 	}
 
 	@Override
