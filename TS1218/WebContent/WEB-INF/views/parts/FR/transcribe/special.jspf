@@ -13,7 +13,7 @@
 Le scribe du manuscrit de Genève utilise le plus souvent deux lignes diagonales // pour terminer les lignes trop courtes.
 </p>
 				<img
-					src="../images/special_characters/a_special_characters_linefillers.png">
+					src="./images/special_characters/a_special_characters_linefillers.png">
 				<p>
 					<strong>Pour insérer ces caractères à la fin d’une ligne, sélectionnez le symbole voulu parmi 
 					les icônes, dans le menu déroulant à gauche, en-dessous de la boîte de texte.</strong>
@@ -30,7 +30,7 @@ Le scribe du manuscrit de Genève utilise le plus souvent deux lignes diagonales
 				Ces lettres allongées doivent être transcrites de façon normale sans aucune indication spéciale. 
 				Par exemple : - נוטל את.</p>
 				<img
-					src="../images/special_characters/b_special_characters_wide_letters.png">
+					src="./images/special_characters/b_special_characters_wide_letters.png">
 
 			</div>
 		</div>
@@ -42,14 +42,14 @@ Le scribe du manuscrit de Genève utilise le plus souvent deux lignes diagonales
 				<p>
 				<div class="images">
 					<img
-						src="../images/special_characters/c_special_characters_upper_dot1.png">
+						src="./images/special_characters/c_special_characters_upper_dot1.png">
 					<br /> <img
-						src="../images/special_characters/d_special_characters_upper_dot2.png">
+						src="./images/special_characters/d_special_characters_upper_dot2.png">
 				</div>
 				<p>
 				<strong>Pour transcrire un point supérieur, sélectionnez l’icône (<img
 
-					src="../images/special_characters/e_special_characters_upper_dot_button.png"
+					src="./images/special_characters/e_special_characters_upper_dot_button.png"
 
 					class="small">) sous la boîte de texte. Ajoutez autant de points supérieurs que le scribe en a 
 					écrits.
@@ -67,9 +67,9 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 				le signe spécial ﭏ (notez le petit drapeau à l’extrémité du bras gauche du aleph).</p>
 				<p>
 					<img
-						src="../images/special_characters/f_special_characters_ligature_aleph_lamed.png">
+						src="./images/special_characters/f_special_characters_ligature_aleph_lamed.png">
 					par exemple, signifie אליו. Veuillez utiliser l’icône <img
-						src="../images/special_characters/g_special_characters_ligature_aleph_lamed_button.png"
+						src="./images/special_characters/g_special_characters_ligature_aleph_lamed_button.png"
 						class="small"> et transcrire ﭏיו.
 				</p>
 			</div>
@@ -82,11 +82,11 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 					ברוך הוא.</p>
 				<div class="images inline">
 					<img
-						src="../images/special_characters/h_special_characters_abbreviations_and_numbers1.png">
+						src="./images/special_characters/h_special_characters_abbreviations_and_numbers1.png">
 					<img
-						src="../images/special_characters/i_special_characters_abbreviations_and_numbers2.png">
+						src="./images/special_characters/i_special_characters_abbreviations_and_numbers2.png">
 					<img
-						src="../images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
+						src="./images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
 				</div>
 				<p>
 					<strong>Veuillez écrire chaque lettre visible de l’abréviation sans espace entre elles. Chaque lettre doit être suivie
@@ -98,19 +98,19 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 				</p>
 				<div>
 					<img
-						src="../images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
+						src="./images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
 					- אמ' ר' לוי'
 				</div>
 				<div>
 					<img
-						src="../images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
+						src="./images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
 					- משה וג'
 				</div>
 				<p>Quand les lettres expriment des nombres, elles doivent être transcrites exactement comme elles apparaissent dans le manuscrit
 				(ici aussi, l’apostrophe représente le point qui surplombe la lettre) :</p>
 				<div>
 					<img
-						src="../images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
+						src="./images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
 					- לנולד בן ז'
 				</div>
 
@@ -123,7 +123,7 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 					Les scribes avaient diverses façon d’écrire le nom divin, en remplacement du tétragramme. La plupart utilisent deux ou 
 					trois yods, qui sont quelquefois décorés. Le scribe du manuscrit de Genève écrit le plus souvent <img
 
-						src="../images/special_characters/n_special_characters_divine_name.png">
+						src="./images/special_characters/n_special_characters_divine_name.png">
 
 					qui doit être transcrit יוי.
 				</p>
@@ -139,7 +139,7 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 					<strong>Transcrivez les têtes de chapitres normalement, sans les différencier du reste du texte.</strong>
 				</p>
 				<img
-					src="../images/special_characters/o_special_characters_headwords.png" class="large">
+					src="./images/special_characters/o_special_characters_headwords.png" class="large">
 			</div>
 		</div>
 	</div>
