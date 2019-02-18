@@ -36,7 +36,7 @@
 					deleted, mark the text using the mouse and then press on the
 					“deletion” button (<img
 						src="./images/ex_deleted_btn_small.jpg">) under the
-					text box. Alternatively, press the 'deletion' button and then type
+					text box. Alternatively, press the 'deletion' button (-) and then type
 					the deleted text between parentheses. For example: <img
 						src="./images/ex_marked_as_deleted_small.jpg"> (אותי )
 					Is marked as deleted
@@ -63,7 +63,7 @@
 				<p>
 					Here, the scribe has inserted the word בן : <img
 						src="./images/ex_addition_small.jpg"> In order to
-					signal an addition, press the [Addition] button below the text line
+					signal an addition, press the [Addition] button [+] below the text line
 					and then write the added word between the brackets. If you want to
 					signal that a transcribed word or letter should rather be handled
 					as addition, please mark that word or letter with your mouse and
@@ -112,7 +112,7 @@
 					torn and sometimes the ink was erased/blurred.</p>
 				<p>
 					<strong> In order to mark unidentified letters
-						(torn/blurred) press on the “damaged” button (<img
+						(torn/blurred) press on the “damaged” button &lt;&#42823;&gt; (<img
 						src="./images/damaged button.PNG">) and mark spaces
 						between square brackets according to the estimated missing/unclear
 						part.
@@ -131,7 +131,7 @@
 				<p>
 					<strong>‘Uncertain’</strong>
 				</p>
-				<p>The uncertain button is intended for cases where you are not
+				<p>The uncertain button {&#42823} is intended for cases where you are not
 					sure if the automatic transcription correctly identified the letter
 					in the manuscript. Please try to minimize the use of this button
 					and use it only in extreme cases.</p>
