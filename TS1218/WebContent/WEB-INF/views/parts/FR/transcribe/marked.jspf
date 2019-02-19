@@ -35,9 +35,7 @@ horizontale au-dessus du mot ; des points au-dessus du mot ; des traits en diago
 				</ul>
 				<p>
 					Pour indiquer la suppression d’une lettre ou d’un mot dans le manuscrit, sélectionnez le texte
-					supprimé avec la souris, puis cliquez sur le bouton « supprimé » (<img
-
-						src="./images/ex_deleted_btn_small.jpg">) en-dessous de la boîte de texte. Vous
+					supprimé avec la souris, puis cliquez sur le bouton (-) en-dessous de la boîte de texte. Vous
 						pouvez également cliquer sur le bouton « supprimé » puis taper le texte supprimé entre 
 						les parenthèses. Par exemple : <img
 						src="./images/ex_marked_as_deleted_small.jpg"> (אותי)

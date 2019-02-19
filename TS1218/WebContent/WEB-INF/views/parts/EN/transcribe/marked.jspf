@@ -34,8 +34,7 @@
 				<p>
 					In order to signal that a word or letter in the manuscript has been
 					deleted, mark the text using the mouse and then press on the
-					“deletion” button (<img
-						src="./images/ex_deleted_btn_small.jpg">) under the
+					“deletion” button (-) under the
 					text box. Alternatively, press the 'deletion' button (-) and then type
 					the deleted text between parentheses. For example: <img
 						src="./images/ex_marked_as_deleted_small.jpg"> (אותי )
@@ -67,8 +66,7 @@
 					and then write the added word between the brackets. If you want to
 					signal that a transcribed word or letter should rather be handled
 					as addition, please mark that word or letter with your mouse and
-					then click on the [Addition] button ( <img
-						src="./images/ex_inserted_btn.png">). For example, the
+					then click on the [Addition] button. For example, the
 					addition of the letter ה in the שקדים has to appear in the end as
 					על ש[ה]קדים שמו:
 				</p>
@@ -112,8 +110,7 @@
 					torn and sometimes the ink was erased/blurred.</p>
 				<p>
 					<strong> In order to mark unidentified letters
-						(torn/blurred) press on the “damaged” button &lt;&#42823;&gt; (<img
-						src="./images/damaged button.PNG">) and mark spaces
+						(torn/blurred) press on the “damaged” button &lt;&#42823;&gt; and mark spaces
 						between square brackets according to the estimated missing/unclear
 						part.
 					</strong>
@@ -140,8 +137,7 @@
 					כחן</p>
 				<p>
 					<strong>In order to mark the uncertainty, use the mouse to
-						mark the uncertain letter and then press the {Uncertain} button (<img
-						src="./images/uncertain_button.PNG">). Alternatively,
+						mark the uncertain letter and then press the {?} button . Alternatively,
 						you can press the button and type the most probable option between
 						curly brackets.
 					</strong>
