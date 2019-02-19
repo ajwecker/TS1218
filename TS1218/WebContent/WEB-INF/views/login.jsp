@@ -21,8 +21,7 @@
 					<div>
 						<fmt:message key="login.center.Intro_line_2" />
 					</div>
-					</p>
-				</div>
+									</div>
 			</div>
 			<%@include file="parts/login.jspf"%>
 		</div>

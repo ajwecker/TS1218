@@ -131,7 +131,7 @@
 				<p>
 					<strong>‘Uncertain’</strong>
 				</p>
-				<p>The uncertain button {&#42823} is intended for cases where you are not
+				<p>The uncertain button {?} is intended for cases where you are not
 					sure if the automatic transcription correctly identified the letter
 					in the manuscript. Please try to minimize the use of this button
 					and use it only in extreme cases.</p>
