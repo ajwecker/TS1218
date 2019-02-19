@@ -22,23 +22,21 @@
 									<fmt:message key="main.work_area.intro_line_2" />
 								</div>
 
-								<div class="video_tut col-md-2 col-4"
-									>
+								<div class="video_tut col-md-2 col-4">
 
 									<a href='<fmt:message key="main.work_area.video"/>'
 										target="_blank"
 										title='<fmt:message key="main.work_area.video_hover"/>'> <img
-										src="./images/video_thumb.png"/>
-										<fmt:message key="main.work_area.video_hover"/>
+										src="./images/video_thumb.png" /> <fmt:message
+											key="main.work_area.video_hover" />
 									</a>
 								</div>
 							</div>
 						</div>
 						<div>
-							<img id="imgline"
-								alt="Image of line in page"
-								width="100%" src="${transcribedlineimgsrc}" class="imageline">
-							
+							<img id="imgline" alt="Image of line in page" width="100%"
+								src="${transcribedlineimgsrc}" class="imageline">
+
 							<form
 								action="${pageContext.request.contextPath}/TranscribeServlet"
 								method="post">
@@ -200,8 +198,7 @@
 					<div class="tab-pane fade" id="special" role="tabpanel"
 						aria-labelledby="profile-tab">
 						<div class="tabcontent">
-							<jsp:include
-								page="parts/${lang}/transcribe/special.jspf" />
+							<jsp:include page="parts/${lang}/transcribe/special.jspf" />
 						</div>
 					</div>
 					<div class="tab-pane fade" id="ab" role="tabpanel"
@@ -235,7 +232,7 @@
 			zoomSnap : 0,
 			zoomDelta : 0.25,
 			crs : L.CRS.Simple,
-			dragging: !L.Browser.mobile
+			dragging : !L.Browser.mobile
 		});
 
 		var pageTileLayer = L.tileLayer.iiif('${pageimgsrc}');

@@ -18,16 +18,17 @@
 					</h1>
 					<p class="lead">
 						<fmt:message key="login.center.Intro_line_1" />
-					<div>
+
 						<fmt:message key="login.center.Intro_line_2" />
-					</div>
-									</div>
+
+					</p>
+				</div>
+				
 			</div>
 			<%@include file="parts/login.jspf"%>
-		</div>
-		<div class="register-form-wrapper">
-			<%@include file="parts/register.jspf"%>
-		</div>
+			<div class="register-form-wrapper">
+				<%@include file="parts/register.jspf"%>
+			</div>
 
-	</div>
-	<%@ include file="../common/footer.jspf"%>
+		</div>
+		<%@ include file="../common/footer.jspf"%>
