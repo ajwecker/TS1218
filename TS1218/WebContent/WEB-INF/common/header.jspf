@@ -34,8 +34,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@0.4.10/dist/leaflet.draw.css" />
 
-  <!-- Image viewer -->
-  <link href="views/imgViewer2.min.css" rel="stylesheet" type="text/css" />
   <!-- Custom styles -->
   <link rel="stylesheet/less" type="text/css" href="views/css/styles.less" />
   <!-- DEV ONLY -->
@@ -57,11 +55,6 @@
   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-draw@0.4.10/dist/leaflet.draw.js"></script>
   <script src="https://unpkg.com/leaflet-iiif@2.0.1/leaflet-iiif.js"></script>
-
-
-  <!-- Image viewer -->
-  <script src="views/imgViewer2.min.js"></script>
-
   
   <!-- Custom scripts -->
   <script src="views/script.js"></script>
