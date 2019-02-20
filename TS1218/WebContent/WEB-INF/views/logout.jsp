@@ -4,7 +4,7 @@
 
 <%@include file="../common/header.jspf"%>
 <body class="${dir}">
-		<script type="text/javascript">
+	<script type="text/javascript">
 		window.page_name = 'logout';
 		$("[data-link='logout']").addClass('active');
 	</script>

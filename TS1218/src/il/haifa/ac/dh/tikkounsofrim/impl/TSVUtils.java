@@ -48,15 +48,17 @@ import java.util.SortedSet;
 
 	    }
 	    
-	    public static void readIn(String csvFile, DoParse parser) {
+	    public static String readIn(String csvFile, DoParse parser) {
 			  String line = "";
 		        String cvsSplitBy = String.valueOf(DEFAULT_SEPARATOR);
 		
 		        try {
 		        	
 		        	 List<String> lines = Files.readAllLines(Paths.get(csvFile), Charset.forName("UTF-8"));//("ISO-8859-1"));//("UTF-8"));
-		        	 line = lines.remove(0);
-		        	 System.out.println("First line header "+ line);
+		        	 String line0 = lines.remove(0);
+		        	 String[]  fitem = line0.split(",");
+		        	 line = fitem[0];
+		        	 System.out.println("First line header "+ line0);
 		        	 
 		        	 for(String line1 :lines) {
 		        		 String[]  item = line1.split(cvsSplitBy);
@@ -66,7 +68,7 @@ import java.util.SortedSet;
 								} catch (Exception e) {
 									// TODO Auto-generated catch block
 									e.printStackTrace();
-									return;
+									return line;
 								}
 							}
 		        		 
@@ -92,7 +94,7 @@ import java.util.SortedSet;
 		            e.printStackTrace();
 		        }
 		
-			
+			return line;
 		}
 
 	    public static String readFileAll(String filename, String path) {

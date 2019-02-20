@@ -23,20 +23,20 @@
 				<p>סופר כ"י ז'נבה מסמן בדרך כלל מחיקות בקו מעל המילה, אך יש
 					בטקסט גם מחיקות אחרות:
 				<ul>
-					<li><img src="/TS1218/images/ex_deletion_small.jpg"> -
+					<li><img src="./images/ex_deletion_small.jpg"> -
 						כאן נמחקו בקו עליון המלים 'ואת בניו', שנכתבו בטעות פעמיים.</li>
-					<li><img src="/TS1218/images/ex_struck_through_small.jpg">
+					<li><img src="./images/ex_struck_through_small.jpg">
 						- כאן מחוקה המילה 'בתורה' בקו אופקי באמצע המילה.</li>
 					<li><img
-						src="/TS1218/images/ex_combination_stuck_deletion_small.jpg">
+						src="./images/ex_combination_stuck_deletion_small.jpg">
 						- כאן השתמש הסופר גם בקו מעל המילה וגם בקו באמצע המילה.</li>
 				</ul>
 				<p>כדי לסמן מילה או אות מחוקה בכתב היד, סמנו את הטקסט המחוק
-					בעזרת העכבר ואז לחצו על כפתור (מחיקה) בשורת הכפתורים מתחת לשורת
+					בעזרת העכבר ואז לחצו על כפתור מחיקה שנראה כך: (-) בשורת הכפתורים מתחת לשורת
 					הטקסט. לחילופין, תוכלו ללחוץ על הכפתור, ואז להקליד אל בין הסוגריים
 					את הטקסט המחוק.</p>
 				<p>
-					לדוגמא: <img src="/TS1218/images/ex_marked_as_deleted_small.jpg">
+					לדוגמא: <img src="./images/ex_marked_as_deleted_small.jpg">
 					- יש לרשום את המחיקה: ביראה (אותי).
 
 				</p>
@@ -46,7 +46,7 @@
 		<div class="unidentified_deleted_text">
 			<div class="title">טקסט מחוק לא מזוהה</div>
 			<div class="content">אם אתם לא מצליחים לזהות את המילה או האות
-				המחוקה, פשוט לחצו פעם אחת על כפתור המחיקה כדי לציין שנמחק שם משהו,
+				המחוקה, פשוט לחצו פעם אחת על כפתור המחיקה (-) כדי לציין שנמחק שם משהו,
 				ואז המשיכו כרגיל.</div>
 		</div>
 		<br> <br>
@@ -61,14 +61,14 @@
 					ולעתים יופיעו תוספות ארוכות יותר בשולי הדף:</p>
 				<p>
 					כאן הוסיף הסופר את המילה 'בן' : <img
-						src="/TS1218/images/ex_addition_small.jpg">
+						src="./images/ex_addition_small.jpg">
 				<p>כדי לסמן תוספת לחצו על כפתור [תוספת] שמתחת לשורת הטקסט, ואז
 					הקלידו את האותיות או המלים אל בין הסוגריים. לחילופין, אם אתם
 					מעוניינים לסמן כתוספת מילה שנמצאת כבר בשורת הטקסט, סמנו את התוספת
-					בעזרת העכבר ואז לחצו על כפתור [תוספת]</p>
+					בעזרת העכבר ואז לחצו על כפתור התוספת שנראה כך [+]</p>
 				<p>לדוגמא:
 				<div class="images">
-					<img src="/TS1218/images/al_shkedim_small.jpg">
+					<img src="./images/al_shkedim_small.jpg">
 				</div>
 				<p>את הוספת האות "ה" כאן יש לציין כך: על ש[ה]קדים שמו.</p>
 			</div>
@@ -79,7 +79,7 @@
 				אם המילה מעל השורה באה לתקן מחיקה, יש לציין את שתיהן. בדוגמא הבאה
 				הסופר כתב תחילה 'מתחילין' ואחר כך מחק והוסיף במקומה 'מתישבים':
 				<div class="images">
-					<img src="/TS1218/images/hatchilu_small.jpg">
+					<img src="./images/hatchilu_small.jpg">
 				</div>
 				יש לסמן זאת כך: התחילו (מתחילין) [מתישבים]
 			</div>
@@ -92,9 +92,9 @@
 				לרשום בשורה כרגיל, ללא סימון מיוחד.
 				<div class="images">
 					<img
-						src="/TS1218/images/marked_text/h_marked_text_diagonal_end_line1.png">
+						src="./images/marked_text/h_marked_text_diagonal_end_line1.png">
 					<img
-						src="/TS1218/images/marked_text/i_marked_text_diagonal_end_line2.png">
+						src="./images/marked_text/i_marked_text_diagonal_end_line2.png">
 				</div>
 			</div>
 		</div>
@@ -105,9 +105,11 @@
 					ולעתים הדיו נמחק או טושטש.</p>
 				<p>
 					<strong> כדי לסמן אותיות לא מזוהות עקב קרע או טשטוש, לחצו
-						על כפתור 'פגום' וסמנו רווחים בין הסוגריים המזוותים על פי גודל החסר
+						על כפתור 'פגום' שנראה כך
+						: &lt;&#42823;&gt;
+						וסמנו רווחים בין הסוגריים המזוותים על פי גודל החסר
 						המשוער.</strong> <img
-						src="/TS1218/images/marked_text/j_marked_text_damage_unreadable_text.png">
+						src="./images/marked_text/j_marked_text_damage_unreadable_text.png">
 				</p>
 				<p>- יש לרשום זאת כך: '&lt; קול שילך אצל'&gt;</p>
 
@@ -125,10 +127,10 @@
 					ושמרו אותו רק למקרים קשים במיוחד.</p>
 				<p>לדוגמא, האות האחרונה במילה האחרונה אינה ברורה מספיק ויש לכם
 					ספק האם התעתיק מדויק:</p>
-				<img src="/TS1218/images/marked_text/k_marked_text_uncertainty1.png">
+				<img src="./images/marked_text/k_marked_text_uncertainty1.png">
 				<p>
 					<strong>כדי לסמן את חוסר הוודאות סמנו בעזרת העכבר את האות
-						המסופקת ואז לחצו על כפתור 'מסופקני'. לחילופין, תוכלו ללחוץ על
+						המסופקת ואז לחצו על כפתור מסופקני שנראה כך {?}. לחילופין, תוכלו ללחוץ על
 						הכפתור ואז להקליד את האפשרות הסבירה ביותר בעיניכם אל בין הסוגריים
 						המסולסלים.</strong>
 				</p>

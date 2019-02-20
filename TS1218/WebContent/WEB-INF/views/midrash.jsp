@@ -8,7 +8,7 @@
 		$("[data-link='midrash']").addClass('active');
 	</script>
 	<div class="container scrollable mt-2">
-		<jsp:include page="../views/parts/${lang}/main-content/midrash.jspf" />
+		<jsp:include page="parts/${lang}/main-content/midrash.jspf" />
 	</div>
 
 	<%@ include file="../common/footer.jspf"%>

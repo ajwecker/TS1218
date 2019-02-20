@@ -8,9 +8,9 @@
 		$("[data-link='team']").addClass('active');
 	</script>
 	<div class="team-page container scrollable">
-		<jsp:include page="../views/parts/${lang}/team/partners.jspf" />
-		<jsp:include page="../views/parts/${lang}/team/team.jspf" />
-		<jsp:include page="../views/parts/${lang}/team/thanks.jspf" /> 	
+		<jsp:include page="parts/${lang}/team/partners.jspf" />
+		<jsp:include page="parts/${lang}/team/team.jspf" />
+		<jsp:include page="parts/${lang}/team/thanks.jspf" /> 	
 	</div>
 
 	<%@ include file="../common/footer.jspf"%>

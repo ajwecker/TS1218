@@ -3,7 +3,7 @@ package il.haifa.ac.dh.tikkounsofrim.model;
 
 
 public interface UserDBase {
-	 public int registerUser(String uName, String password, String email,  UserInfo uInfo);
+	 public int registerUser(String uName, String password, String email,  boolean consent, UserInfo uInfo);
 	 public boolean checkUser( String uName);
 	 public boolean isUserValid(String user, String password);
 	 

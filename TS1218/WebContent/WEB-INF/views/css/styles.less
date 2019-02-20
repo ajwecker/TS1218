@@ -1,10 +1,16 @@
-@import url('variables');
-@import url('fonts');
-@import url('IE');
-.scrollable {
-    overflow-y: auto;
-    height: calc(100% - 210px);
+@import url('_variables');
+@import url('_utils');
+@import url('_fonts');
+@import url('_IE');
+.footer{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin-top:40px;
+    text-align:center;
+    border-top:1px solid black;
 }
+
 .info_content {
     &>.header {
         font-weight: bold;
@@ -47,6 +53,17 @@
         }
     }
 }
+.transcribe-page{
+.btn-toolbar{
+button{
+font-size:11px;
+}
+select{
+height:100%;
+}
+}
+
+}
 .team-page {
     &>div {
         margin-bottom: 5px;
@@ -57,6 +74,7 @@
         }
     }
 }
+
 .login-page {
     &.show-login {
         .register-form-wrapper {
@@ -69,7 +87,14 @@
         }
     }
     .login-form {
-        background-color: #efefef;
+
+        &>div{
+        margin-bottom:10px;
+        input{
+        padding:5px;
+width:100%;
+        }
+        }
     }
 }
 .abc-page {
@@ -102,10 +127,16 @@ text-decoration: underline;
 font-weight: bold;
 font-size:18px;
 }
-#info-page {
+.show{
+
+#map{
+	min-height:500px;
+}
+}
+.info-page {
 
         overflow-y: auto;
-        height:100%;
+        
     }
 
 .rtl {
@@ -125,28 +156,62 @@ font-size:18px;
 
     }
     }
-    
-body {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    position: absolute;
-    overflow: hidden;
 
-    .top-banner {
-        height: 60px;
-        background-image: url(/TS1218/images/Banner_1900_100.png);
-        background-repeat: no-repeat;
+    .info-page{
+.flex-nowrap{overflow-x:auto;overflow-y:hidden;}
+}
+.login-page {
+.login-form-wrapper{padding:5px;}
+	.login-form{width:100%;margin-top:10px}
+
+}
+body {
+
+@media (min-width: 768px) {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+
+.login-page{
+.login-form-wrapper{padding:0;}
+	.login-form{max-width:450px;margin-top:0;}
+}
+.transcribe-page{
+.btn-toolbar{
+button{
+font-size:12px;
+}
+
+}
+
+}
+
+
+ }
+ .video_tut{
+ a{
+ img{
+ width: 100%; border: 1px solid black
+ }
+ }
+ 
+ }
+ .big_image{
+             	background-image: url(../../images/midrash.png);
+              background-repeat: no-repeat;
         background-size: cover;
-        background-blend-mode: lighten;
-       
-        .navbar-brand {
-            img {
-                height: 60px;
-            }
+        height:300px;
+        width:100%;
+ }
+.tsbackground {
+          
+              	background-image: url(../../images/Banner_1900_100.png);
+              background-repeat: no-repeat;
+        background-size: cover;
         }
-    }
+
     .top-nav {
         white-space: nowrap;
         border-bottom: 1px solid #333;
@@ -158,8 +223,11 @@ body {
 
     
     .partner-logos {
+    display:flex;
+    flex-wrap:wrap;
         img {
             height: 45px;
+            margin:5px;
         }
     }
     .logos {
@@ -169,6 +237,7 @@ body {
     .mmsg {      
         font-size: 18px;
         font-style: italic;
+        font-weight:  bold;
         color: black;
     }
     #img-line {
@@ -176,6 +245,10 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
     }
+    .leaflet-control-container {
+    		 position: absolute;
+    		  top: 0px;
+    		  left: 0px; }
     #trw {
         height: 80px;
         font-size: 40px;
@@ -184,27 +257,49 @@ body {
         padding: 10px;
         background-color: #efefef;
     }
-    .sfont {
-        font-size: smaller;
-    }
-    .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 80px;
-        padding: 10px;
-    }
-     .likert
-    {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display:flex;
-justify-content:space-between;
-    }
     
-}
+    .scale{
+    	width:100%;
+    	.title{
+		font-weight:bold;
+	}
+    	ul {
+    		padding:0;
+    		list-style:none;
+    	}
+    }
+   
 
 .leaflet-control-layers{
 display:none;
+}
+}
+
+@media (min-width: 500px) {
+body{
+.tab-content{
+	width:450px;
+}
+}
+}
+@media (min-width: 768px) {
+body{
+.tab-content{
+	width:250px;
+}
+}
+}
+@media (min-width: 1100px) {
+body{
+.tab-content{
+	width:350px;
+}
+}
+}
+@media (min-width: 1280px) {
+body{
+.tab-content{
+	width:450px;
+}
+}
 }

@@ -16,6 +16,13 @@ import il.haifa.ac.dh.tikkounsofrim.model.TaskProvider.Task;
 @WebServlet(urlPatterns = { "/LoginServlet", "/index.html" })
 public class LoginServlet extends HttpServlet {
 
+	private static final String TASK = "task";
+	private static final String TASK_PROVIDER = "taskProvider";
+	private static final String USER = "user";
+	private static final String UTF_8 = "UTF-8";
+	private static final String PAGE = "page";
+	private static final String LANG = "lang";
+	private static final String USER_DB = "userDB";
 	/**
 	 * 
 	 */
@@ -40,24 +47,30 @@ public class LoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String userid = (String) request.getSession().getAttribute("userid");
 
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding(UTF_8);
+		request.getSession().setAttribute("errorMessageRegister",null);
+		request.getSession().setAttribute("errorMessageLogin",null);
 
-		String newlang = request.getParameter("lang");
-//TODO avoid unnecessary resets		String currentlang = (String) request.getSession().getAttribute("lang");
-		if (newlang != null) {
+		String newlang = request.getParameter(LANG);
+		String currentlang = (String) request.getSession().getAttribute(LANG);
+		if (newlang != null && !newlang.equals(currentlang)) {
 			setLanguage(request.getSession(), newlang);
-			String currentpage = (String) request.getSession().getAttribute("page");
+			
+			String currentpage = (String) request.getSession().getAttribute(PAGE);
 			if (currentpage == null) {
 				currentpage = "views/login.jsp";
 			}
 			System.out.println("New Lang" + newlang);
+			
 			request.getRequestDispatcher("/WEB-INF/" + currentpage).forward(request, response);
 			return;
 		} else {
-			setDefaultLanguage(request.getSession());
+			if(currentlang == null) {
+				setDefaultLanguage(request.getSession());
+			}
 		}
 
-		String page = request.getParameter("page");
+		String page = request.getParameter(PAGE);
 		if (page == null) {
 			request.getSession().setAttribute("username", request.getParameter("u"));
 
@@ -76,9 +89,15 @@ public class LoginServlet extends HttpServlet {
 		}
 		if ("views/logout.jsp".equals(page)) {
 			request.getSession().setAttribute("userLineCount", UserDBaseJDBC.instance().getCount(userid));
+			//TODO remove all session attributes connected to user
+			request.getSession().removeAttribute("username");
+			request.getSession().removeAttribute("userid");
+			request.getSession().removeAttribute(USER);
+			request.getSession().removeAttribute(TASK);
+			
 		}
 		System.out.println("page=" + page);
-		request.getSession().setAttribute("page", page);
+		request.getSession().setAttribute(PAGE, page);
 		request.getRequestDispatcher("/WEB-INF/" + page).forward(request, response);
 
 	}
@@ -87,7 +106,7 @@ public class LoginServlet extends HttpServlet {
 	 * @param request
 	 */
 	private void setDefaultLanguage(HttpSession session) {
-		if (session.getAttribute("lang") == null) {
+		if (session.getAttribute(LANG) == null) {
 
 			setLanguage(session, "HE");
 		}
@@ -96,29 +115,35 @@ public class LoginServlet extends HttpServlet {
 	private void setLanguage(HttpSession session, String lang) {
 		String dir = "ltr";
 		String msglang = "en";
+		String mdirauto ="mr-auto";
 		switch (lang) {
 		case "EN":
 			dir = "ltr";
 			msglang = "en";
+			mdirauto = "mr-auto";
 
 			break;
 		case "FR":
 			dir = "ltr";
 			msglang = "fr";
+			mdirauto = "mr-auto";
 
 			break;
 		case "HE":
 			dir = "rtl";
 			msglang = "es";
+			mdirauto = "ml-auto";
 
 			break;
 		default:
 			break;
 		}
 
-		session.setAttribute("lang", lang);
+		session.setAttribute(LANG, lang);
 		session.setAttribute("msglang", msglang);
 		session.setAttribute("dir", dir);
+		session.setAttribute("mdirauto", mdirauto);
+	
 
 	}
 
@@ -137,10 +162,11 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding(UTF_8);
 
 		setDefaultLanguage(request.getSession());
-
+		request.getSession().setAttribute("errorMessageRegister",null);
+		request.getSession().setAttribute("errorMessageLogin",null);
 		String login = request.getParameter("login");
 		System.out.println("login exists " + login);
 		if (login != null) {
@@ -153,12 +179,12 @@ public class LoginServlet extends HttpServlet {
 			return;
 		}
 
-		String page = request.getParameter("page");
+		String page = request.getParameter(PAGE);
 		if (page == null) {
 			page = "views/login.jsp";
 		}
 		System.out.println("page2=" + page);
-		request.getSession().setAttribute("page", page);
+		request.getSession().setAttribute(PAGE, page);
 		request.getRequestDispatcher("/WEB-INF/" + page).forward(request, response);
 	}
 
@@ -180,26 +206,34 @@ public class LoginServlet extends HttpServlet {
 		String name = request.getParameter("usernamesignup");
 		String password = request.getParameter("passwordsignup");
 		String email = request.getParameter("emailsignup");
+		String consent = request.getParameter("contact");
 		String age = request.getParameter("age");
 		String hebrew = request.getParameter("hebrew");
 		String midrashim = request.getParameter("midrashim");
 
 		UserInfo uInfo = new UserInfo(convert(age), convert(hebrew), convert(midrashim));
 		if (!userValidationService.checkUser(name)) {
-			int userRegisterd = userValidationService.registerUser(name, password, email, uInfo);
+			int userRegisterd = userValidationService.registerUser(name, password, email, convertB(consent), uInfo);
 			if (userRegisterd != 0) {
-				request.setAttribute("errorMessageRegister", "Problem registering");
-				response.sendRedirect("/TS1218/LoginServlet#toregister");
+				request.getSession().setAttribute("errorMessageRegister", "Problem registering");
+				response.sendRedirect("LoginServlet#toregister");
 				return;
 			}
 			request.getSession().setAttribute("username", name);
-			response.sendRedirect("/TS1218/LoginServlet");
+			response.sendRedirect("LoginServlet");
 		} else {
-			request.setAttribute("errorMessageRegister", "Invalid Username exists");
-			response.sendRedirect("/TS1218/LoginServlet#toregister");
+			request.getSession().setAttribute("errorMessageRegister", "Invalid Username exists");
+			response.sendRedirect("LoginServlet#toregister");
 
 		}
 
+	}
+
+	private boolean convertB(String consent) {
+		if("on".equals(consent)) {
+			return true;
+		}
+		return false;
 	}
 
 	private void handleLogin(HttpServletRequest request, HttpServletResponse response)
@@ -213,8 +247,8 @@ public class LoginServlet extends HttpServlet {
 		if (isUserValid) {
 			TikunUser user = new TikunUser(name);
 			request.getSession().setAttribute("userid", name);
-			request.getSession().setAttribute("user", user);
-			request.getSession().setAttribute("userDB", userValidationService);
+			request.getSession().setAttribute(USER, user);
+			request.getSession().setAttribute(USER_DB, userValidationService);
 			int b = convert((String) request.getSession().getAttribute("b"));
 			int c = convert((String) request.getSession().getAttribute("c"));
 
@@ -238,9 +272,9 @@ public class LoginServlet extends HttpServlet {
 				task = taskProvider.getTask(user);
 
 			}
-			request.getSession().setAttribute("taskProvider", taskProvider);
-			request.getSession().setAttribute("task", task);
-			response.sendRedirect("/TS1218/TranscribeServlet");
+			request.getSession().setAttribute(TASK_PROVIDER, taskProvider);
+			request.getSession().setAttribute(TASK, task);
+			response.sendRedirect("TranscribeServlet");
 		} else {
 			request.setAttribute("errorMessageLogin", "Invalid Credentials!");
 			request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);

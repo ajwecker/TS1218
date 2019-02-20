@@ -8,14 +8,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
 
+import il.haifa.ac.dh.tikkounsofrim.Config;
 import il.haifa.ac.dh.tikkounsofrim.model.ManuscriptPlace;
 import il.haifa.ac.dh.tikkounsofrim.model.UserDBase;
 import il.haifa.ac.dh.tikkounsofrim.model.UserInfo;
 
 public class UserDBaseJDBC implements UserDBase {
-	private static final String DB_SERVER = "tikkoun-sofrim.haifa.ac.il";
-	 //private static final String DB_SERVER = "localhost";
-
 	private Connection connect = null;
 	private static UserDBaseJDBC instance = null;
 
@@ -41,9 +39,9 @@ public class UserDBaseJDBC implements UserDBase {
 			// Statements allow to issue SQL queries to the database
 			statement = connect.createStatement();
 			// Result set get the result of the SQL query
-			ResultSet resultSet = statement.executeQuery("select * from tikkoun.users");
+			ResultSet resultSet = statement.executeQuery("select * from users");
 			writeResultSet(resultSet);
-			resultSet = statement.executeQuery("select * from tikkoun.transcriptions");
+			resultSet = statement.executeQuery("select * from transcriptions");
 			writeMetaData(resultSet);
 
 		} catch (Exception e) {
@@ -58,8 +56,8 @@ public class UserDBaseJDBC implements UserDBase {
 	private void connect() throws SQLException, ClassNotFoundException {
 		if (connect == null || connect.isClosed()) {
 			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
-			connect = DriverManager.getConnection("jdbc:mysql://" + DB_SERVER + "/tikkoun?"
-					+ "user=tikun&password=Paris2019!&serverTimezone=UTC&characterEncoding=utf-8&useUnicode=true");
+			String connectionURL = Config.getString("db.url");
+			connect = DriverManager.getConnection(connectionURL);
 		}
 
 	}
@@ -97,27 +95,69 @@ public class UserDBaseJDBC implements UserDBase {
 		}
 	}
 
+	/**
+	 * Not a real main. Just utility. This one converts the clear password to hashed ones.
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		UserDBaseJDBC dao = new UserDBaseJDBC();
-		dao.readDataBase();
+		Statement statement = null;
+		PreparedStatement updateStmt = null;
+		try {
+			dao.connect();
+			statement = dao.connect.createStatement();
+			updateStmt = dao.connect.prepareStatement("update users set hashed_password=?, password=null where userid=?");
+			ResultSet resultSet = statement.executeQuery("select userid, password from users "
+					+ "where password is not null and password <> '' and hashed_password is null");
+			while (resultSet.next()) {
+				String userid = resultSet.getString(1);
+				String clearPassword = resultSet.getString(2);
+				
+				String hashed = Password.getSaltedHash(clearPassword);
+				updateStmt.setString(1, hashed);
+				updateStmt.setString(2, userid);
+				updateStmt.execute();
+				System.out.println("Updated " + userid + " to " + hashed);
+			}
+			// autocommit is set
+			//dao.connect.commit();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			dao.closeStatement(statement);
+		}
 	}
 
 	@Override
-	public int registerUser(String uName, String password, String email, UserInfo uInfo) {
-
+	public int registerUser(String uName, String password, String email, boolean consent, UserInfo uInfo) {
+		String hpassword;
+		try {
+			hpassword = Password.getSaltedHash(password);
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+			return -1;
+		}
 		// PreparedStatements can use variables and are more efficient
 		PreparedStatement preparedStatement = null;
 		try {
 			connect();
-			preparedStatement = connect.prepareStatement("insert into  tikkoun.users values (?, ?, ?, ?, ?, ?, ?, ?)");
+
+			preparedStatement = connect.prepareStatement("insert into users "
+					+ "(userid, email, password, age, hebrewknowledge, midrashknowledge, numlines, "
+					+ "registered, hashed_password, contact_allowed) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 			preparedStatement.setString(1, uName);
 			preparedStatement.setString(2, email);
-			preparedStatement.setString(3, password);
+			preparedStatement.setString(3, null); // clear password
 			preparedStatement.setInt(4, uInfo.age);
 			preparedStatement.setInt(5, uInfo.hebrewknowledge);
 			preparedStatement.setInt(6, uInfo.midrashknowledge);
 			preparedStatement.setInt(7, 0);
 			preparedStatement.setTimestamp(8, new java.sql.Timestamp(System.currentTimeMillis()));
+			preparedStatement.setString(9, hpassword);
+			preparedStatement.setBoolean(10, consent);
 			preparedStatement.executeUpdate();
 			return 0;
 		} catch (SQLException e) {
@@ -133,16 +173,30 @@ public class UserDBaseJDBC implements UserDBase {
 
 		return -1;
 	}
+	
+/*	update user
+ * Get all users
+ * loop on users
+ *     get password
+ *     saltAndHash paasword
+ *     replace password
+ * 
+ * (non-Javadoc)
+ * @see il.haifa.ac.dh.tikkounsofrim.model.UserDBase#checkUser(java.lang.String)
+ */
 
 	@Override
 	public boolean checkUser(String uName) {
 		Statement statement = null;
 		try {
+			if ("guest".equals(uName)) {
+				return true;
+			}
 			connect();
 			statement = connect.createStatement();
 			// Result set get the result of the SQL query
 			ResultSet resultSet = statement
-					.executeQuery("select count(*) from tikkoun.users where userid = '" + uName + "'");
+					.executeQuery("select count(*) from users where userid = '" + uName + "'");
 			resultSet.last();
 			int rowcount = resultSet.getInt(1);
 			if (rowcount > 0) {
@@ -169,17 +223,26 @@ public class UserDBaseJDBC implements UserDBase {
 	public boolean isUserValid(String user, String password) {
 		Statement statement = null;
 		try {
-			connect();
-			statement = connect.createStatement();
-			ResultSet resultSet = statement.executeQuery("select count(*) from tikkoun.users where userid = '" + user
-					+ "'and password = '" + password + "'");
-			resultSet.last();
-			int rowcount = resultSet.getInt(1);
-			if (rowcount > 0) {
+			if ("guest".equals(user)) {
 				return true;
 			}
-
+			connect();
+			statement = connect.createStatement();
+			ResultSet resultSet = statement.executeQuery("select password, hashed_password from users where userid = '" + user +  "'");
+			boolean exists = resultSet.last();
+			if (exists) {
+				String clearPassword = resultSet.getString(1);
+				String hashedPassword = resultSet.getString(2);
+				if (clearPassword != null && clearPassword.equals(password)) {
+					return true;
+				}
+				// else, it's hashed
+				return Password.check(password, hashedPassword);
+			} 
 		} catch (SQLException | ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
@@ -208,7 +271,7 @@ public class UserDBaseJDBC implements UserDBase {
 
 		try {
 			connect();
-			preparedStatement = connect.prepareStatement("insert into tikkoun.transcriptions "
+			preparedStatement = connect.prepareStatement("insert into transcriptions "
 					+ "(date, userid, manuscript, page, line, transcriptionversion, "
 					+ "automatictranscription, usertranscription, status, start, host) "
 					+ "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
@@ -248,7 +311,7 @@ public class UserDBaseJDBC implements UserDBase {
 			connect();
 			statement = connect.createStatement();
 			ResultSet resultSet = statement.executeQuery(
-					"select count(*) from tikkoun.transcriptions where userid = '" + user + "' and status <> 0");
+					"select count(*) from transcriptions where userid = '" + user + "' and status <> 0");
 			if (resultSet.next()) {
 				return resultSet.getInt(1);
 			}
@@ -273,7 +336,7 @@ public class UserDBaseJDBC implements UserDBase {
 			connect();
 			statement = connect.createStatement();
 			ResultSet resultSet = statement
-					.executeQuery("select count(*) from tikkoun.transcriptions where manuscript = '"
+					.executeQuery("select count(*) from transcriptions where manuscript = '"
 							+ place.manuscriptId + "'and page = '" + place.page + "'and line = '" + place.line + "'");
 			boolean empty = resultSet.last();
 			if (!empty) {
@@ -303,7 +366,7 @@ public class UserDBaseJDBC implements UserDBase {
 			connect();
 			statement = connect.createStatement();
 			ResultSet resultSet = statement.executeQuery(
-					"select count(*) from tikkoun.transcriptions where manuscript = '" + place.manuscriptId.getName()
+					"select count(*) from transcriptions where manuscript = '" + place.manuscriptId.getName()
 							+ "' and page = " + place.page + " and line = " + place.line + " and status <> 0");
 			if (resultSet.last()) {
 				int rowcount = resultSet.getInt(1);
@@ -330,7 +393,7 @@ public class UserDBaseJDBC implements UserDBase {
 		try {
 			connect();
 			statement = connect.createStatement();
-			ResultSet resultSet = statement.executeQuery("select * from tikkoun.transcriptions where manuscript = '"
+			ResultSet resultSet = statement.executeQuery("select * from transcriptions where manuscript = '"
 					+ place.manuscriptId.getName() + "' and page = " + place.page + " and line = " + place.line
 					+ " and userid = '" + user + '\'');
 			return resultSet.next();

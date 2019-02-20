@@ -6,14 +6,29 @@
 <%@include file="../common/header.jspf"%>
 <body class="${dir}">
 	<%@include file="../common/navigation.jspf"%>
-	<div class="container mt-2 scrollable login-page show-login">
-	
-		<div class="login-form-wrapper">
-			<%@include file="parts/login.jspf"%>
-		</div>
-		<div class="register-form-wrapper">
-			<%@include file="parts/register.jspf"%>
-		</div>
 
-	</div>
-	<%@ include file="../common/footer.jspf"%>
+	<div class="login-page show-login">
+
+		<div>
+			<div class="jumbotron jumbotron-fluid tsbackground">
+				<div class="container"
+					style="background-color: rgba(255, 255, 255, 0.8);">
+					<h1 class="display-4">
+						<fmt:message key="login.center.welcome" />
+					</h1>
+					<p class="lead">
+						<fmt:message key="login.center.Intro_line_1" />
+
+						<fmt:message key="login.center.Intro_line_2" />
+
+					</p>
+				</div>
+				
+			</div>
+			<%@include file="parts/login.jspf"%>
+			<div class="register-form-wrapper">
+				<%@include file="parts/register.jspf"%>
+			</div>
+
+		</div>
+		<%@ include file="../common/footer.jspf"%>

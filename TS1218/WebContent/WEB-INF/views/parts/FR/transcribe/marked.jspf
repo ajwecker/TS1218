@@ -23,21 +23,23 @@ horizontale au-dessus du mot ; des points au-dessus du mot ; des traits en diago
 </p>
 
 				<ul>
-					<li><img src="/TS1218/images/ex_deletion_small.jpg"> La ligne horizontale indique la suppression 
+
+					<li><img src="./images/ex_deletion_small.jpg"> La ligne horizontale indique la suppression 
 					des mots ואת בניו (écrits deux fois, par erreur).</li>
-					<li><img src="/TS1218/images/ex_struck_through_small.jpg">
+					<li><img src="./images/ex_struck_through_small.jpg">
+
 						le mot תורה a été barré.</li>
 					<li><img
-						src="/TS1218/images/ex_combination_stuck_deletion_small.jpg">
+						src="./images/ex_combination_stuck_deletion_small.jpg">
 						Une combinaison des deux méthodes ci-dessus.</li>
 				</ul>
 				<p>
 					Pour indiquer la suppression d’une lettre ou d’un mot dans le manuscrit, sélectionnez le texte
-					supprimé avec la souris, puis cliquez sur le bouton « supprimé » (<img
-						src="/TS1218/images/ex_deleted_btn_small.jpg">) en-dessous de la boîte de texte. Vous
+					supprimé avec la souris, puis cliquez sur le bouton (-) en-dessous de la boîte de texte. Vous
 						pouvez également cliquer sur le bouton « supprimé » puis taper le texte supprimé entre 
 						les parenthèses. Par exemple : <img
-						src="/TS1218/images/ex_marked_as_deleted_small.jpg"> (אותי)
+						src="./images/ex_marked_as_deleted_small.jpg"> (אותי)
+
 					est supprimé.
 				</p>
 			</div>
@@ -45,7 +47,7 @@ horizontale au-dessus du mot ; des points au-dessus du mot ; des traits en diago
 
 		<div class="unidentified_deleted_text">
 			<div class="title">Texte supprimé illisible</div>
-			<div class="content">Si la lettre ou le mot ne peuvent être identifiés, cliquez une fois sur le bouton « Supprimé », afin d’indiquer que quelque chose a été supprimé à cet endroit, puis continuez.</div>
+			<div class="content">Si la lettre ou le mot ne peuvent être identifiés, cliquez une fois sur le bouton (-), afin d’indiquer que quelque chose a été supprimé à cet endroit, puis continuez.</div>
 		</div>
 		<div class="additions">
 			<div class="title">Ajouts</div>
@@ -57,7 +59,7 @@ Le scribe du manuscrit de Genève insère le plus souvent les ajouts les plus co
 </p>
 				<p>
 					Ici, le scribe a inséré le mot בן : <img
-						src="/TS1218/images/ex_addition_small.jpg"> Afin de signaler un ajout, utilisez le bouton [Ajouté] en-dessous de la ligne de texte, et écrivez le mot inséré entre les crochets. Si vous devez signaler qu’une lettre ou un mot transcrits doivent être considérés comme un ajout, sélectionnez-les avec la souris, puis cliquez sur le bouton [Ajouté]. Par exemple, l’insertion de la lettre ה dans le mot שקדים doit être signalée dans la transcription de la façon suivante : על ש[ה]קדים שמו 
+						src="./images/ex_addition_small.jpg"> Afin de signaler un ajout, utilisez le bouton [+] en-dessous de la ligne de texte, et écrivez le mot inséré entre les crochets. Si vous devez signaler qu’une lettre ou un mot transcrits doivent être considérés comme un ajout, sélectionnez-les avec la souris, puis cliquez sur le bouton [Ajouté]. Par exemple, l’insertion de la lettre ה dans le mot שקדים doit être signalée dans la transcription de la façon suivante : על ש[ה]קדים שמו 
 				</p>
 			</div>
 		</div>

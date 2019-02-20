@@ -20,7 +20,7 @@
 				בתוספת עיטור קבוע.</p>
 			<p>
 				סופר כתב יד ז'נבה רושם את שם האל בדרך כלל כך: <img
-					src="/TS1218/images/special_characters/n_special_characters_divine_name.png">
+					src="./images/special_characters/n_special_characters_divine_name.png">
 				יש לרשום את האותיות כפי שהן: יוי.
 		</div>
 	</div>
@@ -38,11 +38,11 @@
 			נכתבת כך:</p>
 		<p>
 			<img
-				src="/TS1218/images/special_characters/f_special_characters_ligature_aleph_lamed.png">
+				src="./images/special_characters/f_special_characters_ligature_aleph_lamed.png">
 		</p>
 		<p>
 			כדי לתעתק את הליגטורה א-ל, לחצו על הכפתור <img
-				src="/TS1218/images/special_characters/g_special_characters_ligature_aleph_lamed_button.png"
+				src="./images/special_characters/g_special_characters_ligature_aleph_lamed_button.png"
 				class="small"> שמתחת לשורת הטקסט.
 		</p>
 	</div>
@@ -57,11 +57,11 @@
 			הקדוש) ברוך הוא.</p>
 		<div class="images inline">
 			<img
-				src="/TS1218/images/special_characters/h_special_characters_abbreviations_and_numbers1.png">
+				src="./images/special_characters/h_special_characters_abbreviations_and_numbers1.png">
 			<img
-				src="/TS1218/images/special_characters/i_special_characters_abbreviations_and_numbers2.png">
+				src="./images/special_characters/i_special_characters_abbreviations_and_numbers2.png">
 			<img
-				src="/TS1218/images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
+				src="./images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
 		</div>
 		<p>רישום נכון של ראשי התיבות: רשמו את כל האותיות ללא רווח, וסמנו
 			את הנקודה העלית בעזרת גרש. '. .לדוגמא: ה'ב'ה', ז'ש'ה
@@ -71,19 +71,19 @@
 
 	<div>
 		<img
-			src="/TS1218/images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
+			src="./images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
 		- אמ' ר' לוי
 	</div>
 	<div>
 		<img
-			src="/TS1218/images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
+			src="./images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
 		- משה וג'
 	</div>
 	<p class="mt-5">גם אותיות המשמשות כערך נומרי, כתחליף למספר, יש
 		לתעתק כפי שמעתיקים ראשי תיבות: ז', י'א'.</p>
 	<div>
 		<img
-			src="/TS1218/images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
+			src="./images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
 		- לנולד בן ז'
 	</div>
 
@@ -100,12 +100,12 @@
 		<p>
 		<div class="images">
 			<img
-				src="/TS1218/images/special_characters/c_special_characters_upper_dot1.png">
+				src="./images/special_characters/c_special_characters_upper_dot1.png">
 			<br /> <img
-				src="/TS1218/images/special_characters/d_special_characters_upper_dot2.png">
+				src="./images/special_characters/d_special_characters_upper_dot2.png">
 		</div>
 		כדי לסמן נקודה עילית לחצו על הכפתור <img
-			src="/TS1218/images/special_characters/e_special_characters_upper_dot_button.png"
+			src="./images/special_characters/e_special_characters_upper_dot_button.png"
 			class="small"> בשורת הכפתורים שמתחת לשורת הטקסט. סמנו את אותו
 		מספר נקודות שסימן הסופר. אם נתקלתם בסימן אחר שיש לכם במקלדת, לדוגמא
 		נקודותיים, ניתן להשתמש בו על פי שיקול דעתכם.
@@ -125,7 +125,7 @@
 		<p>סופר כתב יד ז'נבה ממלא בדרך כלל את סופי השורות בקו אלכסוני, או
 			בשני קווים אלכסוניים.</p>
 		<img
-			src="/TS1218/images/special_characters/a_special_characters_linefillers.png">
+			src="./images/special_characters/a_special_characters_linefillers.png">
 		<p>כדי לסמן תוים אלה בסוף שורת הטקסט, לחצו על הכפתור השמאלי ביותר
 			בשורת הכפתורים מתחת לשורת הטקסט, ובחרו בסימן המתאים למצוי בכתב היד /
 			או //</p>
@@ -143,7 +143,7 @@
 			שורות. אותיות אלה יש לרשום כאות רגילה. לדוגמא: .</p>
 		<div>
 			- נוטל את <img
-				src="/TS1218/images/special_characters/b_special_characters_wide_letters.png">
+				src="./images/special_characters/b_special_characters_wide_letters.png">
 		</div>
 	</div>
 </div>
@@ -158,7 +158,7 @@
 			משולבות בשורה כרגיל.</p>
 		<p>העתיקו את הכותרות באות רגילה כמו שאר הטקסט.</p>
 		<img
-			src="/TS1218/images/special_characters/o_special_characters_headwords.png"
+			src="./images/special_characters/o_special_characters_headwords.png"
 			class="large">
 		<p>בדוגמא המוצגת יש באות רגילה ללא כל שינוי: וג' וידבר יוי וג' דבר
 			אל</p>

@@ -14,7 +14,7 @@
 					Geneva manuscript usually fills the end of lines with one or two
 					diagonal strokes.</p>
 				<img
-					src="/TS1218/images/special_characters/a_special_characters_linefillers.png">
+					src="./images/special_characters/a_special_characters_linefillers.png">
 				<p>
 					<strong>In order to insert these characters at the end of
 						a line, press the leftmost button at the buttons line under the
@@ -32,7 +32,7 @@
 					large letters at the ends of the lines. These letters need to be
 					written as regular letters. For example: - נוטל את.</p>
 				<img
-					src="/TS1218/images/special_characters/b_special_characters_wide_letters.png">
+					src="./images/special_characters/b_special_characters_wide_letters.png">
 
 			</div>
 		</div>
@@ -44,13 +44,13 @@
 				<p>
 				<div class="images">
 					<img
-						src="/TS1218/images/special_characters/c_special_characters_upper_dot1.png">
+						src="./images/special_characters/c_special_characters_upper_dot1.png">
 					<br /> <img
-						src="/TS1218/images/special_characters/d_special_characters_upper_dot2.png">
+						src="./images/special_characters/d_special_characters_upper_dot2.png">
 				</div>
 				<p>
 				<strong>To mark an upper dot press the button (<img
-					src="/TS1218/images/special_characters/e_special_characters_upper_dot_button.png"
+					src="./images/special_characters/e_special_characters_upper_dot_button.png"
 					class="small">) in the buttons line under the text. Add the
 					same number of dots that the manuscript author wrote. If you
 					encounter a different mark that appears on the keyboard, for
@@ -69,9 +69,9 @@
 					the top left of the aleph).</p>
 				<p>
 					<img
-						src="/TS1218/images/special_characters/f_special_characters_ligature_aleph_lamed.png">
+						src="./images/special_characters/f_special_characters_ligature_aleph_lamed.png">
 					for example means אליו. Please use the special button <img
-						src="/TS1218/images/special_characters/g_special_characters_ligature_aleph_lamed_button.png"
+						src="./images/special_characters/g_special_characters_ligature_aleph_lamed_button.png"
 						class="small"> below the text line and transcribe ﭏיו.
 				</p>
 			</div>
@@ -84,11 +84,11 @@
 					ברוך הוא.</p>
 				<div class="images inline">
 					<img
-						src="/TS1218/images/special_characters/h_special_characters_abbreviations_and_numbers1.png">
+						src="./images/special_characters/h_special_characters_abbreviations_and_numbers1.png">
 					<img
-						src="/TS1218/images/special_characters/i_special_characters_abbreviations_and_numbers2.png">
+						src="./images/special_characters/i_special_characters_abbreviations_and_numbers2.png">
 					<img
-						src="/TS1218/images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
+						src="./images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
 				</div>
 				<p>
 					<strong>Please write each single visible letter of the
@@ -101,12 +101,12 @@
 				</p>
 				<div>
 					<img
-						src="/TS1218/images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
+						src="./images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
 					- אמ' ר' לוי'
 				</div>
 				<div>
 					<img
-						src="/TS1218/images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
+						src="./images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
 					- משה וג'
 				</div>
 				<p>When letters serve as numbers they should be transcribed with
@@ -114,7 +114,7 @@
 					apostrophe, i.e.</p>
 				<div>
 					<img
-						src="/TS1218/images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
+						src="./images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
 					- לנולד בן ז'
 				</div>
 
@@ -128,7 +128,7 @@
 					name of G-d replacing the tetragrammaton, most of them use two or
 					three yods, sometimes with an ornament. The scribe of the Geneva
 					manuscript, usually writes the divine name <img
-						src="/TS1218/images/special_characters/n_special_characters_divine_name.png">
+						src="./images/special_characters/n_special_characters_divine_name.png">
 					and should be transcribed as יוי.
 				</p>
 			</div>
@@ -145,7 +145,7 @@
 						rest of the text</strong>
 				</p>
 				<img
-					src="/TS1218/images/special_characters/o_special_characters_headwords.png" class="large">
+					src="./images/special_characters/o_special_characters_headwords.png" class="large">
 			</div>
 		</div>
 	</div>
