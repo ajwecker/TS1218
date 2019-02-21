@@ -1,50 +1,56 @@
 <div>
 <strong>Travail</strong>
 	<p>Le travail sur Tikkoun Sofrim est assez simple. Au milieu de la
-		page est prÃ©sentÃ©e une ligne du manuscrit, et en dessous une
-		transcription automatique proposÃ©e par Kraken. Si Kraken a fait des
+		page est présentée une ligne du manuscrit, et en dessous une
+		transcription automatique proposée par Kraken. Si Kraken a fait des
 		erreurs, corrigez-les. Si la transcription de Kraken est correcte,
-		vous nâ€™avez rien Ã  faire.</p>
-	<p>Sâ€™il y a dans le texte des caractÃ¨res spÃ©ciaux, des
+		vous n’avez rien à faire.</p>
+	<p>S’il y a dans le texte des caractères spéciaux, des
 		suppressions ou des ajouts, utilisez les boutons se trouvant sous la
-		ligne pour les mettre en Ã©vidence.</p>
+		ligne pour les mettre en évidence.</p>
 	<p>Vous pouvez augmenter et diminuer la taille de la police de la
-		transcription en utilisant les boutons [+] et (-). Vous pouvez Ã©galement
-		annuler vos corrections et revenir Ã  la transcription proposÃ©e
-		automatiquement en utilisant le bouton &#8634;.</p>
-	<p>Sur le cÃ´tÃ© gauche, vous trouverez la zone dâ€™aide. Vous
-		pouvez y examiner la page entiÃ¨re du manuscrit et explorer les
-		diffÃ©rents onglets dâ€™aide, oÃ¹ vous trouverez des explications
+		transcription en utilisant les boutons [+] et (-). Vous pouvez également
+		annuler vos corrections et revenir à la transcription proposée
+		automatiquement en utilisant le bouton “Recommencer” &#8634;.</p>
+	<p>Sur le côté gauche, vous trouverez la zone d’aide. Vous
+		pouvez y examiner la page entière du manuscrit et explorer les
+		différents onglets d’aide, où vous trouverez des explications
 		concernant les lettres et leur forme dans ce manuscrit, une
-		explication concernant les caractÃ¨res spÃ©ciaux utilisÃ©s dans le
+		explication concernant les caractères spéciaux utilisés dans le
 		manuscrit pour la ponctuation, la mention du nom divin etc. ; des
 		explications concernant le marquage des suppressions et des ajouts et
-		ce quâ€™il faut faire lorsque vous rencontrez ce genre de phÃ©nomÃ¨nes
+		ce qu’il faut faire lorsque vous rencontrez ce genre de phénomènes
 		dans le manuscrit.</p>
 </div>
 <div>
 	<strong>Aide</strong>
-	<p>La transcription de manuscrits peut sâ€™avÃ©rer difficile, et
-		requiert une expÃ©rience considÃ©rable. Voici quelques conseils pour
-		surmonter les difficultÃ©s. Une lettre est difficile Ã  identifier.
-		Que faire ? Cliquez sur lâ€™onglet des lettres pour vÃ©rifier la forme
+	<p>La transcription de manuscrits peut s’avérer difficile, et
+		requiert une expérience considérable. Voici quelques conseils pour
+		surmonter les difficultés. Une lettre est difficile à identifier.
+		Que faire ? Cliquez sur l’onglet des lettres pour vérifier la forme
 		de chaque lettre dans ce manuscript particulier, et pour obtenir des
-		explications sur la faÃ§on dont elles sont tracÃ©es. 
+		explications sur la façon dont elles sont tracées.
+
+
 		</p>
 		<p>Pas suffisant ?
-		Il est toujours utile dâ€™observer les lignes prÃ©cÃ©dentes et
-		suivantes, chercher dâ€™autres occurrences de cette lettre dans des
-		mots identifiables, et de rÃ©soudre ainsi l'ambiguÃ¯tÃ© par
+		Il est toujours utile d’observer les lignes précédentes et
+		suivantes, chercher d’autres occurrences de cette lettre dans des
+		mots identifiables, et de résoudre ainsi l'ambiguïté par
 		comparaison. 
 		</p>
-		<p>Le problÃ¨me subsiste ? Vous pouvez consulter la version
-		Ã©ditÃ©e du midrash, ou sâ€™il sâ€™agit dâ€™une citation biblique, la
-		vÃ©rifier. Mais attention: diffÃ©rents manuscrits du mÃªme texte
-		prÃ©sentent des variantes, vÃ©rifiez quâ€™Ã  cet endroit les deux
+		
+		
+		<p>
+		Le problème subsiste ? Vous pouvez consulter la version
+		éditée du midrash, ou s’il s’agit d’une citation biblique, la
+		vérifier. Mais attention: différents manuscrits du même texte
+		présentent des variantes, vérifiez qu’à  cet endroit les deux
 		versions sont identiques. 
 		</p>
+		
 		<p>Vous trouverez le texte du midrash Tanhouma
-		sur le site Sefaria : Midrash Tanhouma imprimÃ© Midrash Tanhouma -
-		Ã©dition Buber Midrash Rabba (qui inclut une partie du contenu pour
-		les livres de lâ€™Exode, des Nombres, et du DeutÃ©ronome).</p>
+		sur le site Sefaria : Midrash Tanhouma imprimé Midrash Tanhouma -
+		édition Buber Midrash Rabba (qui inclut une partie du contenu pour
+		les livres de l’Exode, des Nombres, et du Deutéronome).</p>
 </div>
