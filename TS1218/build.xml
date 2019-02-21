@@ -1,3 +1,4 @@
+<!DOCTYPE project>
 <project name="ts" default="dist" basedir=".">
 
 	<!-- ****************** Project Standard Properties ******************* -->

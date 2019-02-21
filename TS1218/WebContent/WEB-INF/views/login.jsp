@@ -22,6 +22,7 @@
 						<fmt:message key="login.center.Intro_line_2" />
 
 					</p>
+					</div>
 				</div>
 				
 			</div>
