@@ -59,20 +59,38 @@ Le scribe du manuscrit de Genève insère le plus souvent les ajouts les plus co
 </p>
 				<p>
 					Ici, le scribe a inséré le mot בן : <img
-						src="./images/ex_addition_small.jpg"> Afin de signaler un ajout, utilisez le bouton [+] en-dessous de la ligne de texte, et écrivez le mot inséré entre les crochets. Si vous devez signaler qu’une lettre ou un mot transcrits doivent être considérés comme un ajout, sélectionnez-les avec la souris, puis cliquez sur le bouton [+]. Par exemple, l’insertion de la lettre ה dans le mot שקדים doit être signalée dans la transcription de la façon suivante : על ש[ה]קדים שמו 
+						src="./images/ex_addition_small.jpg"> Afin de signaler un ajout, 
+						utilisez le bouton [+] en-dessous de la ligne de texte, et écrivez 
+						le mot inséré entre les crochets. Si vous devez signaler qu’une lettre 
+						ou un mot transcrits doivent être considérés comme un ajout, sélectionnez-les 
+						avec la souris, puis cliquez sur le bouton [+]. Par exemple, l’insertion de la 
+						lettre ה dans le mot שקדים doit être signalée dans la transcription de la façon suivante : על ש[ה]קדים שמו 
 				</p>
+				<div class="images">
+					<img src="./images/al_shkedim_small.jpg">
+</div>
 			</div>
 		</div>
 		<div class="combination">
 			<div class="title">Combinaison d’une suppression et d’un ajout</div>
 			<div class="content">Si un mot est inséré entre deux lignes afin de corriger un mot de la ligne, le mot ajouté et le mot corrigé doivent être marqués tous les deux. Dans l’exemple suivant, le scribe a écrit מתחילין puis il a barré ce mot et inséré
  מתישבים au-dessus. Cela doit être transcrit ainsi : [התחילו (מתחילין) [מתישבים</div>
+ <div class="images">
+					<img src="./images/hatchilu_small.jpg">
+</div>
 		</div>
 		<div class="diagonal_words_at_the_end_of_lines">
 			<div class="title">Mots en diagonale à la fin des lignes</div>
-			<div class="content">Afin de justifier les paragraphes du côté gauche, le scribe écrit quelquefois le dernier mot de la ligne en diagonale. Cette technique constitue souvent un obstacle pour le logiciel de transcription.
-Ces mots doivent être écrits normalement, sans aucune indication spéciale. Voir les exemples ci-dessous.
-</div>
+			<div class="content">
+			<p>Afin de justifier les paragraphes du côté gauche, le scribe écrit quelquefois le dernier mot de la ligne en diagonale. Cette technique constitue souvent un obstacle pour le logiciel de transcription.
+Ces mots doivent être écrits normalement, sans aucune indication spéciale. Voir les exemples ci-dessous.</p>
+
+<div class="images">
+					<img
+						src="./images/marked_text/h_marked_text_diagonal_end_line1.png">
+					<img
+						src="./images/marked_text/i_marked_text_diagonal_end_line2.png">
+</div></div>
 		</div>
 		<div class="damaged_or_unreadable_text">
 			<div class="title">Texte endommagé ou illisible</div>
@@ -81,6 +99,7 @@ Ces mots doivent être écrits normalement, sans aucune indication spéciale. Vo
 				<p>
 					<strong> Pour marquer des lettres non-identifiables (déchirées ou estompées), 
 					cliquez sur le bouton &lt;&#42823;&gt; et insérez des espaces entre les chevrons, selon votre estimation de la longueur du texte illisible.</strong>
+					<img src="./images/marked_text/j_marked_text_damage_unreadable_text.png">
 				</p>
 				<p>doit être noté ainsi : &lt; קול שילך אצל   &gt;</p>
 			</div>
@@ -97,7 +116,9 @@ Ces mots doivent être écrits normalement, sans aucune indication spéciale. Vo
 					<strong>Pour indiquer un doute, utilisez la souris pour sélectionner la lettre puis cliquez sur ‘douteux’.
 						Vous pouvez également cliquer sur le bouton et taper la lettre la plus probable entre les accolades.</strong>
 				</p>
-				<p>Dans cet exemple, il faut marquer comme douteuse la lettre ainsi : {אלא לפי כח{ו</p>
+				<p>Dans cet exemple, il faut marquer comme douteuse la lettre ainsi :
+				<img src="./images/marked_text/k_marked_text_uncertainty1.png">
+				{אלא לפי כח{ו</p>
 			</div>
 		</div>
 	</div>
