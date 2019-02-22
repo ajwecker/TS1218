@@ -78,8 +78,9 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 			<div class="title">Abréviations et nombres</div>
 			<div class="content">
 				<p>Certaines expressions sont presque toujours abrégées. Par exemple :
+				<span dir="rtl">
 					ז'ש'ה' – זהו שאמר הכתוב; ד'א' – דבר אחר; ה'ב'ה' – הקודש (או הקדוש)
-					ברוך הוא.</p>
+					ברוך הוא<span>.</p>
 				<div class="images inline">
 					<img
 						src="./images/special_characters/h_special_characters_abbreviations_and_numbers1.png">
@@ -89,29 +90,33 @@ Si vous rencontrez un caractère différent qui existe sur votre clavier, comme 
 						src="./images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
 				</div>
 				<p>
-					<strong>Veuillez écrire chaque lettre visible de l’abréviation sans espace entre elles. Chaque lettre doit être suivie
-					directement par une apostrophe, qui représente le point utilisé dans le manuscrit</strong>, :
-					ה'ב'ה', ז'ש'ה'. Il ne faut pas développer les abréviations.
-
-
-
+					<strong>Veuillez écrire chaque lettre visible de l’abréviation sans espace entre elles. 
+					Chaque lettre doit être suivie
+					directement par une apostrophe, qui représente le point utilisé dans le manuscrit</strong> :
+					<span dir="rtl">
+					ה'ב'ה', ז'ש'ה'</span>. Il ne faut pas développer les abréviations.
 				</p>
 				<div>
 					<img
 						src="./images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
-					- אמ' ר' לוי'
+						<span dir="rtl">
+					- אמ' ר' לוי'</span>
 				</div>
 				<div>
 					<img
 						src="./images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
+						<span dir="rtl">
 					- משה וג'
+					<span>
 				</div>
 				<p>Quand les lettres expriment des nombres, elles doivent être transcrites exactement comme elles apparaissent dans le manuscrit
 				(ici aussi, l’apostrophe représente le point qui surplombe la lettre) :</p>
 				<div>
 					<img
 						src="./images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
+						<span dir="rtl">
 					- לנולד בן ז'
+					</span>
 				</div>
 
 			</div>
