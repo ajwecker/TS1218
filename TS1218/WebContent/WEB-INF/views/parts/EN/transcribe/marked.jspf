@@ -119,7 +119,8 @@
 					needs to be written as follows: <img
 						src="./images/marked_text/j_marked_text_damage_unreadable_text.png">
 				</p>
-				<p>&lt;ק&gt;ול שילך אצל</p>
+				<p>
+				<span dir="rtl">ול שילך אצל</span>&lt;ק&gt;</p>
 			</div>
 		</div>
 		<div class="uncertainty_in_transcription">

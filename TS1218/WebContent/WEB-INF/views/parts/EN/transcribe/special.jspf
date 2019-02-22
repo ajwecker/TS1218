@@ -104,24 +104,26 @@
 				</p>
 				<div>
 					<img
-						src="./images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
+						src="./images/special_characters/k_special_characters_abbreviations_and_numbers4.png">-
 						<span dir="rtl">
-					- אמ' ר' לוי'
+				 אמ' ר' לוי'
 					</span>
 				</div>
 				<div>
 					<img
-						src="./images/special_characters/l_special_characters_abbreviations_and_numbers5.png">
-					- משה וג'
+						src="./images/special_characters/l_special_characters_abbreviations_and_numbers5.png">-
+				<span dir="rtl">		
+					משה וג'
+				</span>	
 				</div>
 				<p>When letters serve as numbers they should be transcribed with
 					the letters displayed (and the dot above the Hebrew letter as an
 					apostrophe, i.e.</p>
 				<div>
 					<img
-						src="./images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
+						src="./images/special_characters/m_special_characters_abbreviations_and_numbers6.png">-
 						<span dir="rtl">
-					- לנולד בן ז'
+					 לנולד בן ז'
 					</span>
 				</div>
 
