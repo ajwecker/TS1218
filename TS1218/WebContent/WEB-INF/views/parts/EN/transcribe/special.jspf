@@ -80,7 +80,9 @@
 			<div class="title">Abbreviations and Numbers</div>
 			<div class="content">
 				<p>Some expressions are almost always abbreviated. For example:
-					 ז'ש'ה' – זהו שאמר הכתוב;  ד'א' – דבר אחר;  ה'ב'ה' – הקודש או הקדוש ברוך הוא					
+				<span dir="rtl">
+					 ז'ש'ה' – זהו שאמר הכתוב;  ד'א' – דבר אחר;  ה'ב'ה' – הקודש או הקדוש ברוך הוא	
+					 </span>
 					 </p>
 				<div class="images inline">
 					<img
@@ -94,7 +96,8 @@
 					<strong>Please write each single visible letter of the
 						abbreviation without space in between, each letter followed
 						directly by an apostrophe ‘ representing the dot above</strong>, i.e. :
-					ה'ב'ה', ז'ש'ה'. Please do NOT resolve the abbreviations.
+						<span dir="rtl">
+					ה'ב'ה', ז'ש'ה' </span>.Please do NOT resolve the abbreviations.
 
 
 
@@ -102,7 +105,9 @@
 				<div>
 					<img
 						src="./images/special_characters/k_special_characters_abbreviations_and_numbers4.png">
+						<span dir="rtl">
 					- אמ' ר' לוי'
+					</span>
 				</div>
 				<div>
 					<img
@@ -115,7 +120,9 @@
 				<div>
 					<img
 						src="./images/special_characters/m_special_characters_abbreviations_and_numbers6.png">
+						<span dir="rtl">
 					- לנולד בן ז'
+					</span>
 				</div>
 
 			</div>
