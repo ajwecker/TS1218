@@ -20,10 +20,13 @@ public class ManuscriptPlace {
 			this.line = currentLineNumber;
 			return this;
 					
-		} else 	if(currentPage < totalPages) { //getManuscriptDescription(task.getmId()).getTotalPageNumber()) {
+		} else 	if(currentPage <= (totalPages+1)) { //getManuscriptDescription(task.getmId()).getTotalPageNumber()) {
 				currentPage++;
 			    this.line = 1;
-			    this.page = currentPage;
+			    this.page = currentPage % (totalPages+1);
+			    if(this.page == 0) {
+			    	this.page++;
+			    }
 				return this;
 		}
 		return null;
