@@ -31,4 +31,35 @@ public class ManuscriptPlace {
 		}
 		return null;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + line;
+		result = prime * result + ((manuscriptId == null) ? 0 : manuscriptId.getName().hashCode());
+		result = prime * result + page;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ManuscriptPlace other = (ManuscriptPlace) obj;
+		if (line != other.line)
+			return false;
+		if (manuscriptId == null) {
+			if (other.manuscriptId != null)
+				return false;
+		} else if (!manuscriptId.getName().equals(other.manuscriptId.getName()))
+			return false;
+		if (page != other.page)
+			return false;
+		return true;
+	}
 }

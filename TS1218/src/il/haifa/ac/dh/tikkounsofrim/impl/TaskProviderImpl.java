@@ -28,10 +28,14 @@ public class TaskProviderImpl implements TaskProvider {
 	private ManuscriptPlace getNextFree(ManuscriptPlace seed, TikunUser user) {
 		// TODO Auto-generated method stub
 		boolean free = checkIfFree(seed, user);
+		ManuscriptPlace start = seed;
 		while (!free) {
 			seed = seed.getNext(mprov.getManuscriptDescription(seed.manuscriptId).getTotalLineNumbers(seed.page),
 					mprov.getManuscriptDescription(seed.manuscriptId).getTotalPageNumber());
 			free = checkIfFree(seed, user);
+			if(start.equals(seed)){
+				break;
+			}
 		}
 		return seed;
 	}
