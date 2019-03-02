@@ -12,24 +12,22 @@ public class ManuscriptPlace {
 	}
 
 	public ManuscriptPlace getNext(int totalLines, int totalPages) {
-		// TODO Auto-generated method stub
-		int  currentLineNumber = this.line;
+		int currentLineNumber = this.line;
 		int currentPage = this.page;
 		currentLineNumber++;
-		if (currentLineNumber <= totalLines) { //getManuscriptDescription(task.getmId()).getTotalLineNumbers(currentPage)) {
-			this.line = currentLineNumber;
-			return this;
-					
-		} else 	if(currentPage <= (totalPages+1)) { //getManuscriptDescription(task.getmId()).getTotalPageNumber()) {
-				currentPage++;
-			    this.line = 1;
-			    this.page = currentPage % (totalPages+1);
-			    if(this.page == 0) {
-			    	this.page++;
-			    }
-				return this;
+		if (currentLineNumber <= totalLines) {
+			// More lines to go in this page
+			return new ManuscriptPlace(manuscriptId.getName(), currentPage, currentLineNumber);
+		} else {
+			// no more lines in page - go to the first line in the next page
+			currentLineNumber = 1;
+			currentPage++;
+			if (currentPage >= totalPages) {
+				// page numbers start with 1, not 0
+				currentPage = (currentPage + 1) - totalPages;
+			}
+			return new ManuscriptPlace(manuscriptId.getName(), currentPage, currentLineNumber);
 		}
-		return null;
 	}
 
 	@Override
