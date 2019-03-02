@@ -14,7 +14,7 @@
 	<property name="views.src"       value="${conf.src}/views"/>
 
 	<!-- ********************* Derived Properties ************************* -->
-	<property name="app.name" value="TS1812"/>
+	<property name="app.name" value="TS1218"/>
 	<property name="build.app" value="${build.dir}/${app.name}"/>
 	<property name="dist.app"  value="${dist.dir}/${app.name}.war"/>
 
@@ -26,7 +26,7 @@
 	<property name="tomcat.username"    value="ts"/>
 	<property name="tomcat.password"    value="Tanhuma2019"/>
 	<property name="webapp.name" value="ts-staging"/>
-	<property name="webapp.name.prod" value="TS1812"/>
+	<property name="webapp.name.prod" value="TS1218"/>
 
 	<!-- ********************** Destination Preparation ********************* -->
 
