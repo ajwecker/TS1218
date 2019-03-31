@@ -412,7 +412,7 @@ public class UserDBaseJDBC implements UserDBase {
 	}
 
 	@Override
-	public boolean isLineDone(ManuscriptPlace place, int seenLimit, int correctLimit, TikunUser user) {
+	public int isLineDone(ManuscriptPlace place, int seenLimit, int correctLimit, TikunUser user) {
 		// TODO Auto-generated method stub
 		Statement statement = null;
 		try {
@@ -428,21 +428,21 @@ public class UserDBaseJDBC implements UserDBase {
 			  
 			   seenCount++;
 			   if (seenCount > seenLimit) {
-				   return true;
+				   return 1;
 			   }
 			   
 			   int status = resultSet.getInt(9);
 			   if (status != 0 ) {
 				   doneCount++;
 				   if (doneCount > correctLimit) {
-					   return true;
+					   return 2;
 				   }
 				   if("guest".equals(user.getId())){
-					   return true;
+					   return 3;
 				   }
 				   String author = resultSet.getString(2);
 				   if(author.equals(user.getId())){
-					   return true;
+					   return 4;
 				   }
 					
 				}
@@ -453,13 +453,13 @@ public class UserDBaseJDBC implements UserDBase {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			return false;
+			return 0;
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			closeStatement(statement);
 		}
-		return false;
+		return 0;
 	}
 }

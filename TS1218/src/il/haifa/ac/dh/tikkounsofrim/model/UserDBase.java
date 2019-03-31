@@ -13,7 +13,7 @@ public interface UserDBase {
 	 public int getTotalTimesLineSeen(ManuscriptPlace place);
 	 public int getTotalTimesLineCorrected(ManuscriptPlace place);
 	public boolean userDidLine(ManuscriptPlace seed, String user);
-	public boolean isLineDone(ManuscriptPlace seed, int seenLimit, int correctLimit, TikunUser user);
+	public int isLineDone(ManuscriptPlace seed, int seenLimit, int correctLimit, TikunUser user);
 	 
 
 }

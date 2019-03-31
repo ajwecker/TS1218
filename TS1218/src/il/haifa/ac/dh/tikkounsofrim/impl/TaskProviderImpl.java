@@ -44,8 +44,14 @@ public class TaskProviderImpl implements TaskProvider {
 	private boolean checkIfFree(ManuscriptPlace seed, TikunUser user) {
 		// check whether the line hase been seen opr corrected more that the threshold.
 		// Also, skip the line if user already saw it, unless it the guest account
-		return userDB.isLineDone(seed, SEEN_LIMIT, CORRECT_LIMIT, user); 
-		
+		int retCode = userDB.isLineDone(seed, SEEN_LIMIT, CORRECT_LIMIT, user);
+		if (retCode == 0) {
+			return false;
+		}
+		if(retCode == 1 || retCode==2) {
+			globalSeed = seed;
+		}
+		return true;
 	}
 
 	public Task getTask(TikunUser user, ManuscriptPlace firstPlace) {
