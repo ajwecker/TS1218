@@ -10,6 +10,7 @@ import java.sql.Timestamp;
 
 import il.haifa.ac.dh.tikkounsofrim.Config;
 import il.haifa.ac.dh.tikkounsofrim.model.ManuscriptPlace;
+import il.haifa.ac.dh.tikkounsofrim.model.TikunUser;
 import il.haifa.ac.dh.tikkounsofrim.model.UserDBase;
 import il.haifa.ac.dh.tikkounsofrim.model.UserInfo;
 
@@ -397,6 +398,58 @@ public class UserDBaseJDBC implements UserDBase {
 					+ place.manuscriptId.getName() + "' and page = " + place.page + " and line = " + place.line
 					+ " and userid = '" + user + '\'');
 			return resultSet.next();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			closeStatement(statement);
+		}
+		return false;
+	}
+
+	@Override
+	public boolean isLineDone(ManuscriptPlace place, int seenLimit, int correctLimit, TikunUser user) {
+		// TODO Auto-generated method stub
+		Statement statement = null;
+		try {
+			connect();
+			statement = connect.createStatement();
+			ResultSet resultSet = statement
+					.executeQuery("select * from transcriptions where manuscript = '"
+							+ place.manuscriptId + "'and page = '" + place.page + "'and line = '" + place.line + "'");
+			int seenCount = 0;
+			int doneCount = 0;
+			while (resultSet.next()) {
+			   
+			  
+			   seenCount++;
+			   if (seenCount > seenLimit) {
+				   return true;
+			   }
+			   
+			   int status = resultSet.getInt(9);
+			   if (status != 0 ) {
+				   doneCount++;
+				   if (doneCount > correctLimit) {
+					   return true;
+				   }
+				   if("guest".equals(user.getId())){
+					   return true;
+				   }
+				   String author = resultSet.getString(2);
+				   if(author.equals(user.getId())){
+					   return true;
+				   }
+					
+				}
+			   
+			  
+			}
+
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

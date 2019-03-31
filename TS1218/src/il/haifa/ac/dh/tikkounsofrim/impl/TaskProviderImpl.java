@@ -9,6 +9,7 @@ public class TaskProviderImpl implements TaskProvider {
 	ManuscriptProvider mprov = null;
 	UserDBase userDB = null;
 	ChapterAssignmentData chapterAssignmentData = null;
+	private static ManuscriptPlace globalSeed = getDefaultManuscriptPlace();
 
 	public TaskProviderImpl(ManuscriptProvider mprov, ChapterAssignmentData chapterAssignmentData, UserDBase userDB) {
 		super();
@@ -20,8 +21,8 @@ public class TaskProviderImpl implements TaskProvider {
 	@Override
 	public Task getTask(TikunUser user) {
 
-		ManuscriptPlace seed = getDefaultManuscriptPlace();
-		seed = getNextFree(seed,user);
+		
+		ManuscriptPlace seed = getNextFree(globalSeed,user);
 		return getTask(user, seed);
 	}
 
@@ -43,12 +44,8 @@ public class TaskProviderImpl implements TaskProvider {
 	private boolean checkIfFree(ManuscriptPlace seed, TikunUser user) {
 		// check whether the line hase been seen opr corrected more that the threshold.
 		// Also, skip the line if user already saw it, unless it the guest account
-		if (userDB.getTotalTimesLineSeen(seed) <= SEEN_LIMIT
-				&& userDB.getTotalTimesLineCorrected(seed) <= CORRECT_LIMIT
-				&& ("guest".equals(user.getId()) || !userDB.userDidLine(seed,user.getId()))) {
-			return true;
-		}
-		return false;
+		return userDB.isLineDone(seed, SEEN_LIMIT, CORRECT_LIMIT, user); 
+		
 	}
 
 	public Task getTask(TikunUser user, ManuscriptPlace firstPlace) {
@@ -111,8 +108,8 @@ public class TaskProviderImpl implements TaskProvider {
 	/**
 	 * @return
 	 */
-	private ManuscriptPlace getDefaultManuscriptPlace() {
-		return new ManuscriptPlace(ChapterAssignmentDataImpl.GENEVA_MANUSRIPT_NAME,100, 1);
+	private static ManuscriptPlace getDefaultManuscriptPlace() {
+		return new ManuscriptPlace(ChapterAssignmentDataImpl.GENEVA_MANUSRIPT_NAME,250, 1);
 	}
 
 	/**
@@ -123,7 +120,7 @@ public class TaskProviderImpl implements TaskProvider {
 	private ManuscriptPlace lookup(int ntnChapterId) {
 		ChapterAssignment chapterAssignment = chapterAssignmentData.getChapterAssignment(ntnChapterId);
 		if (chapterAssignment == null) {
-			return getDefaultManuscriptPlace();
+			return globalSeed;
 		}
 
 		ManuscriptPlace seed = new ManuscriptPlace(chapterAssignmentData.getName(),
