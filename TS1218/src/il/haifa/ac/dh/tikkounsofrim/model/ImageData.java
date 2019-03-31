@@ -45,7 +45,7 @@ public class ImageData {
 	
 	public String getTranscribedLineImgSrc() {
 		String src = getScheme()+"://"+getServer()+"/"+getPrefix()+"/"
-				+getImageId()+"/"+getBoundingBox().toString()+"/full/0/default.jpg";
+				+getImageId()+"/"+getBoundingBox().toString()+"/full/0/default.jpg"; //.jpg
 		System.out.println("TranscribdLineSrc="+src);
 		return src;
 	}

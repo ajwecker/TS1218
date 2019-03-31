@@ -34,6 +34,7 @@ public class TaskProviderImpl implements TaskProvider {
 					mprov.getManuscriptDescription(seed.manuscriptId).getTotalPageNumber());
 			free = checkIfFree(seed, user);
 			if(start.equals(seed)){
+				//goto new manuscript
 				break;
 			}
 		}
@@ -112,7 +113,7 @@ public class TaskProviderImpl implements TaskProvider {
 	 * @return
 	 */
 	private ManuscriptPlace getDefaultManuscriptPlace() {
-		return new ManuscriptPlace(ChapterAssignmentDataImpl.GENEVA_MANUSRIPT_NAME,100, 1);
+		return new ManuscriptPlace("GENEVA146",300, 1);
 	}
 
 	/**

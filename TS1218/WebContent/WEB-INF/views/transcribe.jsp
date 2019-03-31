@@ -198,25 +198,25 @@
 					<div class="tab-pane fade" id="special" role="tabpanel"
 						aria-labelledby="profile-tab">
 						<div class="tabcontent">
-							<jsp:include page="parts/${lang}/transcribe/special.jspf" />
+							<jsp:include page="parts/${lang}/transcribe/Geneva146/special.jspf" />
 						</div>
 					</div>
 					<div class="tab-pane fade" id="ab" role="tabpanel"
 						aria-labelledby="ab-tab">
 						<div class="tabcontent">
-							<jsp:include page="parts/${lang}/transcribe/abc.jspf" />
+							<jsp:include page="parts/${lang}/transcribe/Geneva146/abc.jspf" />
 						</div>
 					</div>
 					<div class="tab-pane fade" id="marked" role="tabpanel"
 						aria-labelledby="marked-tab">
 						<div class="tabcontent">
-							<jsp:include page="parts/${lang}/transcribe/marked.jspf" />
+							<jsp:include page="parts/${lang}/transcribe/Geneva146/marked.jspf" />
 						</div>
 					</div>
 					<div class="tab-pane fade" id="help" role="tabpanel"
 						aria-labelledby="help-tab">
 						<div class="tabcontent">
-							<jsp:include page="parts/${lang}/transcribe/help.jspf" />
+							<jsp:include page="parts/${lang}/transcribe/Geneva146/help.jspf" />
 						</div>
 					</div>
 

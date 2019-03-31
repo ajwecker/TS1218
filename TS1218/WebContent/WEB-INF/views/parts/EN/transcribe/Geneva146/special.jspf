@@ -1,0 +1,165 @@
+<div class="special_chars info_content">
+	<div class="header">
+		<div class="title">Special characters</div>
+	</div>
+	<div class="content">
+		<div class="line_fillers">
+			<div class="title">Line fillers</div>
+			<div class="content">
+				<p>In order to maintain a homogeneous text layout, medieval
+					scribes frequently used “line fillers”, special characters added at
+					the ends of lines in cases where the text did not reach the end of
+					line naturally. Another way was filling the remaining space with
+					the first letters of the word of the next line. The scribe of the
+					Geneva manuscript usually fills the end of lines with one or two
+					diagonal strokes.</p>
+				<img
+					src="./images/special_characters/a_special_characters_linefillers.png">
+				<p>
+					<strong>In order to insert these characters at the end of
+						a line, press the leftmost button at the buttons line under the
+						text and select the / symbol or //</strong>
+				</p>
+
+
+			</div>
+		</div>
+
+		<div class="wide_letters">
+			<div class="title">Wide letters</div>
+			<div class="content">
+				<p>Another way to fill the rest of the line is to write very
+					large letters at the ends of the lines. These letters need to be
+					written as regular letters. For example: - נוטל את.</p>
+				<img
+					src="./images/special_characters/b_special_characters_wide_letters.png">
+
+			</div>
+		</div>
+		<div class="upper_dots">
+			<div class="title">Upper dots</div>
+			<div class="content">
+				<p>Instead commas and full stops used today, the author of
+					Geneva manuscript separated sentences using upper dots:</p>
+				<p>
+				<div class="images">
+					<img
+						src="./images/special_characters/c_special_characters_upper_dot1.png">
+					<br /> <img
+						src="./images/special_characters/d_special_characters_upper_dot2.png">
+				</div>
+				<p>
+				<strong>To mark an upper dot press the button (<img
+					src="./images/special_characters/e_special_characters_upper_dot_button.png"
+					class="small">) in the buttons line under the text. Add the
+					same number of dots that the manuscript author wrote. If you
+					encounter a different mark that appears on the keyboard, for
+					instance “:”, you may consider using it.
+				</strong>
+				</p>
+			</div>
+		</div>
+		<div class="ligature_alef_lamed">
+			<div class="title">Ligature א-ל</div>
+			<div class="content">
+				<p>Due to the sanctity of the divine name, scribes have been
+					avoiding to write two complete letters aleph lamed in continuation
+					and wrote a ligature, a sign joining both letters, instead. We use
+					for this the corresponding special sign ﭏ (note the little flag on
+					the top left of the aleph).</p>
+				<p>
+					<img
+						src="./images/special_characters/f_special_characters_ligature_aleph_lamed.png">
+					for example means אליו. Please use the special button <img
+						src="./images/special_characters/g_special_characters_ligature_aleph_lamed_button.png"
+						class="small"> below the text line and transcribe ﭏיו.
+				</p>
+			</div>
+		</div>
+		<div class="abbreviations_and_numbers">
+			<div class="title">Abbreviations and Numbers</div>
+			<div class="content">
+				<p>Some expressions are almost always abbreviated. For example:
+				<span dir="rtl">
+					 ז'ש'ה' – זהו שאמר הכתוב;  ד'א' – דבר אחר;  ה'ב'ה' – הקודש או הקדוש ברוך הוא	
+					 </span>
+					 </p>
+				<div class="images inline">
+					<img
+						src="./images/special_characters/h_special_characters_abbreviations_and_numbers1.png">
+					<img
+						src="./images/special_characters/i_special_characters_abbreviations_and_numbers2.png">
+					<img
+						src="./images/special_characters/j_special_characters_abbreviations_and_numbers3.png">
+				</div>
+				<p>
+					<strong>Please write each single visible letter of the
+						abbreviation without space in between, each letter followed
+						directly by an apostrophe ‘ representing the dot above</strong>, i.e. :
+						<span dir="rtl">
+					ה'ב'ה', ז'ש'ה' </span>.Please do NOT resolve the abbreviations.
+
+
+
+				</p>
+				<div>
+					<img
+						src="./images/special_characters/k_special_characters_abbreviations_and_numbers4.png">-
+						<span dir="rtl">
+				 אמ' ר' לוי'
+					</span>
+				</div>
+				<div>
+					<img
+						src="./images/special_characters/l_special_characters_abbreviations_and_numbers5.png">-
+				<span dir="rtl">		
+					משה וג'
+				</span>	
+				</div>
+				<p>When letters serve as numbers they should be transcribed with
+					the letters displayed (and the dot above the Hebrew letter as an
+					apostrophe, i.e.</p>
+				<div>
+					<img
+						src="./images/special_characters/m_special_characters_abbreviations_and_numbers6.png">-
+						<span dir="rtl">
+					 לנולד בן ז'
+					</span>
+				</div>
+
+			</div>
+		</div>
+		<div class="the_divine_name">
+			<div class="title">The Divine name</div>
+			<div class="content">
+				<p>
+					In manuscripts written by Jews, there are many ways to write the
+					name of G-d replacing the tetragrammaton, most of them use two or
+					three yods, sometimes with an ornament. The scribe of the Geneva
+					manuscript, usually writes the divine name <img
+						src="./images/special_characters/n_special_characters_divine_name.png">
+					and should be transcribed as יוי.
+				</p>
+			</div>
+		</div>
+		<div class="headwords">
+			<div class="title">Headwords</div>
+			<div class="content">
+				<p>The manuscript contains big headwords, usually written with
+					square letters standing out from the other handwriting. Sometimes
+					they invade the line below that remains empty and sometimes they
+					are integrated into the line.</p>
+				<p>
+					<strong>Transcribe the headwords in regular font like the
+						rest of the text</strong>
+				</p>
+				<img
+					src="./images/special_characters/o_special_characters_headwords.png" class="large">
+			</div>
+		</div>
+	</div>
+
+
+
+
+</div>

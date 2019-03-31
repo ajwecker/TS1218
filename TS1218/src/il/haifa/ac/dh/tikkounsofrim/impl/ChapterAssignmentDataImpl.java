@@ -17,7 +17,8 @@ public class ChapterAssignmentDataImpl implements ChapterAssignmentData {
 
 	public final static String TSV_GENEVA_FILENAME = "Geneva_146_929.tsv.txt";
 	
-	public final static String GENEVA_MANUSRIPT_NAME = "Geneva_146";
+	public final static String GENEVA_MANUSCRIPT_NAME = "Geneva_146";
+	public final static String BNF_MANUSCRIPT_NAME = "BNF_150";
 
 	private Map<Integer, ChapterAssignment> chapterLines = new HashMap<Integer, ChapterAssignment>();
 
@@ -38,12 +39,12 @@ public class ChapterAssignmentDataImpl implements ChapterAssignmentData {
 				int endPage = Integer.parseInt(item[4]);
 				int endLine = Integer.parseInt(item[5]);
 				System.out.println(" Assignment: " + chapter + ", " + startPage + ", " + startLine + ", " + endPage + ", " + endLine);
-				ChapterAssignment assingment = new ChapterAssignment(GENEVA_MANUSRIPT_NAME, chapter, startPage,
+				ChapterAssignment assingment = new ChapterAssignment(GENEVA_MANUSCRIPT_NAME, chapter, startPage,
 						startLine, endPage, endLine);
 				chapterLines.put(chapter, assingment);
 			}
 		});
-		name = GENEVA_MANUSRIPT_NAME;
+		name = GENEVA_MANUSCRIPT_NAME;
 	}
 	
 	/* (non-Javadoc)

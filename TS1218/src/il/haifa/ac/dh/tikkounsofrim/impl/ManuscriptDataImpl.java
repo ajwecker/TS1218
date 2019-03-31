@@ -16,7 +16,7 @@ public class ManuscriptDataImpl implements ManuscriptData, SegmentationProvider,
 	
 	
 	
-	public final static String tvsGeneva = "Geneva_146";
+	public final static String tvsGeneva = "Geneva146";
 	
 	
 	
@@ -26,15 +26,29 @@ public class ManuscriptDataImpl implements ManuscriptData, SegmentationProvider,
 	private List <Integer> pageLengths = new ArrayList<Integer>();
 	private List <List <LineData>> manuscriptLineData = new ArrayList<List<LineData>>();
 	private String transcriptionVerion ="";
+
+
+
+
+
+	static int iImageFile=10;
+	static int iAT = 6;
+	static int iPage = 0;
+	static int iLine =1 ;
+	static int iTop = 2;
+	static int iBottom = 3; 
+	static int iRight =4;
+	static int iLeft=5;
 	
 	
-	
-	static ManuscriptData loadData(String tvsFile){
+	static ManuscriptData loadData(String tvsFile, int datafileversion){
 		//So we can access the data in the inner class
+		final int fileversion = datafileversion;
 		final int[] currentPage= new int[1]; currentPage[0]=0;
 		final int[] currentLine= new int[1]; currentLine[0]=0;
 		final List<List<LineData>> currentPageLineData = new ArrayList<List<LineData>>(1);
 					currentPageLineData.add(0, new ArrayList<LineData>());
+		loadIndex(fileversion);			
 		
 		
 		ManuscriptDataImpl mData = new ManuscriptDataImpl();
@@ -44,10 +58,14 @@ public class ManuscriptDataImpl implements ManuscriptData, SegmentationProvider,
 			@Override
 			public void doIt(String[] item) {
 				// TODO Auto-generated method stub
-// 0	1			    2           3               4               5                6   7      8        9               10
-//page	line4Filename	top_on_page	bottom_on_page	left_on_page	right_on_page	AT	GT01	GT02	enriched_y_n	color_img_file_name
-				int page = Integer.parseInt(item[0]);
+				int page = Integer.parseInt(item[iPage]);
 				if(page != currentPage[0]) {
+					while (page != currentPage[0]+1) {
+						//add skipped pages
+						mData.pageLengths.add(currentPage[0], (currentLine[0]-1));
+						mData.manuscriptLineData.add(currentPage[0], currentPageLineData.get(0));
+						currentPage[0]++;
+					}
 					mData.pageLengths.add(currentPage[0], (currentLine[0]-1));
 					mData.manuscriptLineData.add(currentPage[0], currentPageLineData.get(0));
 					mData.numberOfPages=page;
@@ -61,27 +79,33 @@ public class ManuscriptDataImpl implements ManuscriptData, SegmentationProvider,
 					
 				}
 				if(page == 8) {
-					System.out.println("T8="+item[6]+"-"+item[10]);
+					System.out.println("T8="+item[iAT]+"-"+item[iImageFile]);
 				}
-				int line = Integer.parseInt(item[1]);
-				if (line != currentLine[0]) {
-					System.err.println("!!!Failed sanity check at page="+currentPage+" line="+line+" expecting line="+currentLine);
+				int line = Integer.parseInt(item[iLine]);
+				if(line == 0) { // include = 0;
+					return;
 				}
-				int top = Integer.parseInt(item[2]);
-				int bottom = Integer.parseInt(item[3]);
-				int left = Integer.parseInt(item[4]);
-				int right = Integer.parseInt(item[5]);
+				while (line != currentLine[0]) {
+					System.err.println("!!!Missing lines at page="+currentPage[0]+" line="+line+" expecting line="+currentLine[0]);
+					
+					currentPageLineData.get(0).add(currentLine[0], null);
+					currentLine[0]++;
+				}
+				int top = Integer.parseInt(item[iTop]);
+				int bottom = Integer.parseInt(item[iBottom]);
+				int left = Integer.parseInt(item[iLeft]);
+				int right = Integer.parseInt(item[iRight]);
 				int height = bottom - top;
 				int width = right -left;
 				BoundingBox bbox = new BoundingBox(left, top, width, height);
-				String transcription = item[6];  //was item[7]; GT now AT
+				String transcription = item[iAT];  //was item[7]; GT now AT
 				if(transcription == null || transcription.length()==0) {
 					transcription = ""; // was item[6]; AT
 				}
 				if(currentLine[0]==13) {
 					System.out.println("load page="+page+" Transcription line="+currentLine[0]+" ="+transcription);
 				}
-				String imgName = item[10];
+				String imgName = item[iImageFile];
 				SegData lineSegData = new SegData(page, line, bbox,  imgName);
 				TranscribedString ts = new TranscribedString(transcription, null, "version");
 				LineData lineData = new LineData(ts,lineSegData);
@@ -94,6 +118,38 @@ public class ManuscriptDataImpl implements ManuscriptData, SegmentationProvider,
 		mData.manuscriptLineData.add(currentPage[0], currentPageLineData.get(0));
 		
 		return mData;
+	}
+	private static void loadIndex(int fileversion) {
+		// 		0	1			    2           3               4               5                	6   	7      8        9               10					11				12			13				14				15				16	17	18				19					20					21			22			23			24			25				26
+		//V1  page	line4Filename	top_on_page	bottom_on_page	left_on_page	right_on_page		AT		GT01	GT02	enriched_y_n	color_img_file_name
+		//V2: DanOrder	alanOrder	lineID	    page			page_on_photo	col_on_single_page	x1col	y1col	x2col	y2col			newLineNuAlan	GTLineNumberDaniel	top_on_page	bottom_on_page	left_on_page	right_on_page	AT	GT2	enriched_y_n	color_img_file_name	include	regionID	regionx1	regiony1	regionx2	regiony2	enriched_y_n	color_img_file_name				
+
+		switch (fileversion) {
+		case 1:
+			 iImageFile=10;
+			 iAT = 6;
+			 iPage = 0;
+			 iLine =1 ;
+			 iTop = 2;
+			 iBottom = 3; 
+			 iRight =5;
+			 iLeft=4;
+			break;
+		case 2:
+			 iImageFile=19;
+			 iAT = 16;
+			 iPage = 3;
+			 iLine =10 ;
+			 iTop = 12;
+			 iBottom = 13; 
+			 iRight =15;
+			 iLeft=14;
+			break;	
+
+		default:
+			break;
+		}
+		
 	}
 	/* (non-Javadoc)
 	 * @see il.haifa.ac.dh.tikkounsofrim.impl.ManuscriptData#getTranscribedData(int, int)

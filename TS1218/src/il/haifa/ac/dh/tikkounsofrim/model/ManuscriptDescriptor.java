@@ -3,33 +3,32 @@ package il.haifa.ac.dh.tikkounsofrim.model;
 public class ManuscriptDescriptor {
 	
 	
-	private String shortDescriptionEN;
-	private String descriptionLinkEN;
-	private String shortDescriptionFR;
-	private String descriptionLinkFR;
-	private String shortDescriptionHE;
-	private String descriptionLinkHE;
+	String  id;
 	private String attribution;
 	private double leafletFactor;
+	int difficulty;
+	private int priority;
+	
+	String[] specialcharacters;
+	String[] linefillers;
 	private ManuscriptData mdata;
 	private SegmentationProvider sdata; 
 	private TranscriptionProvider tdata;
-	public ManuscriptDescriptor(ManuscriptData mdata, SegmentationProvider sdata, TranscriptionProvider tdata, double leafletFactor,
-			String shortDescriptionEN, String descriptionLinkEN,
-			String shortDescriptionFR, String descriptionLinkFR,  
-			String shortDescriptionHE, String descriptionLinkHE,
+	public ManuscriptDescriptor(String id, ManuscriptData mdata, SegmentationProvider sdata, TranscriptionProvider tdata, double leafletFactor,
+			int difficulty,
+			int priority,
+			String[] specialcharacters,
+			String[] linefillers,
 			String attribution) {
 		super();
-		
+		this.id = id;
 		this.mdata = mdata;
 		this.leafletFactor = leafletFactor;
-		this.shortDescriptionEN = shortDescriptionEN;
-		this.descriptionLinkEN = descriptionLinkEN;
-		this.shortDescriptionFR = shortDescriptionFR;
-		this.descriptionLinkFR = descriptionLinkFR;
-		this.shortDescriptionHE = shortDescriptionHE;
-		this.descriptionLinkHE = descriptionLinkHE;
+		
+		this.specialcharacters = specialcharacters;
 		this.attribution = attribution;
+		this.difficulty = difficulty;
+		this.setPriority(priority);
 		this.sdata = sdata;
 		this.tdata = tdata;
 	}
@@ -46,46 +45,9 @@ public class ManuscriptDescriptor {
 		return lines;
 		
 	}
-public String getShortDescription(String lang) {
-	    String ret= "";
-		switch (lang) {
-		case "EN":
-			ret = shortDescriptionEN;
-			break;
-		case "FR":
-			ret = shortDescriptionFR;
-			break;
-		case "HE":
-			ret = shortDescriptionHE;
-			break;
 
-		default:
-			break;
-		}
-		return ret;
-		
-	}
-public String getDescriptionLink(String lang) {
-	 String ret= "";
-		switch (lang) {
-		case "EN":
-			ret = descriptionLinkEN;
-			break;
-		case "FR":
-			ret = descriptionLinkFR;
-			break;
-		case "HE":
-			ret = descriptionLinkHE;
-			break;
-
-		default:
-			break;
-		}
-		return ret;
 	
 	
-	
-}
 
 public double getLeafletFactor() {
 	return leafletFactor;
@@ -104,5 +66,23 @@ public String getAttribution() {
 }
 public String getTranscriptionVersion() {
 	return mdata.getTranscriptionVersion();
+}
+public String getId() {
+	
+	return id;
+}
+public String getShortDescription(String lang) {
+	// TODO Auto-generated method stub
+	return null;
+}
+public String getDescriptionLink(String lang) {
+	// TODO Auto-generated method stub
+	return null;
+}
+public int getPriority() {
+	return priority;
+}
+public void setPriority(int priority) {
+	this.priority = priority;
 }
 }
